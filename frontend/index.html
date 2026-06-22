@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#12372f" />
+    <title>CHP Training Assistant</title>
+    <link rel="icon" href="icons/app-icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Graph RAG MVP</p>
+          <h1>CHP Training Assistant</h1>
+        </div>
+        <div class="status-pill" id="apiStatus">Checking</div>
+      </header>
+
+      <section class="composer" aria-label="Ask a CHP training question">
+        <label class="input-label" for="questionInput">Question</label>
+        <textarea
+          id="questionInput"
+          rows="4"
+          placeholder="Ask about belt drift, transfer points, coal flow, or track hopper safety..."
+        ></textarea>
+        <div class="actions">
+          <button id="micButton" class="secondary-button" type="button">
+            <span id="micButtonText">Record</span>
+          </button>
+          <button id="sendButton" class="primary-button" type="button">Ask</button>
+        </div>
+        <p class="helper-text" id="voiceHint">Voice records a short question, transcribes it, then fills the box.</p>
+      </section>
+
+      <section class="state-panel" id="statePanel" hidden></section>
+
+      <section class="answer-panel" id="answerPanel" hidden>
+        <h2>Answer</h2>
+        <div class="answer-text" id="answerText"></div>
+      </section>
+
+      <section class="references-grid" id="referencesGrid" hidden>
+        <div class="reference-section">
+          <h2>References</h2>
+          <div id="referencesList" class="stack"></div>
+        </div>
+        <div class="reference-section">
+          <h2>Relevant Diagrams</h2>
+          <div id="imagesList" class="stack"></div>
+        </div>
+      </section>
+
+      <section class="notes-panel" id="notesPanel" hidden>
+        <h2>Coverage</h2>
+        <div id="coverageNotes"></div>
+      </section>
+    </main>
+
+    <script src="app.js?v=3"></script>
+  </body>
+</html>

@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Hopper Feeder | L2 Preparedness Course</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #f4f1eb;
+  --bg2:      #ede9e0;
+  --bg3:      #e4dfd3;
+  --ink:      #1c1a16;
+  --ink2:     #3d3a32;
+  --ink3:     #6b6656;
+  --rule:     #c8c2b4;
+  --rule2:    #d8d3c8;
+  --orange:   #c8520a;
+  --orange-l: #e8682a;
+  --orange-d: #8c3600;
+  --orange-bg:#fdf2ea;
+  --red:      #b02020;
+  --red-l:    #cc3333;
+  --red-bg:   #fdf0f0;
+  --green:    #2a6e3a;
+  --green-bg: #eff7f1;
+  --blue:     #1a4d7c;
+  --blue-bg:  #eef4fb;
+  --yellow:   #a06800;
+  --yellow-bg:#fdf8ee;
+  --font-h:   'Barlow Condensed', sans-serif;
+  --font-b:   'Barlow', sans-serif;
+  --font-m:   'Share Tech Mono', monospace;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+
+body{
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-b);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* ── HEADER ── */
+.site-header{
+  background: var(--ink);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--orange);
+}
+.header-inner{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hbadge{
+  background: var(--orange);
+  color: #fff;
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.htitle{
+  font-family: var(--font-h);
+  font-size: 16px;
+  font-weight: 600;
+  color: #f4f1eb;
+  letter-spacing: 0.04em;
+}
+.hmeta{
+  margin-left: auto;
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: #888;
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+/* ── HERO ── */
+.hero{
+  background: var(--ink);
+  padding: 52px 28px 44px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after{
+  content: 'L2';
+  position: absolute;
+  right: -20px; top: -20px;
+  font-family: var(--font-h);
+  font-size: 220px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.03);
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: -0.05em;
+}
+.hero-inner{ max-width: 1080px; margin: 0 auto; }
+.hero-kicker{
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.hero h1{
+  font-family: var(--font-h);
+  font-size: clamp(30px, 5vw, 52px);
+  font-weight: 700;
+  color: #f4f1eb;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  margin-bottom: 14px;
+}
+.hero h1 em{ color: var(--orange); font-style: normal; }
+.hero-desc{
+  font-size: 15px;
+  color: #a8a49c;
+  max-width: 620px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.hero-pills{
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.pill{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 2px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-family: var(--font-m);
+  color: #a8a49c;
+}
+.pill strong{ color: var(--orange); }
+
+/* ── TRAINER NOTE ── */
+.trainer-note{
+  background: var(--orange-bg);
+  border-left: 4px solid var(--orange);
+  border-radius: 0 4px 4px 0;
+  padding: 16px 20px;
+  margin: 0 0 32px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.tn-icon{ font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.tn-label{
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--orange-d);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.tn-text{ font-size: 13px; color: var(--ink2); line-height: 1.7; }
+
+/* ── LAYOUT ── */
+.page-body{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 44px 28px 80px;
+}
+
+/* ── TOC ── */
+.toc{
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin-bottom: 44px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4px;
+}
+.toc-label{
+  grid-column: 1/-1;
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.toc a{
+  display: block;
+  font-size: 13px;
+  color: var(--ink3);
+  text-decoration: none;
+  padding: 3px 0;
+  font-family: var(--font-b);
+  transition: color 0.15s;
+}
+.toc a:hover{ color: var(--orange); }
+.toc a::before{
+  content: '› ';
+  color: var(--orange);
+  font-family: var(--font-m);
+}
+
+/* ── SECTION ── */
+.section{ margin-bottom: 60px; }
+.section-hd{
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+}
+.s-num{
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+.section h2{
+  font-family: var(--font-h);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+.section h3{
+  font-family: var(--font-h);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--orange-d);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 28px 0 10px;
+}
+.section p{ margin-bottom: 12px; color: var(--ink2); }
+
+/* ── CALLOUT ── */
+.callout{
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 18px 0;
+  display: flex; gap: 14px;
+  border-left: 4px solid;
+}
+.callout-icon{ font-size: 18px; flex-shrink:0; margin-top: 2px; }
+.callout-body{ flex:1; }
+.callout-label{
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.callout-text{ font-size: 13px; line-height: 1.7; }
+.callout.stop{ background: var(--red-bg); border-color: var(--red); }
+.callout.stop .callout-label{ color: var(--red); }
+.callout.stop .callout-text{ color: #5a1a1a; }
+.callout.warn{ background: var(--yellow-bg); border-color: var(--yellow); }
+.callout.warn .callout-label{ color: var(--yellow); }
+.callout.warn .callout-text{ color: #4a3000; }
+.callout.info{ background: var(--blue-bg); border-color: var(--blue); }
+.callout.info .callout-label{ color: var(--blue); }
+.callout.info .callout-text{ color: #0e2a46; }
+.callout.ok{ background: var(--green-bg); border-color: var(--green); }
+.callout.ok .callout-label{ color: var(--green); }
+.callout.ok .callout-text{ color: #0e2e1a; }
+.callout.field{ background: var(--orange-bg); border-color: var(--orange); }
+.callout.field .callout-label{ color: var(--orange-d); }
+.callout.field .callout-text{ color: #4a1e00; }
+
+/* ── SKILL OBJECTIVE ── */
+.skill-obj{
+  background: var(--ink);
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+  align-items: start;
+}
+.skill-tag{
+  background: var(--orange);
+  color: #fff;
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.skill-text{
+  font-family: var(--font-h);
+  font-size: 16px;
+  font-weight: 500;
+  color: #f4f1eb;
+  line-height: 1.5;
+}
+.skill-sub{
+  grid-column: 2;
+  font-size: 12px;
+  color: #888;
+  font-family: var(--font-m);
+  margin-top: -4px;
+}
+
+/* ── CONTROL POINT CARDS ── */
+.cp-stack{ display: flex; flex-direction: column; gap: 2px; margin: 20px 0; }
+.cp-card{
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cp-header{
+  display: flex; align-items: center; gap: 0;
+  cursor: pointer;
+  padding: 0;
+}
+.cp-num{
+  background: var(--ink);
+  color: var(--orange);
+  font-family: var(--font-m);
+  font-size: 12px;
+  padding: 14px 18px;
+  flex-shrink: 0;
+  letter-spacing: 0.08em;
+}
+.cp-title{
+  padding: 14px 18px;
+  font-family: var(--font-h);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  flex: 1;
+}
+.cp-supervision{
+  padding: 6px 14px;
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  border-radius: 2px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+.cp-supervision.required{
+  background: var(--red-bg);
+  color: var(--red);
+  border: 1px solid rgba(176,32,32,0.2);
+}
+.cp-body{
+  padding: 0 20px 18px 56px;
+  border-top: 1px solid var(--rule2);
+}
+.cp-body p{ font-size: 13px; color: var(--ink2); margin-top: 12px; }
+
+/* ── CHECKLIST ── */
+.checklist{ list-style: none; margin: 14px 0; }
+.checklist li{
+  display: flex; gap: 10px; align-items: flex-start;
+  font-size: 13px; color: var(--ink2);
+  padding: 7px 0;
+  border-bottom: 1px solid var(--rule2);
+  line-height: 1.6;
+}
+.checklist li:last-child{ border-bottom: none; }
+.chk-box{
+  width: 18px; height: 18px;
+  border: 2px solid var(--rule);
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  background: #fff;
+}
+.chk-box.sup{ border-color: var(--orange); background: var(--orange-bg); }
+.chk-box.obs{ border-color: var(--blue); background: var(--blue-bg); }
+.chk-text{ flex: 1; }
+.chk-role{
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  align-self: flex-start;
+}
+.chk-role.t{ background: var(--blue-bg); color: var(--blue); }
+.chk-role.s{ background: var(--orange-bg); color: var(--orange-d); }
+.chk-role.j{ background: #f0f0f0; color: var(--ink3); }
+
+/* ── OBSERVATION GRID ── */
+.obs-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.obs-card{
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+.obs-card.normal{ border-color: rgba(42,110,58,0.25); background: var(--green-bg); }
+.obs-card.warn{ border-color: rgba(160,104,0,0.25); background: var(--yellow-bg); }
+.obs-card.stop{ border-color: rgba(176,32,32,0.25); background: var(--red-bg); }
+.obs-card-label{
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.obs-card.normal .obs-card-label{ color: var(--green); }
+.obs-card.warn .obs-card-label{ color: var(--yellow); }
+.obs-card.stop .obs-card-label{ color: var(--red); }
+.obs-item{
+  font-size: 12px;
+  line-height: 1.65;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  display: flex; gap: 6px;
+}
+.obs-item::before{ content: '•'; flex-shrink: 0; }
+.obs-card.normal .obs-item{ color: #1a3a22; }
+.obs-card.warn .obs-item{ color: #4a3000; }
+.obs-card.stop .obs-item{ color: #5a1010; }
+.obs-item:last-child{ border-bottom: none; }
+
+/* ── FAILURE CASE ── */
+.case-block{
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+.case-header{
+  background: var(--ink);
+  padding: 14px 20px;
+  display: flex; gap: 14px; align-items: center;
+}
+.case-num{
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: var(--orange);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+.case-title{
+  font-family: var(--font-h);
+  font-size: 15px;
+  font-weight: 600;
+  color: #f4f1eb;
+  letter-spacing: 0.02em;
+}
+.case-body{ padding: 0; }
+.case-row{
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  border-bottom: 1px solid var(--rule2);
+  font-size: 13px;
+}
+.case-row:last-child{ border-bottom: none; }
+.case-key{
+  padding: 12px 16px;
+  background: var(--bg2);
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink3);
+  text-transform: uppercase;
+  display: flex; align-items: flex-start;
+  padding-top: 14px;
+}
+.case-val{
+  padding: 12px 16px;
+  color: var(--ink2);
+  line-height: 1.65;
+}
+.case-val.lesson{
+  background: var(--yellow-bg);
+  color: #4a3000;
+  font-weight: 500;
+}
+
+/* ── RISK TABLE ── */
+.risk-table{
+  width: 100%; border-collapse: collapse;
+  font-size: 13px; margin: 18px 0;
+}
+.risk-table th{
+  background: var(--ink);
+  color: #f4f1eb;
+  padding: 10px 14px;
+  text-align: left;
+  font-family: var(--font-m);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.risk-table td{
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule2);
+  vertical-align: top;
+  color: var(--ink2);
+  background: #fff;
+}
+.risk-table tr:nth-child(even) td{ background: var(--bg2); }
+.risk-badge{
+  display: inline-block; padding: 2px 8px; border-radius: 2px;
+  font-size: 10px; font-family: var(--font-m);
+  font-weight: 600; letter-spacing: 0.04em;
+}
+.rb-h{ background: var(--red-bg); color: var(--red); border: 1px solid rgba(176,32,32,0.2); }
+.rb-m{ background: var(--yellow-bg); color: var(--yellow); border: 1px solid rgba(160,104,0,0.2); }
+.rb-c{ background: #3d0000; color: #ff9999; }
+
+/* ── SYSTEM BEHAVIOUR SVG wrap ── */
+.diagram-wrap{
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 20px;
+  margin: 18px 0;
+  overflow-x: auto;
+}
+.diagram-cap{
+  font-size: 11px; color: var(--ink3);
+  text-align: center;
+  margin-top: 10px;
+  font-family: var(--font-m);
+  letter-spacing: 0.04em;
+}
+
+/* ── INSPECTION MATRIX ── */
+.insp-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px; margin: 18px 0;
+}
+.insp-card{
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+.insp-card-hd{
+  padding: 10px 14px;
+  font-family: var(--font-h);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.insp-card-hd.sense{ background: var(--blue-bg); color: var(--blue); border-bottom: 1px solid rgba(26,77,124,0.15); }
+.insp-card-hd.look{ background: var(--green-bg); color: var(--green); border-bottom: 1px solid rgba(42,110,58,0.15); }
+.insp-card-hd.listen{ background: var(--yellow-bg); color: var(--yellow); border-bottom: 1px solid rgba(160,104,0,0.15); }
+.insp-card-hd.feel{ background: var(--orange-bg); color: var(--orange-d); border-bottom: 1px solid rgba(200,82,10,0.15); }
+.insp-card-body{ padding: 10px 14px; }
+.insp-item{ font-size: 12px; color: var(--ink2); padding: 4px 0; border-bottom: 1px solid var(--rule2); display: flex; gap: 6px; line-height: 1.6; }
+.insp-item:last-child{ border-bottom: none; }
+.insp-item::before{ content: '›'; color: var(--orange); font-family: var(--font-m); flex-shrink: 0; }
+
+/* ── DO/DON'T ── */
+.dontdo-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px; margin: 18px 0;
+}
+.dd-card{ border-radius: 4px; border: 1px solid; padding: 16px 18px; }
+.dd-card.do{ background: var(--green-bg); border-color: rgba(42,110,58,0.25); }
+.dd-card.dont{ background: var(--red-bg); border-color: rgba(176,32,32,0.25); }
+.dd-label{
+  font-family: var(--font-h);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.dd-card.do .dd-label{ color: var(--green); }
+.dd-card.dont .dd-label{ color: var(--red); }
+.dd-item{ font-size: 12px; padding: 5px 0; border-bottom: 1px solid rgba(0,0,0,0.07); line-height: 1.6; display: flex; gap: 6px; }
+.dd-item:last-child{ border-bottom: none; }
+.dd-card.do .dd-item{ color: #0e2e1a; }
+.dd-card.dont .dd-item{ color: #5a1010; }
+.dd-item::before{ font-family: var(--font-m); font-size: 11px; flex-shrink: 0; margin-top: 2px; }
+.dd-card.do .dd-item::before{ content: '✓'; color: var(--green); }
+.dd-card.dont .dd-item::before{ content: '✗'; color: var(--red); }
+
+/* ── SUMMARY CARD ── */
+.summary{
+  background: var(--ink);
+  border-radius: 4px;
+  padding: 28px 32px;
+  margin-top: 56px;
+}
+.summary h3{
+  font-family: var(--font-h);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--orange);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.sum-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 6px 24px;
+}
+.sum-item{
+  font-size: 13px; color: #c0bbb0; padding: 5px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; gap: 8px;
+}
+.sum-item::before{ content: '→'; color: var(--orange); font-family: var(--font-m); flex-shrink: 0; }
+
+/* ── FOOTER ── */
+footer{
+  background: var(--bg3);
+  border-top: 1px solid var(--rule);
+  padding: 20px 28px;
+  text-align: center;
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: var(--ink3);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+  .dontdo-grid{ grid-template-columns: 1fr; }
+  .hero{ padding: 36px 16px; }
+  .page-body{ padding: 28px 16px 60px; }
+  .header-inner{ padding: 12px 16px; }
+  .hmeta{ display: none; }
+  .cp-body{ padding-left: 20px; }
+  .case-row{ grid-template-columns: 90px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="hbadge">L2 · PREPAREDNESS</div>
+    <div class="htitle">Track Hopper Feeder — Operation Execution</div>
+    <div class="hmeta">Coal Handling Plant · Thermal Power Station<br>Assisted Execution Readiness</div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">Capability Knowledge Course · Assisted Execution</div>
+    <h1>Track Hopper Feeder<br><em>Start, Stop &amp; Inspection</em><br>under Supervision</h1>
+    <p class="hero-desc">You have completed L1 — you know what the system is and why it matters. This course prepares you for the next stage: <strong style="color:#f4f1eb;">assisted execution</strong>. You will work alongside a supervisor, observe, support, and learn to read what the system is telling you.</p>
+    <div class="hero-pills">
+      <span class="pill"><strong>Skill 1</strong> Assist in Starting and Stopping Feeder</span>
+      <span class="pill"><strong>Skill 2</strong> Assist in Inspecting Coal at Feeder Input</span>
+      <span class="pill"><strong>Mode</strong> Supervised execution only</span>
+      <span class="pill"><strong>Pre-req</strong> L1 Wagon Tippler completed</span>
+    </div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="page-body">
+
+  <!-- Trainer Voice -->
+  <div class="trainer-note" style="margin-top: 32px;">
+    <div class="tn-icon">🧑‍🏭</div>
+    <div>
+      <div class="tn-label">Trainer's Voice</div>
+      <div class="tn-text">Think of this course as me standing next to you before we walk onto the floor. I'm not asking you to operate anything alone. I'm asking you to understand what's happening at every moment so that when I give you an instruction, you execute it correctly — and when something looks wrong, you say it out loud before it becomes a problem. That's your job at L2.</div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <nav class="toc">
+    <div class="toc-label">Course Sections</div>
+    <a href="#s0">The Track Hopper Feeder — A Quick Refresh</a>
+    <a href="#s1">Execution Block 1: Feeder Start Sequence</a>
+    <a href="#s2">Execution Block 2: Feeder Stop Sequence</a>
+    <a href="#s3">Execution Block 3: Coal Inspection at Feeder Input</a>
+    <a href="#s4">Observation Windows — What to Watch</a>
+    <a href="#s5">Common Mistakes in Assisted Execution</a>
+    <a href="#s6">Failure Cases — Learn from What Went Wrong</a>
+    <a href="#s7">Risk Summary — Three Dimensions</a>
+    <a href="#s8">Your Role Boundary</a>
+  </nav>
+
+  <!-- ════════════ SECTION 0 ════════════ -->
+  <section class="section" id="s0">
+    <div class="section-hd">
+      <span class="s-num">00 /</span>
+      <h2>The Track Hopper Feeder — A Quick Refresh</h2>
+    </div>
+
+    <p>You learned in L1 that coal discharged from the Wagon Tippler falls into the Underground Hopper. The <strong>Track Hopper Feeder</strong> is the device that meters coal from the bottom of that hopper onto the downstream belt conveyor at a controlled, steady rate.</p>
+
+    <p>There are two main types you will encounter in Indian thermal power plants:</p>
+
+    <!-- System diagram SVG -->
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 820 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;" font-family="'Share Tech Mono', monospace">
+        <defs>
+          <marker id="a2" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3z" fill="#c8520a"/>
+          </marker>
+          <marker id="a2b" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3z" fill="#1a4d7c"/>
+          </marker>
+        </defs>
+
+        <!-- Wagon -->
+        <rect x="10" y="20" width="100" height="40" rx="3" fill="#2a3545" stroke="#4a5a6a" stroke-width="1.2"/>
+        <ellipse cx="50" cy="50" rx="30" ry="8" fill="#1e1e1e"/>
+        <text x="60" y="38" fill="#a8a49c" font-size="9" text-anchor="middle">WAGON</text>
+        <text x="60" y="50" fill="#c8c2b4" font-size="8" text-anchor="middle">tippled</text>
+
+        <!-- Arrow down into hopper -->
+        <line x1="60" y1="62" x2="60" y2="80" stroke="#c8520a" stroke-width="1.5" marker-end="url(#a2)"/>
+
+        <!-- Hopper -->
+        <polygon points="20,82 100,82 85,130 35,130" fill="#e4dfd3" stroke="#6b6656" stroke-width="1.2"/>
+        <text x="60" y="110" fill="#3d3a32" font-size="8" text-anchor="middle">HOPPER</text>
+
+        <!-- Feeder box -->
+        <rect x="10" y="132" width="100" height="32" rx="3" fill="#fff" stroke="#c8520a" stroke-width="2"/>
+        <text x="60" y="148" fill="#c8520a" font-size="9" text-anchor="middle" font-weight="600">FEEDER</text>
+        <text x="60" y="159" fill="#8c3600" font-size="8" text-anchor="middle">★ THIS COURSE</text>
+
+        <!-- Arrow to belt -->
+        <line x1="112" y1="148" x2="148" y2="148" stroke="#c8520a" stroke-width="1.5" marker-end="url(#a2)"/>
+
+        <!-- Belt -->
+        <rect x="150" y="135" width="220" height="24" rx="3" fill="#e4dfd3" stroke="#6b6656" stroke-width="1.2"/>
+        <text x="260" y="151" fill="#3d3a32" font-size="9" text-anchor="middle">BELT CONVEYOR</text>
+
+        <!-- Arrow to crusher -->
+        <line x1="372" y1="148" x2="408" y2="148" stroke="#1a4d7c" stroke-width="1.5" marker-end="url(#a2b)"/>
+
+        <rect x="410" y="130" width="100" height="40" rx="3" fill="#eef4fb" stroke="#1a4d7c" stroke-width="1.2"/>
+        <text x="460" y="148" fill="#1a4d7c" font-size="9" text-anchor="middle">CRUSHER</text>
+        <text x="460" y="161" fill="#4a7aaa" font-size="8" text-anchor="middle">HOUSE</text>
+
+        <line x1="512" y1="148" x2="548" y2="148" stroke="#1a4d7c" stroke-width="1.5" marker-end="url(#a2b)"/>
+        <rect x="550" y="130" width="100" height="40" rx="3" fill="#eef4fb" stroke="#1a4d7c" stroke-width="1.2"/>
+        <text x="600" y="148" fill="#1a4d7c" font-size="9" text-anchor="middle">COAL BUNKER</text>
+        <text x="600" y="161" fill="#4a7aaa" font-size="8" text-anchor="middle">/ STOCK</text>
+
+        <line x1="652" y1="148" x2="688" y2="148" stroke="#1a4d7c" stroke-width="1.5" marker-end="url(#a2b)"/>
+        <rect x="690" y="130" width="110" height="40" rx="3" fill="#eef4fb" stroke="#1a4d7c" stroke-width="1.2"/>
+        <text x="745" y="148" fill="#1a4d7c" font-size="9" text-anchor="middle">MILL → BOILER</text>
+        <text x="745" y="161" fill="#4a7aaa" font-size="8" text-anchor="middle">GENERATION</text>
+
+        <!-- title -->
+        <text x="410" y="24" fill="#1c1a16" font-size="11" font-weight="600" text-anchor="middle">POSITION OF FEEDER IN COAL FLOW CHAIN</text>
+        <text x="410" y="38" fill="#6b6656" font-size="8" text-anchor="middle">Every tonne through the boiler passes through this feeder first</text>
+      </svg>
+      <div class="diagram-cap">Fig. 1 — The Feeder is the metering point between the hopper buffer and the conveyor. Disruption here propagates immediately downstream.</div>
+    </div>
+
+    <!-- Feeder types -->
+    <h3>Two Feeder Types You Will Encounter</h3>
+    <div class="obs-grid" style="grid-template-columns: 1fr 1fr;">
+      <div style="background: var(--bg2); border: 1px solid var(--rule); border-radius: 4px; padding: 16px 18px;">
+        <div style="font-family: var(--font-h); font-size: 15px; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px;">Vibratory Feeder</div>
+        <p style="font-size: 13px; color: var(--ink2);">Uses electromagnetic or mechanical vibration to move coal along a trough. Simpler design, lower maintenance, well-suited to fine coal. Flow rate is adjusted by changing vibration amplitude or frequency.</p>
+        <p style="font-size: 12px; color: var(--ink3); margin-top: 6px; font-family: var(--font-m);">Common at: smaller CHP installations, older plants</p>
+      </div>
+      <div style="background: var(--bg2); border: 1px solid var(--rule); border-radius: 4px; padding: 16px 18px;">
+        <div style="font-family: var(--font-h); font-size: 15px; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px;">Apron / Belt Feeder</div>
+        <p style="font-size: 13px; color: var(--ink2);">Uses a slow-moving steel apron or rubber belt to carry coal from the hopper outlet. Handles larger lumps and heavier material well. Flow rate controlled by feeder speed and a slide gate above.</p>
+        <p style="font-size: 12px; color: var(--ink3); margin-top: 6px; font-family: var(--font-m);">Common at: large-capacity plants, high-throughput systems</p>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <div class="callout-icon">ℹ</div>
+      <div class="callout-body">
+        <div class="callout-label">L2 Scope — What This Course Covers</div>
+        <div class="callout-text">This course covers <strong>assisted starting and stopping</strong> of the feeder, and <strong>supervised inspection of coal quality at the feeder input</strong>. You will not set feeder speeds, adjust gates, or respond to trips independently. You will observe, support, report, and learn to recognise normal vs. abnormal conditions.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ SECTION 1 ════════════ -->
+  <section class="section" id="s1">
+    <div class="section-hd">
+      <span class="s-num">01 /</span>
+      <h2>Execution Block 1: Feeder Start Sequence</h2>
+    </div>
+
+    <div class="skill-obj">
+      <div class="skill-tag">SKILL 1</div>
+      <div class="skill-text">Assist in starting the Track Hopper Feeder</div>
+      <div></div>
+      <div class="skill-sub">Supervised execution only · Do not initiate independently</div>
+    </div>
+
+    <div class="callout stop">
+      <div class="callout-icon">⛔</div>
+      <div class="callout-body">
+        <div class="callout-label">Execution Constraint — Understand This First</div>
+        <div class="callout-text">Starting the feeder is a <strong>load-sensitive event</strong>. The moment coal begins flowing from the feeder, a material load is placed on the downstream conveyor belt. If the belt is not running, not confirmed clear, or already at capacity, the result is spillage, belt mis-tracking, or a downstream trip. You cannot see the downstream belt from the feeder control station — your supervisor has system-wide awareness that you do not yet have.</div>
+      </div>
+    </div>
+
+    <h3>What Happens When the Feeder Starts</h3>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg" style="width:100%;" font-family="'Share Tech Mono', monospace">
+        <defs>
+          <marker id="af" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3z" fill="#c8520a"/>
+          </marker>
+        </defs>
+        <!-- timeline bar -->
+        <line x1="30" y1="60" x2="730" y2="60" stroke="#c8c2b4" stroke-width="1.5"/>
+
+        <!-- T=0 -->
+        <circle cx="80" cy="60" r="10" fill="#c8520a"/>
+        <text x="80" y="64" fill="#fff" font-size="9" text-anchor="middle">0</text>
+        <text x="80" y="35" fill="#c8520a" font-size="9" text-anchor="middle">FEEDER</text>
+        <text x="80" y="46" fill="#c8520a" font-size="9" text-anchor="middle">START CMD</text>
+        <text x="80" y="82" fill="#6b6656" font-size="8" text-anchor="middle">supervisor</text>
+        <text x="80" y="92" fill="#6b6656" font-size="8" text-anchor="middle">initiates</text>
+
+        <!-- T=5s -->
+        <circle cx="220" cy="60" r="8" fill="#a06800"/>
+        <text x="220" y="64" fill="#fff" font-size="8" text-anchor="middle">~5s</text>
+        <text x="220" y="35" fill="#a06800" font-size="9" text-anchor="middle">MOTOR</text>
+        <text x="220" y="46" fill="#a06800" font-size="9" text-anchor="middle">ACCELERATES</text>
+        <text x="220" y="82" fill="#6b6656" font-size="8" text-anchor="middle">observe</text>
+        <text x="220" y="92" fill="#6b6656" font-size="8" text-anchor="middle">sound/vibration</text>
+
+        <!-- T=15s -->
+        <circle cx="380" cy="60" r="8" fill="#2a6e3a"/>
+        <text x="380" y="64" fill="#fff" font-size="8" text-anchor="middle">~15s</text>
+        <text x="380" y="35" fill="#2a6e3a" font-size="9" text-anchor="middle">FIRST COAL</text>
+        <text x="380" y="46" fill="#2a6e3a" font-size="9" text-anchor="middle">HITS BELT</text>
+        <text x="380" y="82" fill="#6b6656" font-size="8" text-anchor="middle">observation</text>
+        <text x="380" y="92" fill="#6b6656" font-size="8" text-anchor="middle">window opens</text>
+
+        <!-- T=60s -->
+        <circle cx="540" cy="60" r="8" fill="#1a4d7c"/>
+        <text x="540" y="64" fill="#fff" font-size="8" text-anchor="middle">~1min</text>
+        <text x="540" y="35" fill="#1a4d7c" font-size="9" text-anchor="middle">STEADY</text>
+        <text x="540" y="46" fill="#1a4d7c" font-size="9" text-anchor="middle">STATE FLOW</text>
+        <text x="540" y="82" fill="#6b6656" font-size="8" text-anchor="middle">confirm normal</text>
+        <text x="540" y="92" fill="#6b6656" font-size="8" text-anchor="middle">operation</text>
+
+        <!-- T=continuous -->
+        <circle cx="680" cy="60" r="8" fill="#3d3a32"/>
+        <text x="680" y="64" fill="#fff" font-size="8" text-anchor="middle">cont.</text>
+        <text x="680" y="35" fill="#3d3a32" font-size="9" text-anchor="middle">PERIODIC</text>
+        <text x="680" y="46" fill="#3d3a32" font-size="9" text-anchor="middle">MONITORING</text>
+        <text x="680" y="82" fill="#6b6656" font-size="8" text-anchor="middle">rounds</text>
+        <text x="680" y="92" fill="#6b6656" font-size="8" text-anchor="middle">every shift</text>
+      </svg>
+      <div class="diagram-cap">Fig. 2 — Timeline of feeder start events. The critical observation window is the first 60 seconds after first coal contact with the belt.</div>
+    </div>
+
+    <h3>Control Point 1 — Pre-Start System Readiness Check</h3>
+
+    <div class="cp-stack">
+      <div class="cp-card">
+        <div class="cp-header">
+          <div class="cp-num">CP 1.1</div>
+          <div class="cp-title">Downstream Belt Confirmed Running</div>
+          <div class="cp-supervision required">SUPERVISION REQUIRED</div>
+        </div>
+        <div class="cp-body">
+          <p>The downstream belt conveyor <em>must</em> be confirmed running and at the correct speed before feeder start is commanded. This confirmation comes from the control room or from the supervisor who has checked belt status on the SCADA/PLC system. As a trainee, you do not have the authority or system access to confirm belt status — this is a supervisor action.</p>
+          <p><strong>Your role:</strong> Stand at the feeder local panel area, observe the feeder visually, and listen for the supervisor's instruction to proceed. Do not touch the start pushbutton unless specifically directed.</p>
+        </div>
+      </div>
+      <div class="cp-card">
+        <div class="cp-header">
+          <div class="cp-num">CP 1.2</div>
+          <div class="cp-title">Hopper Level Visual Check</div>
+          <div class="cp-supervision required">TRAINEE CAN ASSIST</div>
+        </div>
+        <div class="cp-body">
+          <p>Before start, the hopper should have sufficient coal to sustain initial flow. You can assist by checking the hopper level indicator (if visible locally) or reading the level gauge and reporting the reading to your supervisor. Low hopper level may cause intermittent feeding — important to note before starting.</p>
+          <p><strong>What to report:</strong> Hopper level reading. Presence of any blockage at the hopper throat. Any unusual odours or visible smoke from the hopper area (can indicate spontaneous combustion).</p>
+        </div>
+      </div>
+      <div class="cp-card">
+        <div class="cp-header">
+          <div class="cp-num">CP 1.3</div>
+          <div class="cp-title">Feeder Area — Personnel Clearance</div>
+          <div class="cp-supervision required">JOINT ACTION</div>
+        </div>
+        <div class="cp-body">
+          <p>Confirm that no personnel are in the feeder zone — under the feeder trough, near the discharge end, or inside the underground hopper area. Both you and your supervisor walk the immediate zone before any start command is issued. This is a procedural safety step and is never skipped regardless of time pressure.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Control Point 2 — Initial Coal Flow Observation Window</h3>
+
+    <div class="callout field">
+      <div class="callout-icon">👁</div>
+      <div class="callout-body">
+        <div class="callout-label">Your Primary Role at This Point</div>
+        <div class="callout-text">The first 60 seconds after feeder start is the highest-risk observation window. You are positioned at a safe, designated observation point where you can see: (a) the feeder discharge end, (b) the coal contact point on the belt, and (c) the feeder drive motor. You observe and report. Your supervisor is monitoring SCADA and system response. Your local eyes are the complement to remote instrumentation.</div>
+      </div>
+    </div>
+
+    <ul class="checklist">
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">Coal begins flowing steadily from the feeder outlet — no surging, no sudden large lumps, no gaps in flow</div>
+        <div class="chk-role t">OBSERVE</div>
+      </li>
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">Feeder drive motor sound is smooth and consistent — no grinding, banging, or cyclical thumping</div>
+        <div class="chk-role t">LISTEN</div>
+      </li>
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">Coal falls centrally on the belt at the transfer point — not to one side (which causes belt mis-tracking)</div>
+        <div class="chk-role t">OBSERVE</div>
+      </li>
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">No unusual coal dust cloud beyond normal — excessive dust at startup indicates high coal velocity or faulty dust suppression</div>
+        <div class="chk-role t">OBSERVE</div>
+      </li>
+      <li>
+        <div class="chk-box sup"></div>
+        <div class="chk-text">Feeder ampere reading (motor current) is within normal range — supervisor confirms on SCADA; high current at startup can indicate blockage or material jam</div>
+        <div class="chk-role s">SUPERVISOR</div>
+      </li>
+      <li>
+        <div class="chk-box sup"></div>
+        <div class="chk-text">Belt load cell / weigh feeder reading is increasing normally — supervisor confirms material is being placed on belt as expected</div>
+        <div class="chk-role s">SUPERVISOR</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ════════════ SECTION 2 ════════════ -->
+  <section class="section" id="s2">
+    <div class="section-hd">
+      <span class="s-num">02 /</span>
+      <h2>Execution Block 2: Feeder Stop Sequence</h2>
+    </div>
+
+    <div class="skill-obj">
+      <div class="skill-tag">SKILL 1</div>
+      <div class="skill-text">Assist in stopping the Track Hopper Feeder under live load conditions</div>
+      <div></div>
+      <div class="skill-sub">Supervised execution only · Residual coal movement continues after stop command</div>
+    </div>
+
+    <div class="callout stop">
+      <div class="callout-icon">⚠</div>
+      <div class="callout-body">
+        <div class="callout-label">Critical Execution Constraint</div>
+        <div class="callout-text">When a feeder stop command is issued, <strong>coal does not stop flowing immediately</strong>. There is residual material in the feeder trough, at the discharge lip, and in transit on the belt. This inertia effect lasts 10–30 seconds after the motor stops. If the downstream belt has already been stopped, this residual coal will pile at the transfer point — causing spillage and potential belt damage. Your supervisor manages the stop sequence timing. You observe and report.</div>
+      </div>
+    </div>
+
+    <h3>System Behaviour During a Stop — The Inertia Window</h3>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg" style="width:100%;" font-family="'Share Tech Mono', monospace">
+        <!-- axes -->
+        <line x1="40" y1="110" x2="680" y2="110" stroke="#c8c2b4" stroke-width="1"/>
+        <line x1="40" y1="20" x2="40" y2="110" stroke="#c8c2b4" stroke-width="1"/>
+        <text x="360" y="128" fill="#6b6656" font-size="9" text-anchor="middle">TIME →</text>
+        <text x="14" y="65" fill="#6b6656" font-size="9" text-anchor="middle" transform="rotate(-90,14,65)">FLOW RATE</text>
+
+        <!-- Feeder flow curve (drops sharply but has tail) -->
+        <!-- Before stop: flat at high -->
+        <polyline points="40,35 200,35" fill="none" stroke="#c8520a" stroke-width="2"/>
+        <!-- At stop: ramp down -->
+        <polyline points="200,35 240,42 280,55 320,72 360,85 400,97 430,107 460,110" fill="none" stroke="#c8520a" stroke-width="2" stroke-dasharray="5,3"/>
+        <!-- After: zero -->
+        <polyline points="460,110 680,110" fill="none" stroke="#c8520a" stroke-width="1" stroke-dasharray="2,2"/>
+
+        <!-- Belt needs line -->
+        <polyline points="40,35 200,35 210,110 680,110" fill="none" stroke="#1a4d7c" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+        <!-- Stop command marker -->
+        <line x1="200" y1="20" x2="200" y2="115" stroke="#b02020" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <text x="200" y="16" fill="#b02020" font-size="9" text-anchor="middle">STOP CMD</text>
+
+        <!-- Inertia zone shading -->
+        <rect x="200" y="30" width="260" height="80" fill="rgba(200,82,10,0.06)"/>
+        <text x="330" y="50" fill="#c8520a" font-size="9" text-anchor="middle">INERTIA ZONE</text>
+        <text x="330" y="62" fill="#c8520a" font-size="9" text-anchor="middle">10–30 seconds</text>
+        <text x="330" y="74" fill="#c8520a" font-size="9" text-anchor="middle">coal still flowing</text>
+
+        <!-- Legend -->
+        <line x1="490" y1="35" x2="520" y2="35" stroke="#c8520a" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="528" y="39" fill="#c8520a" font-size="9">Actual feeder output</text>
+        <line x1="490" y1="52" x2="520" y2="52" stroke="#1a4d7c" stroke-width="1.5" stroke-dasharray="6,4"/>
+        <text x="528" y="56" fill="#1a4d7c" font-size="9">Belt "expectation"</text>
+      </svg>
+      <div class="diagram-cap">Fig. 3 — Feeder output does not stop immediately after the stop command. Residual coal movement during the inertia window must be managed.</div>
+    </div>
+
+    <h3>Planned Stop vs Emergency Stop — Know the Difference</h3>
+
+    <div class="obs-grid" style="grid-template-columns: 1fr 1fr;">
+      <div style="background: var(--green-bg); border: 1px solid rgba(42,110,58,0.2); border-radius: 4px; padding: 16px 18px;">
+        <div style="font-family: var(--font-h); font-size: 14px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px;">Planned Stop</div>
+        <div style="font-size: 13px; color: #0e2e1a; line-height: 1.7;">A coordinated shutdown following the defined sequence. Typically: feeder stops first → belt continues for clearing time (usually 3–5 minutes) → belt stops. The hopper throat gate may be closed before the feeder stop to limit residual flow. Your role is to observe the discharge end during the clearing run and confirm the belt is empty before it stops.</div>
+      </div>
+      <div style="background: var(--red-bg); border: 1px solid rgba(176,32,32,0.2); border-radius: 4px; padding: 16px 18px;">
+        <div style="font-family: var(--font-h); font-size: 14px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px;">Emergency Stop</div>
+        <div style="font-size: 13px; color: #5a1010; line-height: 1.7;">A system-initiated or operator-initiated immediate stop due to belt trip, blockage, safety issue, or fire. Feeder and belt may stop simultaneously. This leaves coal on the belt and in the feeder trough. Do not approach the feeder zone after an emergency stop until your supervisor has assessed the situation and confirmed it is safe to approach. Report what you saw immediately before the stop.</div>
+      </div>
+    </div>
+
+    <h3>Control Point 3 — Assisted Stop Under Live Load</h3>
+
+    <ul class="checklist">
+      <li>
+        <div class="chk-box sup"></div>
+        <div class="chk-text">Supervisor confirms downstream belt will continue running for the clearing period after feeder stop — this is non-negotiable</div>
+        <div class="chk-role s">SUPERVISOR</div>
+      </li>
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">You observe the feeder discharge end — watch for the coal tail-off: flow should reduce progressively, not cut off with a sudden material surge</div>
+        <div class="chk-role t">OBSERVE</div>
+      </li>
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">Watch the transfer point on the belt — coal should spread evenly during tail-off, not pile up on one edge</div>
+        <div class="chk-role t">OBSERVE</div>
+      </li>
+      <li>
+        <div class="chk-box obs"></div>
+        <div class="chk-text">Feeder motor sound should reduce smoothly to silence — an abnormal grinding or metallic sound during deceleration is a warning sign to report immediately</div>
+        <div class="chk-role t">LISTEN</div>
+      </li>
+      <li>
+        <div class="chk-box sup"></div>
+        <div class="chk-text">Hopper throat gate closure (if applicable) — commanded by supervisor before or at stop to limit residual flow</div>
+        <div class="chk-role s">SUPERVISOR</div>
+      </li>
+      <li>
+        <div class="chk-box j"></div>
+        <div class="chk-text">After motor stops: both trainee and supervisor confirm the feeder is stationary before anyone approaches the feeder for inspection</div>
+        <div class="chk-role j">JOINT</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ════════════ SECTION 3 ════════════ -->
+  <section class="section" id="s3">
+    <div class="section-hd">
+      <span class="s-num">03 /</span>
+      <h2>Execution Block 3: Coal Inspection at Feeder Input</h2>
+    </div>
+
+    <div class="skill-obj">
+      <div class="skill-tag">SKILL 2</div>
+      <div class="skill-text">Assist in inspecting coal quality and condition at the feeder input (hopper discharge zone)</div>
+      <div></div>
+      <div class="skill-sub">Supervised inspection only · Not a cosmetic check — this is a protective safety control</div>
+    </div>
+
+    <div class="callout stop">
+      <div class="callout-icon">🛑</div>
+      <div class="callout-body">
+        <div class="callout-label">Mindset Reset — Inspection Is a Safety Control</div>
+        <div class="callout-text">Coal inspection at the feeder input is frequently treated as a routine walkthrough. It is not. It is the last opportunity to detect material that will cause damage to the feeder, downstream equipment, or trigger a safety incident. Oversized lumps, tramp iron, wet/frozen coal, and burning coal have all entered feeders because an inspection was done carelessly or skipped entirely. When you are assigned to assist in inspection, treat it as a critical protective control — not a tick-box activity.</div>
+      </div>
+    </div>
+
+    <h3>What You Are Inspecting and Why</h3>
+
+    <div class="insp-grid">
+      <div class="insp-card">
+        <div class="insp-card-hd look">👁 What You See</div>
+        <div class="insp-card-body">
+          <div class="insp-item">Coal size — are there oversized lumps near the hopper throat or on the feeder trough?</div>
+          <div class="insp-item">Visible tramp material — wood, metal, rope, bags, or rock mixed with coal</div>
+          <div class="insp-item">Coal colour — fresh coal is black; reddish-brown patches may indicate partial combustion</div>
+          <div class="insp-item">Ice or frozen coal crust near the hopper outlet (in cold weather)</div>
+          <div class="insp-item">Any spillage or accumulated coal outside the feeder trough path</div>
+          <div class="insp-item">Visible blockage or bridging at the hopper throat</div>
+        </div>
+      </div>
+      <div class="insp-card">
+        <div class="insp-card-hd listen">👂 What You Hear</div>
+        <div class="insp-card-body">
+          <div class="insp-item">Metallic clanking from within the feeder — possible tramp iron in the material flow</div>
+          <div class="insp-item">Excessive banging or thumping — large lumps passing through or impact with feeder structure</div>
+          <div class="insp-item">Unusual grinding — coal fines packed between feeder trough and side plates</div>
+          <div class="insp-item">High-pitched squealing from drive motor — possible belt/chain tension issue</div>
+          <div class="insp-item">Rumbling from the hopper — coal avalanche inside; listen for stability</div>
+        </div>
+      </div>
+      <div class="insp-card">
+        <div class="insp-card-hd sense">🌡 What You Sense</div>
+        <div class="insp-card-body">
+          <div class="insp-item">Smoke or burning smell — possible spontaneous combustion in the hopper. Report IMMEDIATELY — do not continue inspection</div>
+          <div class="insp-item">Excessive heat near the hopper wall — thermal hotspot indicator</div>
+          <div class="insp-item">Unusual chemical smell — contaminated coal or leaked hydraulic fluid on coal</div>
+          <div class="insp-item">Coal dust in the air — compare to normal; sudden increase indicates dust suppression failure</div>
+        </div>
+      </div>
+      <div class="insp-card">
+        <div class="insp-card-hd feel">✋ What You Feel (with PPE)</div>
+        <div class="insp-card-body">
+          <div class="insp-item">Feeder trough vibration with hand on structure (never on moving parts) — abnormal vibration indicates imbalance</div>
+          <div class="insp-item">Heat on feeder motor casing (back of hand, never palm first) — hot to touch without a warm-up period suggests bearing issue</div>
+          <div class="insp-item">Excessive dust deposition on nearby surfaces — gauge relative to normal for that day</div>
+          <div class="insp-item">Ground vibration — large lumps passing through cause perceptible floor vibration</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Coal Size Assessment — Why It Matters Here</h3>
+    <p>The feeder is designed to handle coal up to a maximum lump size — typically <strong>150mm–300mm</strong> depending on the feeder type and downstream crusher capacity. Coal that exceeds this size causes:</p>
+
+    <div class="obs-grid">
+      <div class="obs-card warn">
+        <div class="obs-card-label">Blockage Risk</div>
+        <div class="obs-item">Oversized coal jams at the feeder discharge lip</div>
+        <div class="obs-item">Coal bridges across the hopper throat, stopping flow</div>
+        <div class="obs-item">Feeder motor stalls under excess load</div>
+      </div>
+      <div class="obs-card stop">
+        <div class="obs-card-label">Damage Risk</div>
+        <div class="obs-item">Lumps exceeding crusher capacity break crusher teeth</div>
+        <div class="obs-item">Hard foreign objects (tramp iron) damage conveyor belt and idlers</div>
+        <div class="obs-item">Impact damage to feeder pan / trough structure</div>
+      </div>
+      <div class="obs-card normal">
+        <div class="obs-card-label">Normal Appearance</div>
+        <div class="obs-item">Mixed coal with majority under 150mm</div>
+        <div class="obs-item">No visible metallic material or non-coal items</div>
+        <div class="obs-item">Uniform black colour, moist but not saturated</div>
+        <div class="obs-item">No visible smoke, flame, or burning odour</div>
+      </div>
+    </div>
+
+    <div class="callout warn">
+      <div class="callout-icon">⚙</div>
+      <div class="callout-body">
+        <div class="callout-label">Tramp Iron — A Special Hazard</div>
+        <div class="callout-text">Tramp iron refers to metal objects — wire rope, wagon parts, bolts, old tools — that have entered the coal stream and are not detectable by visual inspection of surface coal alone. Most coal handling plants have a <strong>Magnetic Separator</strong> and a <strong>Metal Detector</strong> on the conveyor downstream of the feeder. Your inspection reduces the gross hazard; the instrumentation catches what you cannot. If you see obvious metal during your visual inspection, stop and report to your supervisor immediately — do not attempt to remove it yourself.</div>
+      </div>
+    </div>
+
+    <h3>Inspection Safety Rules</h3>
+
+    <div class="dontdo-grid">
+      <div class="dd-card do">
+        <div class="dd-label">Always Do</div>
+        <div class="dd-item">Wear full PPE — helmet, safety shoes, dust mask (N95 minimum), hearing protection, hi-vis vest</div>
+        <div class="dd-item">Stay on the designated inspection walkway — never stand directly over or below the feeder trough</div>
+        <div class="dd-item">Keep a safe distance from the moving feeder pan/trough — minimum 1 metre</div>
+        <div class="dd-item">Use a torch for inspecting dark areas of the hopper throat</div>
+        <div class="dd-item">Report every finding verbally to your supervisor — even if you think it looks "probably fine"</div>
+        <div class="dd-item">Record your observations in the shift log as directed by your supervisor</div>
+      </div>
+      <div class="dd-card dont">
+        <div class="dd-label">Never Do</div>
+        <div class="dd-item">Never approach a running feeder trough from the side where coal is actively discharging</div>
+        <div class="dd-item">Never lean over a running feeder or hopper throat to get a better look</div>
+        <div class="dd-item">Never attempt to remove an obstruction from a running feeder — ever</div>
+        <div class="dd-item">Never inspect alone — L2 inspection is always with your supervisor present</div>
+        <div class="dd-item">Never ignore a burning smell — treat it as an emergency until confirmed otherwise by supervisor</div>
+        <div class="dd-item">Never enter the underground hopper area for inspection without proper LOTO and permit</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ SECTION 4 ════════════ -->
+  <section class="section" id="s4">
+    <div class="section-hd">
+      <span class="s-num">04 /</span>
+      <h2>Observation Windows — Reading System Behaviour</h2>
+    </div>
+
+    <p>A large part of your value as an L2 learner is your <em>presence on the floor</em>. Instruments are not everywhere, and local observation is a genuine layer of protection. Knowing what normal looks like is the only way to recognise abnormal.</p>
+
+    <h3>Normal vs. Abnormal — Quick Reference</h3>
+
+    <table class="risk-table">
+      <tr>
+        <th>What You Are Watching</th>
+        <th>Normal Condition</th>
+        <th>Early Warning</th>
+        <th>Act</th>
+      </tr>
+      <tr>
+        <td>Coal flow from feeder outlet</td>
+        <td>Steady, continuous, even width</td>
+        <td>Pulsing, gaps, surges</td>
+        <td><span class="risk-badge rb-m">REPORT</span></td>
+      </tr>
+      <tr>
+        <td>Coal landing on belt</td>
+        <td>Centred, consistent pile height</td>
+        <td>Displaced to one side</td>
+        <td><span class="risk-badge rb-m">REPORT</span></td>
+      </tr>
+      <tr>
+        <td>Feeder motor sound</td>
+        <td>Smooth, consistent hum</td>
+        <td>Thumping, grinding, cyclical sound</td>
+        <td><span class="risk-badge rb-h">REPORT IMMEDIATELY</span></td>
+      </tr>
+      <tr>
+        <td>Feeder trough vibration</td>
+        <td>Even vibration (vibratory type) or smooth movement (apron type)</td>
+        <td>Irregular, jerky, or hammering vibration</td>
+        <td><span class="risk-badge rb-m">REPORT</span></td>
+      </tr>
+      <tr>
+        <td>Dust levels at feeder</td>
+        <td>Low; water mist visible from suppression</td>
+        <td>Dust cloud increasing; mist absent</td>
+        <td><span class="risk-badge rb-m">REPORT</span></td>
+      </tr>
+      <tr>
+        <td>Coal smell</td>
+        <td>Normal fresh coal odour</td>
+        <td>Burning or acrid smell</td>
+        <td><span class="risk-badge rb-h">REPORT IMMEDIATELY</span></td>
+      </tr>
+      <tr>
+        <td>Motor casing temperature</td>
+        <td>Warm to back of hand — not hot</td>
+        <td>Hot — cannot hold hand near casing</td>
+        <td><span class="risk-badge rb-h">REPORT IMMEDIATELY</span></td>
+      </tr>
+      <tr>
+        <td>Belt tracking at transfer point</td>
+        <td>Belt running centrally on idlers</td>
+        <td>Belt drifting to one side</td>
+        <td><span class="risk-badge rb-m">REPORT</span></td>
+      </tr>
+      <tr>
+        <td>Hopper throat area</td>
+        <td>Open, coal freely moving downward</td>
+        <td>Coal bridging / arch forming</td>
+        <td><span class="risk-badge rb-h">REPORT IMMEDIATELY</span></td>
+      </tr>
+    </table>
+
+    <div class="callout ok">
+      <div class="callout-icon">✔</div>
+      <div class="callout-body">
+        <div class="callout-label">Your Reporting Protocol at L2</div>
+        <div class="callout-text">At L2, your job when you spot an early warning condition is simple: <strong>stop what you are doing, turn to your supervisor, and say what you saw, clearly and factually.</strong> Use specific language: "I can see coal falling to the right side of the belt at the feeder transfer point" is far more useful than "something looks off." You do not decide what happens next — that is the supervisor's role. Your job is to observe and report, accurately and immediately.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ SECTION 5 ════════════ -->
+  <section class="section" id="s5">
+    <div class="section-hd">
+      <span class="s-num">05 /</span>
+      <h2>Common Mistakes in Assisted Execution</h2>
+    </div>
+
+    <p>These are the execution errors that occur most often among trainees during their first supervised interactions with feeder systems. They are not listed to make you nervous — they are listed so you recognise the pattern if you start heading toward it.</p>
+
+    <table class="risk-table">
+      <tr>
+        <th>Mistake</th>
+        <th>Why It Happens</th>
+        <th>Consequence</th>
+        <th>Severity</th>
+      </tr>
+      <tr>
+        <td>Touching the start button before supervisor confirms system readiness</td>
+        <td>Eagerness to help; mistaking presence of button for permission to use it</td>
+        <td>Feeder starts before downstream belt is ready; spillage or belt trip</td>
+        <td><span class="risk-badge rb-h">HIGH</span></td>
+      </tr>
+      <tr>
+        <td>Standing in the coal discharge fall zone during observation</td>
+        <td>Wanting a better viewing angle; not knowing the designated safe observation point</td>
+        <td>Coal impact injury; coal dust inhalation; being caught in moving material</td>
+        <td><span class="risk-badge rb-h">HIGH</span></td>
+      </tr>
+      <tr>
+        <td>Treating inspection as a quick visual pass — not pausing to observe carefully</td>
+        <td>Time pressure; assumption that nothing will be wrong</td>
+        <td>Hazardous material (tramp iron, oversized coal) enters the system undetected</td>
+        <td><span class="risk-badge rb-h">HIGH</span></td>
+      </tr>
+      <tr>
+        <td>Not reporting an early warning condition because "it seems minor"</td>
+        <td>Self-doubt; not wanting to raise a false alarm; not knowing what normal is</td>
+        <td>Small issues become failures; early warning missed means later incident</td>
+        <td><span class="risk-badge rb-h">HIGH</span></td>
+      </tr>
+      <tr>
+        <td>Walking away from the feeder during the post-start observation window</td>
+        <td>Feeling that once it starts, the job is done</td>
+        <td>Abnormal behaviour in the first 60 seconds goes undetected</td>
+        <td><span class="risk-badge rb-m">MEDIUM</span></td>
+      </tr>
+      <tr>
+        <td>Not accounting for inertia during a stop — assuming coal stops when the motor stops</td>
+        <td>Intuition from everyday experience (switches turn things off instantly)</td>
+        <td>Misreads the discharge end as clear when coal is still flowing; wrong report</td>
+        <td><span class="risk-badge rb-m">MEDIUM</span></td>
+      </tr>
+      <tr>
+        <td>Attempting to remove obstruction from the feeder trough</td>
+        <td>Wanting to solve the problem; not wanting to slow things down</td>
+        <td>Entanglement injury; crush injury; falls into trough</td>
+        <td><span class="risk-badge rb-c">CRITICAL / FATAL</span></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- ════════════ SECTION 6 ════════════ -->
+  <section class="section" id="s6">
+    <div class="section-hd">
+      <span class="s-num">06 /</span>
+      <h2>Failure Cases — Learn from What Went Wrong</h2>
+    </div>
+
+    <p>These cases are drawn from real failure scenarios in coal handling plant environments. The details have been presented as learning cases. Read each case as if you were the trainee in that situation.</p>
+
+    <div class="case-block">
+      <div class="case-header">
+        <div class="case-num">CASE 01</div>
+        <div class="case-title">Assisted Start Without Coordinated Readiness — Coal Accumulated at Transfer Point</div>
+      </div>
+      <div class="case-body">
+        <div class="case-row">
+          <div class="case-key">Situation</div>
+          <div class="case-val">A trainee, working with a supervisor who stepped away briefly, saw the feeder start instruction in the shift log and initiated the feeder start from the local panel without waiting for supervisor return and system confirmation.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">What happened</div>
+          <div class="case-val">The downstream conveyor had not yet been started. Coal from the feeder fell at the transfer point and accumulated rapidly. The belt started shortly after but was loaded unevenly, causing mis-tracking. The belt drifted and rubbed against the stringer, causing damage to the belt edge.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">Root cause</div>
+          <div class="case-val">The trainee was focused only on the local feeder and had no visibility of downstream belt status. They interpreted "feeder start instruction in the log" as authorisation to act independently. Starting without confirmed system readiness is not assisted execution — it is unassisted execution.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">Lesson</div>
+          <div class="case-val lesson">The system is coupled. The feeder does not exist alone. A start action at the feeder is a start action on the entire downstream chain simultaneously. Supervised start exists precisely to manage these couplings — the supervisor's system awareness is not a formality, it is the safety layer you do not yet have.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-header">
+        <div class="case-num">CASE 02</div>
+        <div class="case-title">Inadequate Supervised Inspection — Oversized Material Entered Feeder, Partial Blockage</div>
+      </div>
+      <div class="case-body">
+        <div class="case-row">
+          <div class="case-key">Situation</div>
+          <div class="case-val">During a pre-start inspection of the feeder input zone, the trainee and supervisor walked the area quickly. The trainee noted the general coal appearance as "normal" without looking into the hopper throat zone carefully. A large lump (~400mm) was wedged at the hopper throat, partially visible above the coal surface.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">What happened</div>
+          <div class="case-val">The feeder started normally. As coal drained from above the lump, the large piece fell onto the feeder pan and jammed the apron chain. The feeder motor stalled and tripped. Clearing the blockage took 2.5 hours, with a permitted entry into the hopper area under LOTO. The plant ran on reduced coal stock during the outage.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">Root cause</div>
+          <div class="case-val">Inspection was done standing and walking — it was not a careful, systematic look. The hopper throat area requires a deliberate pause and a close look with a torch if there is any doubt. The trainee assumed surface-level observation was sufficient.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">Lesson</div>
+          <div class="case-val lesson">Assisted inspection is a <em>protective control</em>. The purpose is to detect what the instruments cannot and what the surface appearance hides. A proper inspection takes 3–5 minutes minimum, uses a torch in dark zones, and reports any uncertainty immediately — not after deciding it is probably fine. If you are unsure what you are looking at, say so. That is the correct answer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-header">
+        <div class="case-num">CASE 03</div>
+        <div class="case-title">Improper Assisted Stop Under Live Load — Material Buildup Caused Belt Stress and Mis-Tracking</div>
+      </div>
+      <div class="case-body">
+        <div class="case-row">
+          <div class="case-key">Situation</div>
+          <div class="case-val">During a planned system shutdown, the trainee was asked to monitor the feeder discharge during the stop sequence. The trainee observed the feeder motor stop and reported to the supervisor that "feeder is stopped." The supervisor, relying on this confirmation, initiated belt stop sooner than the clearing time required.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">What happened</div>
+          <div class="case-val">The motor had stopped, but coal was still discharging from the residual material in the trough. When the belt stopped, this residual coal piled at the transfer point. The off-centre pile caused belt mis-tracking on restart, and the belt required re-training by a maintenance crew — adding 1.5 hours to restart time.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">Root cause</div>
+          <div class="case-val">The trainee did not understand that "motor stopped" and "coal flow stopped" are not simultaneous events. The report of "feeder is stopped" was factually correct about the motor, but the intended meaning — that coal discharge had ceased — was not yet true. Imprecise reporting led to a premature belt stop decision.</div>
+        </div>
+        <div class="case-row">
+          <div class="case-key">Lesson</div>
+          <div class="case-val lesson">Report what you <em>see</em>, not what you infer. "Motor has stopped" and "coal is still flowing from the discharge end" are two separate, simultaneous facts — report both. Your supervisor needs the complete picture. The inertia window is 10–30 seconds of critical post-motor-stop observation — do not leave the discharge point until flow has actually stopped.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ SECTION 7 ════════════ -->
+  <section class="section" id="s7">
+    <div class="section-hd">
+      <span class="s-num">07 /</span>
+      <h2>Risk Summary — Three Dimensions</h2>
+    </div>
+
+    <table class="risk-table">
+      <tr>
+        <th>Risk Dimension</th>
+        <th>Trigger Scenario</th>
+        <th>Potential Consequence</th>
+        <th>Severity</th>
+      </tr>
+      <tr>
+        <td><strong>Plant Continuity</strong></td>
+        <td>Feeder trip during peak coal demand; blockage of hopper throat; belt damage from mis-tracking</td>
+        <td>Downstream conveyor starvation → bunker depletion → mill trip → unit derate. In a tight coal stock situation, even a 2-hour feeder outage can force load reduction.</td>
+        <td><span class="risk-badge rb-h">HIGH</span></td>
+      </tr>
+      <tr>
+        <td><strong>Machinery Integrity</strong></td>
+        <td>Tramp iron through feeder; oversized lump blocking apron chain; uncontrolled start/stop loading belt</td>
+        <td>Feeder chain/pan damage requiring replacement; belt edge damage from mis-tracking; crusher tooth breakage from oversized material. Repair downtime: hours to days.</td>
+        <td><span class="risk-badge rb-h">HIGH</span></td>
+      </tr>
+      <tr>
+        <td><strong>Human Safety</strong></td>
+        <td>Approach to running feeder zone without clearance; attempt to clear blockage manually; entry into hopper area without LOTO; ignoring burning smell</td>
+        <td>Entanglement in moving feeder mechanism; coal burial in hopper; burn injury from spontaneous combustion; respiratory injury from coal dust. Consequences are potentially fatal.</td>
+        <td><span class="risk-badge rb-c">CRITICAL</span></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- ════════════ SECTION 8 ════════════ -->
+  <section class="section" id="s8">
+    <div class="section-hd">
+      <span class="s-num">08 /</span>
+      <h2>Your Role Boundary — What L2 Means in Practice</h2>
+    </div>
+
+    <div class="callout info">
+      <div class="callout-icon">📋</div>
+      <div class="callout-body">
+        <div class="callout-label">The Definition of Assisted Execution</div>
+        <div class="callout-text">Assisted execution means you <strong>act on instruction, observe actively, and report accurately</strong>. You do not decide to start, stop, or adjust anything independently. You do not diagnose faults. You do not escalate to anyone other than your immediate supervisor. Your value at this stage is your attentiveness, your communication, and your willingness to report what you see — even when you are not sure it matters.</div>
+      </div>
+    </div>
+
+    <div class="dontdo-grid">
+      <div class="dd-card do">
+        <div class="dd-label">Within Your L2 Boundary</div>
+        <div class="dd-item">Observe and report feeder discharge behaviour during start and stop</div>
+        <div class="dd-item">Report hopper level reading to supervisor when asked</div>
+        <div class="dd-item">Confirm the feeder area is clear of personnel before start (as part of joint check)</div>
+        <div class="dd-item">Perform visual and sensory inspection of coal at feeder input alongside supervisor</div>
+        <div class="dd-item">Record observations in the shift log as directed by supervisor</div>
+        <div class="dd-item">Operate a local start/stop button when specifically instructed by supervisor who is present</div>
+        <div class="dd-item">Report any abnormal condition immediately to the supervisor, clearly and factually</div>
+      </div>
+      <div class="dd-card dont">
+        <div class="dd-label">Outside Your L2 Boundary</div>
+        <div class="dd-item">Do not initiate any feeder start or stop without an explicit instruction from your present supervisor</div>
+        <div class="dd-item">Do not adjust feeder speed or gate position</div>
+        <div class="dd-item">Do not override, bypass, or reset any interlock or trip</div>
+        <div class="dd-item">Do not diagnose a fault and take action on your own conclusion</div>
+        <div class="dd-item">Do not approach a running feeder trough for any reason without supervisor clearance</div>
+        <div class="dd-item">Do not remove obstructions from feeder, trough, or hopper throat</div>
+        <div class="dd-item">Do not enter the underground hopper area at any time during this course level</div>
+        <div class="dd-item">Do not communicate a system problem directly to the control room without going through your supervisor first</div>
+      </div>
+    </div>
+
+    <div class="trainer-note" style="margin-top: 24px;">
+      <div class="tn-icon">🧑‍🏭</div>
+      <div>
+        <div class="tn-label">Final Word from Your Trainer</div>
+        <div class="tn-text">You will be ready for L3 — independent execution — when two things are true: you have completed enough supervised cycles that you can predict what the system will do before it does it, and your supervisor trusts your observation and reporting enough to give you room. That trust is built one honest, careful, attentive round at a time. Don't rush it. The system is patient. The hazards are not.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    <h3>What You Should Be Ready to Do — Under Supervision</h3>
+    <div class="sum-grid">
+      <div class="sum-item">Recognise that feeder start is a system-wide load event, not a local action</div>
+      <div class="sum-item">Observe and report the first 60 seconds of coal flow after feeder start</div>
+      <div class="sum-item">Identify the inertia window after feeder stop and observe discharge tail-off</div>
+      <div class="sum-item">Distinguish between planned stop and emergency stop, and behave accordingly</div>
+      <div class="sum-item">Perform a systematic 4-sense inspection of coal at the feeder input</div>
+      <div class="sum-item">Identify normal vs. early warning conditions at the feeder and transfer point</div>
+      <div class="sum-item">Report findings specifically and factually — describe what you see, not what you infer</div>
+      <div class="sum-item">Recognise tramp iron, oversized coal, bridging, and spontaneous combustion signs</div>
+      <div class="sum-item">State your role boundary clearly — know what is and is not within your authority</div>
+      <div class="sum-item">Understand all three failure cases and the lesson each carries</div>
+    </div>
+  </div>
+
+</div><!-- /page-body -->
+
+<footer>
+  L2 PREPAREDNESS COURSE &nbsp;·&nbsp; TRACK HOPPER FEEDER &nbsp;·&nbsp; COAL HANDLING PLANT &nbsp;·&nbsp; THERMAL POWER STATION<br>
+  ASSISTED EXECUTION ONLY — ALL ACTIVITIES REQUIRE SUPERVISOR PRESENCE &nbsp;·&nbsp; FOR SUPERVISED TRAINING USE ONLY
+</footer>
+
+</body>
+</html>

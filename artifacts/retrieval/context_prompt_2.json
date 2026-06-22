@@ -1,0 +1,1752 @@
+{
+  "query": "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+  "seed_results": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "concept_id": "belt-drift-belt-misalignment",
+        "title": "Belt Drift (Belt Misalignment)",
+        "content": "Belt Drift (Belt Misalignment) Root Cause: Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension। Effect: Belt एक तरफ रगड़ती है conveyor structure से → belt edge fraying → material spillage → structure damage → fire risk (friction से)। Detection: BSW (Belt Sway Switch) alarm; visual patrol में belt edge की position देखें। Immediate Action: Feed rate कम करें → self-aligning idlers adjust करें → loading pattern investigate करें। BSW trip के बाद investigation के बिना restart नहीं।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-belt-drift-belt-misalignment",
+        "metadata": {
+          "content_length": 605,
+          "child_titles": [],
+          "level": 4,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "6 Common Failure Scenarios",
+            "Belt Drift (Belt Misalignment)"
+          ]
+        },
+        "score": 0.98,
+        "vector_score": null,
+        "lexical_score": 0.98,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ],
+        "rerank_score": 1.7999999999999998
+      },
+      {
+        "collection": "TextChunk",
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "concept_id": "transfer-point",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "content": "Transfer Point पर क्या गलत हो सकता है? समस्या | कारण | तत्काल प्रभाव ; Chute Blockage | गीली/चिपचिपी coal, over-size lumps, worn liners | Coal backup → upstream belt overload → ZSS trip ; Spillage | Belt overloading, worn skirt seals, off-centre loading | Structure पर coal गिरती है, idler damage, fire risk ; Excessive Dust | High drop height, dry fine coal, missing dust hood | CWP risk, visibility कम, explosion hazard ; Belt Drift (Receiving End) | Off-centre coal loading on BC-2 | BSW alarm, belt edge damage ; Liner Wear-Through | Abrasion से chute wall घिसना | Structural breach, coal system के बाहर जाती है Transfer points पर कभी भी running conveyor के पास काम नहीं करें। किसी भी maintenance से पहले LOTO (Lockout-Tagout) अनिवार्य है। Confined space entry के लिए formal permit system follow करें।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-transfer-point",
+        "metadata": {
+          "level": 3,
+          "child_titles": [],
+          "content_length": 805,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Transfer Points और Coal Flow का व्यवहार",
+            "Transfer Point पर क्या गलत हो सकता है?"
+          ]
+        },
+        "score": 0.98,
+        "vector_score": null,
+        "lexical_score": 0.98,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=1",
+          "operational_overlap=5",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ],
+        "rerank_score": 1.765
+      },
+      {
+        "collection": "TextChunk",
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "concept_id": "why-the-belt-drifts-misalignment",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "content": "Why the Belt Drifts (Misalignment) The belt naturally tends to drift (wander sideways) if there is any asymmetry — uneven loading, idlers not perfectly perpendicular to belt travel, wind, or a bent frame. Even a slight drift accumulates over the length of the belt. If not corrected, the belt edge contacts the conveyor structure, causing edge damage, spillage, and ultimately belt failure. Self-aligning idlers and training idlers are used to correct drift automatically. A drifted belt that contacts the steel structure can generate enough heat through friction to ignite coal dust — causing a conveyor fire. Belt fires in CHP are a major risk and have caused plant outages lasting weeks.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-why-the-belt-drifts-misalignment",
+        "metadata": {
+          "level": 3,
+          "child_titles": [],
+          "content_length": 690,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Functional Mechanism of Conveying",
+            "Why the Belt Drifts (Misalignment)"
+          ]
+        },
+        "score": 0.98,
+        "vector_score": null,
+        "lexical_score": 0.98,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ],
+        "rerank_score": 1.74
+      },
+      {
+        "collection": "TextChunk",
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "concept_id": "belt-alignment-along-structure",
+        "title": "Belt Alignment Along Structure",
+        "content": "Belt Alignment Along Structure Where: Monitored continuously along the full length of the conveyor using belt sway switches. What is critical here: The belt must remain centred on the idlers throughout its full length. Belt sway switches are installed at regular intervals — if the belt drifts beyond a set limit, the sway switch first gives an alarm; if drift continues, it trips the conveyor. Self-aligning (training) idlers automatically correct minor drift. Regular inspection of idler alignment and condition is essential to maintaining belt tracking. Belt drift → edge contact with structure → friction heat → fire risk. Spillage along the full belt length. Edge damage requires expensive belt replacement.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-belt-alignment-along-structure",
+        "metadata": {
+          "content_length": 712,
+          "child_titles": [],
+          "level": 4,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Critical Process Control Points",
+            "Belt Alignment Along Structure"
+          ]
+        },
+        "score": 0.98,
+        "vector_score": null,
+        "lexical_score": 0.98,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ],
+        "rerank_score": 1.74
+      },
+      {
+        "collection": "TextChunk",
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "concept_id": "belt-drift",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "content": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है? Belt को हमेशा idlers के centre में रहना चाहिए। लेकिन अगर loading एक side पर ज़्यादा हो, idler alignment off हो, या tension uneven हो — belt धीरे-धीरे एक side की तरफ खिसकने लगती है। इसे belt drift कहते हैं। Belt drift → Belt का edge steel structure से contact → Friction heat generate → Coal dust ignite → FIRE। साथ में spillage पूरी belt length पर, expensive belt replacement, और plant shutdown। Belt sway switches (BSW) automatic alarm और trip देते हैं अगर drift ज़्यादा हो।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-belt-drift",
+        "metadata": {
+          "content_length": 521,
+          "child_titles": [],
+          "level": 3,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Conveying का Functional Mechanism",
+            "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?"
+          ]
+        },
+        "score": 0.98,
+        "vector_score": null,
+        "lexical_score": 0.98,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift"
+        ],
+        "rerank_score": 1.655
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "concept_id": "system-flow-integration-coal",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "description": "Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html.",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "metadata": {
+          "view_box": "0 0 820 420",
+          "order_in_file": 2,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+          "svg_text_labels": [
+            "① Railway Wagon",
+            "Coal loaded BOX-N wagons",
+            "railway tracks पर आते हैं",
+            "⚠ Surge loading risk",
+            "② Wagon Tippler",
+            "Wagon को rotate/tilt करके",
+            "coal को dump करता है",
+            "⚠ High dust generation",
+            "③ Track Hopper",
+            "Coal को temporarily",
+            "store करता है",
+            "⚠ Overflow risk",
+            "④ Feeder",
+            "Coal की rate control",
+            "करके belt पर डालता है",
+            "⚠ Overfeeding risk",
+            "⑤ Belt Conveyor",
+            "BC-1",
+            "Coal को aage carry",
+            "⚠ Drift, overload risk",
+            "⑥ Transfer",
+            "Tower",
+            "BC-1 से BC-2 पर coal",
+            "⚠ HIGHEST RISK ZONE",
+            "⑦ Belt",
+            "Conveyor BC-2",
+            "Bunker तक carry",
+            "⚠ Same risks",
+            "⑧ Coal",
+            "Bunker",
+            "8–12 hrs buffer storage",
+            "⚠ Overflow / starvation",
+            "⑨ Pulveriser",
+            "Coal को powder बनाता है",
+            "→ Boiler में जाती है",
+            "✓ Electricity generation"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:800px\" viewbox=\"0 0 820 420\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"a2\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"><polygon fill=\"#2c3e50\" points=\"0 0,8 3,0 6\"></polygon></marker> <marker id=\"a2r\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"><polygon fill=\"#c0392b\" points=\"0 0,8 3,0 6\"></polygon></marker> </defs> <!-- Stage 1: Railway Wagon --> <rect fill=\"#d6eaf8\" height=\"75\" rx=\"10\" stroke=\"#2980b9\" stroke-width=\"2",
+          "caption": "Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "System Flow Integration – Coal का पूरा सफर"
+          ]
+        },
+        "score": 0.8700000000000001,
+        "vector_score": null,
+        "lexical_score": 0.8700000000000001,
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 1.1150000000000002
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "448682ddfc6d36f050779bb025817903",
+        "concept_id": "transfer-points-flow-behaviour",
+        "title": "Transfer Points & Flow Behaviour",
+        "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "metadata": {
+          "view_box": "0 0 680 300",
+          "order_in_file": 6,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+          "svg_text_labels": [
+            "BC-1 (Upper Conveyor)",
+            "Coal on BC-1",
+            "Head",
+            "Pulley",
+            "TRANSFER",
+            "CHUTE",
+            "(guides coal)",
+            "↓ Coal",
+            "falls here",
+            "BC-2 (Lower Conveyor)",
+            "Impact Zone",
+            "Coal on BC-2",
+            "⚠ DUST",
+            "⚠ Spillage",
+            "⚠ BLOCKAGE RISK",
+            "Wet/sticky coal",
+            "can block chute",
+            "Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift."
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:660px\" viewbox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"ta\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"> <polygon fill=\"#2c5282\" points=\"0 0,8 3,0 6\"></polygon> </marker> <marker id=\"ta2\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"> <polygon fill=\"#c0392b\" points=\"0 0,8 3,0 6\"></polygon> </marker> <marker id=\"ta3\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"> <polygon fill=\"#e67e22\" po",
+          "caption": "Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Transfer Points & Flow Behaviour"
+          ]
+        },
+        "score": 0.8700000000000001,
+        "vector_score": null,
+        "lexical_score": 0.8700000000000001,
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 1.1150000000000002
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "22a2ac1f76db93ef0ab3d76e8c591eb4",
+        "concept_id": "quick-reference-card-print-carry-on-site",
+        "title": "Quick Reference Card – Print & Carry on Site",
+        "description": "Diagram under: Quick Reference Card – Print & Carry on Site. Caption: Quick Reference Card – print double-sided and carry during site visits. Visible labels: BELT CONVEYOR SYSTEM – L1 QUICK REFERENCE | CHP INTERN SAFETY CARD; COAL FLOW (End-to-End); Wagon → Tippler → Hopper → Feeder → BC-1 → Transfer → BC-2 → Bunker → Boiler; KEY COMPONENTS & FUNCTION; Belt: carries coal (carry + return loop); Drive Pulley: powered pulley at HEAD end; Tail Pulley: free pulley at FEED end; Idlers: support belt; troughed = more capacity; Take-up: maintains correct belt tension; Scraper: removes carryback at head end; EPC: Emergency Pull Cord — full length STOP; BSW: Belt Sway Switch — drift detection; ZSS: Zero Speed Switch — slip detection; CAPACITY DEPENDS ON:; • Belt width (800–1400 mm typical); • Belt speed (1.2–2.5 m/s typical); • Trough angle (20°–45°); • Inclination (max 15–18° for coal); • Coal density & moisture content; WAGON TIPPLER TYPES:; Rotary; 150–160° flip; Side Discharge; 45–60° tilt; Track Hopper; Bottom discharge; CONTROL POINTS:; CP1: Feed point — uniform loading; CP2: Transfer point — highest risk zone; CP3: Drive pulley — power + friction; CP4: Belt alignment — drift = damage; CP5: Bunker discharge — fuel supply end; 🔴 HAZARD ZONES — HIGHEST RISK; ZONE; HAZARD TYPE; CONSEQUENCE; Head/Tail Pulley; Nip/Pinch point; Crush / Amputation; Belt Surface; Entanglement; Degloving / Fatality; Transfer Tower; Confined space + dust; Asphyxia / Impact; Feed Point; Impact from coal; Blunt trauma; Coal Spillage; Slip / Trip; Fall / Fracture; Coal Dust (all zones); Respiratory / Fire; CWP / Explosion; PPE REQUIRED IN CHP:; ⛑ Safety Helmet | 👟 Steel-toe Boots; 🦺 Hi-Vis Vest | 😷 Dust Mask (P2 min); 🥽 Safety Glasses | Close-fitting Coveralls; ⚠ Remove loose gloves near rotating parts; KEY FAILURE CONSEQUENCES:; Belt drift → fire → belt loss + outage; Overload → spillage → motor trip → coal backup; Chute block → conveyor trip → bunker starves; Belt slip → overheating → fire at drive end; Dust accumulation → fire / explosion risk; Entanglement → serious injury / fatality; 🆘 EMERGENCY ACTIONS; 1. Entanglement / injury → Pull EPC immediately; 2. Fire / smoke → Pull EPC + raise fire alarm; 3. Blockage / unusual noise → Inform supervisor; 4. Seizure / burning smell → Do NOT touch; report; 5. NEVER restart a tripped conveyor yourself; STOPPED ≠ SAFE; Confirm LOTO before approaching any stopped conveyor; SITE OBSERVATION CHECKLIST; Walk belt → tick healthy / flag abnormal:; ☐ Belt centred on idlers (no drift); ☐ All idlers spinning (no seizures); ☐ Belt surface intact (no rips); ☐ No coal spillage on walkway; ☐ No burning smell; ☐ EPC ropes intact both sides; ☐ All guards in place (pulleys); ☐ Scraper in contact with belt; ☐ No blocked chute (sound check); ☐ Motor noise normal (steady hum); ☐ No dust cloud beyond normal; → Any abnormality: REPORT IMMEDIATELY; DO ✔; Wear full PPE always; Walk in buddy pairs; Stay on designated walkways; Report all abnormalities; Pull EPC without hesitation in emergency; Know nearest EPC location before entering; DON'T ✘; Touch moving belt; Lean over running conveyor; Remove any guard; Enter confined space without permit; Operate any equipment independently; Bypass safety devices; Work alone in CHP gallery / tower; Thermal Power Plant | Coal Handling Plant | L1 Intern Safety Reference Card; This card is for awareness only. Always follow plant-specific SOPs and supervisor instructions.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-quick-reference-card-print-carry-on-site",
+        "metadata": {
+          "view_box": "0 0 820 560",
+          "order_in_file": 11,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-quick-reference-card-print-carry-on-site",
+          "svg_text_labels": [
+            "BELT CONVEYOR SYSTEM – L1 QUICK REFERENCE | CHP INTERN SAFETY CARD",
+            "COAL FLOW (End-to-End)",
+            "Wagon → Tippler → Hopper → Feeder → BC-1 → Transfer → BC-2 → Bunker → Boiler",
+            "KEY COMPONENTS & FUNCTION",
+            "Belt: carries coal (carry + return loop)",
+            "Drive Pulley: powered pulley at HEAD end",
+            "Tail Pulley: free pulley at FEED end",
+            "Idlers: support belt; troughed = more capacity",
+            "Take-up: maintains correct belt tension",
+            "Scraper: removes carryback at head end",
+            "EPC: Emergency Pull Cord — full length STOP",
+            "BSW: Belt Sway Switch — drift detection",
+            "ZSS: Zero Speed Switch — slip detection",
+            "CAPACITY DEPENDS ON:",
+            "• Belt width (800–1400 mm typical)",
+            "• Belt speed (1.2–2.5 m/s typical)",
+            "• Trough angle (20°–45°)",
+            "• Inclination (max 15–18° for coal)",
+            "• Coal density & moisture content",
+            "WAGON TIPPLER TYPES:",
+            "Rotary",
+            "150–160° flip",
+            "Side Discharge",
+            "45–60° tilt",
+            "Track Hopper",
+            "Bottom discharge",
+            "CONTROL POINTS:",
+            "CP1: Feed point — uniform loading",
+            "CP2: Transfer point — highest risk zone",
+            "CP3: Drive pulley — power + friction",
+            "CP4: Belt alignment — drift = damage",
+            "CP5: Bunker discharge — fuel supply end",
+            "🔴 HAZARD ZONES — HIGHEST RISK",
+            "ZONE",
+            "HAZARD TYPE",
+            "CONSEQUENCE",
+            "Head/Tail Pulley",
+            "Nip/Pinch point",
+            "Crush / Amputation",
+            "Belt Surface",
+            "Entanglement",
+            "Degloving / Fatality",
+            "Transfer Tower",
+            "Confined space + dust",
+            "Asphyxia / Impact",
+            "Feed Point",
+            "Impact from coal",
+            "Blunt trauma",
+            "Coal Spillage",
+            "Slip / Trip",
+            "Fall / Fracture",
+            "Coal Dust (all zones)",
+            "Respiratory / Fire",
+            "CWP / Explosion",
+            "PPE REQUIRED IN CHP:",
+            "⛑ Safety Helmet | 👟 Steel-toe Boots",
+            "🦺 Hi-Vis Vest | 😷 Dust Mask (P2 min)",
+            "🥽 Safety Glasses | Close-fitting Coveralls",
+            "⚠ Remove loose gloves near rotating parts",
+            "KEY FAILURE CONSEQUENCES:",
+            "Belt drift → fire → belt loss + outage",
+            "Overload → spillage → motor trip → coal backup",
+            "Chute block → conveyor trip → bunker starves",
+            "Belt slip → overheating → fire at drive end",
+            "Dust accumulation → fire / explosion risk",
+            "Entanglement → serious injury / fatality",
+            "🆘 EMERGENCY ACTIONS",
+            "1. Entanglement / injury → Pull EPC immediately",
+            "2. Fire / smoke → Pull EPC + raise fire alarm",
+            "3. Blockage / unusual noise → Inform supervisor",
+            "4. Seizure / burning smell → Do NOT touch; report",
+            "5. NEVER restart a tripped conveyor yourself",
+            "STOPPED ≠ SAFE",
+            "Confirm LOTO before approaching any stopped conveyor",
+            "SITE OBSERVATION CHECKLIST",
+            "Walk belt → tick healthy / flag abnormal:",
+            "☐ Belt centred on idlers (no drift)",
+            "☐ All idlers spinning (no seizures)",
+            "☐ Belt surface intact (no rips)",
+            "☐ No coal spillage on walkway",
+            "☐ No burning smell",
+            "☐ EPC ropes intact both sides",
+            "☐ All guards in place (pulleys)",
+            "☐ Scraper in contact with belt",
+            "☐ No blocked chute (sound check)",
+            "☐ Motor noise normal (steady hum)",
+            "☐ No dust cloud beyond normal",
+            "→ Any abnormality: REPORT IMMEDIATELY",
+            "DO ✔",
+            "Wear full PPE always",
+            "Walk in buddy pairs",
+            "Stay on designated walkways",
+            "Report all abnormalities",
+            "Pull EPC without hesitation in emergency",
+            "Know nearest EPC location before entering",
+            "DON'T ✘",
+            "Touch moving belt",
+            "Lean over running conveyor",
+            "Remove any guard",
+            "Enter confined space without permit",
+            "Operate any equipment independently",
+            "Bypass safety devices",
+            "Work alone in CHP gallery / tower",
+            "Thermal Power Plant | Coal Handling Plant | L1 Intern Safety Reference Card",
+            "This card is for awareness only. Always follow plant-specific SOPs and supervisor instructions."
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:800px\" viewbox=\"0 0 820 560\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- Card Border --> <rect fill=\"white\" height=\"556\" rx=\"10\" stroke=\"#0d2137\" stroke-width=\"3\" width=\"816\" x=\"2\" y=\"2\"></rect> <!-- HEADER --> <rect fill=\"#0d2137\" height=\"50\" rx=\"10\" width=\"816\" x=\"2\" y=\"2\"></rect> <rect fill=\"#0d2137\" height=\"10\" width=\"816\" x=\"2\" y=\"42\"></rect> <text fill=\"white\" font-size=\"14\" font-weight=\"800\" text-anchor=\"middle\" x=\"410\" y=\"32\">BELT CONVEYOR SYSTEM – L1 QUICK REFERENCE |",
+          "caption": "Quick Reference Card – print double-sided and carry during site visits",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Quick Reference Card – Print & Carry on Site"
+          ]
+        },
+        "score": 0.9099999999999999,
+        "vector_score": null,
+        "lexical_score": 0.9099999999999999,
+        "generic_instruction_penalty": 0.5,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk",
+          "generic_penalty=0.50"
+        ],
+        "rerank_score": 1.1099999999999999
+      }
+    ],
+    "concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "belt-drift",
+        "concept_id": "belt-drift",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "score": 0.8875277042388916,
+        "vector_score": 0.8875277042388916,
+        "rerank_score": 0.8875277042388916,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1124722957611084,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "text_chunk_ids": [
+          "69ae06b0a8331602e788719e5ac38519"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8875277042388916
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "course",
+        "concept_id": "course",
+        "title": "यह Course कैसे इस्तेमाल करें",
+        "score": 0.8757209777832031,
+        "vector_score": 0.8757209777832031,
+        "rerank_score": 0.8757209777832031,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12427902221679688,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+            "इस Course में आप क्या सीखोगे",
+            "यह Course कैसे इस्तेमाल करें"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 3,
+          "has_evidence": true
+        },
+        "label": "यह Course कैसे इस्तेमाल करें",
+        "text_chunk_ids": [
+          "4c488929c0e6a2e5a2560eaf5f6153d1",
+          "e260f713aeef67b5f50ae0020154e269",
+          "fcaf0d2642cadd142348953ce5e52182"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8757209777832031
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "belt-drift-belt-misalignment",
+        "concept_id": "belt-drift-belt-misalignment",
+        "title": "Belt Drift (Belt Misalignment)",
+        "score": 0.8743058443069458,
+        "vector_score": 0.8743058443069458,
+        "rerank_score": 0.8743058443069458,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1256941556930542,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Belt Drift (Belt Misalignment)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        },
+        "label": "Belt Drift (Belt Misalignment)",
+        "text_chunk_ids": [
+          "c4ccac6ea9c6348c3345ea41b075e453"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8743058443069458
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "score": 0.8672888875007629,
+        "vector_score": 0.8672888875007629,
+        "rerank_score": 0.8672888875007629,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13271111249923706,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "text_chunk_ids": [
+          "57424115bb84daad17ff190dfe33beab"
+        ],
+        "image_ids": [
+          "df6927d5c387e9bfa54c5e5cc52b02dc"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8672888875007629
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "fire",
+        "concept_id": "fire",
+        "title": "Fire का खतरा",
+        "score": 0.8600348234176636,
+        "vector_score": 0.8600348234176636,
+        "rerank_score": 0.8600348234176636,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13996517658233643,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Fire का खतरा"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Fire का खतरा",
+        "text_chunk_ids": [
+          "29a4a6606b96261b3641bf3c4dfc37e5"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8600348234176636
+      }
+    ]
+  },
+  "graph_expansion": {
+    "max_hops": 2,
+    "nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "label": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "text_chunk_ids": [
+          "57424115bb84daad17ff190dfe33beab"
+        ],
+        "image_ids": [
+          "df6927d5c387e9bfa54c5e5cc52b02dc"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "belt-alignment-along-structure",
+        "concept_id": "belt-alignment-along-structure",
+        "label": "Belt Alignment Along Structure",
+        "text_chunk_ids": [
+          "8bb296cf2118bc6530e367dba873d3b5"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Belt Alignment Along Structure"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "belt-drift",
+        "concept_id": "belt-drift",
+        "label": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "text_chunk_ids": [
+          "69ae06b0a8331602e788719e5ac38519"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "belt-drift-belt-misalignment",
+        "concept_id": "belt-drift-belt-misalignment",
+        "label": "Belt Drift (Belt Misalignment)",
+        "text_chunk_ids": [
+          "c4ccac6ea9c6348c3345ea41b075e453"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Belt Drift (Belt Misalignment)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "course",
+        "concept_id": "course",
+        "label": "यह Course कैसे इस्तेमाल करें",
+        "text_chunk_ids": [
+          "4c488929c0e6a2e5a2560eaf5f6153d1",
+          "e260f713aeef67b5f50ae0020154e269",
+          "fcaf0d2642cadd142348953ce5e52182"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+            "इस Course में आप क्या सीखोगे",
+            "यह Course कैसे इस्तेमाल करें"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 3,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "fire",
+        "concept_id": "fire",
+        "label": "Fire का खतरा",
+        "text_chunk_ids": [
+          "29a4a6606b96261b3641bf3c4dfc37e5"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Fire का खतरा"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "quick-reference-card-print-carry-on-site",
+        "concept_id": "quick-reference-card-print-carry-on-site",
+        "label": "Quick Reference Card – Print & Carry on Site",
+        "text_chunk_ids": [
+          "9660d52f2b0f04e610acfd88ff637fd0"
+        ],
+        "image_ids": [
+          "22a2ac1f76db93ef0ab3d76e8c591eb4"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Quick Reference Card – Print & Carry on Site"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal",
+        "label": "System Flow Integration – Coal का पूरा सफर",
+        "text_chunk_ids": [
+          "91d74d119e070e5c8113408d1d797c2d"
+        ],
+        "image_ids": [
+          "072723b02f37eb29b368ac7fe2fc1774"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "System Flow Integration – Coal का पूरा सफर"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "transfer-point",
+        "concept_id": "transfer-point",
+        "label": "Transfer Point पर क्या गलत हो सकता है?",
+        "text_chunk_ids": [
+          "341a29ae3a77b7fd559748f49508111a"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Transfer Point पर क्या गलत हो सकता है?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "transfer-points-flow-behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "label": "Transfer Points & Flow Behaviour",
+        "text_chunk_ids": [
+          "21a17a41b519a584208799bf74b6c6ad"
+        ],
+        "image_ids": [
+          "448682ddfc6d36f050779bb025817903"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Transfer Points & Flow Behaviour"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "why-the-belt-drifts-misalignment",
+        "concept_id": "why-the-belt-drifts-misalignment",
+        "label": "Why the Belt Drifts (Misalignment)",
+        "text_chunk_ids": [
+          "0c722e1c373f8b6c94d45b461cc43a52"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Why the Belt Drifts (Misalignment)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      }
+    ],
+    "relations": [],
+    "trace": [],
+    "seed_relation_only_nodes": []
+  },
+  "expanded_evidence": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "57424115bb84daad17ff190dfe33beab",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "content": "3. Safety Devices — आपकी जान बचाने वाले Instruments Belt Conveyor (Loaded Direction) EPC Rope (पूरी length में) EPC EPC EPC EPC EPC BSW BSW ZSS Speed Belt Weigher EPC: कहीं से भी खींचें → तुरंत stop ZSS: Speed drop → auto trip BSW: Belt drift → alarm → trip Belt Weigher: TPH → control room data Safety Device | काम क्या करता है | कब Trip होता है ; Emergency Pull Cord (EPC) | पूरी conveyor length में rope; कहीं से भी खींचें — instant stop | Manual pull; self-latching — investigation के बाद ही restart ; Belt Sway Switch (BSW) | Belt का lateral drift detect करता है | Stage 1: alarm; Stage 2: conveyor trip। हर 25–30 m पर। ; Zero Speed Switch (ZSS) | Belt speed monitor करता है | Speed rated से 70–80% से कम → 3 sec बाद trip ; Belt Weigher | Real-time TPH measure करता है | Trip नहीं — data control room को भेजता है ; Chute Blocked Detector | Chute fill-up detect करता है | Paddle stop / RF change → upstream belt/feeder trip ; Thermal / Fire Detector | Temperature rise या flame detect करता है | Rate-of-rise +8°C/min या fixed 68/93°C → Fire Alarm trip",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+        "metadata": {
+          "level": 3,
+          "child_titles": [],
+          "content_length": 1055,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Safety और Hazard Awareness",
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "operational_overlap=5",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.7449999999999999
+      },
+      {
+        "collection": "TextChunk",
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "concept_id": "transfer-points-flow-behaviour",
+        "title": "Transfer Points & Flow Behaviour",
+        "content": "Transfer Points & Flow Behaviour A transfer point is like a controlled handover baton pass — coal must land precisely on the next belt. Any miss, blockage, or misalignment at this point disrupts the entire downstream flow. Wherever coal moves from one conveyor to the next — or from a hopper to a conveyor — there is a transfer point . These are not minor connections; they are among the most critical and most hazardous locations in the entire Coal Handling Plant. Understanding what happens at a transfer point is essential before entering the CHP. BC-1 (Upper Conveyor) Coal on BC-1 Head Pulley TRANSFER CHUTE (guides coal) ↓ Coal falls here BC-2 (Lower Conveyor) Impact Zone Coal on BC-2 ⚠ DUST ⚠ Spillage ⚠ Spillage ⚠ BLOCKAGE RISK Wet/sticky coal can block chute Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "What Can Go Wrong at a Transfer Point"
+          ],
+          "content_length": 847,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Transfer Points & Flow Behaviour"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.6950000000000001
+      },
+      {
+        "collection": "TextChunk",
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "concept_id": "system-flow-integration-coal",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "content": "System Flow Integration – Coal का पूरा सफर Coal का सफर एक relay race की तरह है — हर stage अगली stage को handoff करती है। एक भी stage fail हुई तो पूरी race रुक जाती है। Belt conveyor system अकेले काम नहीं करता — यह एक बड़े coal handling sequence का हिस्सा है। Wagon tippler से boiler तक हर step एक specific function है जो अगले step पर निर्भर करती है। यह chain समझना ज़रूरी है। ① Railway Wagon Coal loaded BOX-N wagons railway tracks पर आते हैं ⚠ Surge loading risk ② Wagon Tippler Wagon को rotate/tilt करके coal को dump करता है ⚠ High dust generation ③ Track Hopper Coal को temporarily store करता है ⚠ Overflow risk ④ Feeder Coal की rate control करके belt पर डालता है ⚠ Overfeeding risk ⑤ Belt Conveyor BC-1 Coal को aage carry ⚠ Drift, overload risk ⑥ Transfer Tower BC-1 से BC-2 पर coal ⚠ HIGHEST RISK ZONE ⑦ Belt Conveyor BC-2 Bunker तक carry ⚠ Same risks ⑧ Coal Bunker 8–12 hrs buffer storage ⚠ Overflow / starvation ⑨ Pulveriser Coal को powder बनाता है → Boiler में जाती है ✓ Electricity generation",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "हर Stage का Breakdown"
+          ],
+          "content_length": 1001,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "System Flow Integration – Coal का पूरा सफर"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.6950000000000001
+      },
+      {
+        "collection": "TextChunk",
+        "id": "9660d52f2b0f04e610acfd88ff637fd0",
+        "concept_id": "quick-reference-card-print-carry-on-site",
+        "title": "Quick Reference Card – Print & Carry on Site",
+        "content": "Quick Reference Card – Print & Carry on Site Cut out or print this card and keep it in your site notebook or pocket during your internship. BELT CONVEYOR SYSTEM – L1 QUICK REFERENCE | CHP INTERN SAFETY CARD COAL FLOW (End-to-End) Wagon → Tippler → Hopper → Feeder → BC-1 → Transfer → BC-2 → Bunker → Boiler KEY COMPONENTS & FUNCTION Belt: carries coal (carry + return loop) Drive Pulley: powered pulley at HEAD end Tail Pulley: free pulley at FEED end Idlers: support belt; troughed = more capacity Take-up: maintains correct belt tension Scraper: removes carryback at head end EPC: Emergency Pull Cord — full length STOP BSW: Belt Sway Switch — drift detection ZSS: Zero Speed Switch — slip detection CAPACITY DEPENDS ON: • Belt width (800–1400 mm typical) • Belt speed (1.2–2.5 m/s typical) • Trough angle (20°–45°) • Inclination (max 15–18° for coal) • Coal density & moisture content WAGON TIPPLER TYPES: Rotary 150–160° flip Side Discharge 45–60° tilt Track Hopper Bottom discharge CONTROL POINTS: CP1: Feed point — uniform loading CP2: Transfer point — highest risk zone CP3: Drive pulley — power + friction CP4: Belt alignment — drift = damage CP5: Bunker discharge — fuel supply end 🔴 HAZARD ZONES — HIGHEST RISK ZONE HAZARD TYPE CONSEQUENCE Head/Tail Pulley Nip/Pinch point Crush / Amputation Belt Surface Entanglement Degloving / Fatality Transfer Tower Confined space + dust Asphyxia / Impact Feed Point Impact from coal Blunt trauma Coal Spillage Slip / Trip Fall / Fracture Coal Dust (all zones) Respiratory / Fire CWP / Explosion PPE REQUIRED IN CHP: ⛑ Safety Helmet | 👟 Steel-toe Boots 🦺 Hi-Vis Vest | 😷 Dust Mask (P2 min) 🥽 Safety Glasses | Close-fitting Coveralls ⚠ Remove loose gloves near rotating parts KEY FAILURE CONSEQUENCES: Belt drift → fire → belt loss + outage Overload → spillage → motor trip → coal backup Chute block → conveyor trip → bunker starves Belt slip → overheating → fire at drive end Dust accumulation → fire / explosion risk Entanglement → serious injury / fatality 🆘 EMERGENCY ACTIONS 1. Entanglement / injury → Pull EPC immediately 2. Fire / smoke → Pull EPC + raise fire alarm 3. Blockage / unusual noise → Inform supervisor 4. Seizure / burning smell → Do NOT touch; report 5. NEVER restart a tripped conveyor yourself STOPPED ≠ SAFE Confirm LOTO before approaching any stopped conveyor SITE OBSERVATION CHECKLIST Walk belt → tick healthy / flag abnormal: ☐ Belt centred on idlers (no drift) ☐ All idlers spinning (no seizures) ☐ Belt surface intact (no rips) ☐ No coal spillage on walkway ☐ No burning smell ☐ EPC ropes intact both sides ☐ All guards in place (pulleys) ☐ Scraper in contact with belt ☐ No blocked chute (sound check) ☐ Motor noise normal (steady hum) ☐ No dust cloud beyond normal → Any abnormality: REPORT IMMEDIATELY DO ✔ Wear full PPE always Walk in buddy pairs Stay on designated walkways Report all abnormalities Pull EPC without hesitation in emergency Know nearest EPC location before entering DON'T ✘ Touch moving belt Lean over running conveyor Remove any guard Enter confined space without permit Operate any equipment independently Bypass safety devices Work alone in CHP gallery / tower Thermal Power Plant | Coal Handling Plant | L1 Intern Safety Reference Card This card is for awareness only. Always follow plant-specific SOPs and supervisor instructions.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-quick-reference-card-print-carry-on-site",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 3333,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Quick Reference Card – Print & Carry on Site"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.6499999999999999
+      },
+      {
+        "collection": "TextChunk",
+        "id": "4c488929c0e6a2e5a2560eaf5f6153d1",
+        "concept_id": "course",
+        "title": "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+        "content": "इस Course को पूरा करने के बाद आप क्या कर पाएंगे ये learning outcomes define करते हैं कि इस L1 course को complete करने के बाद एक intern या trainee operator को क्या demonstrate करना चाहिए। ये सिर्फ theoretical knowledge नहीं — ये observable behaviours हैं। Context & Importance: Thermal power generation cycle explain कर पाना — coal से electricity तक — और belt conveyor की critical role इस chain में। Component Recognition: एक real conveyor पर सभी major components — belt, pulleys, idlers, take-up, scrapers, chute — identify और name कर पाना। Working Principle: Friction-drive principle explain करना — tight side/slack side tension का concept — और यह conveyor reliability को कैसे affect करता है। Capacity Factors: TPH capacity को affect करने वाले factors (width, speed, trough angle, coal properties) identify करना और normal vs. abnormal loading recognize करना। Transfer Points: Transfer point पर coal flow को describe करना — chute function, impact zone, और common hazards (blockage, spillage, dust) explain करना। Hazard Recognition: Primary mechanical hazards (entanglement, nip points, struck-by), dust hazards (CWP, explosion), और fire hazards को identify करना। Safety Devices: EPC, BSW, ZSS, Belt Weigher, Chute Blocked Detector, और Thermal Detector — हर device का function और trip condition बताना। LOTO Procedure: LOTO के सभी 8 steps सही sequence में बताना और यह explain करना कि LOTO किसी भी maintenance activity से पहले क्यों mandatory है। Control Points: CP1 से CP5 तक की locations और हर point पर क्या check करना है — यह describe करना। Failure Recognition: 6 common failure cases — belt drift, overloading, chute blockage, belt slip, dust fire, entanglement — identify करना और हर case में immediate action बताना।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-course-3",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 1717,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=1",
+          "operational_overlap=6",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.5899999999999999
+      },
+      {
+        "collection": "TextChunk",
+        "id": "29a4a6606b96261b3641bf3c4dfc37e5",
+        "concept_id": "fire",
+        "title": "Fire का खतरा",
+        "content": "Fire का खतरा Fire sources: seized idler bearing friction, drive pulley पर belt slip, accumulated spill coal, electrical fault। Belt material (rubber) combustible होती है। Enclosed galleries में toxic smoke तेज़ी से भर जाती है। Prevention: हर shift में spill coal साफ करें, idlers की free rotation check करें, scrapers maintain करें। Gallery में fire हो तो: तुरंत evacuate करें, CO₂/DCP use करें।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-fire",
+        "metadata": {
+          "content_length": 395,
+          "child_titles": [],
+          "level": 4,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Safety और Hazard Awareness",
+            "2. Dust और Fire Hazards",
+            "Fire का खतरा"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=2",
+          "title_overlap=1",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.39
+      },
+      {
+        "collection": "TextChunk",
+        "id": "e260f713aeef67b5f50ae0020154e269",
+        "concept_id": "course",
+        "title": "इस Course में आप क्या सीखोगे",
+        "content": "इस Course में आप क्या सीखोगे ✓ Boiler तक continuous fuel supply में conveyor system का role समझना। ✓ सारे major conveyor components identify करना और उनका system में क्या काम है यह समझना। ✓ Visualize करना कि coal, unloading point (wagon tippler) से boiler bunker तक कैसे travel करती है। ✓ Belt conveyor में motion, load carrying, और tension balance का mechanism समझना। ✓ यह पहचानना कि capacity limits system stability और plant performance को कैसे affect करती हैं। ✓ High-risk zones जैसे transfer points, drive pulleys, और rotating parts के बारे में awareness develop करना। ✓ Upstream systems जैसे wagon tippler, conveyor behaviour को सीधे कैसे affect करता है, यह समझना।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-course-2",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 668,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "इस Course में आप क्या सीखोगे"
+          ]
+        },
+        "generic_instruction_penalty": 0.5,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20",
+          "generic_penalty=0.50"
+        ],
+        "rerank_score": 0.0
+      },
+      {
+        "collection": "TextChunk",
+        "id": "fcaf0d2642cadd142348953ce5e52182",
+        "concept_id": "course",
+        "title": "यह Course कैसे इस्तेमाल करें",
+        "content": "यह Course कैसे इस्तेमाल करें यह course इसलिए बनाया गया है ताकि आप Coal Handling Plant के belt conveyor system की पूरी mental picture बना सकें — site पर जाने से पहले। सोचिए जैसे पूरा system अपने दिमाग में download कर रहे हों, ताकि जब आप physically वहाँ पहुँचें, तो हर चीज़ पहचान सकें, उसका reason समझ सकें, और यह भी जान सकें कि खतरा कहाँ है। यह सिर्फ एक context और awareness course है। इसमें यह नहीं बताया गया कि कोई भी equipment कैसे start, stop, या operate करते हैं। आप कभी भी कोई भी operational action अकेले attempt मत करना — plant management से formal training और authorization लेने के बाद ही करना। यह course complete करने के बाद आप Coal Handling Plant में walk कर सकोगे, belt conveyor system के हर major component को identify कर सकोगे, power generation में उसका role समझोगे, और — सबसे important — hazardous zones और ऐसे behaviours पहचान सकोगे जो आपको या दूसरों को injury दे सकते हैं।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-course",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "📋 Course Contents"
+          ],
+          "content_length": 887,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "यह Course कैसे इस्तेमाल करें"
+          ]
+        },
+        "generic_instruction_penalty": 0.5,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=2",
+          "operational_overlap=1",
+          "graph_relevance=0.20",
+          "generic_penalty=0.50"
+        ],
+        "rerank_score": 0.0
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "df6927d5c387e9bfa54c5e5cc52b02dc",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "description": "Diagram under: 3. Safety Devices — आपकी जान बचाने वाले Instruments. Caption: Fig 7.2 – Belt Conveyor Safety Devices: EPC, BSW, ZSS, और Belt Weigher. Visible labels: Belt Conveyor (Loaded Direction); EPC Rope (पूरी length में); EPC; BSW; ZSS; Speed; Belt Weigher; EPC: कहीं से भी खींचें; → तुरंत stop; ZSS: Speed drop; → auto trip; BSW: Belt drift; → alarm → trip; Belt Weigher: TPH; → control room data. Context: Safety और Hazard Awareness / Belt_Conveyor_L1_Course_HINDI.html.",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+        "metadata": {
+          "view_box": "0 0 680 185",
+          "order_in_file": 8,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+          "svg_text_labels": [
+            "Belt Conveyor (Loaded Direction)",
+            "EPC Rope (पूरी length में)",
+            "EPC",
+            "BSW",
+            "ZSS",
+            "Speed",
+            "Belt Weigher",
+            "EPC: कहीं से भी खींचें",
+            "→ तुरंत stop",
+            "ZSS: Speed drop",
+            "→ auto trip",
+            "BSW: Belt drift",
+            "→ alarm → trip",
+            "Belt Weigher: TPH",
+            "→ control room data"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:660px\" viewbox=\"0 0 680 185\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#e8d5c0\" height=\"32\" rx=\"4\" stroke=\"#8b6543\" stroke-width=\"1.5\" width=\"670\" x=\"5\" y=\"8\"></rect> <text fill=\"#5d4037\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"340\" y=\"29\">Belt Conveyor (Loaded Direction)</text> <line stroke=\"#c0392b\" stroke-dasharray=\"12,5\" stroke-width=\"3\" x1=\"5\" x2=\"675\" y1=\"52\" y2=\"52\"></line> <text fill=\"#c0392b\" font-size=\"8.5\" font-weight=\"700\" x=\"8\" y=\"47\">EPC",
+          "caption": "Fig 7.2 – Belt Conveyor Safety Devices: EPC, BSW, ZSS, और Belt Weigher",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Safety और Hazard Awareness",
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=2",
+          "operational_overlap=2",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.38
+      }
+    ]
+  },
+  "context_for_llm_later": {
+    "text_blocks": [
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "concept_id": "belt-drift-belt-misalignment",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "Belt Drift (Belt Misalignment) Root Cause: Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension। Effect: Belt एक तरफ रगड़ती है conveyor structure से → belt edge fraying → material spillage → structure damage → fire risk (friction से)। Detection: BSW (Belt Sway Switch) alarm; visual patrol में belt edge की position देखें। Immediate Action: Feed rate कम करें → self-aligning idlers adjust करें → loading pattern investigate करें। BSW trip के बाद investigation के बिना restart नहीं।",
+        "rerank_score": 1.7999999999999998,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ]
+      },
+      {
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "concept_id": "transfer-point",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "Transfer Point पर क्या गलत हो सकता है? समस्या | कारण | तत्काल प्रभाव ; Chute Blockage | गीली/चिपचिपी coal, over-size lumps, worn liners | Coal backup → upstream belt overload → ZSS trip ; Spillage | Belt overloading, worn skirt seals, off-centre loading | Structure पर coal गिरती है, idler damage, fire risk ; Excessive Dust | High drop height, dry fine coal, missing dust hood | CWP risk, visibility कम, explosion hazard ; Belt Drift (Receiving End) | Off-centre coal loading on BC-2 | BSW alarm, belt edge damage ; Liner Wear-Through | Abrasion से chute wall घिसना | Structural breach, coal system के बाहर जाती है Transfer points पर कभी भी running conveyor के पास काम नहीं करें। किसी भी maintenance से पहले LOTO (Lockout-Tagout) अनिवार्य है। Confined space entry के लिए formal permit system follow करें।",
+        "rerank_score": 1.765,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=1",
+          "operational_overlap=5",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ]
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "concept_id": "why-the-belt-drifts-misalignment",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Why the Belt Drifts (Misalignment) The belt naturally tends to drift (wander sideways) if there is any asymmetry — uneven loading, idlers not perfectly perpendicular to belt travel, wind, or a bent frame. Even a slight drift accumulates over the length of the belt. If not corrected, the belt edge contacts the conveyor structure, causing edge damage, spillage, and ultimately belt failure. Self-aligning idlers and training idlers are used to correct drift automatically. A drifted belt that contacts the steel structure can generate enough heat through friction to ignite coal dust — causing a conveyor fire. Belt fires in CHP are a major risk and have caused plant outages lasting weeks.",
+        "rerank_score": 1.74,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ]
+      },
+      {
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "title": "Belt Alignment Along Structure",
+        "concept_id": "belt-alignment-along-structure",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Belt Alignment Along Structure Where: Monitored continuously along the full length of the conveyor using belt sway switches. What is critical here: The belt must remain centred on the idlers throughout its full length. Belt sway switches are installed at regular intervals — if the belt drifts beyond a set limit, the sway switch first gives an alarm; if drift continues, it trips the conveyor. Self-aligning (training) idlers automatically correct minor drift. Regular inspection of idler alignment and condition is essential to maintaining belt tracking. Belt drift → edge contact with structure → friction heat → fire risk. Spillage along the full belt length. Edge damage requires expensive belt replacement.",
+        "rerank_score": 1.74,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk"
+        ]
+      },
+      {
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "concept_id": "belt-drift",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है? Belt को हमेशा idlers के centre में रहना चाहिए। लेकिन अगर loading एक side पर ज़्यादा हो, idler alignment off हो, या tension uneven हो — belt धीरे-धीरे एक side की तरफ खिसकने लगती है। इसे belt drift कहते हैं। Belt drift → Belt का edge steel structure से contact → Friction heat generate → Coal dust ignite → FIRE। साथ में spillage पूरी belt length पर, expensive belt replacement, और plant shutdown। Belt sway switches (BSW) automatic alarm और trip देते हैं अगर drift ज़्यादा हो।",
+        "rerank_score": 1.655,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift"
+        ]
+      },
+      {
+        "id": "57424115bb84daad17ff190dfe33beab",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "3. Safety Devices — आपकी जान बचाने वाले Instruments Belt Conveyor (Loaded Direction) EPC Rope (पूरी length में) EPC EPC EPC EPC EPC BSW BSW ZSS Speed Belt Weigher EPC: कहीं से भी खींचें → तुरंत stop ZSS: Speed drop → auto trip BSW: Belt drift → alarm → trip Belt Weigher: TPH → control room data Safety Device | काम क्या करता है | कब Trip होता है ; Emergency Pull Cord (EPC) | पूरी conveyor length में rope; कहीं से भी खींचें — instant stop | Manual pull; self-latching — investigation के बाद ही restart ; Belt Sway Switch (BSW) | Belt का lateral drift detect करता है | Stage 1: alarm; Stage 2: conveyor trip। हर 25–30 m पर। ; Zero Speed Switch (ZSS) | Belt speed monitor करता है | Speed rated से 70–80% से कम → 3 sec बाद trip ; Belt Weigher | Real-time TPH measure करता है | Trip नहीं — data control room को भेजता है ; Chute Blocked Detector | Chute fill-up detect करता है | Paddle stop / RF change → upstream belt/feeder trip ; Thermal / Fire Detector | Temperature rise या flame detect करता है | Rate-of-rise +8°C/min या fixed 68/93°C → Fire Alarm trip",
+        "rerank_score": 0.7449999999999999,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "operational_overlap=5",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Transfer Points & Flow Behaviour A transfer point is like a controlled handover baton pass — coal must land precisely on the next belt. Any miss, blockage, or misalignment at this point disrupts the entire downstream flow. Wherever coal moves from one conveyor to the next — or from a hopper to a conveyor — there is a transfer point . These are not minor connections; they are among the most critical and most hazardous locations in the entire Coal Handling Plant. Understanding what happens at a transfer point is essential before entering the CHP. BC-1 (Upper Conveyor) Coal on BC-1 Head Pulley TRANSFER CHUTE (guides coal) ↓ Coal falls here BC-2 (Lower Conveyor) Impact Zone Coal on BC-2 ⚠ DUST ⚠ Spillage ⚠ Spillage ⚠ BLOCKAGE RISK Wet/sticky coal can block chute Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.",
+        "rerank_score": 0.6950000000000001,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "System Flow Integration – Coal का पूरा सफर Coal का सफर एक relay race की तरह है — हर stage अगली stage को handoff करती है। एक भी stage fail हुई तो पूरी race रुक जाती है। Belt conveyor system अकेले काम नहीं करता — यह एक बड़े coal handling sequence का हिस्सा है। Wagon tippler से boiler तक हर step एक specific function है जो अगले step पर निर्भर करती है। यह chain समझना ज़रूरी है। ① Railway Wagon Coal loaded BOX-N wagons railway tracks पर आते हैं ⚠ Surge loading risk ② Wagon Tippler Wagon को rotate/tilt करके coal को dump करता है ⚠ High dust generation ③ Track Hopper Coal को temporarily store करता है ⚠ Overflow risk ④ Feeder Coal की rate control करके belt पर डालता है ⚠ Overfeeding risk ⑤ Belt Conveyor BC-1 Coal को aage carry ⚠ Drift, overload risk ⑥ Transfer Tower BC-1 से BC-2 पर coal ⚠ HIGHEST RISK ZONE ⑦ Belt Conveyor BC-2 Bunker तक carry ⚠ Same risks ⑧ Coal Bunker 8–12 hrs buffer storage ⚠ Overflow / starvation ⑨ Pulveriser Coal को powder बनाता है → Boiler में जाती है ✓ Electricity generation",
+        "rerank_score": 0.6950000000000001,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "graph_relevance=0.20"
+        ]
+      }
+    ],
+    "image_blocks": [
+      {
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "description": "Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html.",
+        "rerank_score": 1.1150000000000002,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "generic_penalty=0.25"
+        ]
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "rerank_score": 1.1150000000000002,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=3",
+          "exact_domain_phrase=belt_drift",
+          "generic_penalty=0.25"
+        ]
+      },
+      {
+        "id": "22a2ac1f76db93ef0ab3d76e8c591eb4",
+        "title": "Quick Reference Card – Print & Carry on Site",
+        "concept_id": "quick-reference-card-print-carry-on-site",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Quick Reference Card – Print & Carry on Site. Caption: Quick Reference Card – print double-sided and carry during site visits. Visible labels: BELT CONVEYOR SYSTEM – L1 QUICK REFERENCE | CHP INTERN SAFETY CARD; COAL FLOW (End-to-End); Wagon → Tippler → Hopper → Feeder → BC-1 → Transfer → BC-2 → Bunker → Boiler; KEY COMPONENTS & FUNCTION; Belt: carries coal (carry + return loop); Drive Pulley: powered pulley at HEAD end; Tail Pulley: free pulley at FEED end; Idlers: support belt; troughed = more capacity; Take-up: maintains correct belt tension; Scraper: removes carryback at head end; EPC: Emergency Pull Cord — full length STOP; BSW: Belt Sway Switch — drift detection; ZSS: Zero Speed Switch — slip detection; CAPACITY DEPENDS ON:; • Belt width (800–1400 mm typical); • Belt speed (1.2–2.5 m/s typical); • Trough angle (20°–45°); • Inclination (max 15–18° for coal); • Coal density & moisture content; WAGON TIPPLER TYPES:; Rotary; 150–160° flip; Side Discharge; 45–60° tilt; Track Hopper; Bottom discharge; CONTROL POINTS:; CP1: Feed point — uniform loading; CP2: Transfer point — highest risk zone; CP3: Drive pulley — power + friction; CP4: Belt alignment — drift = damage; CP5: Bunker discharge — fuel supply end; 🔴 HAZARD ZONES — HIGHEST RISK; ZONE; HAZARD TYPE; CONSEQUENCE; Head/Tail Pulley; Nip/Pinch point; Crush / Amputation; Belt Surface; Entanglement; Degloving / Fatality; Transfer Tower; Confined space + dust; Asphyxia / Impact; Feed Point; Impact from coal; Blunt trauma; Coal Spillage; Slip / Trip; Fall / Fracture; Coal Dust (all zones); Respiratory / Fire; CWP / Explosion; PPE REQUIRED IN CHP:; ⛑ Safety Helmet | 👟 Steel-toe Boots; 🦺 Hi-Vis Vest | 😷 Dust Mask (P2 min); 🥽 Safety Glasses | Close-fitting Coveralls; ⚠ Remove loose gloves near rotating parts; KEY FAILURE CONSEQUENCES:; Belt drift → fire → belt loss + outage; Overload → spillage → motor trip → coal backup; Chute block → conveyor trip → bunker starves; Belt slip → overheating → fire at drive end; Dust accumulation → fire / explosion risk; Entanglement → serious injury / fatality; 🆘 EMERGENCY ACTIONS; 1. Entanglement / injury → Pull EPC immediately; 2. Fire / smoke → Pull EPC + raise fire alarm; 3. Blockage / unusual noise → Inform supervisor; 4. Seizure / burning smell → Do NOT touch; report; 5. NEVER restart a tripped conveyor yourself; STOPPED ≠ SAFE; Confirm LOTO before approaching any stopped conveyor; SITE OBSERVATION CHECKLIST; Walk belt → tick healthy / flag abnormal:; ☐ Belt centred on idlers (no drift); ☐ All idlers spinning (no seizures); ☐ Belt surface intact (no rips); ☐ No coal spillage on walkway; ☐ No burning smell; ☐ EPC ropes intact both sides; ☐ All guards in place (pulleys); ☐ Scraper in contact with belt; ☐ No blocked chute (sound check); ☐ Motor noise normal (steady hum); ☐ No dust cloud beyond normal; → Any abnormality: REPORT IMMEDIATELY; DO ✔; Wear full PPE always; Walk in buddy pairs; Stay on designated walkways; Report all abnormalities; Pull EPC without hesitation in emergency; Know nearest EPC location before entering; DON'T ✘; Touch moving belt; Lean over running conveyor; Remove any guard; Enter confined space without permit; Operate any equipment independently; Bypass safety devices; Work alone in CHP gallery / tower; Thermal Power Plant | Coal Handling Plant | L1 Intern Safety Reference Card; This card is for awareness only. Always follow plant-specific SOPs and supervisor instructions.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "rerank_score": 1.1099999999999999,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "operational_overlap=4",
+          "exact_domain_phrase=belt_drift",
+          "exact_domain_phrase=fire_risk",
+          "generic_penalty=0.50"
+        ]
+      }
+    ],
+    "relation_blocks": [],
+    "seed_concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "belt-drift",
+        "concept_id": "belt-drift",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "score": 0.8875277042388916,
+        "vector_score": 0.8875277042388916,
+        "rerank_score": 0.8875277042388916,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1124722957611084,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "text_chunk_ids": [
+          "69ae06b0a8331602e788719e5ac38519"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8875277042388916
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "course",
+        "concept_id": "course",
+        "title": "यह Course कैसे इस्तेमाल करें",
+        "score": 0.8757209777832031,
+        "vector_score": 0.8757209777832031,
+        "rerank_score": 0.8757209777832031,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12427902221679688,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+            "इस Course में आप क्या सीखोगे",
+            "यह Course कैसे इस्तेमाल करें"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 3,
+          "has_evidence": true
+        },
+        "label": "यह Course कैसे इस्तेमाल करें",
+        "text_chunk_ids": [
+          "4c488929c0e6a2e5a2560eaf5f6153d1",
+          "e260f713aeef67b5f50ae0020154e269",
+          "fcaf0d2642cadd142348953ce5e52182"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8757209777832031
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "belt-drift-belt-misalignment",
+        "concept_id": "belt-drift-belt-misalignment",
+        "title": "Belt Drift (Belt Misalignment)",
+        "score": 0.8743058443069458,
+        "vector_score": 0.8743058443069458,
+        "rerank_score": 0.8743058443069458,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1256941556930542,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Belt Drift (Belt Misalignment)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        },
+        "label": "Belt Drift (Belt Misalignment)",
+        "text_chunk_ids": [
+          "c4ccac6ea9c6348c3345ea41b075e453"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8743058443069458
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "score": 0.8672888875007629,
+        "vector_score": 0.8672888875007629,
+        "rerank_score": 0.8672888875007629,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13271111249923706,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "text_chunk_ids": [
+          "57424115bb84daad17ff190dfe33beab"
+        ],
+        "image_ids": [
+          "df6927d5c387e9bfa54c5e5cc52b02dc"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8672888875007629
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "fire",
+        "concept_id": "fire",
+        "title": "Fire का खतरा",
+        "score": 0.8600348234176636,
+        "vector_score": 0.8600348234176636,
+        "rerank_score": 0.8600348234176636,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13996517658233643,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Fire का खतरा"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Fire का खतरा",
+        "text_chunk_ids": [
+          "29a4a6606b96261b3641bf3c4dfc37e5"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8600348234176636
+      }
+    ],
+    "source_references": [
+      {
+        "collection": "TextChunk",
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-belt-drift-belt-misalignment",
+        "concept_id": "belt-drift-belt-misalignment"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-transfer-point",
+        "concept_id": "transfer-point"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-why-the-belt-drifts-misalignment",
+        "concept_id": "why-the-belt-drifts-misalignment"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "title": "Belt Alignment Along Structure",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-belt-alignment-along-structure",
+        "concept_id": "belt-alignment-along-structure"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-belt-drift",
+        "concept_id": "belt-drift"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "57424115bb84daad17ff190dfe33beab",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "concept_id": "transfer-points-flow-behaviour"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "concept_id": "transfer-points-flow-behaviour"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "22a2ac1f76db93ef0ab3d76e8c591eb4",
+        "title": "Quick Reference Card – Print & Carry on Site",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-quick-reference-card-print-carry-on-site",
+        "concept_id": "quick-reference-card-print-carry-on-site"
+      }
+    ]
+  },
+  "retrieval_diagnostics": {
+    "dropped_generic_chunks": [
+      {
+        "id": "e260f713aeef67b5f50ae0020154e269",
+        "title": "इस Course में आप क्या सीखोगे"
+      },
+      {
+        "id": "fcaf0d2642cadd142348953ce5e52182",
+        "title": "यह Course कैसे इस्तेमाल करें"
+      }
+    ],
+    "dropped_duplicate_chunks": [],
+    "dropped_low_score_relations": [],
+    "final_context_counts": {
+      "text_blocks": 8,
+      "image_blocks": 3,
+      "relation_blocks": 0,
+      "source_references": 11
+    },
+    "graph_disabled": false
+  }
+}

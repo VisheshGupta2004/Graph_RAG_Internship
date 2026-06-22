@@ -1,0 +1,267 @@
+[
+  {
+    "index": 1,
+    "prompt": "Why is belt drift dangerous and what early signs should a trainee watch for?",
+    "output": "D:\\Graph_RAG_Internship\\artifacts\\retrieval\\context_prompt_1.json",
+    "passed": true,
+    "text_blocks": 8,
+    "image_blocks": 3,
+    "relations": 0,
+    "relation_blocks": 0,
+    "trace": 0,
+    "max_seen_hop": 0,
+    "seed_relation_only_nodes": 0,
+    "quality_checks": {
+      "bounded_context": true,
+      "belt_drift_before_generic": true,
+      "generic_not_first": true
+    },
+    "diagnostics": {
+      "dropped_generic_chunks": [
+        {
+          "id": "e260f713aeef67b5f50ae0020154e269",
+          "title": "इस Course में आप क्या सीखोगे"
+        },
+        {
+          "id": "fcaf0d2642cadd142348953ce5e52182",
+          "title": "यह Course कैसे इस्तेमाल करें"
+        }
+      ],
+      "dropped_duplicate_chunks": [],
+      "dropped_low_score_relations": [],
+      "final_context_counts": {
+        "text_blocks": 8,
+        "image_blocks": 3,
+        "relation_blocks": 0,
+        "source_references": 11
+      },
+      "graph_disabled": false
+    }
+  },
+  {
+    "index": 2,
+    "prompt": "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+    "output": "D:\\Graph_RAG_Internship\\artifacts\\retrieval\\context_prompt_2.json",
+    "passed": true,
+    "text_blocks": 8,
+    "image_blocks": 3,
+    "relations": 0,
+    "relation_blocks": 0,
+    "trace": 0,
+    "max_seen_hop": 0,
+    "seed_relation_only_nodes": 0,
+    "quality_checks": {
+      "bounded_context": true,
+      "hindi_or_fire_belt_context": true
+    },
+    "diagnostics": {
+      "dropped_generic_chunks": [
+        {
+          "id": "e260f713aeef67b5f50ae0020154e269",
+          "title": "इस Course में आप क्या सीखोगे"
+        },
+        {
+          "id": "fcaf0d2642cadd142348953ce5e52182",
+          "title": "यह Course कैसे इस्तेमाल करें"
+        }
+      ],
+      "dropped_duplicate_chunks": [],
+      "dropped_low_score_relations": [],
+      "final_context_counts": {
+        "text_blocks": 8,
+        "image_blocks": 3,
+        "relation_blocks": 0,
+        "source_references": 11
+      },
+      "graph_disabled": false
+    }
+  },
+  {
+    "index": 3,
+    "prompt": "Show the coal flow from wagon or track hopper to boiler bunker and include relevant diagrams.",
+    "output": "D:\\Graph_RAG_Internship\\artifacts\\retrieval\\context_prompt_3.json",
+    "passed": true,
+    "text_blocks": 8,
+    "image_blocks": 3,
+    "relations": 4,
+    "relation_blocks": 4,
+    "trace": 4,
+    "max_seen_hop": 1,
+    "seed_relation_only_nodes": 3,
+    "quality_checks": {
+      "bounded_context": true,
+      "coal_flow_diagram": true,
+      "relation_trace_present": true
+    },
+    "diagnostics": {
+      "dropped_generic_chunks": [],
+      "dropped_duplicate_chunks": [],
+      "dropped_low_score_relations": [
+        {
+          "relation_id": "a3cf124fcf152587943d8701b790fe7b",
+          "score": 0.34937500000000005,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=5"
+          ]
+        },
+        {
+          "relation_id": "85ac2a36b4197d05c4e9b225eddd9758",
+          "score": 0.323375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=4"
+          ]
+        },
+        {
+          "relation_id": "6693e1d329f69da742120467a9730c30",
+          "score": 0.323375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=4"
+          ]
+        },
+        {
+          "relation_id": "40cf99fd9633e30d879d0d07a01966ab",
+          "score": 0.297375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=3"
+          ]
+        },
+        {
+          "relation_id": "4662645a84726d14a612d39d6bbdb7a9",
+          "score": 0.297375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=3"
+          ]
+        },
+        {
+          "relation_id": "75da25c0c35bd24f73897cd6af2e58c6",
+          "score": 0.297375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=3"
+          ]
+        },
+        {
+          "relation_id": "aee70daa4e57bad618ee3b54508a154d",
+          "score": 0.297375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=3"
+          ]
+        },
+        {
+          "relation_id": "77b9d670bd20c5f391581a812383dd19",
+          "score": 0.297375,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_skill:0.65",
+            "query_overlap=3"
+          ]
+        },
+        {
+          "relation_id": "869155ee953f4bfa3969d7dba6d46c92",
+          "score": 0.28924999999999995,
+          "reasons": [
+            "seed=0.50",
+            "hop_decay=0.65",
+            "type=has_swo:0.60",
+            "query_overlap=3"
+          ]
+        }
+      ],
+      "final_context_counts": {
+        "text_blocks": 8,
+        "image_blocks": 3,
+        "relation_blocks": 4,
+        "source_references": 11
+      },
+      "graph_disabled": false
+    }
+  },
+  {
+    "index": 4,
+    "prompt": "What happens if the grizzly fails or arch formation occurs in a track hopper?",
+    "output": "D:\\Graph_RAG_Internship\\artifacts\\retrieval\\context_prompt_4.json",
+    "passed": true,
+    "text_blocks": 8,
+    "image_blocks": 3,
+    "relations": 0,
+    "relation_blocks": 0,
+    "trace": 0,
+    "max_seen_hop": 0,
+    "seed_relation_only_nodes": 0,
+    "quality_checks": {
+      "bounded_context": true
+    },
+    "diagnostics": {
+      "dropped_generic_chunks": [],
+      "dropped_duplicate_chunks": [],
+      "dropped_low_score_relations": [],
+      "final_context_counts": {
+        "text_blocks": 8,
+        "image_blocks": 3,
+        "relation_blocks": 0,
+        "source_references": 11
+      },
+      "graph_disabled": false
+    }
+  },
+  {
+    "index": 5,
+    "prompt": "What are the hazards at conveyor transfer points and what safety devices or actions are relevant?",
+    "output": "D:\\Graph_RAG_Internship\\artifacts\\retrieval\\context_prompt_5.json",
+    "passed": true,
+    "text_blocks": 8,
+    "image_blocks": 3,
+    "relations": 2,
+    "relation_blocks": 2,
+    "trace": 2,
+    "max_seen_hop": 1,
+    "seed_relation_only_nodes": 2,
+    "quality_checks": {
+      "bounded_context": true,
+      "transfer_or_hazard": true,
+      "limits_not_in_context": true
+    },
+    "diagnostics": {
+      "dropped_generic_chunks": [
+        {
+          "id": "e260f713aeef67b5f50ae0020154e269",
+          "title": "इस Course में आप क्या सीखोगे"
+        },
+        {
+          "id": "fcaf0d2642cadd142348953ce5e52182",
+          "title": "यह Course कैसे इस्तेमाल करें"
+        }
+      ],
+      "dropped_duplicate_chunks": [],
+      "dropped_low_score_relations": [],
+      "final_context_counts": {
+        "text_blocks": 8,
+        "image_blocks": 3,
+        "relation_blocks": 2,
+        "source_references": 11
+      },
+      "graph_disabled": false
+    }
+  }
+]

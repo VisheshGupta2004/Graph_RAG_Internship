@@ -1,0 +1,1397 @@
+{
+  "query": "What happens if the grizzly fails or arch formation occurs in a track hopper?",
+  "seed_results": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "content": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 354,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Real Scenarios. Real Consequences.",
+            "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?"
+          ]
+        },
+        "score": 0.9,
+        "vector_score": null,
+        "lexical_score": 0.9,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=4",
+          "operational_overlap=4"
+        ],
+        "rerank_score": 1.325
+      },
+      {
+        "collection": "TextChunk",
+        "id": "f569ead205bb61d77a63140bf6614181",
+        "concept_id": "what-is-arch-formation-and-why-is-it-dangerous",
+        "title": "What is \"arch formation\" and why is it dangerous?",
+        "content": "What is \"arch formation\" and why is it dangerous? A The hopper structure is arch-shaped for strength B A safety gate that closes the hopper outlet C Coal particles bridge the outlet, stopping flow — then collapse suddenly in a dangerous surge D Coal piling up above ground level during overfill",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-arch-formation-and-why-is-it-dangerous",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 294,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Real Scenarios. Real Consequences.",
+            "What is \"arch formation\" and why is it dangerous?"
+          ]
+        },
+        "score": 0.89,
+        "vector_score": null,
+        "lexical_score": 0.89,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=3",
+          "operational_overlap=3"
+        ],
+        "rerank_score": 1.315
+      },
+      {
+        "collection": "TextChunk",
+        "id": "dfa6dea4f937ae90050b2770d938b2b6",
+        "concept_id": "what-happens-if-the-grizzly-fails",
+        "title": "What happens if the grizzly fails?",
+        "content": "What happens if the grizzly fails? 🚨 Chain of Destruction 🪨 Boulder/large lump — destroys feeder belt or apron chain completely 🔩 Metal debris (bolts, wire) — cuts conveyor belt downstream 🌿 Rope or wood — wraps around feeder shaft, causes jam and stall 🪨 Shale/stone — jams between apron plates, cracking the steel pans ⚠ Rule",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-happens-if-the-grizzly-fails",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 327,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "What happens if the grizzly fails?"
+          ]
+        },
+        "score": 0.9,
+        "vector_score": null,
+        "lexical_score": 0.9,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=5",
+          "operational_overlap=1"
+        ],
+        "rerank_score": 1.245
+      },
+      {
+        "collection": "TextChunk",
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "content": "What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-the-fundamental-principle-of-a-track-hopper",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 248,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Real Scenarios. Real Consequences.",
+            "What is the fundamental principle of a Track Hopper?"
+          ]
+        },
+        "score": 0.86,
+        "vector_score": null,
+        "lexical_score": 0.86,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=4",
+          "operational_overlap=2"
+        ],
+        "rerank_score": 1.22
+      },
+      {
+        "collection": "TextChunk",
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "concept_id": "what-is-a-track-hopper",
+        "title": "What is a Track Hopper?",
+        "content": "What is a Track Hopper? COAL WAGON bottom doors open ⬇⬇⬇ coal accumulating Track Hopper Pit (underground) Rail wagon with open bottom doors discharging coal by gravity into underground hopper A Track Hopper is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. No tipping. No rotation. Just gravity.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+        "metadata": {
+          "content_length": 392,
+          "child_titles": [
+            "Why it matters to the plant",
+            "Track Hopper vs Wagon Tippler",
+            "The complete coal journey",
+            "Break one link, break the chain",
+            "An underground cavity you cannot fully see",
+            "4 key structural elements",
+            "The Grizzly — first line of defence",
+            "What happens if the grizzly fails?",
+            "Why a feeder is needed",
+            "Belt Feeder",
+            "Apron Feeder",
+            "Coal is NOT a liquid",
+            "Arch Formation — The Silent Stop",
+            "Surge Flow — The Sudden Collapse",
+            "The most dangerous words in a CHP:",
+            "5 deceptive situations",
+            "Not one hazard. Three — overlapping.",
+            "Your role as a trainee"
+          ],
+          "level": 1,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?"
+          ]
+        },
+        "score": 0.85,
+        "vector_score": null,
+        "lexical_score": 0.85,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=3",
+          "operational_overlap=2"
+        ],
+        "rerank_score": 1.21
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "4e61af661d7f633eb3dc57e3cb0e3871",
+        "concept_id": "arch-formation-the-silent-stop",
+        "title": "Arch Formation — The Silent Stop",
+        "description": "Diagram under: Arch Formation — The Silent Stop. Caption: Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.. Visible labels: Coal above arch; ARCH (bridge); ⛔ Flow STOPS; Coal above builds up · pressure increases. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-arch-formation-the-silent-stop",
+        "metadata": {
+          "view_box": "0 0 360 160",
+          "order_in_file": 6,
+          "linked_text_section_id": "Track_Hopper_iCard_Microlearning-arch-formation-the-silent-stop",
+          "svg_text_labels": [
+            "Coal above arch",
+            "ARCH (bridge)",
+            "⛔ Flow STOPS",
+            "Coal above builds up · pressure increases"
+          ],
+          "raw_svg_excerpt": "<svg viewbox=\"0 0 360 160\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#0d1220\" height=\"160\" width=\"360\" x=\"0\" y=\"0\"></rect> <!-- Hopper --> <polygon fill=\"#1a237e\" opacity=\"0.7\" points=\"50,20 110,100 250,100 310,20\"></polygon> <!-- Coal inside --> <ellipse cx=\"180\" cy=\"60\" fill=\"#1a0e06\" opacity=\"0.8\" rx=\"80\" ry=\"28\"></ellipse> <text fill=\"#9fa8da\" font-size=\"9\" text-anchor=\"middle\" x=\"180\" y=\"64\">Coal above arch</text> <!-- ARCH --> <path d=\"M 110,100 Q 180,76 250,100\" fill=\"none\" stroke=\"",
+          "caption": "Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.",
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "Arch Formation — The Silent Stop"
+          ]
+        },
+        "score": 0.9299999999999999,
+        "vector_score": null,
+        "lexical_score": 0.9299999999999999,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=3",
+          "operational_overlap=4"
+        ],
+        "rerank_score": 1.38
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "title": "The Grizzly — first line of defence",
+        "score": 0.8617536425590515,
+        "vector_score": 0.8617536425590515,
+        "rerank_score": 1.2267536425590515,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=2",
+          "operational_overlap=3"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1382463574409485,
+        "metadata": {
+          "view_box": "0 0 360 160",
+          "order_in_file": 3,
+          "linked_text_section_id": "Track_Hopper_iCard_Microlearning-the-grizzly-first-line-of-defence",
+          "svg_text_labels": [
+            "gap",
+            "200–300mm",
+            "Fine coal ✓ passes",
+            "LARGE",
+            "LUMP",
+            "⛔ STOPPED",
+            "GRIZZLY SCREEN — Top View",
+            "↓ Fine coal falls freely into hopper pit below"
+          ],
+          "raw_svg_excerpt": "<svg viewbox=\"0 0 360 160\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#1a0a2e\" height=\"160\" width=\"360\" x=\"0\" y=\"0\"></rect> <!-- Grizzly frame --> <rect fill=\"none\" height=\"70\" rx=\"3\" stroke=\"#9c27b0\" stroke-width=\"2\" width=\"300\" x=\"30\" y=\"30\"></rect> <!-- Bars --> <line stroke=\"#9c27b0\" stroke-width=\"7\" x1=\"30\" x2=\"330\" y1=\"45\" y2=\"45\"></line> <line stroke=\"#9c27b0\" stroke-width=\"7\" x1=\"30\" x2=\"330\" y1=\"65\" y2=\"65\"></line> <line stroke=\"#9c27b0\" stroke-width=\"7\" x1=\"30\" x2=\"330\" y1=\"85\" y2",
+          "caption": "Steel bar grid — small coal passes, oversized material and debris are stopped",
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "The Grizzly — first line of defence"
+          ]
+        },
+        "description": "Diagram under: The Grizzly — first line of defence. Caption: Steel bar grid — small coal passes, oversized material and debris are stopped. Visible labels: gap; 200–300mm; Fine coal ✓ passes; LARGE; LUMP; ⛔ STOPPED; GRIZZLY SCREEN — Top View; ↓ Fine coal falls freely into hopper pit below. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-grizzly-first-line-of-defence"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "46838ec16d143849ee124fc956000344",
+        "concept_id": "what-is-a-track-hopper",
+        "title": "What is a Track Hopper?",
+        "score": 0.8104709982872009,
+        "vector_score": 0.8104709982872009,
+        "rerank_score": 1.145470998287201,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=3",
+          "operational_overlap=2"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.18952900171279907,
+        "metadata": {
+          "view_box": "0 0 360 180",
+          "order_in_file": 1,
+          "linked_text_section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+          "svg_text_labels": [
+            "COAL WAGON",
+            "bottom doors open",
+            "⬇⬇⬇",
+            "coal accumulating",
+            "Track Hopper Pit (underground)"
+          ],
+          "raw_svg_excerpt": "<svg viewbox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#1b3a1f\" height=\"180\" width=\"360\" x=\"0\" y=\"0\"></rect> <!-- Rail track --> <rect fill=\"#607d8b\" height=\"8\" rx=\"2\" width=\"320\" x=\"20\" y=\"60\"></rect> <!-- Sleepers --> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"50\" y=\"57\"></rect> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"90\" y=\"57\"></rect> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"130\" y=\"57\"></rect> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"170\" y=\"57\"></rect",
+          "caption": "Rail wagon with open bottom doors discharging coal by gravity into underground hopper",
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?"
+          ]
+        },
+        "description": "Diagram under: What is a Track Hopper?. Caption: Rail wagon with open bottom doors discharging coal by gravity into underground hopper. Visible labels: COAL WAGON; bottom doors open; ⬇⬇⬇; coal accumulating; Track Hopper Pit (underground). Context: Track Hopper – iCard Microlearning / Track_Hopper_iCard_Microlearning.html.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper"
+      }
+    ],
+    "concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "score": 0.8772822618484497,
+        "vector_score": 0.8772822618484497,
+        "rerank_score": 0.8772822618484497,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12271773815155029,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "text_chunk_ids": [
+          "a057d83d76f364d1192b6f9af8aaddff"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8772822618484497
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "5-deceptive-situations",
+        "concept_id": "5-deceptive-situations",
+        "title": "5 deceptive situations",
+        "score": 0.8586605787277222,
+        "vector_score": 0.8586605787277222,
+        "rerank_score": 0.8586605787277222,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14133942127227783,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "5 deceptive situations"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "5 deceptive situations",
+        "text_chunk_ids": [
+          "c4eb4b0eda480668b490e5b765054a59"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8586605787277222
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-grizzly-first-line-of-defence",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "title": "The Grizzly — first line of defence",
+        "score": 0.8568491339683533,
+        "vector_score": 0.8568491339683533,
+        "rerank_score": 0.8568491339683533,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14315086603164673,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The Grizzly — first line of defence"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "The Grizzly — first line of defence",
+        "text_chunk_ids": [
+          "24aca4ddb57b9f4304a2fdbb9df348a0"
+        ],
+        "image_ids": [
+          "36ea3cbec7860cb08e7ca2a27f0df97f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8568491339683533
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "grizzly-accumulation",
+        "concept_id": "grizzly-accumulation",
+        "title": "Grizzly & Accumulation",
+        "score": 0.8555407524108887,
+        "vector_score": 0.8555407524108887,
+        "rerank_score": 0.8555407524108887,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14445924758911133,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Grizzly & Accumulation"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Grizzly & Accumulation",
+        "text_chunk_ids": [
+          "7ab0e60c7f73f90e427831bcddead079"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8555407524108887
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "two-cracked-grizzly-bars-created-a-gap",
+        "concept_id": "two-cracked-grizzly-bars-created-a-gap",
+        "title": "Two cracked grizzly bars created a gap",
+        "score": 0.8550503253936768,
+        "vector_score": 0.8550503253936768,
+        "rerank_score": 0.8550503253936768,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14494967460632324,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Two cracked grizzly bars created a gap"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        },
+        "label": "Two cracked grizzly bars created a gap",
+        "text_chunk_ids": [
+          "993ddcb66f92c424a54fafc81f4a38b3"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8550503253936768
+      }
+    ]
+  },
+  "graph_expansion": {
+    "max_hops": 2,
+    "nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "5-deceptive-situations",
+        "concept_id": "5-deceptive-situations",
+        "label": "5 deceptive situations",
+        "text_chunk_ids": [
+          "c4eb4b0eda480668b490e5b765054a59"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "5 deceptive situations"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "arch-formation-the-silent-stop",
+        "concept_id": "arch-formation-the-silent-stop",
+        "label": "Arch Formation — The Silent Stop",
+        "text_chunk_ids": [
+          "4bc67597e05aeab48dfd4e02159e1392"
+        ],
+        "image_ids": [
+          "4e61af661d7f633eb3dc57e3cb0e3871"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Arch Formation — The Silent Stop"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "grizzly-accumulation",
+        "concept_id": "grizzly-accumulation",
+        "label": "Grizzly & Accumulation",
+        "text_chunk_ids": [
+          "7ab0e60c7f73f90e427831bcddead079"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Grizzly & Accumulation"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-grizzly-first-line-of-defence",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "label": "The Grizzly — first line of defence",
+        "text_chunk_ids": [
+          "24aca4ddb57b9f4304a2fdbb9df348a0"
+        ],
+        "image_ids": [
+          "36ea3cbec7860cb08e7ca2a27f0df97f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "The Grizzly — first line of defence"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "label": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "text_chunk_ids": [
+          "a057d83d76f364d1192b6f9af8aaddff"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "two-cracked-grizzly-bars-created-a-gap",
+        "concept_id": "two-cracked-grizzly-bars-created-a-gap",
+        "label": "Two cracked grizzly bars created a gap",
+        "text_chunk_ids": [
+          "993ddcb66f92c424a54fafc81f4a38b3"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Two cracked grizzly bars created a gap"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-happens-if-the-grizzly-fails",
+        "concept_id": "what-happens-if-the-grizzly-fails",
+        "label": "What happens if the grizzly fails?",
+        "text_chunk_ids": [
+          "dfa6dea4f937ae90050b2770d938b2b6"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "What happens if the grizzly fails?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-is-a-track-hopper",
+        "concept_id": "what-is-a-track-hopper",
+        "label": "What is a Track Hopper?",
+        "text_chunk_ids": [
+          "19840e50aaad348878ec0cda8cc8e1a1"
+        ],
+        "image_ids": [
+          "46838ec16d143849ee124fc956000344"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "What is a Track Hopper?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-is-arch-formation-and-why-is-it-dangerous",
+        "concept_id": "what-is-arch-formation-and-why-is-it-dangerous",
+        "label": "What is \"arch formation\" and why is it dangerous?",
+        "text_chunk_ids": [
+          "f569ead205bb61d77a63140bf6614181"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "What is \"arch formation\" and why is it dangerous?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "label": "What is the fundamental principle of a Track Hopper?",
+        "text_chunk_ids": [
+          "a24dd3a6d0e9f899172f20d57080afb1"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "What is the fundamental principle of a Track Hopper?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      }
+    ],
+    "relations": [],
+    "trace": [],
+    "seed_relation_only_nodes": []
+  },
+  "expanded_evidence": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "4bc67597e05aeab48dfd4e02159e1392",
+        "concept_id": "arch-formation-the-silent-stop",
+        "title": "Arch Formation — The Silent Stop",
+        "content": "Arch Formation — The Silent Stop Coal above arch ARCH (bridge) ⛔ Flow STOPS Coal above builds up · pressure increases Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently. 💧 More likely with wet, fine, or clay-rich coal ❄️ Increases in winter — moisture freezes, coal compacts ⏰ Static storage — coal that sits too long settles and bridges",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-arch-formation-the-silent-stop",
+        "metadata": {
+          "content_length": 378,
+          "child_titles": [],
+          "level": 2,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "Arch Formation — The Silent Stop"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=3",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.535
+      },
+      {
+        "collection": "TextChunk",
+        "id": "7ab0e60c7f73f90e427831bcddead079",
+        "concept_id": "grizzly-accumulation",
+        "title": "Grizzly & Accumulation",
+        "content": "Grizzly & Accumulation Every piece of coal gets size-classified here. Broken bars = unprotected feeder. Inspect after every unloading, never during. Tramp material on bars must be removed safely. The hopper buffers between variable wagon discharge rate and steady feeder rate. Overfill → coal at grizzly level (fall hazard). Underfill with arch → surge when it fails. Both extremes are dangerous.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-grizzly-accumulation",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 396,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "5 Critical Points in the Coal Chain",
+            "Grizzly & Accumulation"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.505
+      },
+      {
+        "collection": "TextChunk",
+        "id": "993ddcb66f92c424a54fafc81f4a38b3",
+        "concept_id": "two-cracked-grizzly-bars-created-a-gap",
+        "title": "Two cracked grizzly bars created a gap",
+        "content": "Two cracked grizzly bars created a gap A 400 mm boulder passed through the gap → entered hopper → reached belt feeder → belt torn over 2 metres. Consequence Track hopper offline for 3 days Belt replacement + grizzly repair. Coal receipt suspended. Boiler load reduced. Emergency coal draw-down from yard. Consequence",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-two-cracked-grizzly-bars-created-a-gap",
+        "metadata": {
+          "level": 4,
+          "child_titles": [],
+          "content_length": 316,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Real Scenarios. Real Consequences.",
+            "Oversized material bypasses grizzly",
+            "Two cracked grizzly bars created a gap"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.48000000000000004
+      },
+      {
+        "collection": "TextChunk",
+        "id": "24aca4ddb57b9f4304a2fdbb9df348a0",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "title": "The Grizzly — first line of defence",
+        "content": "The Grizzly — first line of defence gap 200–300mm Fine coal ✓ passes LARGE LUMP ⛔ STOPPED GRIZZLY SCREEN — Top View ↓ Fine coal falls freely into hopper pit below Steel bar grid — small coal passes, oversized material and debris are stopped The Grizzly is a grid of thick steel bars (75–100 mm section) across the hopper opening. It is the only barrier between uncontrolled wagon contents and the precision-engineered machinery below.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-grizzly-first-line-of-defence",
+        "metadata": {
+          "content_length": 434,
+          "child_titles": [],
+          "level": 2,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "The Grizzly — first line of defence"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.47500000000000003
+      },
+      {
+        "collection": "TextChunk",
+        "id": "c4eb4b0eda480668b490e5b765054a59",
+        "concept_id": "5-deceptive-situations",
+        "title": "5 deceptive situations",
+        "content": "5 deceptive situations 😶 Empty, quiet grizzly → feeder still running below; void forming 😶 Coal level looks stable → arch formed; 80+ tonnes balanced above 😶 No wagons on track → wet coal left on grizzly bars; extreme slip risk 😶 Feeder belt appears stopped → motor energised; restarts without warning 😶 Area looks clean → coal dust suspended in underground gallery 🚨 The Rule",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-5-deceptive-situations",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 376,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "5 deceptive situations"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.42000000000000004
+      }
+    ],
+    "image_chunks": []
+  },
+  "context_for_llm_later": {
+    "text_blocks": [
+      {
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free",
+        "rerank_score": 1.325,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=4",
+          "operational_overlap=4"
+        ]
+      },
+      {
+        "id": "f569ead205bb61d77a63140bf6614181",
+        "title": "What is \"arch formation\" and why is it dangerous?",
+        "concept_id": "what-is-arch-formation-and-why-is-it-dangerous",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "What is \"arch formation\" and why is it dangerous? A The hopper structure is arch-shaped for strength B A safety gate that closes the hopper outlet C Coal particles bridge the outlet, stopping flow — then collapse suddenly in a dangerous surge D Coal piling up above ground level during overfill",
+        "rerank_score": 1.315,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=3",
+          "operational_overlap=3"
+        ]
+      },
+      {
+        "id": "dfa6dea4f937ae90050b2770d938b2b6",
+        "title": "What happens if the grizzly fails?",
+        "concept_id": "what-happens-if-the-grizzly-fails",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "What happens if the grizzly fails? 🚨 Chain of Destruction 🪨 Boulder/large lump — destroys feeder belt or apron chain completely 🔩 Metal debris (bolts, wire) — cuts conveyor belt downstream 🌿 Rope or wood — wraps around feeder shaft, causes jam and stall 🪨 Shale/stone — jams between apron plates, cracking the steel pans ⚠ Rule",
+        "rerank_score": 1.245,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=5",
+          "operational_overlap=1"
+        ]
+      },
+      {
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways",
+        "rerank_score": 1.22,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=4",
+          "operational_overlap=2"
+        ]
+      },
+      {
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "title": "What is a Track Hopper?",
+        "concept_id": "what-is-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "What is a Track Hopper? COAL WAGON bottom doors open ⬇⬇⬇ coal accumulating Track Hopper Pit (underground) Rail wagon with open bottom doors discharging coal by gravity into underground hopper A Track Hopper is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. No tipping. No rotation. Just gravity.",
+        "rerank_score": 1.21,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=3",
+          "operational_overlap=2"
+        ]
+      },
+      {
+        "id": "4bc67597e05aeab48dfd4e02159e1392",
+        "title": "Arch Formation — The Silent Stop",
+        "concept_id": "arch-formation-the-silent-stop",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "Arch Formation — The Silent Stop Coal above arch ARCH (bridge) ⛔ Flow STOPS Coal above builds up · pressure increases Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently. 💧 More likely with wet, fine, or clay-rich coal ❄️ Increases in winter — moisture freezes, coal compacts ⏰ Static storage — coal that sits too long settles and bridges",
+        "rerank_score": 0.535,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=3",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "7ab0e60c7f73f90e427831bcddead079",
+        "title": "Grizzly & Accumulation",
+        "concept_id": "grizzly-accumulation",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "Grizzly & Accumulation Every piece of coal gets size-classified here. Broken bars = unprotected feeder. Inspect after every unloading, never during. Tramp material on bars must be removed safely. The hopper buffers between variable wagon discharge rate and steady feeder rate. Overfill → coal at grizzly level (fall hazard). Underfill with arch → surge when it fails. Both extremes are dangerous.",
+        "rerank_score": 0.505,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "993ddcb66f92c424a54fafc81f4a38b3",
+        "title": "Two cracked grizzly bars created a gap",
+        "concept_id": "two-cracked-grizzly-bars-created-a-gap",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "Two cracked grizzly bars created a gap A 400 mm boulder passed through the gap → entered hopper → reached belt feeder → belt torn over 2 metres. Consequence Track hopper offline for 3 days Belt replacement + grizzly repair. Coal receipt suspended. Boiler load reduced. Emergency coal draw-down from yard. Consequence",
+        "rerank_score": 0.48000000000000004,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ]
+      }
+    ],
+    "image_blocks": [
+      {
+        "id": "4e61af661d7f633eb3dc57e3cb0e3871",
+        "title": "Arch Formation — The Silent Stop",
+        "concept_id": "arch-formation-the-silent-stop",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: Arch Formation — The Silent Stop. Caption: Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.. Visible labels: Coal above arch; ARCH (bridge); ⛔ Flow STOPS; Coal above builds up · pressure increases. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "rerank_score": 1.38,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=3",
+          "operational_overlap=4"
+        ]
+      },
+      {
+        "id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+        "title": "The Grizzly — first line of defence",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: The Grizzly — first line of defence. Caption: Steel bar grid — small coal passes, oversized material and debris are stopped. Visible labels: gap; 200–300mm; Fine coal ✓ passes; LARGE; LUMP; ⛔ STOPPED; GRIZZLY SCREEN — Top View; ↓ Fine coal falls freely into hopper pit below. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "rerank_score": 1.2267536425590515,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=2",
+          "operational_overlap=3"
+        ]
+      },
+      {
+        "id": "46838ec16d143849ee124fc956000344",
+        "title": "What is a Track Hopper?",
+        "concept_id": "what-is-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: What is a Track Hopper?. Caption: Rail wagon with open bottom doors discharging coal by gravity into underground hopper. Visible labels: COAL WAGON; bottom doors open; ⬇⬇⬇; coal accumulating; Track Hopper Pit (underground). Context: Track Hopper – iCard Microlearning / Track_Hopper_iCard_Microlearning.html.",
+        "rerank_score": 1.145470998287201,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=3",
+          "operational_overlap=2"
+        ]
+      }
+    ],
+    "relation_blocks": [],
+    "seed_concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "score": 0.8772822618484497,
+        "vector_score": 0.8772822618484497,
+        "rerank_score": 0.8772822618484497,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12271773815155029,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "text_chunk_ids": [
+          "a057d83d76f364d1192b6f9af8aaddff"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8772822618484497
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "5-deceptive-situations",
+        "concept_id": "5-deceptive-situations",
+        "title": "5 deceptive situations",
+        "score": 0.8586605787277222,
+        "vector_score": 0.8586605787277222,
+        "rerank_score": 0.8586605787277222,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14133942127227783,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "5 deceptive situations"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "5 deceptive situations",
+        "text_chunk_ids": [
+          "c4eb4b0eda480668b490e5b765054a59"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8586605787277222
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-grizzly-first-line-of-defence",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "title": "The Grizzly — first line of defence",
+        "score": 0.8568491339683533,
+        "vector_score": 0.8568491339683533,
+        "rerank_score": 0.8568491339683533,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14315086603164673,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The Grizzly — first line of defence"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "The Grizzly — first line of defence",
+        "text_chunk_ids": [
+          "24aca4ddb57b9f4304a2fdbb9df348a0"
+        ],
+        "image_ids": [
+          "36ea3cbec7860cb08e7ca2a27f0df97f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8568491339683533
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "grizzly-accumulation",
+        "concept_id": "grizzly-accumulation",
+        "title": "Grizzly & Accumulation",
+        "score": 0.8555407524108887,
+        "vector_score": 0.8555407524108887,
+        "rerank_score": 0.8555407524108887,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14445924758911133,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Grizzly & Accumulation"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Grizzly & Accumulation",
+        "text_chunk_ids": [
+          "7ab0e60c7f73f90e427831bcddead079"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8555407524108887
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "two-cracked-grizzly-bars-created-a-gap",
+        "concept_id": "two-cracked-grizzly-bars-created-a-gap",
+        "title": "Two cracked grizzly bars created a gap",
+        "score": 0.8550503253936768,
+        "vector_score": 0.8550503253936768,
+        "rerank_score": 0.8550503253936768,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14494967460632324,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Two cracked grizzly bars created a gap"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        },
+        "label": "Two cracked grizzly bars created a gap",
+        "text_chunk_ids": [
+          "993ddcb66f92c424a54fafc81f4a38b3"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8550503253936768
+      }
+    ],
+    "source_references": [
+      {
+        "collection": "TextChunk",
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "f569ead205bb61d77a63140bf6614181",
+        "title": "What is \"arch formation\" and why is it dangerous?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-arch-formation-and-why-is-it-dangerous",
+        "concept_id": "what-is-arch-formation-and-why-is-it-dangerous"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "dfa6dea4f937ae90050b2770d938b2b6",
+        "title": "What happens if the grizzly fails?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-happens-if-the-grizzly-fails",
+        "concept_id": "what-happens-if-the-grizzly-fails"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-the-fundamental-principle-of-a-track-hopper",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "title": "What is a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+        "concept_id": "what-is-a-track-hopper"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "4bc67597e05aeab48dfd4e02159e1392",
+        "title": "Arch Formation — The Silent Stop",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-arch-formation-the-silent-stop",
+        "concept_id": "arch-formation-the-silent-stop"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "7ab0e60c7f73f90e427831bcddead079",
+        "title": "Grizzly & Accumulation",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-grizzly-accumulation",
+        "concept_id": "grizzly-accumulation"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "993ddcb66f92c424a54fafc81f4a38b3",
+        "title": "Two cracked grizzly bars created a gap",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-two-cracked-grizzly-bars-created-a-gap",
+        "concept_id": "two-cracked-grizzly-bars-created-a-gap"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "4e61af661d7f633eb3dc57e3cb0e3871",
+        "title": "Arch Formation — The Silent Stop",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-arch-formation-the-silent-stop",
+        "concept_id": "arch-formation-the-silent-stop"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+        "title": "The Grizzly — first line of defence",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-grizzly-first-line-of-defence",
+        "concept_id": "the-grizzly-first-line-of-defence"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "46838ec16d143849ee124fc956000344",
+        "title": "What is a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+        "concept_id": "what-is-a-track-hopper"
+      }
+    ]
+  },
+  "retrieval_diagnostics": {
+    "dropped_generic_chunks": [],
+    "dropped_duplicate_chunks": [],
+    "dropped_low_score_relations": [],
+    "final_context_counts": {
+      "text_blocks": 8,
+      "image_blocks": 3,
+      "relation_blocks": 0,
+      "source_references": 11
+    },
+    "graph_disabled": false
+  }
+}

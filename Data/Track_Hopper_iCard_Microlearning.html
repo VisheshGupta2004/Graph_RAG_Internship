@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Track Hopper – iCard Microlearning</title>
+<style>
+:root {
+  --c-forest: #1b5e20; --c-teal: #006064; --c-purple: #4a148c;
+  --c-orange: #e65100; --c-slate: #1a237e; --c-red: #b71c1c;
+  --c-brown: #3e2723; --c-green: #2e7d32; --c-quiz: #212121;
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html, body { height:100%; overflow:hidden; font-family:'Segoe UI',Arial,sans-serif; background:#000; }
+
+/* ── DECK WRAPPER ── */
+#deck { position:relative; width:100%; height:100%; }
+
+/* ── CARDS ── */
+.card {
+  position:absolute; inset:0; display:flex; flex-direction:column;
+  overflow:hidden; transition:transform .38s cubic-bezier(.4,0,.2,1), opacity .38s;
+  will-change:transform; backface-visibility:hidden;
+  user-select:none;
+}
+.card.hidden     { transform:translateX(100%); pointer-events:none; opacity:0; }
+.card.exit-left  { transform:translateX(-100%); pointer-events:none; opacity:0; }
+.card.active     { transform:translateX(0); opacity:1; }
+
+/* ── PROGRESS BAR (top) ── */
+.prog-row {
+  position:absolute; top:0; left:0; right:0; z-index:20;
+  display:flex; gap:3px; padding:12px 14px 0;
+}
+.prog-seg {
+  flex:1; height:3px; border-radius:3px; background:rgba(255,255,255,.28);
+  overflow:hidden;
+}
+.prog-seg .fill { height:100%; width:0%; background:#fff; border-radius:3px; transition:width .35s linear; }
+.prog-seg.done .fill  { width:100%; }
+.prog-seg.active .fill { animation:progAnim var(--dur, 999s) linear forwards; }
+@keyframes progAnim { from{width:0%} to{width:100%} }
+
+/* ── MODULE LABEL ── */
+.mod-label {
+  position:absolute; top:22px; right:14px; z-index:21;
+  background:rgba(0,0,0,.38); border:1px solid rgba(255,255,255,.2);
+  color:#fff; font-size:10px; font-weight:700; letter-spacing:.8px;
+  text-transform:uppercase; padding:3px 10px; border-radius:20px;
+}
+
+/* ── NAV ZONES ── */
+.nav-left, .nav-right {
+  position:absolute; top:0; bottom:0; z-index:10; cursor:pointer; width:40%;
+}
+.nav-left  { left:0; }
+.nav-right { right:0; }
+
+/* ── NAV ARROWS ── */
+.arrow {
+  position:absolute; bottom:22px; z-index:25;
+  background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3);
+  border-radius:50%; width:40px; height:40px; display:flex; align-items:center; justify-content:center;
+  cursor:pointer; font-size:18px; color:#fff; transition:background .2s;
+}
+.arrow:hover { background:rgba(255,255,255,.3); }
+#arr-left  { left:18px; }
+#arr-right { right:18px; }
+#arr-left.hidden-btn, #arr-right.hidden-btn { opacity:.2; pointer-events:none; }
+
+/* counter */
+#counter {
+  position:fixed; bottom:26px; left:50%; transform:translateX(-50%);
+  z-index:30; font-size:12px; color:rgba(255,255,255,.55); pointer-events:none;
+}
+
+/* ── CARD CONTENT HELPERS ── */
+.card-body {
+  flex:1; display:flex; flex-direction:column; padding:58px 22px 72px;
+  justify-content:center;
+}
+.eyebrow { font-size:11px; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; opacity:.7; margin-bottom:10px; }
+.card-h1 { font-size:clamp(26px,5.5vw,42px); font-weight:900; line-height:1.2; margin-bottom:14px; }
+.card-h2 { font-size:clamp(20px,4vw,30px); font-weight:800; line-height:1.3; margin-bottom:12px; }
+.card-p  { font-size:clamp(13px,2.2vw,16px); line-height:1.65; opacity:.92; margin-bottom:10px; }
+.pill {
+  display:inline-block; padding:4px 14px; border-radius:20px;
+  font-size:11px; font-weight:700; margin:3px 4px 3px 0; letter-spacing:.5px;
+}
+.big-stat { font-size:clamp(52px,12vw,80px); font-weight:900; line-height:1; }
+.big-unit { font-size:clamp(16px,3vw,22px); font-weight:600; opacity:.75; }
+
+/* callout boxes */
+.callout {
+  border-radius:10px; padding:12px 15px; margin:12px 0;
+  border-left:4px solid; font-size:clamp(12px,2vw,14px);
+}
+.callout .cl { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
+.callout-warn  { background:rgba(255,167,38,.12); border-color:#ffa726; color:#fff3e0; }
+.callout-warn .cl { color:#ffa726; }
+.callout-danger{ background:rgba(239,83,80,.12); border-color:#ef5350; color:#ffeaea; }
+.callout-danger .cl { color:#ef5350; }
+.callout-key   { background:rgba(102,187,106,.12); border-color:#66bb6a; color:#e8f5e9; }
+.callout-key .cl { color:#66bb6a; }
+.callout-info  { background:rgba(41,182,246,.12); border-color:#29b6f6; color:#e1f5fe; }
+.callout-info .cl { color:#29b6f6; }
+
+/* list */
+.iclist { list-style:none; }
+.iclist li { display:flex; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,.08); font-size:clamp(12px,2vw,14px); align-items:flex-start; }
+.iclist li:last-child { border:none; }
+.iclist li .ic2 { font-size:17px; flex-shrink:0; }
+
+/* grid 2-col */
+.g2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:12px 0; }
+.g2-card { border-radius:10px; padding:12px; font-size:clamp(11px,1.8vw,13px); border:1px solid rgba(255,255,255,.15); }
+.g2-card h4 { font-size:clamp(12px,2vw,14px); font-weight:700; margin-bottom:6px; }
+
+/* SVG container */
+.svg-frame { margin:14px 0; border-radius:12px; overflow:hidden; background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.1); text-align:center; }
+.svg-frame svg { max-width:100%; height:auto; display:block; margin:0 auto; }
+.svg-cap { font-size:11px; padding:6px 10px; opacity:.65; text-align:center; font-style:italic; }
+
+/* ── QUIZ ── */
+.quiz-opt {
+  display:flex; align-items:center; gap:12px;
+  padding:11px 15px; border-radius:10px; margin-bottom:9px; cursor:pointer;
+  border:2px solid rgba(255,255,255,.2); transition:all .2s;
+  font-size:clamp(13px,2.2vw,15px); color:#fff;
+}
+.quiz-opt:hover { border-color:rgba(255,255,255,.5); background:rgba(255,255,255,.08); }
+.quiz-opt .qnum { width:28px; height:28px; border-radius:50%; border:2px solid rgba(255,255,255,.4); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0; }
+.quiz-opt.correct { border-color:#66bb6a; background:rgba(102,187,106,.18); }
+.quiz-opt.wrong   { border-color:#ef5350; background:rgba(239,83,80,.15); }
+.quiz-feedback { padding:12px 15px; border-radius:8px; margin-top:10px; font-size:13px; display:none; }
+.quiz-feedback.show { display:block; }
+.quiz-feedback.ok  { background:rgba(102,187,106,.15); border:1px solid #66bb6a; color:#e8f5e9; }
+.quiz-feedback.no  { background:rgba(239,83,80,.12); border:1px solid #ef5350; color:#ffeaea; }
+
+/* ── SPECIFIC CARD THEMES ── */
+/* cover */
+.cover-card { background:linear-gradient(160deg,#1b3a1f 0%,#2e6b35 50%,#1a5276 100%); color:#fff; }
+/* how to use */
+.how-card { background:linear-gradient(160deg,#212121 0%,#1a237e 100%); color:#fff; }
+
+/* CB themes */
+.cb1-card { background:linear-gradient(160deg,#1b5e20 0%,#2e7d32 100%); color:#fff; }
+.cb2-card { background:linear-gradient(160deg,#006064 0%,#00838f 100%); color:#fff; }
+.cb3-card { background:linear-gradient(160deg,#3e2723 0%,#6d4c41 100%); color:#fff; }
+.cb4-card { background:linear-gradient(160deg,#4a148c 0%,#6a1b9a 100%); color:#fff; }
+.cb5-card { background:linear-gradient(160deg,#e65100 0%,#bf360c 100%); color:#fff; }
+.cb6-card { background:linear-gradient(160deg,#1a237e 0%,#283593 100%); color:#fff; }
+.cb7-card { background:linear-gradient(160deg,#b71c1c 0%,#c62828 100%); color:#fff; }
+.cb8-card { background:linear-gradient(160deg,#212121 0%,#37474f 100%); color:#fff; }
+.cp-card-t { background:linear-gradient(160deg,#1a3a4a 0%,#0d47a1 100%); color:#fff; }
+.fc-card-t { background:linear-gradient(160deg,#4a0e0e 0%,#b71c1c 100%); color:#fff; }
+.quiz-card { background:linear-gradient(160deg,#1a1a2e 0%,#16213e 100%); color:#fff; }
+.out-card  { background:linear-gradient(160deg,#1b5e20 0%,#0d2b63 100%); color:#fff; }
+
+/* flow diagram steps */
+.flow-step {
+  display:flex; align-items:center; gap:10px; padding:10px 14px;
+  border-radius:10px; margin-bottom:8px;
+  border:1px solid rgba(255,255,255,.2);
+  font-size:clamp(12px,2vw,14px);
+}
+.flow-step .fnum { width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0; }
+.flow-step .farr { font-size:18px; opacity:.5; }
+
+/* hazard zone pill */
+.hz { border-radius:10px; padding:14px; margin:8px 0; border:1px solid rgba(255,255,255,.15); }
+.hz h4 { font-size:13px; font-weight:800; margin-bottom:4px; }
+.hz p  { font-size:12px; opacity:.85; }
+
+/* failure card items */
+.fail-item { border-radius:10px; padding:14px; margin:10px 0; border-left:4px solid #ef5350; background:rgba(239,83,80,.1); }
+.fail-item .fi-tag { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:#ef5350; margin-bottom:5px; }
+.fail-item h4  { font-size:14px; font-weight:700; color:#fff; margin-bottom:4px; }
+.fail-item p   { font-size:12px; opacity:.85; }
+
+/* outcome tick list */
+.ot-list li { border-bottom:1px solid rgba(255,255,255,.08); padding:9px 0; display:flex; gap:10px; align-items:flex-start; font-size:clamp(12px,2vw,14px); }
+.ot-chk { color:#66bb6a; font-size:18px; flex-shrink:0; }
+
+/* module nav dots */
+#mod-dots {
+  position:fixed; top:50%; right:10px; transform:translateY(-50%);
+  z-index:30; display:flex; flex-direction:column; gap:5px;
+}
+.mdot { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.3); cursor:pointer; transition:all .2s; }
+.mdot.active { background:#fff; width:9px; height:9px; }
+
+/* tap hint */
+#tap-hint {
+  position:fixed; bottom:68px; left:50%; transform:translateX(-50%);
+  z-index:30; font-size:11px; color:rgba(255,255,255,.45);
+  pointer-events:none; animation:fadeHint 4s ease forwards;
+}
+@keyframes fadeHint { 0%{opacity:1} 70%{opacity:1} 100%{opacity:0} }
+</style>
+</head>
+<body>
+
+<div id="deck"></div>
+
+<!-- Fixed navigation arrows -->
+<div class="arrow" id="arr-left"  onclick="prevCard()">&#8592;</div>
+<div class="arrow" id="arr-right" onclick="nextCard()">&#8594;</div>
+<div id="counter"></div>
+<div id="mod-dots"></div>
+<div id="tap-hint">← Tap left / right edges to navigate →</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+//  CARD DATA
+// ═══════════════════════════════════════════════════════
+const MODULES = [
+  { id:'cover',  label:'', color:'#2e7d32' },
+  { id:'intro',  label:'How to Use', color:'#1a237e' },
+  { id:'cb1',    label:'CB1 · Purpose', color:'#2e7d32' },
+  { id:'cb2',    label:'CB2 · System Flow', color:'#00838f' },
+  { id:'cb3',    label:'CB3 · Structure', color:'#6d4c41' },
+  { id:'cb4',    label:'CB4 · Grizzly', color:'#6a1b9a' },
+  { id:'cb5',    label:'CB5 · Feeders', color:'#bf360c' },
+  { id:'cb6',    label:'CB6 · Coal Flow', color:'#283593' },
+  { id:'cb7',    label:'CB7 · Surface Risk', color:'#c62828' },
+  { id:'cb8',    label:'CB8 · Hazard Zones', color:'#37474f' },
+  { id:'cp',     label:'Control Points', color:'#0d47a1' },
+  { id:'fc',     label:'Failure Cases', color:'#b71c1c' },
+  { id:'quiz',   label:'Quiz', color:'#1a1a2e' },
+  { id:'out',    label:'You Are L1-Ready', color:'#1b5e20' },
+];
+
+const CARDS = [
+// ── COVER ──────────────────────────────────────────────
+{mod:0, theme:'cover-card', html:`
+<div class="card-body" style="justify-content:flex-end;padding-bottom:90px">
+  <div style="text-align:center">
+    <div style="font-size:64px;margin-bottom:10px">⚙</div>
+    <div class="eyebrow" style="color:#a5d6a7;justify-content:center;display:flex">L1 Foundational · iCard Microlearning</div>
+    <div class="card-h1" style="text-align:center;font-size:clamp(30px,7vw,52px)">Track Hopper<br>Operation</div>
+    <div class="card-p" style="text-align:center;opacity:.75;margin-top:6px">Coal Receipt &amp; Unloading<br>Thermal Power Plant · Coal Handling Plant</div>
+    <div style="margin-top:24px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap">
+      <span class="pill" style="background:rgba(255,255,255,.18);color:#fff">8 Concept Blocks</span>
+      <span class="pill" style="background:rgba(255,255,255,.18);color:#fff">42 Learning Cards</span>
+      <span class="pill" style="background:rgba(255,255,255,.18);color:#fff">5 Control Points</span>
+      <span class="pill" style="background:rgba(255,255,255,.18);color:#fff">6 Failure Cases</span>
+    </div>
+    <div style="margin-top:20px;font-size:12px;opacity:.55;color:#fff">Tap right edge or → to begin</div>
+  </div>
+</div>`},
+
+// ── HOW TO USE ─────────────────────────────────────────
+{mod:1, theme:'how-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#90caf9">Before You Start</div>
+  <div class="card-h2">How to use this course</div>
+  <ul class="iclist" style="margin-top:8px">
+    <li><span class="ic2">👆</span><span>Tap the <strong>right side</strong> to go to the next card. Tap the <strong>left side</strong> to go back.</span></li>
+    <li><span class="ic2">↔️</span><span>On mobile, <strong>swipe left or right</strong> to navigate between cards.</span></li>
+    <li><span class="ic2">⌨️</span><span>On desktop, use your <strong>arrow keys</strong> or click the ← → buttons.</span></li>
+    <li><span class="ic2">🔵</span><span>The <strong>dots on the right</strong> show which module you're in. Tap to jump.</span></li>
+    <li><span class="ic2">🎯</span><span>Each card is one idea. Read, absorb, then move on.</span></li>
+    <li><span class="ic2">⚠️</span><span>This is a <strong>Context &amp; Awareness</strong> course. It does NOT teach you how to operate equipment.</span></li>
+  </ul>
+  <div class="callout callout-key" style="margin-top:14px">
+    <div class="cl">✅ Your goal</div>
+    When you finish, you will understand the Track Hopper system completely — before you ever visit the plant.
+  </div>
+</div>`},
+
+// ── CB1 ────────────────────────────────────────────────
+{mod:2, theme:'cb1-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#a5d6a7">Concept Block 1 · Purpose</div>
+  <div class="card-h1">What is a<br>Track Hopper?</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 180" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="180" fill="#1b3a1f"/>
+      <!-- Rail track -->
+      <rect x="20" y="60" width="320" height="8" rx="2" fill="#607d8b"/>
+      <!-- Sleepers -->
+      <rect x="50" y="57" width="8" height="14" fill="#5d4037"/>
+      <rect x="90" y="57" width="8" height="14" fill="#5d4037"/>
+      <rect x="130" y="57" width="8" height="14" fill="#5d4037"/>
+      <rect x="170" y="57" width="8" height="14" fill="#5d4037"/>
+      <rect x="210" y="57" width="8" height="14" fill="#5d4037"/>
+      <rect x="250" y="57" width="8" height="14" fill="#5d4037"/>
+      <rect x="290" y="57" width="8" height="14" fill="#5d4037"/>
+      <!-- Ground line -->
+      <rect x="0" y="72" width="360" height="4" fill="#5d4037"/>
+      <!-- Wagon -->
+      <rect x="120" y="30" width="120" height="32" rx="3" fill="#546e7a" stroke="#37474f" stroke-width="1.5"/>
+      <text x="180" y="43" font-size="9" fill="white" text-anchor="middle" font-weight="700">COAL WAGON</text>
+      <text x="180" y="55" font-size="8" fill="#90caf9" text-anchor="middle">bottom doors open</text>
+      <!-- Falling coal -->
+      <text x="155" y="84" font-size="14" fill="#bcaaa4">⬇⬇⬇</text>
+      <!-- Hopper -->
+      <polygon points="80,76 120,140 240,140 280,76" fill="#4e342e" opacity="0.8"/>
+      <!-- Coal inside -->
+      <ellipse cx="180" cy="135" rx="55" ry="10" fill="#2e1a0e" opacity="0.9"/>
+      <text x="180" y="138" font-size="8" fill="#bcaaa4" text-anchor="middle">coal accumulating</text>
+      <!-- Labels -->
+      <text x="180" y="165" font-size="9" fill="#a5d6a7" text-anchor="middle">Track Hopper Pit (underground)</text>
+    </svg>
+    <div class="svg-cap">Rail wagon with open bottom doors discharging coal by gravity into underground hopper</div>
+  </div>
+  <div class="card-p">A <strong>Track Hopper</strong> is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. <em>No tipping. No rotation. Just gravity.</em></div>
+</div>`},
+
+{mod:2, theme:'cb1-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#a5d6a7">Concept Block 1 · Purpose</div>
+  <div class="card-h2">Why it matters to the plant</div>
+  <div style="text-align:center;margin:16px 0">
+    <div class="big-stat" style="color:#a5d6a7">240</div>
+    <div class="big-unit" style="color:#fff">tonnes per hour</div>
+    <div style="font-size:12px;opacity:.6;margin-top:4px">Coal demanded by a single 660 MW boiler unit</div>
+  </div>
+  <div class="callout callout-warn">
+    <div class="cl">⚠ Critical Fact</div>
+    The Track Hopper is the plant's <strong>primary coal entry gate</strong>. If it stops, fuel supply to the boiler begins failing within hours. There is no other route for coal at this rate.
+  </div>
+  <div style="display:flex;gap:10px;margin-top:14px">
+    <div style="flex:1;background:rgba(255,255,255,.08);border-radius:10px;padding:12px;text-align:center">
+      <div style="font-size:28px;font-weight:800;color:#a5d6a7">2,000–4,000</div>
+      <div style="font-size:11px;opacity:.7">TPH unload rate (full rake)</div>
+    </div>
+    <div style="flex:1;background:rgba(255,255,255,.08);border-radius:10px;padding:12px;text-align:center">
+      <div style="font-size:28px;font-weight:800;color:#a5d6a7">58–72</div>
+      <div style="font-size:11px;opacity:.7">wagons in one rake</div>
+    </div>
+  </div>
+</div>`},
+
+{mod:2, theme:'cb1-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#a5d6a7">Concept Block 1 · Purpose</div>
+  <div class="card-h2">Track Hopper vs Wagon Tippler</div>
+  <div class="g2" style="margin-top:12px">
+    <div class="g2-card" style="border-color:#66bb6a;background:rgba(102,187,106,.1)">
+      <h4 style="color:#66bb6a">✅ Track Hopper</h4>
+      <p>Wagon stays on track. Bottom doors open. Coal falls by gravity. Continuous movement — entire rake unloaded while slowly moving.</p>
+    </div>
+    <div class="g2-card" style="border-color:#ef5350;background:rgba(239,83,80,.1)">
+      <h4 style="color:#ef5350">↔ Wagon Tippler</h4>
+      <p>Wagon is clamped and physically rotated ~160°. One wagon at a time. Stops train for each cycle. Different wagon type needed.</p>
+    </div>
+  </div>
+  <div class="callout callout-info" style="margin-top:10px">
+    <div class="cl">ℹ Key Difference</div>
+    Track Hopper requires special BOXN-HL wagons with bottom-discharge doors. Regular wagons cannot be used. This is a design choice made when building the plant.
+  </div>
+  <div class="card-p" style="margin-top:8px">Both serve the same purpose — getting coal into the plant — but through completely different mechanisms with different hazards and different equipment requirements.</div>
+</div>`},
+
+// ── CB2 ────────────────────────────────────────────────
+{mod:3, theme:'cb2-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#80deea">Concept Block 2 · System Flow</div>
+  <div class="card-h2">The complete coal journey</div>
+  <div style="margin:14px 0">
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#1565c0">1</div>
+      <div><strong>Coal Wagon</strong><br><span style="opacity:.7;font-size:12px">Bottom doors open over track hopper</span></div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#2e7d32">2</div>
+      <div><strong>Track Hopper Pit</strong><br><span style="opacity:.7;font-size:12px">Coal falls by gravity into underground cavity</span></div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#6a1b9a">3</div>
+      <div><strong>Grizzly Screen</strong><br><span style="opacity:.7;font-size:12px">Steel bars filter out oversized material</span></div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#e65100">4</div>
+      <div><strong>Feeder System</strong><br><span style="opacity:.7;font-size:12px">Extracts coal at controlled, steady rate</span></div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#37474f">5</div>
+      <div><strong>Belt Conveyor</strong><br><span style="opacity:.7;font-size:12px">Carries coal to crusher / yard / bunkers</span></div>
+    </div>
+  </div>
+</div>`},
+
+{mod:3, theme:'cb2-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#80deea">Concept Block 2 · System Flow</div>
+  <div class="card-h2">Break one link,<br>break the chain</div>
+  <div class="card-p">Coal has only one path into the plant. Every stage depends on the stage before it. There is no bypass, no backup route, no alternative.</div>
+  <ul class="iclist" style="margin-top:6px">
+    <li><span class="ic2">🔴</span><span><strong>Hopper blocked</strong> → coal can't accumulate → feeder runs on empty → bunkers starve</span></li>
+    <li><span class="ic2">🔴</span><span><strong>Grizzly damaged</strong> → oversized material enters feeder → feeder destroyed</span></li>
+    <li><span class="ic2">🔴</span><span><strong>Feeder fails</strong> → hopper fills and overflows → coal receipt stops</span></li>
+    <li><span class="ic2">🔴</span><span><strong>Conveyor trips</strong> → all downstream processes freeze instantly</span></li>
+  </ul>
+  <div class="callout callout-danger" style="margin-top:10px">
+    <div class="cl">🚨 Consequence</div>
+    Any failure here reaches the boiler within hours. A 660 MW unit at reduced load loses crores in revenue every hour.
+  </div>
+</div>`},
+
+// ── CB3 ────────────────────────────────────────────────
+{mod:4, theme:'cb3-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#bcaaa4">Concept Block 3 · Hopper Structure</div>
+  <div class="card-h2">An underground cavity<br>you cannot fully see</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="200" fill="#2e1a0e"/>
+      <!-- Surface -->
+      <rect x="0" y="70" width="360" height="6" fill="#5d4037"/>
+      <text x="5" y="66" font-size="9" fill="#bcaaa4">GROUND LEVEL</text>
+      <!-- Track -->
+      <rect x="20" y="56" width="320" height="7" rx="1" fill="#607d8b"/>
+      <!-- Grizzly bars -->
+      <line x1="20" y1="72" x2="340" y2="72" stroke="#212121" stroke-width="5"/>
+      <line x1="20" y1="80" x2="340" y2="80" stroke="#212121" stroke-width="5"/>
+      <text x="180" y="69" font-size="8" fill="#bdbdbd" text-anchor="middle">GRIZZLY BARS</text>
+      <!-- Hopper shape -->
+      <polygon points="40,76 90,145 270,145 320,76" fill="#4e342e" opacity="0.7"/>
+      <!-- Lower funnel -->
+      <polygon points="90,145 120,185 240,185 270,145" fill="#3e2723" opacity="0.8"/>
+      <!-- Depth arrow -->
+      <line x1="12" y1="76" x2="12" y2="185" stroke="#ef9a9a" stroke-width="1.5" stroke-dasharray="3,2"/>
+      <line x1="6" y1="76" x2="18" y2="76" stroke="#ef9a9a" stroke-width="1.5"/>
+      <line x1="6" y1="185" x2="18" y2="185" stroke="#ef9a9a" stroke-width="1.5"/>
+      <text x="22" y="135" font-size="8" fill="#ef9a9a" transform="rotate(-90,22,135)">4–7 m deep</text>
+      <!-- Coal inside -->
+      <ellipse cx="180" cy="163" rx="65" ry="11" fill="#1a0e06" opacity="0.9"/>
+      <text x="180" y="166" font-size="8" fill="#bcaaa4" text-anchor="middle">COAL ACCUMULATING</text>
+      <!-- Feeder label -->
+      <rect x="130" y="186" width="100" height="14" rx="3" fill="#e65100" opacity="0.8"/>
+      <text x="180" y="196" font-size="8" fill="white" text-anchor="middle">FEEDER BELOW</text>
+      <!-- Hopper labels -->
+      <text x="330" y="115" font-size="8" fill="#bcaaa4">Side</text>
+      <text x="330" y="126" font-size="8" fill="#bcaaa4">Wall</text>
+    </svg>
+    <div class="svg-cap">Cross-section: rail track at top, grizzly at ground, 4–7m underground cavity below</div>
+  </div>
+  <div class="card-p">What looks like a flat track with some steel bars is actually the top of a <strong>massive underground cavity</strong> — 4 to 7 metres deep, 40 to 150 metres long. Most of the structure is invisible from where you stand.</div>
+</div>`},
+
+{mod:4, theme:'cb3-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#bcaaa4">Concept Block 3 · Hopper Structure</div>
+  <div class="card-h2">4 key structural<br>elements</div>
+  <div class="g2" style="margin-top:12px">
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#ef9a9a">🕳 Hopper Pit</h4>
+      <p>Reinforced concrete underground cavity. Funnel-shaped to guide coal to feeder at base.</p>
+    </div>
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#ef9a9a">🚃 Unloading Zone</h4>
+      <p>Track section above hopper with open grizzly bars. Wagons stop or move slowly here.</p>
+    </div>
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#ef9a9a">📐 Side Walls</h4>
+      <p>Sloped concrete (60–70° angle) guiding coal downward. Must be steep enough for gravity flow.</p>
+    </div>
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#ef9a9a">⬇ Feeder Opening</h4>
+      <p>Narrow base outlet above the feeder. Controls flow rate. Never accessible during operation.</p>
+    </div>
+  </div>
+  <div class="callout callout-danger" style="margin-top:10px">
+    <div class="cl">🚨 Safety Reality</div>
+    A fall from grizzly level into an operating hopper is potentially fatal. The feeder is running below. Coal is in motion. There is no safe recovery.
+  </div>
+</div>`},
+
+// ── CB4 ────────────────────────────────────────────────
+{mod:5, theme:'cb4-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ce93d8">Concept Block 4 · Grizzly</div>
+  <div class="card-h2">The Grizzly —<br>first line of defence</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 160" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="160" fill="#1a0a2e"/>
+      <!-- Grizzly frame -->
+      <rect x="30" y="30" width="300" height="70" rx="3" fill="none" stroke="#9c27b0" stroke-width="2"/>
+      <!-- Bars -->
+      <line x1="30" y1="45" x2="330" y2="45" stroke="#9c27b0" stroke-width="7"/>
+      <line x1="30" y1="65" x2="330" y2="65" stroke="#9c27b0" stroke-width="7"/>
+      <line x1="30" y1="85" x2="330" y2="85" stroke="#9c27b0" stroke-width="7"/>
+      <!-- Gap label -->
+      <line x1="338" y1="45" x2="338" y2="65" stroke="#ce93d8" stroke-width="1"/>
+      <text x="344" y="57" font-size="9" fill="#ce93d8">gap</text>
+      <text x="342" y="68" font-size="8" fill="#ce93d8">200–300mm</text>
+      <!-- Small coal passing through -->
+      <ellipse cx="100" cy="56" rx="7" ry="5" fill="#795548"/>
+      <text x="85" y="122" font-size="9" fill="#66bb6a">Fine coal ✓ passes</text>
+      <line x1="100" y1="86" x2="100" y2="110" stroke="#66bb6a" stroke-width="1.5" stroke-dasharray="3,2"/>
+      <!-- Small coal 2 -->
+      <ellipse cx="200" cy="74" rx="6" ry="5" fill="#795548"/>
+      <line x1="200" y1="86" x2="200" y2="110" stroke="#66bb6a" stroke-width="1.5" stroke-dasharray="3,2"/>
+      <!-- Large lump STOPPED -->
+      <ellipse cx="280" cy="57" rx="20" ry="14" fill="#6d4c41" stroke="#4e342e" stroke-width="1.5"/>
+      <text x="280" y="60" font-size="8" fill="white" text-anchor="middle" font-weight="700">LARGE</text>
+      <text x="280" y="70" font-size="8" fill="white" text-anchor="middle" font-weight="700">LUMP</text>
+      <text x="265" y="122" font-size="9" fill="#ef5350">⛔ STOPPED</text>
+      <!-- Title -->
+      <text x="180" y="20" font-size="10" fill="#ce93d8" text-anchor="middle" font-weight="700">GRIZZLY SCREEN — Top View</text>
+      <!-- Below -->
+      <text x="180" y="148" font-size="9" fill="#a5d6a7" text-anchor="middle">↓  Fine coal falls freely into hopper pit below</text>
+    </svg>
+    <div class="svg-cap">Steel bar grid — small coal passes, oversized material and debris are stopped</div>
+  </div>
+  <div class="card-p">The Grizzly is a grid of thick steel bars (75–100 mm section) across the hopper opening. It is the only barrier between uncontrolled wagon contents and the precision-engineered machinery below.</div>
+</div>`},
+
+{mod:5, theme:'cb4-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ce93d8">Concept Block 4 · Grizzly</div>
+  <div class="card-h2">What happens if the<br>grizzly fails?</div>
+  <div class="callout callout-danger" style="margin-top:8px">
+    <div class="cl">🚨 Chain of Destruction</div>
+    Broken bar → large boulder enters hopper → reaches feeder → feeder belt/chain destroyed → <strong>days of downtime</strong>
+  </div>
+  <ul class="iclist" style="margin-top:12px">
+    <li><span class="ic2">🪨</span><span><strong>Boulder/large lump</strong> — destroys feeder belt or apron chain completely</span></li>
+    <li><span class="ic2">🔩</span><span><strong>Metal debris</strong> (bolts, wire) — cuts conveyor belt downstream</span></li>
+    <li><span class="ic2">🌿</span><span><strong>Rope or wood</strong> — wraps around feeder shaft, causes jam and stall</span></li>
+    <li><span class="ic2">🪨</span><span><strong>Shale/stone</strong> — jams between apron plates, cracking the steel pans</span></li>
+  </ul>
+  <div class="callout callout-warn" style="margin-top:12px">
+    <div class="cl">⚠ Rule</div>
+    Broken grizzly bars are treated as emergency repairs — not routine maintenance. A bar gap means the entire system below is unprotected.
+  </div>
+</div>`},
+
+// ── CB5 ────────────────────────────────────────────────
+{mod:6, theme:'cb5-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ffccbc">Concept Block 5 · Feeders</div>
+  <div class="card-h2">Why a feeder is needed</div>
+  <div class="card-p">Without a feeder, coal in the hopper would rush out uncontrollably — sometimes flooding the conveyor, sometimes blocking and stopping entirely.</div>
+  <div style="margin:16px 0;text-align:center">
+    <div style="display:flex;align-items:center;justify-content:center;gap:14px;margin:10px 0">
+      <div style="text-align:center">
+        <div style="font-size:32px">🪣</div>
+        <div style="font-size:11px;opacity:.7">Full hopper</div>
+        <div style="font-size:11px;opacity:.7">(uncontrolled)</div>
+      </div>
+      <div style="font-size:30px;opacity:.5">→</div>
+      <div style="text-align:center">
+        <div style="font-size:32px">⚙</div>
+        <div style="font-size:11px;opacity:.7">Feeder</div>
+        <div style="font-size:11px;opacity:.7">(controls rate)</div>
+      </div>
+      <div style="font-size:30px;opacity:.5">→</div>
+      <div style="text-align:center">
+        <div style="font-size:32px">➡</div>
+        <div style="font-size:11px;opacity:.7">Steady stream</div>
+        <div style="font-size:11px;opacity:.7">to conveyor</div>
+      </div>
+    </div>
+  </div>
+  <div class="callout callout-info">
+    <div class="cl">ℹ Mental Model</div>
+    Think of the feeder as the tap at the bottom of a full tank. Without a tap, water (coal) gushes out or blocks. With a tap, you control the exact flow rate.
+  </div>
+  <div class="card-p" style="margin-top:8px">Two main types of feeders are used in track hopper systems — <strong>Belt Feeders</strong> and <strong>Apron Feeders</strong>. Swipe to see each one.</div>
+</div>`},
+
+{mod:6, theme:'cb5-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ffccbc">Concept Block 5 · Feeders</div>
+  <div class="card-h2">Belt Feeder</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="130" fill="#1a0a00"/>
+      <!-- Hopper above -->
+      <polygon points="100,10 135,50 225,50 260,10" fill="#4e342e" opacity="0.8"/>
+      <text x="180" y="32" font-size="9" fill="#bcaaa4" text-anchor="middle">HOPPER</text>
+      <!-- Belt -->
+      <rect x="40" y="50" width="230" height="18" rx="3" fill="#1565c0" opacity="0.9"/>
+      <text x="155" y="62" font-size="10" fill="white" text-anchor="middle" font-weight="700">RUBBER BELT</text>
+      <!-- Pulleys -->
+      <circle cx="42" cy="59" r="11" fill="#0d47a1"/>
+      <circle cx="268" cy="59" r="11" fill="#0d47a1"/>
+      <!-- Coal on belt -->
+      <ellipse cx="165" cy="52" rx="50" ry="7" fill="#4e342e" opacity="0.7"/>
+      <!-- Arrow direction -->
+      <line x1="230" y1="59" x2="295" y2="59" stroke="#ffa726" stroke-width="2"/>
+      <polygon points="293,55 300,59 293,63" fill="#ffa726"/>
+      <text x="305" y="63" font-size="9" fill="#ffa726">→ conveyor</text>
+      <!-- Return belt -->
+      <rect x="40" y="74" width="230" height="8" rx="2" fill="#1565c0" opacity="0.35"/>
+      <!-- Labels -->
+      <text x="155" y="100" font-size="9" fill="#90caf9" text-anchor="middle">Speed-controlled rubber belt</text>
+      <text x="155" y="113" font-size="9" fill="#90caf9" text-anchor="middle">Gentle on coal · best for fine/medium coal</text>
+    </svg>
+    <div class="svg-cap">Belt Feeder — short rubber conveyor running under hopper discharge</div>
+  </div>
+  <div class="g2" style="margin-top:8px">
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#66bb6a">✅ Strengths</h4>
+      <p>Smooth flow, speed-adjustable, less coal breakage. Good for fine/medium coal.</p>
+    </div>
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#ef5350">⚠ Limits</h4>
+      <p>Belt can be damaged by sharp coarse coal. Ongoing belt wear and replacement.</p>
+    </div>
+  </div>
+</div>`},
+
+{mod:6, theme:'cb5-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ffccbc">Concept Block 5 · Feeders</div>
+  <div class="card-h2">Apron Feeder</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 130" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="130" fill="#1a0a00"/>
+      <!-- Hopper above -->
+      <polygon points="100,10 135,50 225,50 260,10" fill="#4e342e" opacity="0.8"/>
+      <text x="180" y="32" font-size="9" fill="#bcaaa4" text-anchor="middle">HOPPER</text>
+      <!-- Apron plates (chain) -->
+      <rect x="38" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <rect x="72" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <rect x="106" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <rect x="140" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <rect x="174" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <rect x="208" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <rect x="242" y="50" width="32" height="18" rx="2" fill="#6a1b9a" opacity="0.9"/>
+      <!-- Chain line -->
+      <line x1="38" y1="68" x2="274" y2="68" stroke="#4a148c" stroke-width="2" stroke-dasharray="4,2"/>
+      <!-- Sprockets -->
+      <circle cx="36" cy="59" r="11" fill="#4a148c"/>
+      <circle cx="276" cy="59" r="11" fill="#4a148c"/>
+      <!-- Coal in pans -->
+      <ellipse cx="170" cy="52" rx="65" ry="6" fill="#4e342e" opacity="0.7"/>
+      <!-- Arrow -->
+      <line x1="245" y1="59" x2="305" y2="59" stroke="#ffa726" stroke-width="2"/>
+      <polygon points="303,55 310,59 303,63" fill="#ffa726"/>
+      <text x="313" y="63" font-size="9" fill="#ffa726">→</text>
+      <!-- Return -->
+      <rect x="38" y="74" width="236" height="8" rx="2" fill="#6a1b9a" opacity="0.3"/>
+      <!-- Labels -->
+      <text x="155" y="100" font-size="9" fill="#ce93d8" text-anchor="middle">Overlapping steel pan chain</text>
+      <text x="155" y="113" font-size="9" fill="#ce93d8" text-anchor="middle">Heavy-duty · handles large lumps</text>
+    </svg>
+    <div class="svg-cap">Apron Feeder — chain of overlapping steel pans for heavy-duty, coarse-coal applications</div>
+  </div>
+  <div class="g2" style="margin-top:8px">
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#66bb6a">✅ Strengths</h4>
+      <p>Handles very large lumps and heavy loads. No belt to cut. Robust construction.</p>
+    </div>
+    <div class="g2-card" style="background:rgba(255,255,255,.08)">
+      <h4 style="color:#ef5350">⚠ Limits</h4>
+      <p>Heavier, more complex, higher cost. Chain and sprocket maintenance intensive.</p>
+    </div>
+  </div>
+</div>`},
+
+// ── CB6 ────────────────────────────────────────────────
+{mod:7, theme:'cb6-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#9fa8da">Concept Block 6 · Coal Flow Behaviour</div>
+  <div class="card-h2">Coal is NOT<br>a liquid</div>
+  <div style="font-size:56px;text-align:center;margin:14px 0">🪨</div>
+  <div class="card-p">Most people assume coal flows like water. It doesn't. Coal is a <strong>bulk solid</strong> — it flows, yes, but it also <em>stops, bridges, jams, and collapses suddenly</em>.</div>
+  <div class="callout callout-info" style="margin-top:10px">
+    <div class="cl">ℹ Key Behaviour Patterns</div>
+    <strong>Normal flow</strong> → coal slides steadily through hopper walls to feeder<br><br>
+    <strong>Arch formation</strong> → coal particles interlock and create a bridge, stopping flow<br><br>
+    <strong>Surge flow</strong> → arch collapses suddenly, releasing all backed-up coal at once
+  </div>
+  <div class="card-p" style="margin-top:8px">Both arch formation and surge flow are dangerous — for equipment <em>and</em> for people nearby. Swipe to understand each one.</div>
+</div>`},
+
+{mod:7, theme:'cb6-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#9fa8da">Concept Block 6 · Coal Flow Behaviour</div>
+  <div class="card-h2">Arch Formation<br>— The Silent Stop</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 160" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="160" fill="#0d1220"/>
+      <!-- Hopper -->
+      <polygon points="50,20 110,100 250,100 310,20" fill="#1a237e" opacity="0.7"/>
+      <!-- Coal inside -->
+      <ellipse cx="180" cy="60" rx="80" ry="28" fill="#1a0e06" opacity="0.8"/>
+      <text x="180" y="64" font-size="9" fill="#9fa8da" text-anchor="middle">Coal above arch</text>
+      <!-- ARCH -->
+      <path d="M 110,100 Q 180,76 250,100" fill="none" stroke="#ef5350" stroke-width="8" stroke-linecap="round"/>
+      <text x="180" y="95" font-size="9" fill="#ef5350" text-anchor="middle" font-weight="700">ARCH (bridge)</text>
+      <!-- Blocked outlet -->
+      <rect x="138" y="100" width="84" height="10" fill="#ef5350" opacity="0.3"/>
+      <text x="180" y="130" font-size="10" fill="#ef5350" text-anchor="middle" font-weight="700">⛔ Flow STOPS</text>
+      <text x="180" y="148" font-size="9" fill="#9fa8da" text-anchor="middle">Coal above builds up · pressure increases</text>
+    </svg>
+    <div class="svg-cap">Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.</div>
+  </div>
+  <ul class="iclist" style="margin-top:6px">
+    <li><span class="ic2">💧</span><span>More likely with <strong>wet, fine, or clay-rich coal</strong></span></li>
+    <li><span class="ic2">❄️</span><span>Increases in <strong>winter</strong> — moisture freezes, coal compacts</span></li>
+    <li><span class="ic2">⏰</span><span><strong>Static storage</strong> — coal that sits too long settles and bridges</span></li>
+  </ul>
+</div>`},
+
+{mod:7, theme:'cb6-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#9fa8da">Concept Block 6 · Coal Flow Behaviour</div>
+  <div class="card-h2">Surge Flow<br>— The Sudden Collapse</div>
+  <div class="svg-frame">
+    <svg viewBox="0 0 360 160" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="360" height="160" fill="#0d1220"/>
+      <!-- Hopper (partially emptied) -->
+      <polygon points="50,20 110,100 250,100 310,20" fill="#1a237e" opacity="0.5"/>
+      <!-- Some coal remaining above -->
+      <ellipse cx="180" cy="55" rx="60" ry="18" fill="#1a0e06" opacity="0.6"/>
+      <!-- Open outlet - surge coming out -->
+      <ellipse cx="180" cy="106" rx="60" ry="10" fill="#4e342e" opacity="0.9"/>
+      <ellipse cx="180" cy="122" rx="50" ry="9" fill="#4e342e" opacity="0.8"/>
+      <ellipse cx="180" cy="137" rx="40" ry="7" fill="#4e342e" opacity="0.7"/>
+      <!-- Arrows of surge -->
+      <text x="148" y="112" font-size="16" fill="#ffa726">⬇⬇⬇</text>
+      <text x="180" y="155" font-size="9" fill="#ffa726" text-anchor="middle" font-weight="700">SUDDEN SURGE — massive coal rush</text>
+    </svg>
+    <div class="svg-cap">Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor</div>
+  </div>
+  <div class="callout callout-danger">
+    <div class="cl">🚨 The Deadly Risk</div>
+    Anyone investigating an arch blockage near the hopper <strong>can be engulfed</strong> when the arch collapses. This has caused fatalities in coal plants worldwide. <strong>Absolute rule: no person enters or leans into a hopper with coal present.</strong>
+  </div>
+</div>`},
+
+// ── CB7 ────────────────────────────────────────────────
+{mod:8, theme:'cb7-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ef9a9a">Concept Block 7 · Surface Risk</div>
+  <div class="card-h2">The most dangerous<br>words in a CHP:</div>
+  <div style="text-align:center;margin:20px 0;padding:20px;background:rgba(255,255,255,.08);border-radius:14px;border:1px solid rgba(255,255,255,.15)">
+    <div style="font-size:clamp(20px,5vw,32px);font-weight:900;font-style:italic;color:#ef5350">"It looks safe<br>from up here."</div>
+  </div>
+  <div class="card-p">The surface of the Track Hopper area looks calm — a flat track, some steel bars, nothing moving. But that surface tells you <em>nothing</em> about what is happening underground.</div>
+  <div class="g2" style="margin-top:12px">
+    <div class="g2-card" style="border-color:#66bb6a;background:rgba(102,187,106,.08)">
+      <h4 style="color:#66bb6a">👀 What you see</h4>
+      <p>Quiet track, still grizzly bars, no obvious movement, no noise at surface</p>
+    </div>
+    <div class="g2-card" style="border-color:#ef5350;background:rgba(239,83,80,.08)">
+      <h4 style="color:#ef5350">⚡ What's real</h4>
+      <p>Feeder running below. Coal moving. Arch possibly forming. Dust in gallery.</p>
+    </div>
+  </div>
+</div>`},
+
+{mod:8, theme:'cb7-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ef9a9a">Concept Block 7 · Surface Risk</div>
+  <div class="card-h2">5 deceptive situations</div>
+  <ul class="iclist" style="margin-top:8px">
+    <li><span class="ic2">😶</span><span><strong>Empty, quiet grizzly</strong> → feeder still running below; void forming</span></li>
+    <li><span class="ic2">😶</span><span><strong>Coal level looks stable</strong> → arch formed; 80+ tonnes balanced above</span></li>
+    <li><span class="ic2">😶</span><span><strong>No wagons on track</strong> → wet coal left on grizzly bars; extreme slip risk</span></li>
+    <li><span class="ic2">😶</span><span><strong>Feeder belt appears stopped</strong> → motor energised; restarts without warning</span></li>
+    <li><span class="ic2">😶</span><span><strong>Area looks clean</strong> → coal dust suspended in underground gallery</span></li>
+  </ul>
+  <div class="callout callout-danger" style="margin-top:12px">
+    <div class="cl">🚨 The Rule</div>
+    Always treat the Track Hopper area as an <strong>active hazard zone</strong> — even between unloading operations, even when it looks completely quiet.
+  </div>
+</div>`},
+
+// ── CB8 ────────────────────────────────────────────────
+{mod:9, theme:'cb8-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#b0bec5">Concept Block 8 · Hazard Zones</div>
+  <div class="card-h2">Not one hazard.<br>Three — overlapping.</div>
+  <div class="card-p">Most industrial areas have one dominant hazard. The Track Hopper area has <strong>three different hazard zones</strong> active simultaneously in the same physical space.</div>
+  <div style="margin:14px 0">
+    <div class="hz" style="border-color:#2196f3;background:rgba(33,150,243,.1)">
+      <h4 style="color:#90caf9">🚂 Zone 1 — Railway Movement</h4>
+      <p>50–200 tonne wagons moving on track above. Never stand on or near the track during rake movement.</p>
+    </div>
+    <div class="hz" style="border-color:#ffa726;background:rgba(255,167,38,.1)">
+      <h4 style="color:#ffd54f">⬇ Zone 2 — Falling Material</h4>
+      <p>Coal falling 3–6 m at high velocity during discharge. Flying lumps can reach any trajectory.</p>
+    </div>
+    <div class="hz" style="border-color:#ef5350;background:rgba(239,83,80,.1)">
+      <h4 style="color:#ef9a9a">⚙ Zone 3 — Underground Machinery</h4>
+      <p>High-torque feeder and conveyor running underground — invisible from the surface and inaccessible during operation.</p>
+    </div>
+  </div>
+</div>`},
+
+{mod:9, theme:'cb8-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#b0bec5">Concept Block 8 · Hazard Zones</div>
+  <div class="card-h2">Your role as<br>a trainee</div>
+  <div style="font-size:48px;text-align:center;margin:14px 0">👷</div>
+  <div class="callout callout-key">
+    <div class="cl">✅ Your only role in this area</div>
+    <strong>Observe and learn.</strong> You will be accompanied by a supervisor at all times. You will not operate equipment, open any barrier, or approach any edge without explicit instruction.
+  </div>
+  <div class="callout callout-warn" style="margin-top:10px">
+    <div class="cl">⚠ This is not a restriction on learning</div>
+    It is the only acceptable behaviour in a multi-hazard zone. The most experienced engineers follow the same rules — every single time.
+  </div>
+  <div class="card-p" style="margin-top:10px">Understanding <em>why</em> these rules exist is more important than knowing the rules themselves. You now understand the risks. That knowledge makes you safer than any briefing could.</div>
+</div>`},
+
+// ── CONTROL POINTS ─────────────────────────────────────
+{mod:10, theme:'cp-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#90caf9">Control Points</div>
+  <div class="card-h1" style="font-size:clamp(20px,4.5vw,32px)">5 Critical Points<br>in the Coal Chain</div>
+  <div class="card-p">A control point is where a specific process transition occurs — and where failure has immediate, significant impact on everything downstream.</div>
+  <div style="margin-top:14px">
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#ef5350">CP1</div>
+      <div>Wagon Unloading Over Hopper</div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#ef5350">CP2</div>
+      <div>Coal Passing Through Grizzly</div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#ef5350">CP3</div>
+      <div>Coal Accumulation Inside Hopper</div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#ef5350">CP4</div>
+      <div>Coal Extraction by Feeder</div>
+    </div>
+    <div class="flow-step" style="background:rgba(255,255,255,.1)">
+      <div class="fnum" style="background:#ef5350">CP5</div>
+      <div>Transfer to Belt Conveyor</div>
+    </div>
+  </div>
+</div>`},
+
+{mod:10, theme:'cp-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#90caf9">Control Point 1</div>
+  <div class="card-h2">Wagon Unloading<br>Over Hopper</div>
+  <div class="card-p">Coal is officially entering the plant here. Wagon bottom doors open over the grizzly. The <strong>interaction between heavy rail movement and an open pit</strong> is the defining hazard at this control point.</div>
+  <div class="callout callout-warn">
+    <div class="cl">⚠ Risks at CP1</div>
+    Moving wagons above · High-velocity falling coal · Dust cloud on discharge · Open grizzly below
+  </div>
+  <div class="callout callout-danger" style="margin-top:8px">
+    <div class="cl">🚨 Zone Rule</div>
+    <strong>No personnel in the unloading exclusion zone</strong> while wagons are overhead — for any reason, including retrieving tools.
+  </div>
+</div>`},
+
+{mod:10, theme:'cp-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#90caf9">Control Points 2 &amp; 3</div>
+  <div class="card-h2">Grizzly &amp;<br>Accumulation</div>
+  <div style="margin:12px 0">
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:14px;margin-bottom:10px;border-left:4px solid #ce93d8">
+      <div style="font-size:11px;color:#ce93d8;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">CP2 — Through the Grizzly</div>
+      <p style="font-size:13px;opacity:.9">Every piece of coal gets size-classified here. Broken bars = unprotected feeder. Inspect after every unloading, never during. Tramp material on bars must be removed safely.</p>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:14px;border-left:4px solid #ffa726">
+      <div style="font-size:11px;color:#ffa726;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">CP3 — Coal Accumulation</div>
+      <p style="font-size:13px;opacity:.9">The hopper buffers between variable wagon discharge rate and steady feeder rate. Overfill → coal at grizzly level (fall hazard). Underfill with arch → surge when it fails. Both extremes are dangerous.</p>
+    </div>
+  </div>
+</div>`},
+
+{mod:10, theme:'cp-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#90caf9">Control Points 4 &amp; 5</div>
+  <div class="card-h2">Feeder &amp;<br>To Conveyor</div>
+  <div style="margin:12px 0">
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:14px;margin-bottom:10px;border-left:4px solid #ef5350">
+      <div style="font-size:11px;color:#ef5350;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">CP4 — Coal Extraction by Feeder</div>
+      <p style="font-size:13px;opacity:.9">The feeder operates under the full weight of coal above pressing down. Restarting under a full hopper needs significantly more torque than normal — this is why feeder motors are oversized. Feeder zone is underground and inaccessible during operation.</p>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:14px;border-left:4px solid #66bb6a">
+      <div style="font-size:11px;color:#66bb6a;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">CP5 — Transfer to Conveyor</div>
+      <p style="font-size:13px;opacity:.9">This is where the Track Hopper system meets the rest of the CHP. Feeder rate must match conveyor capacity. Overloading trips the conveyor — instantly halting all downstream coal flow to boiler bunkers.</p>
+    </div>
+  </div>
+</div>`},
+
+// ── FAILURE CASES ──────────────────────────────────────
+{mod:11, theme:'fc-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ef9a9a">Failure Cases</div>
+  <div class="card-h1" style="font-size:clamp(22px,5vw,36px)">Real Scenarios.<br>Real Consequences.</div>
+  <div class="card-p" style="margin-top:8px">The following failure cases are based on real industrial events. Each one teaches a critical lesson about the Track Hopper system.</div>
+  <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+    <div style="background:rgba(239,83,80,.15);border:1px solid rgba(239,83,80,.3);border-radius:8px;padding:10px;text-align:center">
+      <div style="font-size:20px">🪨</div>
+      <div style="font-size:11px;margin-top:4px;opacity:.8">Grizzly Bypass</div>
+    </div>
+    <div style="background:rgba(239,83,80,.15);border:1px solid rgba(239,83,80,.3);border-radius:8px;padding:10px;text-align:center">
+      <div style="font-size:20px">⚡</div>
+      <div style="font-size:11px;margin-top:4px;opacity:.8">Arch Collapse</div>
+    </div>
+    <div style="background:rgba(239,83,80,.15);border:1px solid rgba(239,83,80,.3);border-radius:8px;padding:10px;text-align:center">
+      <div style="font-size:20px">👷</div>
+      <div style="font-size:11px;margin-top:4px;opacity:.8">Personnel Injury</div>
+    </div>
+    <div style="background:rgba(239,83,80,.15);border:1px solid rgba(239,83,80,.3);border-radius:8px;padding:10px;text-align:center">
+      <div style="font-size:20px">🔥</div>
+      <div style="font-size:11px;margin-top:4px;opacity:.8">Feeder Overload</div>
+    </div>
+    <div style="background:rgba(239,83,80,.15);border:1px solid rgba(239,83,80,.3);border-radius:8px;padding:10px;text-align:center">
+      <div style="font-size:20px">💨</div>
+      <div style="font-size:11px;margin-top:4px;opacity:.8">Dust Fire</div>
+    </div>
+    <div style="background:rgba(239,83,80,.15);border:1px solid rgba(239,83,80,.3);border-radius:8px;padding:10px;text-align:center">
+      <div style="font-size:20px">🎓</div>
+      <div style="font-size:11px;margin-top:4px;opacity:.8">Trainee Near-Miss</div>
+    </div>
+  </div>
+</div>`},
+
+{mod:11, theme:'fc-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ef9a9a">Failure Case 1</div>
+  <div class="card-h2">Oversized material<br>bypasses grizzly</div>
+  <div class="fail-item">
+    <div class="fi-tag">Root Cause</div>
+    <h4>Two cracked grizzly bars created a gap</h4>
+    <p>A 400 mm boulder passed through the gap → entered hopper → reached belt feeder → belt torn over 2 metres.</p>
+  </div>
+  <div class="fail-item">
+    <div class="fi-tag">Consequence</div>
+    <h4>Track hopper offline for 3 days</h4>
+    <p>Belt replacement + grizzly repair. Coal receipt suspended. Boiler load reduced. Emergency coal draw-down from yard.</p>
+  </div>
+  <div class="callout callout-key" style="margin-top:10px">
+    <div class="cl">✅ Lesson</div>
+    Grizzly bars are structural protection. A broken bar means the entire system below is unprotected. Treat it as an emergency.
+  </div>
+</div>`},
+
+{mod:11, theme:'fc-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ef9a9a">Failure Case 2 &amp; 3</div>
+  <div class="card-h2">Arch Collapse &amp;<br>Personnel Injury</div>
+  <div class="fail-item">
+    <div class="fi-tag">Arch Collapse in Winter</div>
+    <h4>80 tonnes surged in under 60 seconds</h4>
+    <p>Wet coal froze overnight, arched. Vibrator applied to restore flow. Arch collapsed instantly. Feeder chain jumped sprocket. 6-hour restoration.</p>
+  </div>
+  <div class="fail-item">
+    <div class="fi-tag">Personnel Injury</div>
+    <h4>Technician struck by falling coal</h4>
+    <p>Approached grizzly during active unloading to retrieve a tool. 25 kg lump bounced off bar, struck shoulder. Fractured shoulder. Helmet prevented head injury.</p>
+  </div>
+  <div class="callout callout-danger" style="margin-top:8px">
+    <div class="cl">🚨 Lesson</div>
+    The exclusion zone is a hard barrier. No person enters for any reason while wagons are overhead. PPE is not optional — it saved a life.
+  </div>
+</div>`},
+
+{mod:11, theme:'fc-card-t', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#ef9a9a">Failure Case 4 &amp; 5</div>
+  <div class="card-h2">Feeder Overload &amp;<br>Dust Fire</div>
+  <div class="fail-item">
+    <div class="fi-tag">Feeder Motor Burnout</div>
+    <h4>Restarted without checking hopper level</h4>
+    <p>After 2-hour shutdown, hopper was near-full. Surface looked normal. Feeder motor overloaded within 4 minutes. Winding damage. 18 hours downtime.</p>
+  </div>
+  <div class="fail-item">
+    <div class="fi-tag">Gallery Dust Fire</div>
+    <h4>Coal dust + electrical spark = flash fire</h4>
+    <p>Weeks of dust accumulation in underground gallery. Electrical fault created spark. Flash fire through tunnel. Complete feeder drive replacement. 5-day shutdown.</p>
+  </div>
+  <div class="callout callout-key" style="margin-top:8px">
+    <div class="cl">✅ Lesson</div>
+    Always verify hopper level before restart. Housekeeping in underground galleries is fire prevention — not just cleanliness.
+  </div>
+</div>`},
+
+// ── QUIZ ───────────────────────────────────────────────
+{mod:12, theme:'quiz-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#80deea">Quick Check · Question 1 of 4</div>
+  <div class="card-h2" style="font-size:clamp(16px,3.5vw,22px)">What is the fundamental principle of a Track Hopper?</div>
+  <div style="margin-top:14px" id="q1">
+    <div class="quiz-opt" onclick="checkQ('q1',this,false)"><div class="qnum">A</div>The wagon is physically rotated to empty coal</div>
+    <div class="quiz-opt" onclick="checkQ('q1',this,true)"><div class="qnum">B</div>Bottom doors open and coal falls by gravity into pit below</div>
+    <div class="quiz-opt" onclick="checkQ('q1',this,false)"><div class="qnum">C</div>A vacuum system draws coal out of the wagon</div>
+    <div class="quiz-opt" onclick="checkQ('q1',this,false)"><div class="qnum">D</div>Hydraulic rams tilt the wagon sideways</div>
+    <div class="quiz-feedback" id="q1-fb"></div>
+  </div>
+</div>`},
+
+{mod:12, theme:'quiz-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#80deea">Quick Check · Question 2 of 4</div>
+  <div class="card-h2" style="font-size:clamp(16px,3.5vw,22px)">Why is the grizzly a critical safety component?</div>
+  <div style="margin-top:14px" id="q2">
+    <div class="quiz-opt" onclick="checkQ('q2',this,false)"><div class="qnum">A</div>It reduces noise from falling coal</div>
+    <div class="quiz-opt" onclick="checkQ('q2',this,false)"><div class="qnum">B</div>It weighs the coal as it passes through</div>
+    <div class="quiz-opt" onclick="checkQ('q2',this,true)"><div class="qnum">C</div>It stops oversized material that would destroy the feeder and conveyor</div>
+    <div class="quiz-opt" onclick="checkQ('q2',this,false)"><div class="qnum">D</div>It slows down coal to protect the hopper walls</div>
+    <div class="quiz-feedback" id="q2-fb"></div>
+  </div>
+</div>`},
+
+{mod:12, theme:'quiz-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#80deea">Quick Check · Question 3 of 4</div>
+  <div class="card-h2" style="font-size:clamp(16px,3.5vw,22px)">What is "arch formation" and why is it dangerous?</div>
+  <div style="margin-top:14px" id="q3">
+    <div class="quiz-opt" onclick="checkQ('q3',this,false)"><div class="qnum">A</div>The hopper structure is arch-shaped for strength</div>
+    <div class="quiz-opt" onclick="checkQ('q3',this,false)"><div class="qnum">B</div>A safety gate that closes the hopper outlet</div>
+    <div class="quiz-opt" onclick="checkQ('q3',this,true)"><div class="qnum">C</div>Coal particles bridge the outlet, stopping flow — then collapse suddenly in a dangerous surge</div>
+    <div class="quiz-opt" onclick="checkQ('q3',this,false)"><div class="qnum">D</div>Coal piling up above ground level during overfill</div>
+    <div class="quiz-feedback" id="q3-fb"></div>
+  </div>
+</div>`},
+
+{mod:12, theme:'quiz-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#80deea">Quick Check · Question 4 of 4</div>
+  <div class="card-h2" style="font-size:clamp(16px,3.5vw,22px)">The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?</div>
+  <div style="margin-top:14px" id="q4">
+    <div class="quiz-opt" onclick="checkQ('q4',this,false)"><div class="qnum">A</div>Yes — if no wagon is on the track, it is safe</div>
+    <div class="quiz-opt" onclick="checkQ('q4',this,false)"><div class="qnum">B</div>Yes — the feeder stops automatically between unloading cycles</div>
+    <div class="quiz-opt" onclick="checkQ('q4',this,true)"><div class="qnum">C</div>No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground</div>
+    <div class="quiz-opt" onclick="checkQ('q4',this,false)"><div class="qnum">D</div>Yes, but only briefly and with both hands free</div>
+    <div class="quiz-feedback" id="q4-fb"></div>
+  </div>
+</div>`},
+
+// ── OUTCOMES ───────────────────────────────────────────
+{mod:13, theme:'out-card', html:`
+<div class="card-body">
+  <div class="eyebrow" style="color:#a5d6a7">Learning Outcomes</div>
+  <div class="card-h2">You are L1-Ready<br>when you can:</div>
+  <ul class="ot-list iclist" style="margin-top:10px">
+    <li><span class="ot-chk">✓</span><span>Explain how coal moves from wagon to conveyor via the Track Hopper system</span></li>
+    <li><span class="ot-chk">✓</span><span>Identify hopper, grizzly, and feeder — and explain each component's function</span></li>
+    <li><span class="ot-chk">✓</span><span>Describe arch formation and surge flow — and why both are dangerous</span></li>
+    <li><span class="ot-chk">✓</span><span>Explain why the surface appearance is a poor indicator of underground conditions</span></li>
+    <li><span class="ot-chk">✓</span><span>Identify the three overlapping hazard zones in the Track Hopper area</span></li>
+    <li><span class="ot-chk">✓</span><span>Describe at least 3 failure cases and what they teach about safe behaviour</span></li>
+    <li><span class="ot-chk">✓</span><span>Articulate the link between Track Hopper uptime and boiler fuel supply</span></li>
+  </ul>
+</div>`},
+
+{mod:13, theme:'out-card', html:`
+<div class="card-body" style="justify-content:center;text-align:center">
+  <div style="font-size:64px;margin-bottom:16px">🎓</div>
+  <div class="card-h1" style="color:#a5d6a7">Course Complete</div>
+  <div class="card-p" style="margin:14px auto;max-width:320px">You have completed the Track Hopper Operation L1 Foundational iCard Course.</div>
+  <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px;margin:14px auto;max-width:320px">
+    <div style="font-size:13px;opacity:.7;margin-bottom:6px">Completed modules</div>
+    <div style="font-size:28px;font-weight:800;color:#a5d6a7">8 CBs · 5 CPs · 6 Failures</div>
+    <div style="font-size:12px;opacity:.6;margin-top:4px">42 learning cards</div>
+  </div>
+  <div class="callout callout-warn" style="max-width:340px;margin:14px auto;text-align:left">
+    <div class="cl">⚠ Remember</div>
+    Always be accompanied by an authorised supervisor when visiting plant areas. This course is awareness only — not operational training.
+  </div>
+</div>`},
+];
+
+// ═══════════════════════════════════════════════════════
+//  RENDER & NAVIGATION
+// ═══════════════════════════════════════════════════════
+let current = 0;
+const deck = document.getElementById('deck');
+
+// Build progress bar segments (grouped by module)
+function buildProgressBar(cardEl) {
+  const row = document.createElement('div');
+  row.className = 'prog-row';
+  CARDS.forEach((_, i) => {
+    const seg = document.createElement('div');
+    seg.className = 'prog-seg' + (i < current ? ' done' : i === current ? ' active' : '');
+    const fill = document.createElement('div');
+    fill.className = 'fill';
+    seg.appendChild(fill);
+    row.appendChild(seg);
+  });
+  cardEl.appendChild(row);
+}
+
+function buildModLabel(cardEl, modIdx) {
+  const m = MODULES[modIdx];
+  if (!m || !m.label) return;
+  const lbl = document.createElement('div');
+  lbl.className = 'mod-label';
+  lbl.textContent = m.label;
+  cardEl.appendChild(lbl);
+}
+
+function buildNavZones(cardEl) {
+  ['nav-left','nav-right'].forEach((cls,i) => {
+    const z = document.createElement('div');
+    z.className = cls;
+    z.onclick = i === 0 ? prevCard : nextCard;
+    cardEl.appendChild(z);
+  });
+}
+
+function renderCards() {
+  deck.innerHTML = '';
+  CARDS.forEach((c, i) => {
+    const el = document.createElement('div');
+    el.className = `card ${c.theme} ${i === current ? 'active' : 'hidden'}`;
+    el.dataset.index = i;
+    el.innerHTML = c.html;
+    buildProgressBar(el);
+    buildModLabel(el, c.mod);
+    buildNavZones(el);
+    deck.appendChild(el);
+  });
+  updateUI();
+}
+
+function updateUI() {
+  document.getElementById('counter').textContent = `${current + 1} / ${CARDS.length}`;
+  document.getElementById('arr-left').classList.toggle('hidden-btn', current === 0);
+  document.getElementById('arr-right').classList.toggle('hidden-btn', current === CARDS.length - 1);
+
+  // Rebuild progress
+  document.querySelectorAll('.card').forEach((el, i) => {
+    const segs = el.querySelectorAll('.prog-seg');
+    segs.forEach((seg, j) => {
+      seg.classList.remove('done','active');
+      if (j < current) seg.classList.add('done');
+      else if (j === current) seg.classList.add('active');
+    });
+  });
+
+  // Module dots
+  const activeMod = CARDS[current].mod;
+  document.querySelectorAll('.mdot').forEach((d,i) => {
+    d.classList.toggle('active', i === activeMod);
+  });
+}
+
+function goTo(idx) {
+  if (idx < 0 || idx >= CARDS.length) return;
+  const cards = document.querySelectorAll('.card');
+  const dir = idx > current ? 1 : -1;
+  cards[current].className = `card ${CARDS[current].theme} ${dir > 0 ? 'exit-left' : 'hidden'}`;
+  current = idx;
+  cards[current].className = `card ${CARDS[current].theme} active`;
+  updateUI();
+}
+
+function nextCard() { goTo(current + 1); }
+function prevCard() { goTo(current - 1); }
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') nextCard();
+  if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   prevCard();
+});
+
+// Touch / Swipe
+let touchStartX = 0, touchStartY = 0;
+document.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+}, { passive: true });
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+    if (dx < 0) nextCard(); else prevCard();
+  }
+}, { passive: true });
+
+// Module dots
+function buildModDots() {
+  const dotContainer = document.getElementById('mod-dots');
+  MODULES.forEach((m, i) => {
+    const d = document.createElement('div');
+    d.className = 'mdot' + (i === CARDS[current].mod ? ' active' : '');
+    d.title = m.label || 'Intro';
+    d.onclick = () => {
+      const targetIdx = CARDS.findIndex(c => c.mod === i);
+      if (targetIdx >= 0) goTo(targetIdx);
+    };
+    dotContainer.appendChild(d);
+  });
+}
+
+// Quiz logic
+function checkQ(qid, el, correct) {
+  const block = document.getElementById(qid);
+  if (block.dataset.answered) return;
+  block.dataset.answered = '1';
+  const opts = block.querySelectorAll('.quiz-opt');
+  opts.forEach(o => o.style.pointerEvents = 'none');
+  el.classList.add(correct ? 'correct' : 'wrong');
+  if (!correct) {
+    opts.forEach(o => {
+      if (o.onclick.toString().includes('true')) o.classList.add('correct');
+    });
+  }
+  const fb = document.getElementById(qid + '-fb');
+  if (fb) {
+    fb.classList.add('show', correct ? 'ok' : 'no');
+    fb.innerHTML = correct
+      ? '✅ <strong>Correct!</strong> ' + getFeedback(qid)
+      : '❌ <strong>Not quite.</strong> ' + getFeedback(qid);
+  }
+}
+
+function getFeedback(qid) {
+  const map = {
+    q1: 'Track Hoppers use bottom-discharge wagons (BOXN-HL type). No tipping or rotation — coal falls by gravity.',
+    q2: 'The grizzly is the only barrier between uncontrolled wagon contents and the precision machinery below. A boulder bypassing a broken bar can destroy the feeder completely.',
+    q3: 'Coal particles interlock to form a bridge (arch), stopping all flow. When the arch collapses, all backed-up coal surges out at once — a dangerous and sudden event.',
+    q4: 'The feeder may still be running. An arch may be ready to collapse. Grizzly bars may be wet and slippery. Coal dust may be in the underground gallery. It is never safe to approach without authorisation.'
+  };
+  return map[qid] || '';
+}
+
+// Init
+renderCards();
+buildModDots();
+</script>
+</body>
+</html>

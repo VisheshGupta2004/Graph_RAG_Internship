@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "textchunk_objects": 196,
+    "imagechunk_objects": 34,
+    "relationchunk_objects": 748,
+    "conceptnode_objects": 938
+  },
+  "checks": {
+    "text_required_fields": [],
+    "image_required_fields": [],
+    "relation_required_fields": [],
+    "concept_required_fields": [],
+    "text_unique_ids": true,
+    "image_unique_ids": true,
+    "relation_unique_ids": true,
+    "concept_unique_ids": true
+  },
+  "embeddings": {
+    "enabled": false
+  },
+  "passed": true
+}

@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Mangal','Noto Sans Devanagari','Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.85;color:#1e2a38;background:#f0f4f8}
+.cover{background:linear-gradient(135deg,#0d2137 0%,#1a5276 60%,#2e86c1 100%);color:white;padding:55px 40px 45px;text-align:center}
+.cover .badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.cover .badge{background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.35);padding:5px 16px;border-radius:20px;font-size:12px;letter-spacing:.5px}
+.cover h1{font-size:2.6em;font-weight:800;margin-bottom:8px;text-shadow:0 2px 6px rgba(0,0,0,.3)}
+.cover h2{font-size:1.2em;font-weight:400;opacity:.9;margin-bottom:6px}
+.cover .sub{font-size:13px;opacity:.7;margin-bottom:30px}
+.meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:820px;margin:0 auto}
+.meta-item{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.2);padding:14px;border-radius:8px}
+.meta-item .ml{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;opacity:.7}
+.meta-item .mv{font-size:13px;font-weight:700;margin-top:3px}
+.wrap{max-width:980px;margin:0 auto;padding:24px 20px}
+.toc-box{background:white;border-radius:10px;padding:28px;margin-bottom:28px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.toc-box h3{color:#0d2137;font-size:1.1em;border-bottom:2px solid #e8f0fe;padding-bottom:10px;margin-bottom:16px}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.toc-row{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:5px;font-size:13.5px;color:#1a3a5c;text-decoration:none}
+.toc-row:hover{background:#eef2ff}
+.toc-n{background:#1a3a5c;color:white;border-radius:4px;min-width:26px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.mod{background:white;border-radius:12px;margin-bottom:28px;box-shadow:0 3px 12px rgba(0,0,0,.08);overflow:hidden}
+.mod-hdr{padding:20px 28px;display:flex;align-items:center;gap:14px}
+.mod-hdr .cb-tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.8;white-space:nowrap}
+.mod-hdr h2{font-size:1.3em;font-weight:800}
+.mod-body{padding:26px 28px}
+.c-navy .mod-hdr{background:#0d2137;color:white}
+.c-teal .mod-hdr{background:#0b6b6b;color:white}
+.c-purple .mod-hdr{background:#4a2d8a;color:white}
+.c-slate .mod-hdr{background:#2c5282;color:white}
+.c-green .mod-hdr{background:#145a32;color:white}
+.c-red .mod-hdr{background:#7b241c;color:white}
+.c-orange .mod-hdr{background:#935116;color:white}
+.c-dark .mod-hdr{background:#1c2833;color:white}
+.c-assess .mod-hdr{background:#1a4080;color:white}
+.mental{background:#e8f4fd;border-left:4px solid #2980b9;padding:13px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.mental .lbl{font-size:10px;text-transform:uppercase;color:#1a5276;font-weight:800;letter-spacing:1px}
+.mental p{margin-top:5px;font-size:14.5px;color:#1a3a5c;font-weight:600}
+.warn{background:#fef9e7;border-left:4px solid #e67e22;padding:13px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.warn .lbl{font-size:10px;text-transform:uppercase;color:#ca6f1e;font-weight:800;letter-spacing:1px}
+.danger{background:#fdedec;border-left:4px solid #c0392b;padding:13px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.danger .lbl{font-size:10px;text-transform:uppercase;color:#922b21;font-weight:800;letter-spacing:1px}
+.key{background:#eafaf1;border-left:4px solid #1e8449;padding:13px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.key .lbl{font-size:10px;text-transform:uppercase;color:#1e8449;font-weight:800;letter-spacing:1px}
+.info{background:#eaf4fb;border-left:4px solid #2980b9;padding:13px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.diag{background:#f7fafc;border:1px solid #d5e3ef;border-radius:10px;padding:20px;margin:20px 0;text-align:center}
+.diag svg{max-width:100%;height:auto}
+.diag .cap{font-size:12.5px;color:#607d8b;font-style:italic;margin-top:10px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.cc{border:1px solid #d6e4f0;border-radius:8px;padding:15px;background:#fafcff}
+.cc h4{color:#154360;font-size:13.5px;margin-bottom:6px;display:flex;align-items:center;gap:7px}
+.cc p{font-size:13px;color:#555;line-height:1.6}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:16px 0}
+.tc{border-radius:10px;padding:16px;border:2px solid #ccc}
+.tc.rot{border-color:#2980b9;background:#eaf4fd}
+.tc.side{border-color:#8e44ad;background:#f5eef8}
+.tc.track{border-color:#27ae60;background:#eafaf1}
+.tc h4{font-size:13px;font-weight:800;margin-bottom:8px}
+.tc.rot h4{color:#1a5276}
+.tc.side h4{color:#6c3483}
+.tc.track h4{color:#1e8449}
+.tc p{font-size:12.5px;color:#444;line-height:1.6;margin-bottom:6px}
+.cp-card{border:2px solid #1a3a5c;border-radius:10px;padding:18px 20px;margin:14px 0;position:relative}
+.cp-badge{position:absolute;top:-13px;left:18px;background:#1a3a5c;color:white;padding:3px 14px;border-radius:12px;font-size:12px;font-weight:700}
+.cp-card h4{color:#0d2137;font-size:14.5px;margin:8px 0 6px}
+.fc{background:#fdf2f2;border:1px solid #e5b8b8;border-radius:8px;padding:15px 18px;margin:10px 0;display:flex;gap:14px;align-items:flex-start}
+.fc-n{background:#c0392b;color:white;border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;flex-shrink:0;margin-top:2px}
+.fc h4{color:#922b21;font-size:13.5px;margin-bottom:4px}
+.fc p{font-size:13px;color:#555}
+.qblock{background:white;border:1px solid #dde5ff;border-radius:8px;padding:18px;margin:12px 0}
+.qtype{font-size:10px;text-transform:uppercase;color:#4a6cf7;font-weight:800;letter-spacing:1px;margin-bottom:5px}
+.qtext{font-size:14.5px;color:#0d2137;font-weight:700;margin-bottom:11px}
+.qopts{list-style:none;display:flex;flex-direction:column;gap:6px}
+.qopts li{padding:8px 13px;border:1px solid #ddd;border-radius:5px;font-size:13.5px;cursor:pointer;transition:all .15s}
+.qopts li:hover{background:#eef2ff;border-color:#4a6cf7}
+.ans{background:#e9f7ef;border:1px solid #abebc6;border-radius:5px;padding:9px 14px;font-size:13px;margin-top:10px}
+.ans .al{color:#1d8348;font-weight:800;font-size:10px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:3px}
+.section-hdr{background:#e8ecf5;border-radius:6px;padding:10px 16px;font-size:12px;font-weight:800;color:#2c3e70;text-transform:uppercase;letter-spacing:1px;margin:20px 0 12px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+th{background:#0d2137;color:white;padding:10px 14px;text-align:left;font-size:12.5px}
+td{padding:9px 14px;border-bottom:1px solid #e8e8e8}
+tr:nth-child(even) td{background:#f8f9fc}
+.lo-list{list-style:none;padding:0}
+.lo-list li{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #eee;font-size:14px;align-items:flex-start}
+.lo-list li:last-child{border:none}
+.lo-chk{color:#1e8449;font-weight:900;font-size:16px;flex-shrink:0;margin-top:1px}
+.og{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.oi{background:#eafaf1;border:1px solid #a9dfbf;border-radius:8px;padding:14px;display:flex;gap:10px;align-items:flex-start}
+.oi .ic{font-size:22px;flex-shrink:0}
+.oi p{font-size:13px;color:#1e6434}
+hr.div{border:none;border-top:2px solid #e8ecf5;margin:22px 0}
+@media(max-width:680px){.cg,.tg,.og,.toc-grid,.meta-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════ COVER ══════════════════════════════════ -->
+<div class="cover">
+  <div class="badges">
+    <span class="badge">L1 Foundational · Process Familiarization</span>
+    <span class="badge">Context &amp; Safety Awareness</span>
+    <span class="badge">Skill: Conveyor Components &amp; Layout पहचानना</span>
+  </div>
+  <h1>Belt Conveyor Operation</h1>
+  <h2>Coal Conveying System – पूरी व्यवस्था की समझ</h2>
+  <p class="sub">Thermal Power Plant &nbsp;|&nbsp; Coal Handling Plant &nbsp;|&nbsp; Site Visit से पहले का Course</p>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="ml">Industry</div><div class="mv">Thermal Power Plant</div></div>
+    <div class="meta-item"><div class="ml">Functional Group</div><div class="mv">Coal Handling Plant (CHP)</div></div>
+    <div class="meta-item"><div class="ml">Proficiency Level</div><div class="mv">L1 – Context &amp; Safety Awareness</div></div>
+    <div class="meta-item"><div class="ml">Primary Work Object</div><div class="mv">Coal Conveying System</div></div>
+    <div class="meta-item"><div class="ml">Target Learner</div><div class="mv">Diploma 3rd Year Intern</div></div>
+    <div class="meta-item"><div class="ml">Capability</div><div class="mv">Process Familiarization</div></div>
+  </div>
+</div>
+
+<!-- WRAP -->
+<div class="wrap">
+
+<!-- INSTRUCTOR NOTE -->
+<div class="mod c-dark">
+  <div class="mod-hdr"><div class="cb-tag">शुरू करने से पहले</div><h2>यह Course कैसे इस्तेमाल करें</h2></div>
+  <div class="mod-body">
+    <p>यह course इसलिए बनाया गया है ताकि आप Coal Handling Plant के belt conveyor system की <strong>पूरी mental picture</strong> बना सकें — site पर जाने से पहले। सोचिए जैसे पूरा system अपने दिमाग में download कर रहे हों, ताकि जब आप physically वहाँ पहुँचें, तो हर चीज़ पहचान सकें, उसका reason समझ सकें, और यह भी जान सकें कि खतरा कहाँ है।</p>
+    <div class="warn" style="margin-top:16px">
+      <div class="lbl">⚠ ज़रूरी बात – यह Course क्या नहीं सिखाता</div>
+      <p>यह सिर्फ एक <strong>context और awareness</strong> course है। इसमें यह नहीं बताया गया कि कोई भी equipment कैसे start, stop, या operate करते हैं। आप कभी भी कोई भी operational action अकेले attempt मत करना — plant management से formal training और authorization लेने के बाद ही करना।</p>
+    </div>
+    <div class="key" style="margin-top:10px">
+      <div class="lbl">✅ आपको क्या मिलेगा</div>
+      <p>यह course complete करने के बाद आप Coal Handling Plant में walk कर सकोगे, belt conveyor system के हर major component को identify कर सकोगे, power generation में उसका role समझोगे, और — सबसे important — hazardous zones और ऐसे behaviours पहचान सकोगे जो आपको या दूसरों को injury दे सकते हैं।</p>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc-box">
+  <h3>📋 Course Contents</h3>
+  <div class="toc-grid">
+    <a class="toc-row" href="#lo"><span class="toc-n">LO</span> Learning Objectives</a>
+    <a class="toc-row" href="#cb1"><span class="toc-n">1</span> Belt Conveyor System का उद्देश्य</a>
+    <a class="toc-row" href="#cb2"><span class="toc-n">2</span> System Flow Integration (End-to-End)</a>
+    <a class="toc-row" href="#cb3"><span class="toc-n">3</span> Conveyor Components &amp; Layout</a>
+    <a class="toc-row" href="#cb4"><span class="toc-n">4</span> Conveying का Functional Mechanism</a>
+    <a class="toc-row" href="#cb5"><span class="toc-n">5</span> Conveyor Capacity &amp; Throughput</a>
+    <a class="toc-row" href="#cb6"><span class="toc-n">6</span> Transfer Points &amp; Flow Behaviour</a>
+    <a class="toc-row" href="#cb7"><span class="toc-n">7</span> Safety &amp; Hazard Awareness</a>
+    <a class="toc-row" href="#cb8"><span class="toc-n">8</span> Wagon Tippler के Types</a>
+    <a class="toc-row" href="#cp"><span class="toc-n">9</span> Control Points</a>
+    <a class="toc-row" href="#risk"><span class="toc-n">10</span> Failure के Risks</a>
+    <a class="toc-row" href="#fc"><span class="toc-n">11</span> Failure Cases</a>
+    <a class="toc-row" href="#outcomes"><span class="toc-n">12</span> Learning Outcomes</a>
+    <a class="toc-row" href="#assess"><span class="toc-n">A</span> Assessments</a>
+    <a class="toc-row" href="#instr"><span class="toc-n">S1</span> Instrumentation &amp; Safety Devices</a>
+    <a class="toc-row" href="#site"><span class="toc-n">S2</span> पहला Site Visit Guide</a>
+    <a class="toc-row" href="#dos"><span class="toc-n">S3</span> Do's &amp; Don'ts</a>
+    <a class="toc-row" href="#glossary"><span class="toc-n">G</span> Glossary</a>
+  </div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="mod c-navy" id="lo">
+  <div class="mod-hdr"><div class="cb-tag">Learning Objectives</div><h2>इस Course में आप क्या सीखोगे</h2></div>
+  <div class="mod-body">
+    <ul class="lo-list">
+      <li><span class="lo-chk">✓</span> Boiler तक continuous fuel supply में conveyor system का role समझना।</li>
+      <li><span class="lo-chk">✓</span> सारे major conveyor components identify करना और उनका system में क्या काम है यह समझना।</li>
+      <li><span class="lo-chk">✓</span> Visualize करना कि coal, unloading point (wagon tippler) से boiler bunker तक कैसे travel करती है।</li>
+      <li><span class="lo-chk">✓</span> Belt conveyor में motion, load carrying, और tension balance का mechanism समझना।</li>
+      <li><span class="lo-chk">✓</span> यह पहचानना कि capacity limits system stability और plant performance को कैसे affect करती हैं।</li>
+      <li><span class="lo-chk">✓</span> High-risk zones जैसे transfer points, drive pulleys, और rotating parts के बारे में awareness develop करना।</li>
+      <li><span class="lo-chk">✓</span> Upstream systems जैसे wagon tippler, conveyor behaviour को सीधे कैसे affect करता है, यह समझना।</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ CB1 ═══════════ -->
+<div class="mod c-teal" id="cb1">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 1</div><h2>Belt Conveyor System का उद्देश्य</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Belt conveyor, plant का continuous coal transport pipeline है — बिल्कुल power plant की bloodstream की तरह।</p>
+    </div>
+    <p>एक thermal power plant coal जलाती है steam बनाने के लिए, जो turbine चलाता है, जो generator spin करता है और electricity produce करता है। पूरी generation cycle एक simple लेकिन critical requirement पर depend करती है: <strong>boiler तक coal की continuous, uninterrupted supply।</strong></p>
+    <p style="margin-top:12px">और यही काम belt conveyor system करता है। यह plant का internal transportation network है जो coal को — रोज़ाना हज़ारों tonnes — receiving point (wagon tippler / track hopper) से boilers के ऊपर रखे coal bunkers तक पहुँचाता है। Bunkers से coal नीचे pulverisers (mills) में जाती है जो उसे powder में grind करती है combustion के लिए।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 820 130" xmlns="http://www.w3.org/2000/svg" style="max-width:780px">
+        <defs><marker id="arr1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1a5276"/></marker></defs>
+        <rect x="5" y="35" width="110" height="55" rx="8" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="60" y="59" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Railway</text>
+        <text x="60" y="73" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Wagon</text>
+        <line x1="116" y1="62" x2="132" y2="62" stroke="#1a5276" stroke-width="2" marker-end="url(#arr1)"/>
+        <rect x="133" y="35" width="110" height="55" rx="8" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="188" y="59" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Wagon</text>
+        <text x="188" y="73" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Tippler</text>
+        <line x1="244" y1="62" x2="260" y2="62" stroke="#1a5276" stroke-width="2" marker-end="url(#arr1)"/>
+        <rect x="261" y="35" width="110" height="55" rx="8" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="316" y="59" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Hopper /</text>
+        <text x="316" y="73" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Feeder</text>
+        <line x1="372" y1="62" x2="388" y2="62" stroke="#1a5276" stroke-width="2" marker-end="url(#arr1)"/>
+        <rect x="389" y="20" width="130" height="85" rx="8" fill="#c0392b" stroke="#922b21" stroke-width="2"/>
+        <text x="454" y="51" text-anchor="middle" font-size="11" font-weight="800" fill="white">Belt</text>
+        <text x="454" y="66" text-anchor="middle" font-size="11" font-weight="800" fill="white">Conveyor</text>
+        <text x="454" y="81" text-anchor="middle" font-size="9.5" fill="#f5b7b1">System</text>
+        <text x="454" y="95" text-anchor="middle" font-size="9" fill="#fadbd8">(BC-1 → Transfer → BC-2)</text>
+        <line x1="520" y1="62" x2="536" y2="62" stroke="#1a5276" stroke-width="2" marker-end="url(#arr1)"/>
+        <rect x="537" y="35" width="110" height="55" rx="8" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="592" y="59" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Coal</text>
+        <text x="592" y="73" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Bunker</text>
+        <line x1="648" y1="62" x2="664" y2="62" stroke="#1a5276" stroke-width="2" marker-end="url(#arr1)"/>
+        <rect x="665" y="35" width="110" height="55" rx="8" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="720" y="59" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">Pulveriser</text>
+        <text x="720" y="73" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a5276">→ Boiler</text>
+        <text x="454" y="118" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="700">▲ यह है Belt Conveyor का critical role ▲</text>
+      </svg>
+      <div class="cap">Fig 1.1 – Coal का end-to-end flow path — Belt Conveyor System बीच में है</div>
+    </div>
+
+    <h3 style="color:#0b6b6b;margin:16px 0 10px">यह इतना Critical क्यों है?</h3>
+    <div class="cg">
+      <div class="cc"><h4>⚡ Generation पर Direct Impact</h4><p>Belt conveyor रुका तो coal supply रुकी, bunker level गिरा, boiler load कम हुई, और generation loss हुआ। एक 500 MW unit में सिर्फ एक घंटे के outage में ₹15–25 lakhs का नुकसान हो सकता है।</p></div>
+      <div class="cc"><h4>🔄 Continuous Operation ज़रूरी है</h4><p>Boiler 24×7 चलती है। Coal supply में कोई भी gap — चाहे कितना भी छोटा हो — boiler की performance को तुरंत affect करता है। Belt conveyor system को continuous, reliable, और rated capacity पर run होना ही होता है।</p></div>
+      <div class="cc"><h4>📊 Scale का अंदाज़ा लगाओ</h4><p>एक average 500 MW unit रोज़ लगभग 3,000–5,000 tonnes coal use करती है। यह सब railway wagons से unload होकर conveyors के ज़रिए boiler तक पहुँचता है — कोई shortcut नहीं।</p></div>
+      <div class="cc"><h4>🔗 Upstream + Downstream दोनों से जुड़ा</h4><p>Conveyor system upstream (wagon tippler, hopper, feeder) और downstream (bunker, mill, boiler) दोनों से directly linked है। किसी भी conveyor की failure एक chain reaction शुरू करती है जो पूरे power generation cycle को affect करती है।</p></div>
+    </div>
+
+    <div class="danger">
+      <div class="lbl">🔴 एक सच्चाई जो याद रखो</div>
+      <p>Coal Handling Plant (CHP) में बहुत कुछ manually नहीं देखा जाता — operators control room से monitor करते हैं। इसलिए एक <strong>trained observer</strong> — यानी आप, एक informed intern — जो physically conveyor के साथ चलते हो और early warning signs पहचानते हो, plant safety में बहुत valuable contribution कर सकते हो। इस course का यही मकसद है।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CB2 ═══════════ -->
+<div class="mod c-purple" id="cb2">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 2</div><h2>System Flow Integration – Coal का पूरा सफर</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Coal का सफर एक relay race की तरह है — हर stage अगली stage को handoff करती है। एक भी stage fail हुई तो पूरी race रुक जाती है।</p>
+    </div>
+    <p>Belt conveyor system अकेले काम नहीं करता — यह एक बड़े coal handling sequence का हिस्सा है। Wagon tippler से boiler तक हर step एक specific function है जो अगले step पर निर्भर करती है। यह chain समझना ज़रूरी है।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+        <defs>
+          <marker id="a2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2c3e50"/></marker>
+          <marker id="a2r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#c0392b"/></marker>
+        </defs>
+        <!-- Stage 1: Railway Wagon -->
+        <rect x="10" y="10" width="145" height="75" rx="10" fill="#d6eaf8" stroke="#2980b9" stroke-width="2"/>
+        <text x="82" y="34" text-anchor="middle" font-size="11" font-weight="800" fill="#1a5276">① Railway Wagon</text>
+        <text x="82" y="51" text-anchor="middle" font-size="9.5" fill="#333">Coal loaded BOX-N wagons</text>
+        <text x="82" y="65" text-anchor="middle" font-size="9.5" fill="#333">railway tracks पर आते हैं</text>
+        <text x="82" y="78" text-anchor="middle" font-size="8.5" fill="#c0392b">⚠ Surge loading risk</text>
+        <!-- Arrow down -->
+        <line x1="82" y1="85" x2="82" y2="107" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 2: Wagon Tippler -->
+        <rect x="10" y="108" width="145" height="75" rx="10" fill="#f5eef8" stroke="#8e44ad" stroke-width="2"/>
+        <text x="82" y="132" text-anchor="middle" font-size="11" font-weight="800" fill="#6c3483">② Wagon Tippler</text>
+        <text x="82" y="149" text-anchor="middle" font-size="9.5" fill="#333">Wagon को rotate/tilt करके</text>
+        <text x="82" y="163" text-anchor="middle" font-size="9.5" fill="#333">coal को dump करता है</text>
+        <text x="82" y="175" text-anchor="middle" font-size="8.5" fill="#c0392b">⚠ High dust generation</text>
+        <!-- Arrow right -->
+        <line x1="156" y1="146" x2="178" y2="146" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 3: Hopper -->
+        <rect x="179" y="108" width="145" height="75" rx="10" fill="#fef9e7" stroke="#e67e22" stroke-width="2"/>
+        <text x="256" y="132" text-anchor="middle" font-size="11" font-weight="800" fill="#935116">③ Track Hopper</text>
+        <text x="256" y="149" text-anchor="middle" font-size="9.5" fill="#333">Coal को temporarily</text>
+        <text x="256" y="163" text-anchor="middle" font-size="9.5" fill="#333">store करता है</text>
+        <text x="256" y="175" text-anchor="middle" font-size="8.5" fill="#c0392b">⚠ Overflow risk</text>
+        <!-- Arrow right -->
+        <line x1="325" y1="146" x2="347" y2="146" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 4: Feeder -->
+        <rect x="348" y="108" width="145" height="75" rx="10" fill="#fef9e7" stroke="#e67e22" stroke-width="2"/>
+        <text x="420" y="132" text-anchor="middle" font-size="11" font-weight="800" fill="#935116">④ Feeder</text>
+        <text x="420" y="149" text-anchor="middle" font-size="9.5" fill="#333">Coal की rate control</text>
+        <text x="420" y="163" text-anchor="middle" font-size="9.5" fill="#333">करके belt पर डालता है</text>
+        <text x="420" y="175" text-anchor="middle" font-size="8.5" fill="#c0392b">⚠ Overfeeding risk</text>
+        <!-- Arrow down from feeder -->
+        <line x1="420" y1="183" x2="420" y2="205" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 5: BC-1 -->
+        <rect x="348" y="206" width="145" height="75" rx="10" fill="#c0392b" stroke="#922b21" stroke-width="2.5"/>
+        <text x="420" y="230" text-anchor="middle" font-size="11" font-weight="800" fill="white">⑤ Belt Conveyor</text>
+        <text x="420" y="246" text-anchor="middle" font-size="11" font-weight="800" fill="white">BC-1</text>
+        <text x="420" y="262" text-anchor="middle" font-size="9.5" fill="#f5b7b1">Coal को aage carry</text>
+        <text x="420" y="274" text-anchor="middle" font-size="8.5" fill="#fadbd8">⚠ Drift, overload risk</text>
+        <!-- Arrow right from BC-1 -->
+        <line x1="494" y1="244" x2="516" y2="244" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 6: Transfer Tower -->
+        <rect x="517" y="206" width="145" height="75" rx="10" fill="#fdedec" stroke="#c0392b" stroke-width="2.5"/>
+        <text x="590" y="230" text-anchor="middle" font-size="11" font-weight="800" fill="#7b241c">⑥ Transfer</text>
+        <text x="590" y="246" text-anchor="middle" font-size="11" font-weight="800" fill="#7b241c">Tower</text>
+        <text x="590" y="262" text-anchor="middle" font-size="9.5" fill="#555">BC-1 से BC-2 पर coal</text>
+        <text x="590" y="274" text-anchor="middle" font-size="8.5" fill="#c0392b">⚠ HIGHEST RISK ZONE</text>
+        <!-- Arrow right from Transfer -->
+        <line x1="663" y1="244" x2="685" y2="244" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 7: BC-2 -->
+        <rect x="686" y="206" width="125" height="75" rx="10" fill="#c0392b" stroke="#922b21" stroke-width="2.5"/>
+        <text x="748" y="230" text-anchor="middle" font-size="11" font-weight="800" fill="white">⑦ Belt</text>
+        <text x="748" y="246" text-anchor="middle" font-size="11" font-weight="800" fill="white">Conveyor BC-2</text>
+        <text x="748" y="262" text-anchor="middle" font-size="9" fill="#f5b7b1">Bunker तक carry</text>
+        <text x="748" y="274" text-anchor="middle" font-size="8.5" fill="#fadbd8">⚠ Same risks</text>
+        <!-- Arrow down from BC-2 -->
+        <line x1="748" y1="281" x2="748" y2="303" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 8: Coal Bunker -->
+        <rect x="686" y="304" width="125" height="75" rx="10" fill="#e8f8f0" stroke="#27ae60" stroke-width="2"/>
+        <text x="748" y="328" text-anchor="middle" font-size="11" font-weight="800" fill="#1e8449">⑧ Coal</text>
+        <text x="748" y="344" text-anchor="middle" font-size="11" font-weight="800" fill="#1e8449">Bunker</text>
+        <text x="748" y="360" text-anchor="middle" font-size="9.5" fill="#333">8–12 hrs buffer storage</text>
+        <text x="748" y="374" text-anchor="middle" font-size="8.5" fill="#c0392b">⚠ Overflow / starvation</text>
+        <!-- Arrow left from Bunker -->
+        <line x1="685" y1="342" x2="600" y2="342" stroke="#2c3e50" stroke-width="2" marker-end="url(#a2)"/>
+        <!-- Stage 9: Pulveriser + Boiler -->
+        <rect x="420" y="304" width="178" height="75" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+        <text x="509" y="328" text-anchor="middle" font-size="11" font-weight="800" fill="#935116">⑨ Pulveriser</text>
+        <text x="509" y="344" text-anchor="middle" font-size="9.5" fill="#333">Coal को powder बनाता है</text>
+        <text x="509" y="360" text-anchor="middle" font-size="9.5" fill="#333">→ Boiler में जाती है</text>
+        <text x="509" y="374" text-anchor="middle" font-size="8.5" fill="#1e8449">✓ Electricity generation</text>
+      </svg>
+      <div class="cap">Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है</div>
+    </div>
+
+    <h3 style="color:#4a2d8a;margin:16px 0 10px">हर Stage का Breakdown</h3>
+    <table>
+      <thead><tr><th>Stage</th><th>क्या होता है</th><th>Conveyor पर Impact</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Railway Wagon</strong></td><td>Coal-loaded wagons plant की railway siding पर आते हैं।</td><td>Wagon का आना तय करता है कि coal supply available है या नहीं।</td></tr>
+        <tr><td><strong>Wagon Tippler</strong></td><td>Wagon को rotate या tilt करके coal dump करते हैं।</td><td>Surge loading — एक बार में बहुत ज़्यादा coal hopper में आती है।</td></tr>
+        <tr><td><strong>Track Hopper</strong></td><td>Coal को temporarily store करता है, surge को buffer करता है।</td><td>Hopper overflow होने पर conveyor overload हो सकती है।</td></tr>
+        <tr><td><strong>Feeder</strong></td><td>Coal को controlled rate पर belt पर डालता है।</td><td>Feeder की speed तय करती है कि belt पर कितना load आता है।</td></tr>
+        <tr><td><strong>Belt Conveyor (BC-1)</strong></td><td>Coal को feed point से transfer point तक carry करता है।</td><td>यही primary subject है इस course का।</td></tr>
+        <tr><td><strong>Transfer Tower</strong></td><td>Coal BC-1 से chute के through BC-2 पर जाती है।</td><td>Blockage, dust, confined space — highest risk location।</td></tr>
+        <tr><td><strong>Belt Conveyor (BC-2)</strong></td><td>Coal को bunker तक पहुँचाता है।</td><td>BC-1 जैसे ही risks, additional height और inclination के साथ।</td></tr>
+        <tr><td><strong>Coal Bunker</strong></td><td>Boiler के ऊपर buffer storage — 8–12 hours का fuel।</td><td>Bunker level plant के buffer time को define करता है।</td></tr>
+        <tr><td><strong>Pulveriser → Boiler</strong></td><td>Coal को powder बनाकर boiler में burn करते हैं।</td><td>Bunker खाली हुआ तो boiler को immediately load reduce करना पड़ता है।</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info">
+      <div class="lbl">🔗 पूरी Chain को एक साथ देखो</div>
+      <p>जब भी कोई senior engineer CHP में किसी problem की बात करता है, वह हमेशा पूरी chain के संदर्भ में सोचता है — इसलिए नहीं कि वह complicated दिखना चाहता है, बल्कि इसलिए कि <strong>system में हर failure किसी और चीज़ से जुड़ी होती है।</strong> Belt drift सिर्फ belt की problem नहीं है — यह spillage है, यह fire risk है, यह bunker starvation है, यह generation loss है। इस chain को समझना ही इस course का सबसे important lesson है।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CB3 ═══════════ -->
+<div class="mod c-orange" id="cb3">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 3</div><h2>Belt Conveyor – Components और Layout</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Conveyor को एक बहुत लम्बे loop की तरह सोचो — belt ऊपर से coal carry करती है और नीचे से खाली वापस आती है। हर component इस loop को maintain रखने के लिए है।</p>
+    </div>
+    <p>Belt conveyor system कई individual components से मिलकर बना है। हर component का एक specific काम है, और जब कोई fail होता है तो पूरा system affect होता है। अब हम हर एक को detail में समझेंगे।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 820 280" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+        <defs>
+          <marker id="a3" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#555"/></marker>
+        </defs>
+        <!-- FRAME -->
+        <rect x="55" y="120" width="710" height="12" rx="3" fill="#bdc3c7" stroke="#95a5a6" stroke-width="1"/>
+        <!-- BELT carry strand -->
+        <rect x="55" y="108" width="710" height="12" rx="3" fill="#c0392b" opacity="0.8"/>
+        <text x="410" y="117" text-anchor="middle" font-size="9" fill="white" font-weight="700">BELT (Carry Strand – Coal ऊपर से जाती है)</text>
+        <!-- BELT return strand -->
+        <rect x="55" y="132" width="710" height="8" rx="3" fill="#e07070" opacity="0.5"/>
+        <text x="410" y="139" text-anchor="middle" font-size="8" fill="#7b241c">Return Strand (Empty belt नीचे से वापस आती है)</text>
+
+        <!-- TAIL PULLEY -->
+        <ellipse cx="68" cy="114" rx="20" ry="20" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+        <text x="68" y="110" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">TAIL</text>
+        <text x="68" y="120" text-anchor="middle" font-size="7.5" fill="white">PULLEY</text>
+        <line x1="68" y1="94" x2="68" y2="72" stroke="#555" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="68" y="65" text-anchor="middle" font-size="8.5" fill="#333" font-weight="700">Tail Pulley</text>
+        <text x="68" y="55" text-anchor="middle" font-size="8" fill="#555">Feed end पर,</text>
+        <text x="68" y="45" text-anchor="middle" font-size="8" fill="#555">passive (motor नहीं)</text>
+
+        <!-- TAKE-UP PULLEY -->
+        <ellipse cx="155" cy="160" rx="14" ry="14" fill="#8e44ad" stroke="#6c3483" stroke-width="1.5"/>
+        <text x="155" y="164" text-anchor="middle" font-size="7" fill="white" font-weight="700">T-UP</text>
+        <line x1="155" y1="174" x2="155" y2="210" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="155" y="220" text-anchor="middle" font-size="8.5" fill="#6c3483" font-weight="700">Take-up</text>
+        <text x="155" y="232" text-anchor="middle" font-size="8" fill="#6c3483">Belt tension maintain</text>
+
+        <!-- CARRY IDLERS -->
+        <rect x="230" y="114" width="8" height="14" rx="2" fill="#27ae60"/>
+        <rect x="258" y="114" width="8" height="14" rx="2" fill="#27ae60"/>
+        <rect x="286" y="114" width="8" height="14" rx="2" fill="#27ae60"/>
+        <line x1="262" y1="108" x2="262" y2="72" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="262" y="65" text-anchor="middle" font-size="8.5" fill="#145a32" font-weight="700">Carry Idlers</text>
+        <text x="262" y="55" text-anchor="middle" font-size="8" fill="#555">Belt को support करते हैं,</text>
+        <text x="262" y="45" text-anchor="middle" font-size="8" fill="#555">troughed shape देते हैं</text>
+
+        <!-- RETURN IDLER -->
+        <rect x="360" y="132" width="8" height="8" rx="2" fill="#e67e22"/>
+        <line x1="364" y1="140" x2="364" y2="210" stroke="#e67e22" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="364" y="220" text-anchor="middle" font-size="8.5" fill="#935116" font-weight="700">Return Idler</text>
+        <text x="364" y="232" text-anchor="middle" font-size="8" fill="#935116">Empty belt को support</text>
+
+        <!-- BELT WEIGHER -->
+        <rect x="430" y="103" width="20" height="20" rx="3" fill="#27ae60" stroke="#1e8449"/>
+        <text x="440" y="116" text-anchor="middle" font-size="7" fill="white" font-weight="700">BW</text>
+        <line x1="440" y1="123" x2="440" y2="210" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="440" y="220" text-anchor="middle" font-size="8.5" fill="#1e8449" font-weight="700">Belt Weigher</text>
+        <text x="440" y="232" text-anchor="middle" font-size="8" fill="#1e8449">TPH measure करता है</text>
+
+        <!-- HEAD SCRAPER -->
+        <rect x="680" y="103" width="12" height="20" rx="2" fill="#f39c12" stroke="#e67e22"/>
+        <text x="686" y="116" text-anchor="middle" font-size="7" fill="white" font-weight="700">SC</text>
+        <line x1="686" y1="93" x2="686" y2="72" stroke="#f39c12" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="686" y="65" text-anchor="middle" font-size="8.5" fill="#935116" font-weight="700">Head Scraper</text>
+        <text x="686" y="55" text-anchor="middle" font-size="8" fill="#555">Carryback coal हटाता है</text>
+        <text x="686" y="45" text-anchor="middle" font-size="8" fill="#555">belt surface से</text>
+
+        <!-- HEAD PULLEY + MOTOR -->
+        <ellipse cx="755" cy="114" rx="24" ry="24" fill="#2980b9" stroke="#1a5276" stroke-width="2.5"/>
+        <text x="755" y="110" text-anchor="middle" font-size="8" fill="white" font-weight="700">DRIVE</text>
+        <text x="755" y="122" text-anchor="middle" font-size="8" fill="white">PULLEY</text>
+        <rect x="786" y="92" width="28" height="22" rx="4" fill="#145a32" stroke="#0b4619"/>
+        <text x="800" y="107" text-anchor="middle" font-size="8" fill="white">M</text>
+        <line x1="755" y1="90" x2="755" y2="72" stroke="#1a5276" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#a3)"/>
+        <text x="755" y="65" text-anchor="middle" font-size="8.5" fill="#1a5276" font-weight="700">Drive Pulley</text>
+        <text x="755" y="55" text-anchor="middle" font-size="8" fill="#555">Motor से connected,</text>
+        <text x="755" y="45" text-anchor="middle" font-size="8" fill="#555">belt को drive करता है</text>
+
+        <!-- SKIRT BOARD -->
+        <rect x="88" y="108" width="6" height="20" rx="2" fill="#1a3a5c"/>
+        <rect x="106" y="108" width="6" height="20" rx="2" fill="#1a3a5c"/>
+        <text x="97" y="270" text-anchor="middle" font-size="8" fill="#1a3a5c" font-weight="700">Skirt Board</text>
+      </svg>
+      <div class="cap">Fig 3.1 – Belt Conveyor के major components — side view</div>
+    </div>
+
+    <h3 style="color:#935116;margin:20px 0 12px">हर Component को Detail में समझो</h3>
+    <div class="cg">
+      <div class="cc">
+        <h4>🔴 Belt</h4>
+        <p>यह conveyor का सबसे central component है — एक continuous loop जो coal को carry strand (ऊपर) से head end तक ले जाती है और return strand (नीचे) से empty वापस आती है। Belt rubber और fabric layers से बनी होती है। Coal का weight, moisture, और lumps — सब belt को directly affect करते हैं।</p>
+      </div>
+      <div class="cc">
+        <h4>⚙ Drive Pulley (Head Pulley)</h4>
+        <p>यह conveyor का discharge end पर होता है और motor से directly connected होता है (gearbox के through)। यह rotate होता है और belt को friction के ज़रिए आगे खींचता है। Surface पर rubber lagging होती है जो grip बढ़ाती है। अगर lagging घिस गई या पानी आ गया — belt slip होती है।</p>
+      </div>
+      <div class="cc">
+        <h4>⚙ Tail Pulley</h4>
+        <p>यह conveyor के loading end पर होता है। Motor से connected नहीं होता — freely rotate करता है। Belt यहाँ से शुरू होकर coal carry करती है। Take-up pulley इसके पास ही होता है।</p>
+      </div>
+      <div class="cc">
+        <h4>🟡 Take-up System</h4>
+        <p>Belt को हमेशा सही tension पर रखना ज़रूरी है — न बहुत tight, न बहुत loose। Take-up system यही करता है। दो types होते हैं: Gravity take-up (एक weighted pulley नीचे लटकता है) और Screw take-up (manually adjust करते हैं)। अगर take-up fail हो जाए — belt slip होगी, fire हो सकती है।</p>
+      </div>
+      <div class="cc">
+        <h4>🟢 Carry Idlers (Troughing Idlers)</h4>
+        <p>ये rotating rollers हैं जो coal-laden belt को support करते हैं। इन्हें troughed configuration में लगाते हैं — side rolls को angle करके — जिससे belt एक trough shape बनाती है और ज़्यादा coal carry कर सकती है। हर 1–1.5 metres पर एक idler set होता है।</p>
+      </div>
+      <div class="cc">
+        <h4>🟢 Return Idlers</h4>
+        <p>Empty belt को return path पर support करते हैं। ये flat होते हैं। अगर कोई idler seize हो जाए (spin करना बंद कर दे) तो belt उसके ऊपर slide करती है, friction से heat generate होती है, और coal dust ignite हो सकती है — fire!</p>
+      </div>
+      <div class="cc">
+        <h4>🔵 Belt Scraper (Head Scraper)</h4>
+        <p>Head pulley के पास लगा एक blade जो belt surface पर press करता है discharge के बाद। Fine coal जो belt पर चिपकी रहती है ("carryback") उसे remove करता है। अगर scraper काम न करे — carryback पूरी return path पर गिरती है — spillage, dust, fouled idlers।</p>
+      </div>
+      <div class="cc">
+        <h4>🔵 Skirt Boards</h4>
+        <p>Feed point पर belt के दोनों sides पर लगे rubber/steel walls जो coal को belt के edges से बाहर गिरने से रोकते हैं। अगर skirt board और belt के बीच gap हो — तुरंत spillage।</p>
+      </div>
+    </div>
+
+    <div class="diag">
+      <svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg" style="max-width:500px">
+        <text x="250" y="18" text-anchor="middle" font-size="12" font-weight="800" fill="#935116">Troughed Idler Cross-Section – Belt का Trough Shape</text>
+        <!-- Flat reference -->
+        <line x1="60" y1="80" x2="240" y2="80" stroke="#aaa" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="150" y="96" text-anchor="middle" font-size="9" fill="#999">Flat belt (कम capacity)</text>
+        <!-- Troughed belt -->
+        <path d="M 60 80 L 120 110 L 180 130 L 240 110 L 300 80" stroke="#c0392b" stroke-width="3" fill="none"/>
+        <text x="180" y="148" text-anchor="middle" font-size="9.5" fill="#922b21" font-weight="700">Troughed belt (ज़्यादा capacity)</text>
+        <!-- Wing idlers -->
+        <line x1="60" y1="80" x2="120" y2="110" stroke="#27ae60" stroke-width="4"/>
+        <line x1="300" y1="80" x2="240" y2="110" stroke="#27ae60" stroke-width="4"/>
+        <!-- Centre idler -->
+        <line x1="130" y1="130" x2="230" y2="130" stroke="#27ae60" stroke-width="4"/>
+        <text x="60" y="74" text-anchor="middle" font-size="8.5" fill="#1e8449">Wing</text>
+        <text x="300" y="74" text-anchor="middle" font-size="8.5" fill="#1e8449">Wing</text>
+        <text x="180" y="155" text-anchor="middle" font-size="8.5" fill="#1e8449">Centre Idler</text>
+        <!-- Coal fill -->
+        <path d="M 100 112 L 155 130 L 205 130 L 258 112 L 228 108 L 180 126 L 132 108 Z" fill="#5d4037" opacity="0.7"/>
+        <text x="180" y="120" text-anchor="middle" font-size="8.5" fill="white" font-weight="700">Coal</text>
+        <!-- Angle label -->
+        <text x="400" y="90" font-size="9" fill="#935116" font-weight="700">Trough Angle:</text>
+        <text x="400" y="104" font-size="9" fill="#555">20°–45°</text>
+        <text x="400" y="118" font-size="9" fill="#555">ज़्यादा angle =</text>
+        <text x="400" y="132" font-size="9" fill="#555">ज़्यादा capacity</text>
+      </svg>
+      <div class="cap">Fig 3.2 – Troughed configuration belt की carrying capacity को flat से बहुत ज़्यादा बढ़ा देती है</div>
+    </div>
+
+    <div class="warn">
+      <div class="lbl">⚠ सबसे ज़रूरी बात — Nip Points</div>
+      <p>जहाँ भी belt किसी pulley से मिलती है — वहाँ एक <strong>nip point</strong> बनता है। यह conveyor का सबसे dangerous zone है। अगर कोई कपड़ा, हाथ, या loose item इस point को छू ले, तो belt उसे instantly grab करती है और खींच लेती है। इस force को कोई भी रोक नहीं सकता — motor सैकड़ों kilowatts deliver करता है। इसीलिए हर nip point पर guard लगाना mandatory है।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CB4 ═══════════ -->
+<div class="mod c-slate" id="cb4">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 4</div><h2>Conveying का Functional Mechanism</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Belt conveyor एक friction-drive system है — बिल्कुल car के tyre की तरह जो road को grip करके आगे बढ़ता है। Motor घूमता है, drive pulley घूमता है, friction होती है, belt चलती है।</p>
+    </div>
+    <p>यह समझना कि belt physically कैसे चलती है, आपको यह भी समझने में help करेगा कि यह कब और क्यों fail होती है।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 820 240" xmlns="http://www.w3.org/2000/svg" style="max-width:800px">
+        <defs>
+          <marker id="a4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1a5276"/></marker>
+          <marker id="a4r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#c0392b"/></marker>
+        </defs>
+        <!-- Motor -->
+        <rect x="10" y="85" width="70" height="45" rx="8" fill="#145a32" stroke="#0b4619" stroke-width="2"/>
+        <text x="45" y="107" text-anchor="middle" font-size="10" font-weight="800" fill="white">MOTOR</text>
+        <text x="45" y="120" text-anchor="middle" font-size="8.5" fill="#a9dfbf">बिजली → घूमना</text>
+        <!-- Arrow Motor to Gearbox -->
+        <line x1="81" y1="107" x2="105" y2="107" stroke="#1a5276" stroke-width="2.5" marker-end="url(#a4)"/>
+        <!-- Gearbox -->
+        <rect x="106" y="85" width="70" height="45" rx="8" fill="#1a5276" stroke="#154360" stroke-width="2"/>
+        <text x="141" y="107" text-anchor="middle" font-size="10" font-weight="800" fill="white">GEAR-</text>
+        <text x="141" y="120" text-anchor="middle" font-size="10" font-weight="800" fill="white">BOX</text>
+        <!-- Arrow Gearbox to Drive Pulley -->
+        <line x1="177" y1="107" x2="201" y2="107" stroke="#1a5276" stroke-width="2.5" marker-end="url(#a4)"/>
+        <!-- Drive Pulley -->
+        <ellipse cx="225" cy="107" rx="28" ry="28" fill="#2980b9" stroke="#1a5276" stroke-width="2.5"/>
+        <text x="225" y="103" text-anchor="middle" font-size="8.5" fill="white" font-weight="700">DRIVE</text>
+        <text x="225" y="115" text-anchor="middle" font-size="8.5" fill="white">PULLEY</text>
+        <!-- TIGHT SIDE belt going right -->
+        <rect x="253" y="94" width="310" height="14" rx="4" fill="#c0392b" opacity="0.85"/>
+        <text x="408" y="104" text-anchor="middle" font-size="9" fill="white" font-weight="700">TIGHT SIDE →→→ (High Tension)</text>
+        <!-- Arrow showing belt direction -->
+        <line x1="460" y1="88" x2="500" y2="88" stroke="#c0392b" stroke-width="2" marker-end="url(#a4r)"/>
+        <!-- SLACK SIDE belt coming back -->
+        <rect x="253" y="116" width="310" height="10" rx="3" fill="#e07070" opacity="0.6"/>
+        <text x="408" y="124" text-anchor="middle" font-size="8.5" fill="#7b241c" font-weight="700">←←← SLACK SIDE (कम tension)</text>
+        <!-- Tail Pulley -->
+        <ellipse cx="590" cy="107" rx="22" ry="22" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+        <text x="590" y="103" text-anchor="middle" font-size="8" fill="white" font-weight="700">TAIL</text>
+        <text x="590" y="115" text-anchor="middle" font-size="8" fill="white">PULLEY</text>
+        <!-- Labels below -->
+        <text x="225" y="155" text-anchor="middle" font-size="9.5" fill="#1a5276" font-weight="700">① Motor torque</text>
+        <text x="225" y="168" text-anchor="middle" font-size="9" fill="#555">pulley को rotate करता है</text>
+        <text x="408" y="155" text-anchor="middle" font-size="9.5" fill="#c0392b" font-weight="700">② Friction → belt move होती है</text>
+        <text x="408" y="168" text-anchor="middle" font-size="9" fill="#555">Tight side = pulling force</text>
+        <text x="590" y="155" text-anchor="middle" font-size="9.5" fill="#555" font-weight="700">③ Tail pulley free घूमता है</text>
+        <text x="590" y="168" text-anchor="middle" font-size="9" fill="#555">Belt यहाँ से wrap होती है</text>
+        <!-- Tension labels -->
+        <text x="45" y="185" text-anchor="middle" font-size="10" fill="#145a32" font-weight="700">Belt Tension की ज़रूरत क्यों?</text>
+        <rect x="5" y="195" width="810" height="38" rx="6" fill="#e8f4fd" stroke="#2980b9"/>
+        <text x="410" y="210" text-anchor="middle" font-size="9" fill="#1a5276">Tension कम → Drive Pulley की grip कम → Belt Slip → Coal नहीं चलती → Friction Heat → FIRE</text>
+        <text x="410" y="225" text-anchor="middle" font-size="9" fill="#1a5276">Tension ज़्यादा → Bearings overload → Structure damage → Belt splice fail</text>
+      </svg>
+      <div class="cap">Fig 4.1 – Friction-drive mechanism: Motor से Belt movement तक का पूरा chain</div>
+    </div>
+
+    <h3 style="color:#2c5282;margin:16px 0 10px">Tight Side vs Slack Side — क्या फ़र्क है?</h3>
+    <div class="cg">
+      <div class="cc">
+        <h4>💪 Tight Side (High Tension)</h4>
+        <p>Drive pulley से निकलने वाला belt strand — यह pulling force carry करता है। इसमें tension सबसे ज़्यादा होती है। यहाँ belt और pulley के बीच maximum friction होती है जो coal को carry करती है।</p>
+      </div>
+      <div class="cc">
+        <h4>↩ Slack Side (कम Tension)</h4>
+        <p>Drive pulley की तरफ वापस आने वाला strand — empty belt। Tension कम होती है। Take-up system यह ensure करता है कि slack side पर भी minimum tension बनी रहे ताकि belt sag न करे।</p>
+      </div>
+    </div>
+
+    <h3 style="color:#2c5282;margin:16px 0 10px">Belt Drift — क्यों होती है, क्यों ख़तरनाक है?</h3>
+    <p>Belt को हमेशा idlers के centre में रहना चाहिए। लेकिन अगर loading एक side पर ज़्यादा हो, idler alignment off हो, या tension uneven हो — belt धीरे-धीरे एक side की तरफ खिसकने लगती है। इसे <strong>belt drift</strong> कहते हैं।</p>
+    <div class="danger">
+      <div class="lbl">🔴 Belt Drift के Consequences</div>
+      <p>Belt drift → Belt का edge steel structure से contact → Friction heat generate → Coal dust ignite → <strong>FIRE।</strong> साथ में spillage पूरी belt length पर, expensive belt replacement, और plant shutdown। Belt sway switches (BSW) automatic alarm और trip देते हैं अगर drift ज़्यादा हो।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CB5 ═══════════ -->
+<div class="mod c-navy" id="cb5">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 5</div><h2>Conveyor Capacity और Throughput</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Conveyor capacity एक highway की तरह है — जितना चौड़ा और तेज़, उतना ज़्यादा traffic। लेकिन जैसे highway पर limit होती है, conveyor पर भी rated capacity से ज़्यादा नहीं जा सकते।</p>
+    </div>
+    <p>हर belt conveyor एक specific throughput rate के लिए design किया जाता है जो Tonnes Per Hour (TPH) में measure होती है। यह rating engineers ने carefully calculate की होती है। इससे ज़्यादा coal डालोगे — problems शुरू।</p>
+
+    <h3 style="color:#0d2137;margin:16px 0 10px">Capacity किन factors पर निर्भर करती है?</h3>
+    <table>
+      <thead><tr><th>Factor</th><th>Effect on Capacity</th><th>Practical Range</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Belt Width</strong></td><td>चौड़ी belt → ज़्यादा coal per metre carry कर सकती है</td><td>800 mm से 1,400 mm तक (coal CHP में)</td></tr>
+        <tr><td><strong>Belt Speed</strong></td><td>तेज़ belt → उसी cross-section पर ज़्यादा tonnes per hour</td><td>1.2 से 2.5 m/s typical</td></tr>
+        <tr><td><strong>Trough Angle</strong></td><td>ज़्यादा angle → ज़्यादा coal hold होती है per metre</td><td>20° से 45° (20° standard, 35°–45° high capacity)</td></tr>
+        <tr><td><strong>Inclination</strong></td><td>ज़्यादा slope → gravity के against काम → कम effective capacity</td><td>Coal के लिए max ~15°–18° (cleated belt के बिना)</td></tr>
+        <tr><td><strong>Coal Density</strong></td><td>Dense coal → same volume = ज़्यादा weight (tonnes)</td><td>750–950 kg/m³ (moisture पर depend करता है)</td></tr>
+        <tr><td><strong>Coal Moisture</strong></td><td>Wet coal ज़्यादा heavy, sticky, और blockage-prone होती है</td><td>Rainy season में significant impact</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info">
+      <div class="lbl">📊 Overloading और Underloading — दोनों ख़राब हैं</div>
+      <p><strong>Overloading:</strong> Coal belt के edges से spill होती है → Motor overload → Trip → Conveyor बंद। Coal pile-up को manually साफ़ करना पड़ता है — घंटों का काम।</p>
+      <p style="margin-top:8px"><strong>Underloading:</strong> Belt half-empty चल रही है → कम TPH → Bunker level गिर रहा है → Boiler को load कम करना पड़ेगा। इसीलिए feeder की speed और hopper level को carefully monitor करते हैं।</p>
+    </div>
+
+    <div class="key">
+      <div class="lbl">💡 Intern के लिए Key Takeaway</div>
+      <p>आप conveyor की rated capacity control नहीं करते — वह तो engineers ने पहले से set कर दी है। लेकिन आपको यह समझना है कि <strong>जब belt overloaded दिखे (coal edges तक पहुँच रही हो)</strong> या <strong>जब belt almost empty चल रही हो</strong> — दोनों असामान्य conditions हैं जो supervisor को immediately report करनी चाहिए। इसी awareness के लिए यह course है।</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ═══════════ CB6 ═══════════ -->
+<div class="mod c-orange" id="cb6">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 6</div><h2>Transfer Points और Coal Flow का व्यवहार</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Transfer point एक relay race का baton pass है — coal को ठीक अगली belt पर land करना होता है। कोई भी चूक, blockage, या misalignment यहाँ पूरे downstream flow को बाधित कर देती है।</p>
+    </div>
+
+    <p>जहाँ भी coal एक conveyor से दूसरे पर जाती है — या hopper से conveyor पर — वहाँ एक <strong>transfer point</strong> होता है। ये सिर्फ जोड़ने वाली जगह नहीं हैं; ये पूरे Coal Handling Plant में सबसे critical और सबसे hazardous locations हैं। CHP जाने से पहले यह समझना ज़रूरी है कि transfer point पर क्या होता है।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <defs>
+          <marker id="ta" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2c5282"/></marker>
+        </defs>
+        <text x="30" y="28" font-size="11" font-weight="700" fill="#2c5282">BC-1 (Upper Conveyor)</text>
+        <rect x="5" y="35" width="380" height="20" rx="4" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+        <rect x="5" y="37" width="380" height="8" rx="3" fill="#c0392b" opacity="0.7"/>
+        <ellipse cx="200" cy="40" rx="90" ry="8" fill="#5d4037"/>
+        <text x="200" y="44" text-anchor="middle" font-size="8.5" fill="white" font-weight="700">Coal on BC-1</text>
+        <line x1="310" y1="45" x2="370" y2="45" stroke="#2c5282" stroke-width="2" marker-end="url(#ta)"/>
+        <ellipse cx="395" cy="55" rx="22" ry="22" fill="#2980b9" stroke="#1a5276" stroke-width="2"/>
+        <text x="395" y="52" text-anchor="middle" font-size="8" fill="white" font-weight="700">Head</text>
+        <text x="395" y="63" text-anchor="middle" font-size="8" fill="white">Pulley</text>
+        <path d="M 393 77 L 370 78 L 350 120 L 310 175 L 290 185 L 330 185 L 385 175 L 430 120 L 415 78 Z" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2" opacity="0.9"/>
+        <text x="360" y="128" text-anchor="middle" font-size="11" fill="#2c3e50" font-weight="800">TRANSFER</text>
+        <text x="360" y="142" text-anchor="middle" font-size="11" fill="#2c3e50" font-weight="800">CHUTE</text>
+        <text x="360" y="156" text-anchor="middle" font-size="9" fill="#555">(coal को guide करती है)</text>
+        <line x1="355" y1="78" x2="325" y2="180" stroke="#5d4037" stroke-width="6" opacity="0.7" stroke-dasharray="6,3"/>
+        <text x="295" y="145" font-size="9" fill="#4e342e">Coal</text>
+        <text x="295" y="157" font-size="9" fill="#4e342e">गिरती है</text>
+        <text x="30" y="208" font-size="11" font-weight="700" fill="#145a32">BC-2 (Lower Conveyor)</text>
+        <rect x="10" y="212" width="630" height="20" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+        <rect x="10" y="214" width="630" height="8" rx="3" fill="#c0392b" opacity="0.6"/>
+        <ellipse cx="330" cy="218" rx="50" ry="9" fill="#f39c12" opacity="0.8"/>
+        <text x="330" y="222" text-anchor="middle" font-size="8.5" fill="white" font-weight="700">Impact Zone</text>
+        <ellipse cx="470" cy="218" rx="90" ry="8" fill="#5d4037"/>
+        <text x="470" y="222" text-anchor="middle" font-size="8.5" fill="white">Coal on BC-2</text>
+        <line x1="300" y1="222" x2="220" y2="222" stroke="#145a32" stroke-width="2" marker-end="url(#ta)"/>
+        <ellipse cx="280" cy="155" rx="35" ry="12" fill="#f8d7da" stroke="#c0392b" stroke-width="1" opacity="0.8"/>
+        <text x="280" y="159" text-anchor="middle" font-size="9" fill="#922b21" font-weight="700">DUST</text>
+        <path d="M 290 215 L 250 240 L 230 250 L 260 240 L 280 228" fill="#e67e22" opacity="0.5"/>
+        <text x="230" y="262" font-size="9" fill="#935116" font-weight="700">Spillage</text>
+        <path d="M 385 215 L 420 238 L 440 250 L 415 240 L 395 228" fill="#e67e22" opacity="0.5"/>
+        <text x="415" y="262" font-size="9" fill="#935116" font-weight="700">Spillage</text>
+        <rect x="510" y="118" width="140" height="42" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1"/>
+        <text x="580" y="134" text-anchor="middle" font-size="9" fill="#922b21" font-weight="700">BLOCKAGE RISK</text>
+        <text x="580" y="148" text-anchor="middle" font-size="8.5" fill="#c0392b">Wet/sticky coal</text>
+        <text x="580" y="158" text-anchor="middle" font-size="8.5" fill="#c0392b">chute block कर सकती है</text>
+        <text x="340" y="285" text-anchor="middle" font-size="10" fill="#444" font-style="italic">Coal को BC-2 belt के centre पर land होना चाहिए। कोई भी deviation — spillage या belt drift।</text>
+      </svg>
+      <div class="cap">Fig 6.1 – Transfer point का cross-section: coal trajectory, chute, और hazard zones</div>
+    </div>
+
+    <h3 style="color:#935116;margin:16px 0 10px">Transfer Point पर क्या गलत हो सकता है?</h3>
+    <table>
+      <tr><th>समस्या</th><th>कारण</th><th>तत्काल प्रभाव</th></tr>
+      <tr><td><strong>Chute Blockage</strong></td><td>गीली/चिपचिपी coal, over-size lumps, worn liners</td><td>Coal backup → upstream belt overload → ZSS trip</td></tr>
+      <tr><td><strong>Spillage</strong></td><td>Belt overloading, worn skirt seals, off-centre loading</td><td>Structure पर coal गिरती है, idler damage, fire risk</td></tr>
+      <tr><td><strong>Excessive Dust</strong></td><td>High drop height, dry fine coal, missing dust hood</td><td>CWP risk, visibility कम, explosion hazard</td></tr>
+      <tr><td><strong>Belt Drift (Receiving End)</strong></td><td>Off-centre coal loading on BC-2</td><td>BSW alarm, belt edge damage</td></tr>
+      <tr><td><strong>Liner Wear-Through</strong></td><td>Abrasion से chute wall घिसना</td><td>Structural breach, coal system के बाहर जाती है</td></tr>
+    </table>
+
+    <div class="warn">
+      <div class="lbl">Safety Alert</div>
+      <p>Transfer points पर कभी भी running conveyor के पास काम नहीं करें। किसी भी maintenance से पहले LOTO (Lockout-Tagout) अनिवार्य है। Confined space entry के लिए formal permit system follow करें।</p>
+    </div>
+
+    <h3 style="color:#935116;margin:16px 0 10px">Skirt Boards और Dust Suppression</h3>
+    <p><strong>Skirt boards</strong> feed/transfer zone पर belt के दोनों तरफ की side plates हैं जो coal को belt पर रोकती हैं। Rubber sealing strips belt surface के साथ contact में रहती हैं। अगर skirt gap 6 mm से ज़्यादा हो जाए — coal फिसलकर structure पर गिरती है। Skirt gap को हर shift में check करें।</p>
+    <p style="margin-top:10px"><strong>Dust suppression</strong> के तरीके: water mist sprays, foam suppression, dry fog systems। Enclosed areas में dust extraction (DE) system भी होता है जो dusty air को bag filters की तरफ खींचता है। Transfer point पर हमेशा N95 या बेहतर respirator पहनें।</p>
+  </div>
+</div>
+
+<!-- ═══════════ CB7 ═══════════ -->
+<div class="mod c-red" id="cb7">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 7</div><h2>Safety और Hazard Awareness</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Belt conveyor एक विशाल machine है जो आपसे बहुत तेज़ चलती है और बहुत ज़्यादा ताकतवर है। यह आपको नहीं देखती। आपको ही इसे देखना होगा — हर बार, हर shift में।</p>
+    </div>
+
+    <p>Belt Conveyor एक very high-energy machine है — thousands of tonnes of coal हर घंटे move करती है, कभी-कभी 3.5 m/s की speed से। CHP एक ऐसा environment है जहाँ negligence — चाहे एक पल की ही हो — life-altering consequences दे सकती है। यह section आपको primary hazards और उनसे बचाव के तरीकों से परिचित कराता है।</p>
+
+    <h3 style="color:#7b241c;margin:16px 0 10px">1. Mechanical Hazards (यांत्रिक खतरे)</h3>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <defs>
+          <marker id="na" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#c0392b"/></marker>
+        </defs>
+        <rect x="20" y="110" width="460" height="18" rx="4" fill="#e8d5c0" stroke="#8b6543" stroke-width="1.5"/>
+        <rect x="20" y="112" width="460" height="7" rx="3" fill="#c0392b" opacity="0.6"/>
+        <ellipse cx="50" cy="119" rx="28" ry="28" fill="#2980b9" stroke="#1a5276" stroke-width="2"/>
+        <text x="50" y="116" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tail</text>
+        <text x="50" y="126" text-anchor="middle" font-size="8" fill="white">Pulley</text>
+        <ellipse cx="500" cy="119" rx="28" ry="28" fill="#c0392b" stroke="#922b21" stroke-width="2"/>
+        <text x="500" y="116" text-anchor="middle" font-size="8" fill="white" font-weight="700">Drive</text>
+        <text x="500" y="126" text-anchor="middle" font-size="8" fill="white">Pulley</text>
+        <rect x="20" y="138" width="460" height="14" rx="4" fill="#d5dbdb" stroke="#aaa" stroke-width="1"/>
+        <path d="M 472 90 L 490 100 L 476 130" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#na)"/>
+        <rect x="480" y="55" width="160" height="38" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1.5"/>
+        <text x="560" y="70" text-anchor="middle" font-size="10" fill="#922b21" font-weight="800">NIP POINT</text>
+        <text x="560" y="84" text-anchor="middle" font-size="8.5" fill="#c0392b">Belt + Pulley का converging zone</text>
+        <ellipse cx="160" cy="138" rx="8" ry="8" fill="#95a5a6"/>
+        <ellipse cx="270" cy="138" rx="8" ry="8" fill="#95a5a6"/>
+        <ellipse cx="380" cy="138" rx="8" ry="8" fill="#95a5a6"/>
+        <text x="270" y="165" text-anchor="middle" font-size="9" fill="#7f8c8d">Return Idlers</text>
+        <path d="M 60 88 L 50 91" stroke="#e67e22" stroke-width="2" marker-end="url(#na)"/>
+        <rect x="5" y="53" width="160" height="38" rx="6" fill="#fef9e7" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="85" y="68" text-anchor="middle" font-size="9.5" fill="#935116" font-weight="800">ENTANGLEMENT ZONE</text>
+        <text x="85" y="82" text-anchor="middle" font-size="8.5" fill="#935116">Belt + Pulley का wrap zone</text>
+        <text x="340" y="200" text-anchor="middle" font-size="10" fill="#444">Nip points — belt जहाँ pulley के चारों तरफ wrap होती है — सबसे खतरनाक zones हैं।</text>
+        <text x="340" y="218" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="700">कभी भी running belt के पास loose clothing या hair मत लाएं।</text>
+      </svg>
+      <div class="cap">Fig 7.1 – Belt conveyor पर Nip Points और Entanglement Zones</div>
+    </div>
+
+    <div class="cg">
+      <div class="cc">
+        <h4 style="color:#922b21">Entanglement का खतरा</h4>
+        <p>Belt conveyors पर fatal injuries का सबसे बड़ा कारण entanglement है। Loose clothing, लंबे बाल, या jewelry rotating pulleys, idlers, या moving belt में फँस सकती है — पूरी arm या body को 1–2 seconds में अंदर खींच लेती है। <strong>Prevention: हमेशा close-fitting workwear पहनें, सारे कपड़े tucked करें, कोई rings/watches नहीं, बाल hard hat के अंदर।</strong></p>
+      </div>
+      <div class="cc">
+        <h4 style="color:#922b21">Struck-By का खतरा</h4>
+        <p>Drifted belt या snapped belt coal के टुकड़े, belt material, या structure के parts को high velocity पर फेंक सकती है। Idler failures rollers को eject कर सकती हैं। Overloaded belts से height से coal गिरना struck-by hazard है। <strong>हमेशा hard hat और safety glasses पहनें। कभी elevated loaded belt के directly नीचे खड़े न हों।</strong></p>
+      </div>
+    </div>
+
+    <h3 style="color:#7b241c;margin:16px 0 10px">2. Dust और Fire Hazards</h3>
+    <div class="cg">
+      <div class="cc">
+        <h4 style="color:#922b21">Coal Dust और CWP</h4>
+        <p>Coal dust के लंबे समय तक exposure से Coal Workers' Pneumoconiosis (CWP) होता है — 'black lung disease' — एक irreversible और potentially fatal lung disease। इसका कोई इलाज नहीं है; सिर्फ prevention काम करती है। <strong>Respirator: N95 minimum; P100 preferred।</strong> Coal dust — air में 35–2,000 g/m³ concentration पर — ignite होने पर explode भी कर सकती है।</p>
+      </div>
+      <div class="cc">
+        <h4 style="color:#922b21">Fire का खतरा</h4>
+        <p>Fire sources: seized idler bearing friction, drive pulley पर belt slip, accumulated spill coal, electrical fault। Belt material (rubber) combustible होती है। Enclosed galleries में toxic smoke तेज़ी से भर जाती है। <strong>Prevention: हर shift में spill coal साफ करें, idlers की free rotation check करें, scrapers maintain करें। Gallery में fire हो तो: तुरंत evacuate करें, CO₂/DCP use करें।</strong></p>
+      </div>
+    </div>
+
+    <h3 style="color:#7b241c;margin:16px 0 10px">3. Safety Devices — आपकी जान बचाने वाले Instruments</h3>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 185" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <rect x="5" y="8" width="670" height="32" rx="4" fill="#e8d5c0" stroke="#8b6543" stroke-width="1.5"/>
+        <text x="340" y="29" text-anchor="middle" font-size="10" fill="#5d4037" font-weight="700">Belt Conveyor (Loaded Direction)</text>
+        <line x1="5" y1="52" x2="675" y2="52" stroke="#c0392b" stroke-width="3" stroke-dasharray="12,5"/>
+        <text x="8" y="47" font-size="8.5" fill="#c0392b" font-weight="700">EPC Rope (पूरी length में)</text>
+        <rect x="80" y="43" width="30" height="18" rx="3" fill="#c0392b"/>
+        <text x="95" y="55" text-anchor="middle" font-size="7" fill="white">EPC</text>
+        <rect x="210" y="43" width="30" height="18" rx="3" fill="#c0392b"/>
+        <text x="225" y="55" text-anchor="middle" font-size="7" fill="white">EPC</text>
+        <rect x="340" y="43" width="30" height="18" rx="3" fill="#c0392b"/>
+        <text x="355" y="55" text-anchor="middle" font-size="7" fill="white">EPC</text>
+        <rect x="470" y="43" width="30" height="18" rx="3" fill="#c0392b"/>
+        <text x="485" y="55" text-anchor="middle" font-size="7" fill="white">EPC</text>
+        <rect x="600" y="43" width="30" height="18" rx="3" fill="#c0392b"/>
+        <text x="615" y="55" text-anchor="middle" font-size="7" fill="white">EPC</text>
+        <rect x="5" y="72" width="32" height="28" rx="3" fill="#f39c12" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="21" y="89" text-anchor="middle" font-size="7" fill="white" font-weight="700">BSW</text>
+        <rect x="645" y="72" width="32" height="28" rx="3" fill="#f39c12" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="661" y="89" text-anchor="middle" font-size="7" fill="white" font-weight="700">BSW</text>
+        <ellipse cx="340" cy="108" rx="22" ry="15" fill="#2980b9" stroke="#1a5276" stroke-width="1.5"/>
+        <text x="340" y="106" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">ZSS</text>
+        <text x="340" y="116" text-anchor="middle" font-size="7" fill="white">Speed</text>
+        <rect x="155" y="94" width="76" height="28" rx="4" fill="#1e8449" stroke="#145a32" stroke-width="1.5"/>
+        <text x="193" y="112" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">Belt Weigher</text>
+        <text x="95" y="148" text-anchor="middle" font-size="8" fill="#c0392b" font-weight="700">EPC: कहीं से भी खींचें</text>
+        <text x="95" y="160" text-anchor="middle" font-size="7.5" fill="#555">→ तुरंत stop</text>
+        <text x="340" y="142" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="700">ZSS: Speed drop</text>
+        <text x="340" y="154" text-anchor="middle" font-size="7.5" fill="#555">→ auto trip</text>
+        <text x="560" y="105" text-anchor="middle" font-size="8" fill="#f39c12" font-weight="700">BSW: Belt drift</text>
+        <text x="560" y="117" text-anchor="middle" font-size="7.5" fill="#555">→ alarm → trip</text>
+        <text x="193" y="142" text-anchor="middle" font-size="8" fill="#1e8449" font-weight="700">Belt Weigher: TPH</text>
+        <text x="193" y="154" text-anchor="middle" font-size="7.5" fill="#555">→ control room data</text>
+      </svg>
+      <div class="cap">Fig 7.2 – Belt Conveyor Safety Devices: EPC, BSW, ZSS, और Belt Weigher</div>
+    </div>
+
+    <table>
+      <tr><th>Safety Device</th><th>काम क्या करता है</th><th>कब Trip होता है</th></tr>
+      <tr><td><strong>Emergency Pull Cord (EPC)</strong></td><td>पूरी conveyor length में rope; कहीं से भी खींचें — instant stop</td><td>Manual pull; self-latching — investigation के बाद ही restart</td></tr>
+      <tr><td><strong>Belt Sway Switch (BSW)</strong></td><td>Belt का lateral drift detect करता है</td><td>Stage 1: alarm; Stage 2: conveyor trip। हर 25–30 m पर।</td></tr>
+      <tr><td><strong>Zero Speed Switch (ZSS)</strong></td><td>Belt speed monitor करता है</td><td>Speed rated से 70–80% से कम → 3 sec बाद trip</td></tr>
+      <tr><td><strong>Belt Weigher</strong></td><td>Real-time TPH measure करता है</td><td>Trip नहीं — data control room को भेजता है</td></tr>
+      <tr><td><strong>Chute Blocked Detector</strong></td><td>Chute fill-up detect करता है</td><td>Paddle stop / RF change → upstream belt/feeder trip</td></tr>
+      <tr><td><strong>Thermal / Fire Detector</strong></td><td>Temperature rise या flame detect करता है</td><td>Rate-of-rise +8°C/min या fixed 68/93°C → Fire Alarm trip</td></tr>
+    </table>
+
+    <h3 style="color:#7b241c;margin:16px 0 10px">4. PPE Requirements और LOTO Procedure</h3>
+    <div class="cg">
+      <div class="cc">
+        <h4>CHP में अनिवार्य PPE</h4>
+        <p>Safety Helmet (IS 2925) · Safety Shoes (steel toe, anti-slip) · Reflective Vest · Safety Glasses (ANSI Z87.1) · Hand Gloves (cut-resistant) · Ear Protection (85 dB से ज़्यादा noise पर) · Dust Respirator (N95 minimum — transfer points और enclosed areas में)</p>
+      </div>
+      <div class="cc">
+        <h4>LOTO — Lockout-Tagout Steps</h4>
+        <p><strong>(1)</strong> Control room को notify करें &nbsp;<strong>(2)</strong> Conveyor stop करें &nbsp;<strong>(3)</strong> Isolator खोलें और अपना personal padlock लगाएं &nbsp;<strong>(4)</strong> "DO NOT OPERATE" tag लटकाएं &nbsp;<strong>(5)</strong> Test करें — start press करें — confirm करें कोई movement नहीं &nbsp;<strong>(6)</strong> काम करें &nbsp;<strong>(7)</strong> Lock + tag हटाएं &nbsp;<strong>(8)</strong> Control room को notify करें।</p>
+      </div>
+    </div>
+
+    <div class="danger">
+      <div class="lbl">Critical Safety Rule</div>
+      <p><strong>LOTO में कोई shortcut नहीं है।</strong> "बस एक second के लिए देखना है" — यह excuse हर साल जानें लेता है। अगर आप conveyor के पास physically हैं — LOTO पहले, काम बाद में। कोई अपवाद नहीं।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CB8 ═══════════ -->
+<div class="mod c-dark" id="cb8">
+  <div class="mod-hdr"><div class="cb-tag">Concept Block 8</div><h2>Wagon Tippler के प्रकार</h2></div>
+  <div class="mod-body">
+    <div class="mental">
+      <div class="lbl">🧠 Mental Model</div>
+      <p>Wagon Tippler coal का front door है — raw material पहली बार यहीं system में enter करती है। Tippler की capacity और availability directly determine करती है कि plant को कितनी coal supply होगी।</p>
+    </div>
+
+    <p>Coal power plants में coal रेलवे wagons में आती है। हर wagon में लगभग 65–90 tonnes coal होती है। इन wagons को <strong>Wagon Tipplers</strong> के ज़रिए खाली किया जाता है, जो coal को hoppers में dump करती हैं, और वहाँ से Belt Conveyor No. 1 पर load होती है।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 265" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <!-- Rotary Tippler -->
+        <text x="90" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="#1a5276">Rotary Tippler</text>
+        <ellipse cx="90" cy="115" rx="65" ry="65" fill="#d6eaf8" stroke="#2980b9" stroke-width="2.5"/>
+        <rect x="58" y="88" width="64" height="38" rx="4" fill="#5d4037" stroke="#4e342e" stroke-width="1.5" transform="rotate(-30,90,107)"/>
+        <text x="90" y="108" text-anchor="middle" font-size="8" fill="white" transform="rotate(-30,90,108)">Wagon</text>
+        <text x="90" y="118" text-anchor="middle" font-size="7.5" fill="white" transform="rotate(-30,90,118)">(65-90 t)</text>
+        <text x="90" y="150" text-anchor="middle" font-size="9" fill="#1a5276">~160° rotation</text>
+        <path d="M 90 50 A 65 65 0 0 1 155 115" fill="none" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <rect x="42" y="180" width="96" height="26" rx="4" fill="#0d2137" stroke="#555"/>
+        <text x="90" y="196" text-anchor="middle" font-size="9" fill="#aaa">Hopper (नीचे)</text>
+        <circle cx="75" cy="165" r="3" fill="#5d4037"/>
+        <circle cx="90" cy="172" r="3" fill="#5d4037"/>
+        <circle cx="105" cy="165" r="3" fill="#5d4037"/>
+        <!-- Side Discharge -->
+        <text x="310" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="#6c3483">Side Discharge Tippler</text>
+        <rect x="250" y="65" width="120" height="52" rx="4" fill="#f5eef8" stroke="#8e44ad" stroke-width="2"/>
+        <text x="310" y="93" text-anchor="middle" font-size="9" fill="#6c3483">Wagon tilts ~50°</text>
+        <text x="310" y="106" text-anchor="middle" font-size="9" fill="#6c3483">to one side</text>
+        <path d="M 310 117 L 280 167 L 340 167 Z" fill="#8e44ad" opacity="0.2" stroke="#8e44ad" stroke-width="1.5"/>
+        <text x="310" y="153" text-anchor="middle" font-size="8.5" fill="#6c3483">Coal</text>
+        <rect x="262" y="167" width="96" height="26" rx="4" fill="#0d2137" stroke="#555"/>
+        <text x="310" y="183" text-anchor="middle" font-size="9" fill="#aaa">Side Hopper</text>
+        <text x="310" y="220" text-anchor="middle" font-size="8.5" fill="#6c3483">Simpler mechanism</text>
+        <text x="310" y="236" text-anchor="middle" font-size="8.5" fill="#6c3483">Lower capacity plants</text>
+        <!-- Track Hopper -->
+        <text x="560" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="#1e8449">Track Hopper System</text>
+        <line x1="492" y1="72" x2="628" y2="72" stroke="#888" stroke-width="3"/>
+        <line x1="492" y1="82" x2="628" y2="82" stroke="#888" stroke-width="3"/>
+        <rect x="500" y="52" width="120" height="28" rx="3" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+        <text x="560" y="65" text-anchor="middle" font-size="8.5" fill="#1e8449">BOXN-HL Wagon</text>
+        <text x="560" y="77" text-anchor="middle" font-size="7.5" fill="#1e8449">(bottom doors खुली)</text>
+        <path d="M 500 82 L 480 157 L 640 157 L 620 82 Z" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+        <text x="560" y="114" text-anchor="middle" font-size="9" fill="#1e8449">Track Hopper Pit</text>
+        <text x="560" y="130" text-anchor="middle" font-size="8.5" fill="#1e8449">(100–200 m लंबी)</text>
+        <line x1="540" y1="82" x2="540" y2="110" stroke="#5d4037" stroke-width="2.5" stroke-dasharray="4,2"/>
+        <line x1="580" y1="82" x2="580" y2="110" stroke="#5d4037" stroke-width="2.5" stroke-dasharray="4,2"/>
+        <text x="560" y="174" text-anchor="middle" font-size="8.5" fill="#1e8449">Gravity discharge</text>
+        <text x="560" y="189" text-anchor="middle" font-size="8.5" fill="#1e8449">No tipping mechanism</text>
+        <text x="560" y="204" text-anchor="middle" font-size="8.5" fill="#1e8449">Feeder → Belt No. 1</text>
+      </svg>
+      <div class="cap">Fig 8.1 – तीन प्रकार के Wagon Tipplers: Rotary, Side Discharge, और Track Hopper</div>
+    </div>
+
+    <div class="tg">
+      <div class="tc rot">
+        <h4>Rotary Tippler</h4>
+        <p><strong>काम कैसे करता है:</strong> Coal wagon (65–90 t) को एक rotating cradle में clamp करके लगभग 160° घुमाया जाता है। Coal नीचे के hopper में dump होती है। Wagon rail से connected रहती है (knuckle couplers के ज़रिए)।</p>
+        <p><strong>Cycle time:</strong> 3–4 minutes/wagon</p>
+        <p><strong>Capacity:</strong> Single: ~1,000–1,200 TPH; Tandem (2 wagons एकसाथ): ~2,000 TPH</p>
+        <p><strong>कहाँ use होता है:</strong> Large thermal power plants (500 MW और ऊपर)</p>
+      </div>
+      <div class="tc side">
+        <h4>Side Discharge Tippler</h4>
+        <p><strong>काम कैसे करता है:</strong> Wagon को sideways (~50°) tilt किया जाता है — पूरा नहीं घुमाया। Coal एक तरफ के hopper में discharge होती है।</p>
+        <p><strong>Simpler mechanism</strong> — construction और maintenance easier।</p>
+        <p><strong>Capacity:</strong> ~500–800 TPH (rotary से कम)</p>
+        <p><strong>Limitation:</strong> सिर्फ side-discharge capable wagons के लिए। Large TPPs में इसे rotary से replace किया जा रहा है।</p>
+      </div>
+      <div class="tc track">
+        <h4>Track Hopper System</h4>
+        <p><strong>काम कैसे करता है:</strong> Rail tracks के नीचे concrete pit (hopper) बनी होती है। BOXN-HL type के bottom-discharge wagons के bottom doors खुलते हैं — coal gravity से नीचे गिरती है।</p>
+        <p><strong>Length:</strong> 100–200 m — एकसाथ 10–20 wagons handle करती है।</p>
+        <p><strong>Feed Control:</strong> Apron Feeder या Vibratory Feeder coal को regulate करके Belt No. 1 पर डालता है।</p>
+        <p><strong>Advantage:</strong> Low maintenance — कोई tipping mechanism नहीं।</p>
+      </div>
+    </div>
+
+    <div class="key">
+      <div class="lbl">Intern की समझ</div>
+      <p>आपको Tippler को operate नहीं करना है — यह specialized work है। लेकिन आपको यह जानना है कि <strong>Wagon Tippler rate directly Belt Conveyor No. 1 की load को determine करती है</strong>। अगर tippler बहुत तेज़ unload कर रहा है, Belt 1 overloaded हो जाएगी। अगर tippler रुक जाए, पूरी coal supply chain रुक जाती है। इसीलिए यह पूरे system का starting point है।</p>
+    </div>
+
+    <h3 style="color:#1c2833;margin:16px 0 10px">Wagon Tippler से Belt Conveyor तक का Flow</h3>
+    <table>
+      <tr><th>Step</th><th>Equipment</th><th>Function</th></tr>
+      <tr><td>1</td><td>Wagon Tippler / Track Hopper</td><td>Coal wagon को empty करता है — hopper में dump</td></tr>
+      <tr><td>2</td><td>Hopper + Vibratory/Apron Feeder</td><td>Controlled rate पर coal को Belt No. 1 पर feed करता है</td></tr>
+      <tr><td>3</td><td>Belt Conveyor No. 1 (BC-1)</td><td>Coal को Crusher House तक ले जाती है</td></tr>
+      <tr><td>4</td><td>Crusher House</td><td>Coal को ≤50 mm तक crush करता है</td></tr>
+      <tr><td>5</td><td>CHP Conveyors</td><td>Crushed coal को Coal Yard / Bunkers तक पहुँचाती हैं</td></tr>
+      <tr><td>6</td><td>Bunker → Mill → Boiler</td><td>Generation cycle शुरू होती है</td></tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════ CONTROL POINTS ═══════════════════════════════════════ -->
+<div class="mod c-slate" id="cp">
+  <div class="mod-hdr"><div class="cb-tag">Control Points</div><h2>Critical Process Control Points</h2></div>
+  <div class="mod-body">
+    <p>Control points वो specific locations हैं system में जहाँ coal flow की quality, continuity, और safety सबसे ज़्यादा sensitive होती है। ये वो जगहें हैं जहाँ एक plant engineer सबसे पहले नज़र डालता है। Intern के रूप में, आप ये terms बार-बार सुनेंगे — इसलिए इन सबका मतलब समझना absolutely ज़रूरी है।</p>
+
+    <div class="cp-card">
+      <div class="cp-badge">CP-1</div>
+      <h4>Coal Loading onto Belt (Feed Point)</h4>
+      <p><strong>कहाँ है:</strong> Tail pulley के ठीक बाद — जहाँ hopper/feeder से coal चलती हुई belt पर गिर रही है।</p>
+      <p style="margin-top:8px"><strong>यहाँ क्या critical है:</strong> Coal को belt के exactly centre में गिरना चाहिए — एक controlled rate पर (rated TPH से ज़्यादा नहीं), और free-fall height minimum होनी चाहिए ताकि impact और dust दोनों कम हों। Skirt boards को edges पर tight seal बनाना चाहिए coal को रोकने के लिए। अगर skirt board में कोई भी gap हो — तो सीधा spillage होगा।</p>
+      <div class="warn" style="margin-top:8px"><div class="lbl">Risk</div><p>CP-1 पर overloading से belt sag होगी, edges से spillage होगी, और motor overload हो सकता है। Blocked skirt boards से belt edge damage होती है। Feed point पर बड़े coal lumps का impact belt cover को damage करता है।</p></div>
+    </div>
+
+    <div class="cp-card">
+      <div class="cp-badge">CP-2</div>
+      <h4>Transfer Between Conveyors (Transfer Point)</h4>
+      <p><strong>कहाँ है:</strong> Transfer tower — जहाँ BC-1 से coal discharge होती है और chute के through BC-2 पर load होती है।</p>
+      <p style="margin-top:8px"><strong>यहाँ क्या critical है:</strong> Chute से गुज़रने वाली coal का trajectory receiving belt की speed और direction के साथ match होना चाहिए। Coal को BC-2 पर centrally land करना चाहिए। Chute blockage-free होनी चाहिए। Chute liners (wear-resistant steel plates) intact होने चाहिए। Deflector plates coal को accurately direct करें।</p>
+      <div class="danger" style="margin-top:8px"><div class="lbl">Risk</div><p>यह पूरे CHP में सबसे high-risk location है। यहाँ blockages chute को back-fill कर सकती हैं, जिससे BC-1 overload होती है। यहाँ से spillage height से गिरती है। Dust maximum होती है। यहाँ confined space entry के लिए formal permit ज़रूरी है।</p></div>
+    </div>
+
+    <div class="cp-card">
+      <div class="cp-badge">CP-3</div>
+      <h4>Belt Movement at Drive Pulley</h4>
+      <p><strong>कहाँ है:</strong> Conveyor का head end — drive pulley, motor, और gearbox assembly।</p>
+      <p style="margin-top:8px"><strong>यहाँ क्या critical है:</strong> Drive pulley को belt के साथ sufficient friction maintain करनी चाहिए ताकि slipping के बिना motor torque transmit हो सके। Belt को pulley पर correct arc (wrap angle) पर wrap होना चाहिए। Head scraper को discharge होते वक्त belt surface से coal effectively remove करना चाहिए। Belt coal को cleanly नीचे की chute में discharge करे।</p>
+      <div class="warn" style="margin-top:8px"><div class="lbl">Risk</div><p>Drive pulley पर belt slip = ZSS trip + heat generation → fire। Drive end पर carryback coal का accumulation idler damage और fire risk दोनों पैदा करता है। Worn scraper blades = excessive carryback।</p></div>
+    </div>
+
+    <div class="cp-card">
+      <div class="cp-badge">CP-4</div>
+      <h4>Belt Tracking Along the Full Length</h4>
+      <p><strong>कहाँ है:</strong> Conveyor की पूरी length — हर idler frame पर belt की centreline position।</p>
+      <p style="margin-top:8px"><strong>यहाँ क्या critical है:</strong> Belt को सभी idlers पर centrally run करना चाहिए — दोनों तरफ equal clearance के साथ। Belt drift — एक तरफ को run करना — structure के against belt edge rubbing, edge fraying, और अंत में belt failure की तरफ ले जाती है। Self-aligning idlers छोटे drift को correct करते हैं।</p>
+      <div class="warn" style="margin-top:8px"><div class="lbl">Risk</div><p>Belt drift → BSW alarm (stage 1) → conveyor trip (stage 2) अगर uncorrected रहे। ±50 mm drift पर alarm, ±75 mm पर trip। Running belt को manually push करके कभी correct नहीं करें।</p></div>
+    </div>
+
+    <div class="cp-card">
+      <div class="cp-badge">CP-5</div>
+      <h4>Bunker Discharge Point</h4>
+      <p><strong>कहाँ है:</strong> Belt conveyor का tail end — जहाँ conveyor coal को bunker में discharge करती है (tripper car या fixed chute के through)।</p>
+      <p style="margin-top:8px"><strong>यहाँ क्या critical है:</strong> Bunker levels सभी bunkers में balanced रहनी चाहिए। Tripper car को sequentially move करना चाहिए coal को evenly distribute करने के लिए। Belt weigher data control room को confirm करे कि coal transfer हो रही है। Over-filling से coal belt पर back up होती है।</p>
+      <div class="warn" style="margin-top:8px"><div class="lbl">Risk</div><p>Full bunker में coal discharge करने की कोशिश → coal belt पर backup → overloading → belt trip। Low bunker level के लिए level sensors coal supply को automatically trigger करते हैं।</p></div>
+    </div>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <defs>
+          <marker id="cpa" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#2c5282"/></marker>
+        </defs>
+        <!-- Belt line -->
+        <rect x="40" y="95" width="600" height="16" rx="4" fill="#e8d5c0" stroke="#8b6543" stroke-width="1.5"/>
+        <rect x="40" y="97" width="600" height="6" rx="3" fill="#c0392b" opacity="0.6"/>
+        <!-- Tail/Head pulleys -->
+        <ellipse cx="55" cy="103" rx="22" ry="22" fill="#2980b9" stroke="#1a5276" stroke-width="2"/>
+        <text x="55" y="107" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">Tail</text>
+        <ellipse cx="625" cy="103" rx="22" ry="22" fill="#c0392b" stroke="#922b21" stroke-width="2"/>
+        <text x="625" y="107" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">Drive</text>
+        <!-- CP markers -->
+        <circle cx="55" cy="80" r="14" fill="#1e8449" stroke="white" stroke-width="1.5"/>
+        <text x="55" y="84" text-anchor="middle" font-size="8.5" fill="white" font-weight="800">CP1</text>
+        <circle cx="195" cy="80" r="14" fill="#2980b9" stroke="white" stroke-width="1.5"/>
+        <text x="195" y="84" text-anchor="middle" font-size="8.5" fill="white" font-weight="800">CP2</text>
+        <circle cx="625" cy="75" r="14" fill="#c0392b" stroke="white" stroke-width="1.5"/>
+        <text x="625" y="79" text-anchor="middle" font-size="8.5" fill="white" font-weight="800">CP3</text>
+        <circle cx="340" cy="68" r="14" fill="#8e44ad" stroke="white" stroke-width="1.5"/>
+        <text x="340" y="72" text-anchor="middle" font-size="8.5" fill="white" font-weight="800">CP4</text>
+        <circle cx="490" cy="80" r="14" fill="#935116" stroke="white" stroke-width="1.5"/>
+        <text x="490" y="84" text-anchor="middle" font-size="8.5" fill="white" font-weight="800">CP5</text>
+        <!-- Labels -->
+        <text x="55" y="142" text-anchor="middle" font-size="8" fill="#1e8449" font-weight="700">Feed Point</text>
+        <text x="55" y="154" text-anchor="middle" font-size="7.5" fill="#555">Loading</text>
+        <text x="195" y="142" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="700">Transfer Point</text>
+        <text x="195" y="154" text-anchor="middle" font-size="7.5" fill="#555">Chute junction</text>
+        <text x="340" y="142" text-anchor="middle" font-size="8" fill="#8e44ad" font-weight="700">Belt Alignment</text>
+        <text x="340" y="154" text-anchor="middle" font-size="7.5" fill="#555">Full length</text>
+        <text x="490" y="142" text-anchor="middle" font-size="8" fill="#935116" font-weight="700">Bunker Discharge</text>
+        <text x="490" y="154" text-anchor="middle" font-size="7.5" fill="#555">Tripper car</text>
+        <text x="625" y="142" text-anchor="middle" font-size="8" fill="#c0392b" font-weight="700">Drive Pulley</text>
+        <text x="625" y="154" text-anchor="middle" font-size="7.5" fill="#555">Motor/Gearbox end</text>
+        <text x="340" y="182" text-anchor="middle" font-size="10" fill="#444" font-weight="600">CP1 से CP5 तक — हर shift में operator का inspection round इन्हीं points पर focus करता है।</text>
+      </svg>
+      <div class="cap">Fig CP.1 – Belt Conveyor पर पाँच Critical Control Points की location</div>
+    </div>
+
+    <div class="key">
+      <div class="lbl">Intern Takeaway</div>
+      <p>इन पाँच control points को याद कर लें — CP1 (Feed), CP2 (Transfer), CP3 (Drive), CP4 (Alignment), CP5 (Discharge)। Site visit पर supervisor आपसे पूछेंगे: <em>"यहाँ क्या देखते हो?"</em> अगर आप इन points को identify कर सकते हैं और यह बता सकते हैं कि वहाँ क्या check करना है — तो आप किसी भी दूसरे intern से आगे होंगे।</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════ RISK OF FAILURE ═══════════════════════════════════════ -->
+<div class="mod c-red" id="risk">
+  <div class="mod-hdr"><div class="cb-tag">Risk of Failure</div><h2>System Fail होने के परिणाम</h2></div>
+  <div class="mod-body">
+    <p>Failure के consequences को समझना pessimism नहीं है — यह safety और operational discipline की नींव है। हर component एक reason से exist करता है, और वो reason तब clearly समझ में आता है जब वो fail होता है। नीचे तीन dimensions में structured view दिया गया है — जब belt conveyor system fail होता है तो क्या होता है।</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0">
+      <div style="background:#fef9e7;border-top:4px solid #e67e22;border-radius:8px;padding:16px">
+        <h4 style="font-size:13.5px;margin-bottom:10px;color:#935116">Plant Continuity</h4>
+        <ul style="padding-left:16px;font-size:13px;line-height:1.9">
+          <li>Conveyor stoppage → coal supply interrupt → bunker level कुछ घंटों में गिर जाता है</li>
+          <li>Bunker starvation → boiler load reduce करना पड़ता है → generation loss (MW reduction)</li>
+          <li>Prolonged stoppage → boiler trips → complete unit shutdown</li>
+          <li>Flow imbalance (feeder too fast) → belt overload → conveyor trip → same outcome</li>
+          <li>Grid पर downstream impact: power deficit, frequency instability</li>
+          <li>500 MW unit के लिए एक घंटे के outage में estimated loss: ₹15–25 लाख (current rates पर)</li>
+        </ul>
+      </div>
+      <div style="background:#fdedec;border-top:4px solid #c0392b;border-radius:8px;padding:16px">
+        <h4 style="font-size:13.5px;margin-bottom:10px;color:#922b21">Equipment Damage</h4>
+        <ul style="padding-left:16px;font-size:13px;line-height:1.9">
+          <li>Belt slip पर heat → belt cover melting → belt replacement: ₹20–80 लाख (belt length पर)</li>
+          <li>Overloading → idler bearing failure → seized idler → fire</li>
+          <li>Belt misalignment → edge fraying → structural damage to idler frames</li>
+          <li>Chute blockage + forced clearing → chute liner damage → unplanned shutdown</li>
+          <li>Neglected carryback → underside coal accumulation → idler/structure corrosion</li>
+          <li>Motor overload trips → frequent starts → motor winding damage</li>
+        </ul>
+      </div>
+      <div style="background:#eafaf1;border-top:4px solid #1e8449;border-radius:8px;padding:16px">
+        <h4 style="font-size:13.5px;margin-bottom:10px;color:#1e8449">Safety Incidents</h4>
+        <ul style="padding-left:16px;font-size:13px;line-height:1.9">
+          <li>Entanglement → crush injury, amputation, fatality — seconds में होता है</li>
+          <li>Belt fire → gallery evacuation, toxic smoke, belt total loss</li>
+          <li>Coal dust explosion → catastrophic structural damage</li>
+          <li>Chute blockage clearing without LOTO → entanglement risk</li>
+          <li>Struck by ejected idler, coal lump, or snapped belt</li>
+          <li>CWP (black lung) → long-term respiratory disease — irreversible</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="danger">
+      <div class="lbl">Safety Perspective</div>
+      <p>Equipment failures costly हैं लेकिन repairable हैं। Safety incidents — especially entanglement और dust exposure — का damage permanent होता है। Belt conveyor operation में safety हमेशा production से ऊपर है।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ FAILURE CASES ═══════════════════════════════════════ -->
+<div class="mod c-red" id="failures">
+  <div class="mod-hdr"><div class="cb-tag">Failure Cases</div><h2>6 Common Failure Scenarios</h2></div>
+  <div class="mod-body">
+    <p>ये 6 failure cases real-world situations से लिए गए हैं। हर case में pattern समझें: <strong>Cause → Effect → Detection → Immediate Action</strong>। यही framework आपको site पर किसी भी problem को systematically देखने की capability देता है।</p>
+
+    <div class="fc">
+      <div class="fc-n">1</div>
+      <div>
+        <h4>Belt Drift (Belt Misalignment)</h4>
+        <p><strong>Root Cause:</strong> Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension।</p>
+        <p style="margin-top:6px"><strong>Effect:</strong> Belt एक तरफ रगड़ती है conveyor structure से → belt edge fraying → material spillage → structure damage → fire risk (friction से)।</p>
+        <p style="margin-top:6px"><strong>Detection:</strong> BSW (Belt Sway Switch) alarm; visual patrol में belt edge की position देखें।</p>
+        <p style="margin-top:6px"><strong>Immediate Action:</strong> Feed rate कम करें → self-aligning idlers adjust करें → loading pattern investigate करें। BSW trip के बाद investigation के बिना restart नहीं।</p>
+      </div>
+    </div>
+
+    <div class="fc">
+      <div class="fc-n">2</div>
+      <div>
+        <h4>Belt Overloading</h4>
+        <p><strong>Root Cause:</strong> Feeder gate ज़रूरत से ज़्यादा खुली, wet/dense coal (higher bulk density), multiple feeders simultaneously over-feeding, या belt speed design से कम।</p>
+        <p style="margin-top:6px"><strong>Effect:</strong> Coal belt के sides से spill होती है → idler frames overloaded → bearing failure → motor overload trip → conveyor stop।</p>
+        <p style="margin-top:6px"><strong>Detection:</strong> Belt Weigher पर high TPH reading; visual spillage; motor current high alarm।</p>
+        <p style="margin-top:6px"><strong>Immediate Action:</strong> Feeder gate कम करें → Belt Weigher reading monitor करें → spilled coal साफ करें → idlers inspect करें।</p>
+      </div>
+    </div>
+
+    <div class="fc">
+      <div class="fc-n">3</div>
+      <div>
+        <h4>Chute Blockage (Choking)</h4>
+        <p><strong>Root Cause:</strong> Wet/sticky coal जो chute opening में bridge बनाती है, oversized lumps (crusher bypass), worn liners जो flow area reduce कर देती हैं, या low belt speed।</p>
+        <p style="margin-top:6px"><strong>Effect:</strong> Coal chute में backup होती है → upstream belt पर load बढ़ता है → ZSS trip downstream belt पर → production stoppage।</p>
+        <p style="margin-top:6px"><strong>Detection:</strong> Chute Blocked Detector alarm; coal backup देखना upstream belt पर; downstream belt पर ZSS trip।</p>
+        <p style="margin-top:6px"><strong>Immediate Action:</strong> Upstream belt/feeder stop करें FIRST (coal supply cut करें) → chute के बाहर से vibrator या rod use करें → कभी भी हाथ अंदर मत डालें → LOTO mandatory किसी भी manual entry से पहले।</p>
+      </div>
+    </div>
+
+    <div class="fc">
+      <div class="fc-n">4</div>
+      <div>
+        <h4>Belt Slip</h4>
+        <p><strong>Root Cause:</strong> Low belt tension (worn/slack take-up), glazed या oily drive pulley surface, wet belt surface, severe overloading।</p>
+        <p style="margin-top:6px"><strong>Effect:</strong> Drive pulley rotate करता है लेकिन belt full speed से move नहीं करती → ZSS trip होता है → extreme heat drive pulley contact point पर → belt cover melt होती है → fire ignites spill coal।</p>
+        <p style="margin-top:6px"><strong>Detection:</strong> ZSS trip (speed drop); drive end पर rubber burning smell; drive pulley पर rubber streak marks।</p>
+        <p style="margin-top:6px"><strong>Immediate Action:</strong> EPC या ZSS trip के बाद तुरंत stop → drive area inspect करें for heat/fire → tension check करें, pulley surface inspect करें, load check करें → fire हो तो evacuate, FAS activate करें।</p>
+      </div>
+    </div>
+
+    <div class="fc">
+      <div class="fc-n">5</div>
+      <div>
+        <h4>Dust Accumulation Fire</h4>
+        <p><strong>Root Cause:</strong> Spill coal का belt structure के नीचे accumulation, seized idler bearing जो enough heat generate करती है ignition के लिए, poor housekeeping, absent या non-functional thermal detector।</p>
+        <p style="margin-top:6px"><strong>Effect:</strong> Gallery fire → belt total destruction → structural damage → toxic smoke → production loss कई दिनों का।</p>
+        <p style="margin-top:6px"><strong>Detection:</strong> Thermal detector alarm; burning smell; smoke; seized idler की squealing sound।</p>
+        <p style="margin-top:6px"><strong>Immediate Action:</strong> EPC pull → Fire Alarm System activate → gallery तुरंत evacuate → CO₂ या DCP extinguisher use करें — live electrical equipment पर कभी water नहीं। Emergency response team को call करें।</p>
+      </div>
+    </div>
+
+    <div class="fc">
+      <div class="fc-n">6</div>
+      <div>
+        <h4>Entanglement Injury</h4>
+        <p><strong>Root Cause:</strong> Running conveyor पर LOTO के बिना काम करना, nip point के पास loose clothing/hair, bypassed या removed guards।</p>
+        <p style="margin-top:6px"><strong>Effect:</strong> Crush injury, amputation, या fatal outcome। Nip points पर यह 1 second से कम में होता है। EPC pull करने की speed भी insufficient होती है एक बार contact हो जाए।</p>
+        <p style="margin-top:6px"><strong>Detection:</strong> यह preventable है — detect करके नहीं, prevent करके। EPC pull होगा लेकिन तब तक बहुत देर हो सकती है।</p>
+        <p style="margin-top:6px"><strong>Prevention (Prevention = Action):</strong> LOTO हर बार, हर काम से पहले — कोई exception नहीं। Close-fitting workwear हमेशा। Guards कभी remove नहीं करें — अगर missing हो तो report करें और belt तब तक run मत करें।</p>
+      </div>
+    </div>
+
+    <div class="key">
+      <div class="lbl">Pattern Recognition</div>
+      <p>Notice करें: हर failure case एक pattern follow करता है — <strong>एक condition (जो कुछ समय से build हो रही थी) + एक trigger (जो उसे failure में convert करती है)</strong>। इसीलिए <strong>preventive inspection rounds</strong> — जहाँ आप conditions को deteriorate होते देखते हैं — उतने ही important हैं जितने emergency responses। एक अच्छा operator failure को होने से पहले identify करता है।</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════ LEARNING OUTCOMES ═══════════════════════════════════════ -->
+<div class="mod c-green" id="lo">
+  <div class="mod-hdr"><div class="cb-tag">Learning Outcomes</div><h2>इस Course को पूरा करने के बाद आप क्या कर पाएंगे</h2></div>
+  <div class="mod-body">
+    <p>ये learning outcomes define करते हैं कि इस L1 course को complete करने के बाद एक intern या trainee operator को क्या demonstrate करना चाहिए। ये सिर्फ theoretical knowledge नहीं — ये observable behaviours हैं।</p>
+
+    <div class="og">
+      <div class="oi"><div class="ic">🏭</div><p><strong>Context &amp; Importance:</strong> Thermal power generation cycle explain कर पाना — coal से electricity तक — और belt conveyor की critical role इस chain में।</p></div>
+      <div class="oi"><div class="ic">🔍</div><p><strong>Component Recognition:</strong> एक real conveyor पर सभी major components — belt, pulleys, idlers, take-up, scrapers, chute — identify और name कर पाना।</p></div>
+      <div class="oi"><div class="ic">⚙</div><p><strong>Working Principle:</strong> Friction-drive principle explain करना — tight side/slack side tension का concept — और यह conveyor reliability को कैसे affect करता है।</p></div>
+      <div class="oi"><div class="ic">📊</div><p><strong>Capacity Factors:</strong> TPH capacity को affect करने वाले factors (width, speed, trough angle, coal properties) identify करना और normal vs. abnormal loading recognize करना।</p></div>
+      <div class="oi"><div class="ic">🔄</div><p><strong>Transfer Points:</strong> Transfer point पर coal flow को describe करना — chute function, impact zone, और common hazards (blockage, spillage, dust) explain करना।</p></div>
+      <div class="oi"><div class="ic">⚠</div><p><strong>Hazard Recognition:</strong> Primary mechanical hazards (entanglement, nip points, struck-by), dust hazards (CWP, explosion), और fire hazards को identify करना।</p></div>
+      <div class="oi"><div class="ic">🛡</div><p><strong>Safety Devices:</strong> EPC, BSW, ZSS, Belt Weigher, Chute Blocked Detector, और Thermal Detector — हर device का function और trip condition बताना।</p></div>
+      <div class="oi"><div class="ic">🔒</div><p><strong>LOTO Procedure:</strong> LOTO के सभी 8 steps सही sequence में बताना और यह explain करना कि LOTO किसी भी maintenance activity से पहले क्यों mandatory है।</p></div>
+      <div class="oi"><div class="ic">📍</div><p><strong>Control Points:</strong> CP1 से CP5 तक की locations और हर point पर क्या check करना है — यह describe करना।</p></div>
+      <div class="oi"><div class="ic">🔧</div><p><strong>Failure Recognition:</strong> 6 common failure cases — belt drift, overloading, chute blockage, belt slip, dust fire, entanglement — identify करना और हर case में immediate action बताना।</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ ASSESSMENT ═══════════════════════════════════════ -->
+<div class="mod c-assess" id="assess">
+  <div class="mod-hdr"><div class="cb-tag">Assessment</div><h2>L1 Belt Conveyor — Knowledge Assessment</h2></div>
+  <div class="mod-body">
+    <p style="font-size:13.5px;color:#2c3e70;margin-bottom:18px">इस assessment में 36 questions हैं: 20 Multiple Choice, 10 True/False, और 6 Short Answer। यह course content के आपके understanding को verify करता है — सिर्फ याद करने का test नहीं, बल्कि concepts apply करने का।</p>
+
+    <!-- ── SECTION A: MCQ ── -->
+    <div class="section-hdr">Section A — Multiple Choice Questions (प्रत्येक 1 अंक)</div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q1</div>
+      <div class="qtext">एक thermal power plant में coal का primary role क्या है?</div>
+      <ol type="A" class="qopts">
+        <li>Turbine को directly rotate करना</li>
+        <li>Steam produce करने के लिए boiler में जलाई जाती है, जो turbine चलाती है</li>
+        <li>Generator को mechanically drive करना</li>
+        <li>Cooling water को heat करना</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Coal जलाने से steam बनती है → turbine → generator → electricity। यह thermal cycle है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q2</div>
+      <div class="qtext">एक 660 MW thermal unit को full load पर approximately कितना coal चाहिए?</div>
+      <ol type="A" class="qopts">
+        <li>~50 TPH</li>
+        <li>~120 TPH</li>
+        <li>~240 TPH</li>
+        <li>~500 TPH</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — 660 MW unit को full load पर approximately 240 TPH coal supply चाहिए।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q3</div>
+      <div class="qtext">Belt Conveyor में Drive Pulley belt को किस principle से move करती है?</div>
+      <ol type="A" class="qopts">
+        <li>Magnetic attraction</li>
+        <li>Friction between pulley surface और belt</li>
+        <li>Hydraulic pressure</li>
+        <li>Pneumatic suction</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Drive pulley belt को friction से move करती है। Rubber lagging friction को बढ़ाती है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q4</div>
+      <div class="qtext">Belt Conveyor में "Tight Side" किसे कहते हैं?</div>
+      <ol type="A" class="qopts">
+        <li>Return belt — नीचे से वापस आने वाली</li>
+        <li>Drive pulley से exit होने वाली pulling side (high tension)</li>
+        <li>Tail pulley के पास की belt</li>
+        <li>Impact idlers वाला section</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Tight side वह है जो drive pulley से निकलती है — इसमें high tension (T1) होता है। Net drive force = T1 − T2।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q5</div>
+      <div class="qtext">Gravity Take-up System का क्या काम है?</div>
+      <ol type="A" class="qopts">
+        <li>Belt speed को control करना</li>
+        <li>Coal को belt पर centre में रखना</li>
+        <li>Belt tension को constant automatically maintain करना</li>
+        <li>Drive pulley को cool करना</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — Gravity take-up weighted carriage से belt tension automatically maintain करता है। Low tension → slip risk।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q6</div>
+      <div class="qtext">Troughed Carry Idler set का standard trough angle क्या होता है?</div>
+      <ol type="A" class="qopts">
+        <li>10° – 15°</li>
+        <li>20° – 25°</li>
+        <li>35° – 45°</li>
+        <li>60° – 75°</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — Standard coal conveyors में 35° trough angle होता है; high-capacity में 45° तक। यह coal को belt पर contain करता है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q7</div>
+      <div class="qtext">Belt Weigher (Weightometer) क्या measure करता है?</div>
+      <ol type="A" class="qopts">
+        <li>Belt की thickness</li>
+        <li>Motor current draw</li>
+        <li>Real-time coal flow rate (TPH)</li>
+        <li>Idler bearing temperature</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — Belt weigher coal mass per metre × belt speed = real-time TPH calculate करता है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q8</div>
+      <div class="qtext">Zero Speed Switch (ZSS) किस condition में conveyor trip करता है?</div>
+      <ol type="A" class="qopts">
+        <li>जब belt ज़्यादा fast हो</li>
+        <li>जब belt rated speed से 70–80% से कम हो जाए (3 seconds से ज़्यादा)</li>
+        <li>जब motor current बढ़े</li>
+        <li>जब chute block हो</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — ZSS belt slip detect करता है। Speed drop → belt slip → heat generation → fire risk।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q9</div>
+      <div class="qtext">EPC (Emergency Pull Cord) के बारे में कौन सा statement सही है?</div>
+      <ol type="A" class="qopts">
+        <li>यह सिर्फ drive end पर होता है</li>
+        <li>यह fail-safe नहीं है — manual reset की ज़रूरत नहीं</li>
+        <li>यह पूरी conveyor length में rope के रूप में होता है; कहीं से भी खींचने पर instant stop और self-latching</li>
+        <li>यह सिर्फ alarm देता है — trip नहीं करता</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — EPC full length में है, कहीं से खींचें → instant stop। Self-latching: investigation के बाद ही reset।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q10</div>
+      <div class="qtext">Belt Sway Switch (BSW) का function क्या है?</div>
+      <ol type="A" class="qopts">
+        <li>Belt speed monitor करना</li>
+        <li>Belt का lateral drift (side wander) detect करना</li>
+        <li>Coal का weight measure करना</li>
+        <li>Chute blockage detect करना</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — BSW belt drift detect करता है। Stage 1: alarm; Stage 2: trip। दोनों तरफ हर 25–30 m पर।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q11</div>
+      <div class="qtext">Coal dust से होने वाली lung disease को क्या कहते हैं?</div>
+      <ol type="A" class="qopts">
+        <li>Silicosis</li>
+        <li>Asbestosis</li>
+        <li>Coal Workers' Pneumoconiosis (CWP) — Black Lung Disease</li>
+        <li>Emphysema</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — CWP (Black Lung) coal dust के chronic exposure से होती है। Irreversible है — कोई cure नहीं।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q12</div>
+      <div class="qtext">Transfer point पर Primary Scraper कहाँ लगा होता है?</div>
+      <ol type="A" class="qopts">
+        <li>Tail pulley के पास</li>
+        <li>Drive/Head pulley पर — belt के outer face पर</li>
+        <li>Belt के centre में, idlers के बीच</li>
+        <li>Chute के अंदर</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Primary scraper head pulley पर belt के outer face को clean करता है। Carryback coal को हटाता है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q13</div>
+      <div class="qtext">Coal के लिए maximum belt inclination (slope) क्या होती है?</div>
+      <ol type="A" class="qopts">
+        <li>5°–8°</li>
+        <li>15°–18°</li>
+        <li>25°–30°</li>
+        <li>35°–40°</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Coal का surcharge angle ~18–20° होता है। Maximum belt inclination 15–18° है; इससे ज़्यादा होने पर coal rollback होती है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q14</div>
+      <div class="qtext">Rotary Tippler एक wagon को खाली करने में कितना time लेता है?</div>
+      <ol type="A" class="qopts">
+        <li>30–60 seconds</li>
+        <li>3–4 minutes</li>
+        <li>10–15 minutes</li>
+        <li>30 minutes</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Rotary tippler cycle time 3–4 minutes/wagon। Single tippler capacity ~1,000–1,200 TPH।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q15</div>
+      <div class="qtext">LOTO procedure में "Test" step का क्या मतलब है?</div>
+      <ol type="A" class="qopts">
+        <li>Belt की thickness test करना</li>
+        <li>Padlock को test करना कि वो lock हो गया है</li>
+        <li>Lock लगाने के बाद Start button press करके confirm करना कि conveyor move नहीं करती</li>
+        <li>Chute के अंदर से test करना</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — "Test zero energy" — Start press करो, confirm करो कि machine move नहीं की। यह verify करता है कि isolation successful था।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q16</div>
+      <div class="qtext">Chute Blocked Detector किस type का होता है?</div>
+      <ol type="A" class="qopts">
+        <li>Pressure gauge</li>
+        <li>Rotary Paddle या RF Capacitance type</li>
+        <li>Ultrasonic flow meter</li>
+        <li>Thermal camera</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Rotary paddle type: coal में डूबने पर spinning रुकती है → trip। RF type: dielectric constant change detect करती है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q17</div>
+      <div class="qtext">Track Hopper System किस wagon type के लिए suitable है?</div>
+      <ol type="A" class="qopts">
+        <li>Open Top wagons (BOXN)</li>
+        <li>Side-tipping wagons</li>
+        <li>Bottom-discharge wagons (BOXN-HL)</li>
+        <li>Covered hopper wagons</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — Track hopper में bottom doors खुलकर coal gravity से नीचे गिरती है। BOXN-HL type required है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q18</div>
+      <div class="qtext">Thermal Detector का "rate-of-rise" trip point क्या होता है?</div>
+      <ol type="A" class="qopts">
+        <li>+2°C/minute</li>
+        <li>+8°C/minute</li>
+        <li>+20°C/minute</li>
+        <li>+50°C/minute</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Rate-of-rise detector +8°C/minute की temperature rise पर trip करता है। Fixed-point detector 68°C या 93°C पर।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q19</div>
+      <div class="qtext">Belt Conveyor को किस sequence में start करना चाहिए?</div>
+      <ol type="A" class="qopts">
+        <li>Source end से start करें, फिर destination की तरफ जाएं</li>
+        <li>Destination end से start करें, फिर source की तरफ जाएं</li>
+        <li>सभी belts एकसाथ start करें</li>
+        <li>Drive pulley belt से start करें, फिर tail pulley belt</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>B — Destination से source की तरफ start करें ताकि कोई belt running belt को blocked नहीं करे।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">MCQ · Q20</div>
+      <div class="qtext">किसी belt fire में अगर electrical equipment involved हो तो कौन सा extinguisher use करना चाहिए?</div>
+      <ol type="A" class="qopts">
+        <li>Water</li>
+        <li>Foam</li>
+        <li>CO₂ या DCP (Dry Chemical Powder)</li>
+        <li>Sand</li>
+      </ol>
+      <div class="ans"><span class="al">सही उत्तर</span>C — Live electrical fires पर water कभी नहीं — electrocution risk। CO₂ या DCP safe है electrical fires के लिए।</div>
+    </div>
+
+    <!-- ── SECTION B: TRUE/FALSE ── -->
+    <div class="section-hdr">Section B — True / False (प्रत्येक 1 अंक)</div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q21</div>
+      <div class="qtext">Belt Conveyor में net driving force = T1 (tight side tension) + T2 (slack side tension) होता है।</div>
+      <div class="ans"><span class="al">FALSE</span>Net drive force = T1 <strong>−</strong> T2 (difference होता है, sum नहीं)। T1 &gt; T2 हमेशा होना चाहिए।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q22</div>
+      <div class="qtext">Coal belt पर जितना ज़्यादा load हो उतना better — इससे conveyor efficiency बढ़ती है।</div>
+      <div class="ans"><span class="al">FALSE</span>Optimal loading 75–85% rated capacity है। Overloading से spillage, idler failure, motor trip होती है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q23</div>
+      <div class="qtext">EPC rope पूरी conveyor length में चलती है और किसी भी point से pull करने पर conveyor तुरंत stop होती है।</div>
+      <div class="ans"><span class="al">TRUE</span>EPC fail-safe design है। किसी भी point से pull → instant stop → self-latching — investigation के बाद ही reset।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q24</div>
+      <div class="qtext">Seized idler belt fire का एक common cause हो सकता है।</div>
+      <div class="ans"><span class="al">TRUE</span>Seized idler bearing heat generate करती है जो nearby spill coal को ignite कर सकती है। Daily idler patrol essential है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q25</div>
+      <div class="qtext">LOTO में padlock लगाने के बाद आप equipment को start करके test नहीं कर सकते।</div>
+      <div class="ans"><span class="al">FALSE</span>Test करना MANDATORY है। Lock लगाने के बाद Start button press करके confirm करें कि machine move नहीं करती।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q26</div>
+      <div class="qtext">Belt Conveyor में Skirt Board gap limit 6 mm होती है — इससे ज़्यादा होने पर spillage होती है।</div>
+      <div class="ans"><span class="al">TRUE</span>Skirt gap ≤6 mm maintain करें। इससे ज़्यादा होने पर coal belt edge के नीचे से फिसलती है → idler damage + fire risk।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q27</div>
+      <div class="qtext">Coal Workers' Pneumoconiosis (CWP) का effective medical treatment available है।</div>
+      <div class="ans"><span class="al">FALSE</span>CWP irreversible है — कोई cure नहीं। सिर्फ prevention काम करती है। Respirator use करना mandatory है।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q28</div>
+      <div class="qtext">Tandem Rotary Tippler एक single rotary tippler से ज़्यादा capacity handle कर सकता है।</div>
+      <div class="ans"><span class="al">TRUE</span>Tandem tippler 2 wagons simultaneously handle करता है — ~2,000 TPH capacity, single tippler की ~1,000–1,200 TPH से double।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q29</div>
+      <div class="qtext">Chute Blockage होने पर पहला काम यह है कि upstream belt तुरंत stop करें (coal supply cut करें)।</div>
+      <div class="ans"><span class="al">TRUE</span>Upstream belt stop करना FIRST action है — यह coal supply cut करता है। उसके बाद safe clearing procedure। कभी हाथ अंदर नहीं।</div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">T/F · Q30</div>
+      <div class="qtext">Belt slip होने पर — जब motor चल रहा हो लेकिन belt full speed से न चले — कोई ख़तरा नहीं होता।</div>
+      <div class="ans"><span class="al">FALSE</span>Belt slip extremely dangerous है। Drive pulley और belt के बीच friction heat generate होती है → belt burning + fire ignition।</div>
+    </div>
+
+    <!-- ── SECTION C: SHORT ANSWER ── -->
+    <div class="section-hdr">Section C — Short Answer Questions (प्रत्येक 5 अंक)</div>
+
+    <div class="qblock">
+      <div class="qtype">Short Answer · Q31</div>
+      <div class="qtext">एक Belt Conveyor के किन्हीं पाँच major components के नाम लिखें और हर एक का primary function एक sentence में explain करें।</div>
+      <div class="ans">
+        <span class="al">Model Answer</span>
+        कोई पाँच: <strong>Drive Pulley</strong> — motor की power को friction के through belt को move करने में convert करता है। <strong>Tail Pulley</strong> — belt का return end है, take-up के साथ tension maintain करता है। <strong>Carry Idlers (Troughed)</strong> — loaded belt को support करते हैं, 35–45° trough बनाते हैं coal को contain करने के लिए। <strong>Take-up System</strong> — belt tension को design limits में automatically maintain करता है। <strong>Belt Scraper</strong> — carryback coal को drive pulley पर belt surface से remove करता है। <strong>Skirt Boards</strong> — feed/transfer zone पर coal को belt पर contain करते हैं।
+      </div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">Short Answer · Q32</div>
+      <div class="qtext">LOTO (Lockout-Tagout) procedure के सभी steps सही sequence में लिखें। यह क्यों ज़रूरी है?</div>
+      <div class="ans">
+        <span class="al">Model Answer</span>
+        <strong>Steps:</strong> (1) Control room को notify करें (2) Conveyor stop करें (3) Isolator खोलें और personal padlock लगाएं (4) "DO NOT OPERATE" tag लटकाएं (5) Test — Start press करें — confirm करें कोई movement नहीं (6) काम करें (7) Lock + tag हटाएं (8) Control room को notify करें। <strong>क्यों ज़रूरी:</strong> बिना LOTO के कोई भी दूसरा operator belt को start कर सकता है जब आप उस पर काम कर रहे हों — entanglement में &lt;1 second में fatal injury होती है।
+      </div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">Short Answer · Q33</div>
+      <div class="qtext">Transfer point पर होने वाले किन्हीं तीन hazards को describe करें और हर एक के लिए prevention measure बताएं।</div>
+      <div class="ans">
+        <span class="al">Model Answer</span>
+        <strong>(1) Dust:</strong> High drop से coal dust airborne होती है → CWP + explosion risk। Prevention: dust suppression sprays/dry fog + N95 respirator हमेशा। <strong>(2) Chute Blockage:</strong> Wet coal bridge बनाती है → upstream backup → ZSS trip। Prevention: correct chute angle, wear liners maintain करें, dry coal ensure करें। <strong>(3) Nip Point Entanglement:</strong> Belt + pulley का converging zone clothing को catch करता है। Prevention: fixed bolted guards mandatory, LOTO before any work near nip points।
+      </div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">Short Answer · Q34</div>
+      <div class="qtext">Belt slip failure को explain करें। इसके causes, effects, और immediate actions बताएं।</div>
+      <div class="ans">
+        <span class="al">Model Answer</span>
+        <strong>Cause:</strong> Low belt tension (worn take-up), glazed/oily drive pulley, wet belt surface, overloading। <strong>Effect:</strong> Motor rotate करता है लेकिन belt full speed से नहीं चलती — ZSS trip → extreme heat drive pulley पर → belt cover melt → fire ignition। <strong>Detection:</strong> ZSS trip; rubber burning smell; drive pulley पर streak marks। <strong>Immediate Action:</strong> Stop immediately → drive area inspect करें heat/fire के लिए → tension check करें → pulley surface inspect करें → load reduce करें। Fire हो तो: evacuate → FAS activate → CO₂/DCP use करें।
+      </div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">Short Answer · Q35</div>
+      <div class="qtext">Control Point 2 (Transfer Point) को पूरे CHP में "highest risk location" क्यों माना जाता है? कम से कम चार reasons दें।</div>
+      <div class="ans">
+        <span class="al">Model Answer</span>
+        (1) <strong>Blockage risk</strong> — wet/sticky coal chute में bridge बना सकती है → BC-1 overload। (2) <strong>Height से spillage</strong> — coal ऊँचाई से गिरती है → struck-by hazard + structural damage। (3) <strong>Maximum dust generation</strong> — coal का free-fall + air displacement → CWP + explosion hazard। (4) <strong>Nip points</strong> — belt + pulley का converging zone यहाँ accessible होता है — entanglement risk। (5) <strong>Confined space</strong> — chute के अंदर entry के लिए formal permit + rescue plan mandatory। कोई भी चार acceptable हैं।
+      </div>
+    </div>
+
+    <div class="qblock">
+      <div class="qtype">Short Answer · Q36</div>
+      <div class="qtext">एक thermal power plant में, 15 minutes के लिए coal supply conveyor का trip क्यों serious consequence है? Plant operations, equipment, और safety — तीनों perspectives से explain करें।</div>
+      <div class="ans">
+        <span class="al">Model Answer</span>
+        <strong>Plant Operations:</strong> Bunker level गिरना शुरू होता है → mill feed कम होती है → boiler load reduce → MW generation loss → grid को power deficit → frequency instability। Prolonged stoppage → boiler trip → complete unit shutdown (₹15–25 लाख/hour loss)। <strong>Equipment:</strong> Abrupt stop/restart cycle = motor winding stress, fluid coupling thermal stress, और mechanical stress on couplings। Repeated trips से maintenance cost बढ़ती है। <strong>Safety:</strong> Emergency stop conditions में rushed restart attempts = operator errors → LOTO bypass → injury risk। Proper investigation time नहीं मिलती → root cause unresolved → repeat failure।
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════ INSTRUMENTATION ═══════════════════════════════════════ -->
+<div class="mod c-teal" id="instr">
+  <div class="mod-hdr"><div class="cb-tag">Instrumentation</div><h2>Safety Devices और Instrumentation — Detail में</h2></div>
+  <div class="mod-body">
+    <p>यह section आपको belt conveyor पर लगे हर safety device और instrument के बारे में deeper understanding देता है। Site visit पर आप इन्हें physically देखेंगे — इन्हें पहचानना और इनका function जानना आपकी professional credibility को दर्शाता है।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <!-- Belt -->
+        <rect x="30" y="105" width="620" height="16" rx="4" fill="#e8d5c0" stroke="#8b6543" stroke-width="1.5"/>
+        <rect x="30" y="107" width="620" height="6" rx="3" fill="#c0392b" opacity="0.5"/>
+        <!-- Pulleys -->
+        <ellipse cx="55" cy="113" rx="25" ry="25" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="2"/>
+        <text x="55" y="117" text-anchor="middle" font-size="7.5" fill="#2c3e50" font-weight="700">Tail</text>
+        <ellipse cx="625" cy="113" rx="25" ry="25" fill="#2980b9" stroke="#1a5276" stroke-width="2"/>
+        <text x="625" y="117" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">Drive</text>
+        <!-- Belt Weigher -->
+        <rect x="130" y="78" width="72" height="26" rx="4" fill="#1e8449" stroke="#145a32" stroke-width="1.5"/>
+        <text x="166" y="95" text-anchor="middle" font-size="7.5" fill="white" font-weight="700">Belt Weigher</text>
+        <line x1="166" y1="104" x2="166" y2="113" stroke="#1e8449" stroke-width="1.5"/>
+        <text x="166" y="70" text-anchor="middle" font-size="7.5" fill="#1e8449">TPH → Control Room</text>
+        <!-- ZSS -->
+        <ellipse cx="290" cy="138" rx="16" ry="16" fill="#2980b9" stroke="#1a5276" stroke-width="1.5"/>
+        <text x="290" y="135" text-anchor="middle" font-size="7" fill="white" font-weight="700">ZSS</text>
+        <text x="290" y="144" text-anchor="middle" font-size="7" fill="white">Speed</text>
+        <text x="290" y="165" text-anchor="middle" font-size="7.5" fill="#2980b9">Return Idler/Pulley</text>
+        <!-- EPC rope -->
+        <line x1="30" y1="88" x2="650" y2="88" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="10,4"/>
+        <text x="340" y="84" text-anchor="middle" font-size="8" fill="#c0392b" font-weight="700">EPC Rope</text>
+        <rect x="80" y="82" width="26" height="14" rx="3" fill="#c0392b"/>
+        <text x="93" y="92" text-anchor="middle" font-size="6.5" fill="white">EPC</text>
+        <rect x="240" y="82" width="26" height="14" rx="3" fill="#c0392b"/>
+        <text x="253" y="92" text-anchor="middle" font-size="6.5" fill="white">EPC</text>
+        <rect x="400" y="82" width="26" height="14" rx="3" fill="#c0392b"/>
+        <text x="413" y="92" text-anchor="middle" font-size="6.5" fill="white">EPC</text>
+        <rect x="560" y="82" width="26" height="14" rx="3" fill="#c0392b"/>
+        <text x="573" y="92" text-anchor="middle" font-size="6.5" fill="white">EPC</text>
+        <!-- BSW -->
+        <rect x="30" y="118" width="20" height="24" rx="3" fill="#f39c12" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="40" y="133" text-anchor="middle" font-size="6" fill="white" font-weight="700">BSW</text>
+        <rect x="630" y="118" width="20" height="24" rx="3" fill="#f39c12" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="640" y="133" text-anchor="middle" font-size="6" fill="white" font-weight="700">BSW</text>
+        <!-- Chute blocked detector -->
+        <rect x="450" y="60" width="80" height="28" rx="4" fill="#8e44ad" stroke="#6c3483" stroke-width="1.5"/>
+        <text x="490" y="74" text-anchor="middle" font-size="7" fill="white" font-weight="700">Chute Blocked</text>
+        <text x="490" y="84" text-anchor="middle" font-size="7" fill="white">Detector</text>
+        <line x1="490" y1="88" x2="490" y2="105" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <!-- Thermal detector -->
+        <rect x="578" y="58" width="70" height="28" rx="4" fill="#c0392b" stroke="#922b21" stroke-width="1.5"/>
+        <text x="613" y="72" text-anchor="middle" font-size="7" fill="white" font-weight="700">Thermal</text>
+        <text x="613" y="82" text-anchor="middle" font-size="7" fill="white">Detector</text>
+        <line x1="613" y1="86" x2="625" y2="105" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <!-- Legend -->
+        <text x="340" y="210" text-anchor="middle" font-size="9.5" fill="#444" font-weight="600">हर safety device एक specific failure mode को address करता है — सब मिलकर एक multi-layer protection system बनाते हैं।</text>
+      </svg>
+      <div class="cap">Fig I.1 – Belt Conveyor पर Safety Devices और Instruments की location</div>
+    </div>
+
+    <table>
+      <tr><th>Device</th><th>Type</th><th>Location</th><th>Trip / Action</th><th>Test Frequency</th></tr>
+      <tr><td><strong>EPC (Emergency Pull Cord)</strong></td><td>Mechanical fail-safe</td><td>Full conveyor length</td><td>Pull → instant stop, self-latch</td><td>Weekly; inspect after every trip</td></tr>
+      <tr><td><strong>BSW (Belt Sway Switch)</strong></td><td>Electro-mechanical</td><td>Both sides, every 25–30 m</td><td>Stage 1: alarm; Stage 2: trip</td><td>Every shift — visual arm check</td></tr>
+      <tr><td><strong>ZSS (Zero Speed Switch)</strong></td><td>Tachometric</td><td>Return pulley or sensing idler</td><td>&lt;70–80% speed for 3 sec → trip</td><td>Monthly function test</td></tr>
+      <tr><td><strong>Belt Weigher</strong></td><td>Gravimetric load cell</td><td>Flat section, 10–15 m from pulley</td><td>No trip — data to control room</td><td>Monthly calibration (test chain)</td></tr>
+      <tr><td><strong>Chute Blocked Detector</strong></td><td>Rotary paddle / RF</td><td>Inside chute, upper section</td><td>Paddle stop → upstream trip</td><td>Monthly — simulate blockage</td></tr>
+      <tr><td><strong>Thermal Detector</strong></td><td>Rate-of-rise / fixed point</td><td>Drive pulley, transfer points</td><td>+8°C/min या 68/93°C → FAS trip</td><td>Monthly — check for dust coating</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SITE VISIT GUIDE ═══════════════════════════════════════ -->
+<div class="mod c-purple" id="sitevisit">
+  <div class="mod-hdr"><div class="cb-tag">Site Visit Guide</div><h2>पहली Site Visit — क्या देखें, क्या पूछें</h2></div>
+  <div class="mod-body">
+    <p>आपकी पहली CHP site visit classroom से बिलकुल अलग experience होगी — loud, dusty, और overwhelming। यह guide आपको एक structured approach देती है ताकि आप observe कर सकें, समझ सकें, और सही questions पूछ सकें।</p>
+
+    <div class="diag">
+      <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <defs>
+          <marker id="sva" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4a2d8a"/></marker>
+        </defs>
+        <text x="340" y="20" text-anchor="middle" font-size="12" font-weight="800" fill="#4a2d8a">CHP Site Visit — Recommended Observation Sequence</text>
+        <!-- Step boxes -->
+        <rect x="5" y="35" width="95" height="50" rx="6" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+        <text x="52" y="57" text-anchor="middle" font-size="8.5" fill="#6c3483" font-weight="700">Step 1</text>
+        <text x="52" y="70" text-anchor="middle" font-size="8" fill="#555">Safety Briefing</text>
+        <text x="52" y="81" text-anchor="middle" font-size="8" fill="#555">PPE Check</text>
+        <line x1="100" y1="60" x2="118" y2="60" stroke="#4a2d8a" stroke-width="1.5" marker-end="url(#sva)"/>
+        <rect x="118" y="35" width="95" height="50" rx="6" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+        <text x="165" y="57" text-anchor="middle" font-size="8.5" fill="#6c3483" font-weight="700">Step 2</text>
+        <text x="165" y="70" text-anchor="middle" font-size="8" fill="#555">Wagon Tippler</text>
+        <text x="165" y="81" text-anchor="middle" font-size="8" fill="#555">Observation</text>
+        <line x1="213" y1="60" x2="231" y2="60" stroke="#4a2d8a" stroke-width="1.5" marker-end="url(#sva)"/>
+        <rect x="231" y="35" width="95" height="50" rx="6" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+        <text x="278" y="57" text-anchor="middle" font-size="8.5" fill="#6c3483" font-weight="700">Step 3</text>
+        <text x="278" y="70" text-anchor="middle" font-size="8" fill="#555">Belt No.1 — Feed</text>
+        <text x="278" y="81" text-anchor="middle" font-size="8" fill="#555">Point (CP-1)</text>
+        <line x1="326" y1="60" x2="344" y2="60" stroke="#4a2d8a" stroke-width="1.5" marker-end="url(#sva)"/>
+        <rect x="344" y="35" width="95" height="50" rx="6" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+        <text x="391" y="57" text-anchor="middle" font-size="8.5" fill="#6c3483" font-weight="700">Step 4</text>
+        <text x="391" y="70" text-anchor="middle" font-size="8" fill="#555">Transfer Tower</text>
+        <text x="391" y="81" text-anchor="middle" font-size="8" fill="#555">(CP-2)</text>
+        <line x1="439" y1="60" x2="457" y2="60" stroke="#4a2d8a" stroke-width="1.5" marker-end="url(#sva)"/>
+        <rect x="457" y="35" width="95" height="50" rx="6" fill="#f5eef8" stroke="#8e44ad" stroke-width="1.5"/>
+        <text x="504" y="57" text-anchor="middle" font-size="8.5" fill="#6c3483" font-weight="700">Step 5</text>
+        <text x="504" y="70" text-anchor="middle" font-size="8" fill="#555">Belt Gallery Walk</text>
+        <text x="504" y="81" text-anchor="middle" font-size="8" fill="#555">CP-3 / CP-4</text>
+        <line x1="552" y1="60" x2="570" y2="60" stroke="#4a2d8a" stroke-width="1.5" marker-end="url(#sva)"/>
+        <rect x="570" y="35" width="105" height="50" rx="6" fill="#eaf4fb" stroke="#2980b9" stroke-width="1.5"/>
+        <text x="622" y="57" text-anchor="middle" font-size="8.5" fill="#1a5276" font-weight="700">Step 6</text>
+        <text x="622" y="70" text-anchor="middle" font-size="8" fill="#555">Bunker Gallery</text>
+        <text x="622" y="81" text-anchor="middle" font-size="8" fill="#555">(CP-5) + Control Room</text>
+        <!-- Notes row -->
+        <text x="52" y="110" text-anchor="middle" font-size="7.5" fill="#888">Wear all PPE</text>
+        <text x="165" y="110" text-anchor="middle" font-size="7.5" fill="#888">Note type used</text>
+        <text x="278" y="110" text-anchor="middle" font-size="7.5" fill="#888">Check skirt seals</text>
+        <text x="391" y="110" text-anchor="middle" font-size="7.5" fill="#888">Observe chute</text>
+        <text x="504" y="110" text-anchor="middle" font-size="7.5" fill="#888">Belt tracking + idlers</text>
+        <text x="622" y="110" text-anchor="middle" font-size="7.5" fill="#888">Level displays</text>
+        <text x="340" y="155" text-anchor="middle" font-size="9.5" fill="#444" font-weight="600">हर step पर supervisor से observations share करें। "यहाँ मुझे यह normal लग रहा है / यह abnormal लग रहा है" — यह mindset develop करें।</text>
+      </svg>
+      <div class="cap">Fig SV.1 – First CHP Site Visit का Recommended Observation Sequence</div>
+    </div>
+
+    <h3 style="color:#4a2d8a;margin:16px 0 10px">Site Visit पर पूछने वाले Questions</h3>
+    <div class="cg">
+      <div class="cc">
+        <h4>Observation Questions (जो आप देखते हुए पूछें)</h4>
+        <ul style="padding-left:14px;font-size:13px;line-height:2">
+          <li>"यह belt अभी कितना TPH carry कर रही है?"</li>
+          <li>"यह BSW switch कब last time triggered हुआ था?"</li>
+          <li>"इस conveyor की rated capacity क्या है?"</li>
+          <li>"Scrapers को कितनी बार inspect किया जाता है?"</li>
+          <li>"EPC rope कब last test हुई थी?"</li>
+        </ul>
+      </div>
+      <div class="cc">
+        <h4>Understanding Questions (concept confirm करने के लिए)</h4>
+        <ul style="padding-left:14px;font-size:13px;line-height:2">
+          <li>"इस transfer point पर most common problem क्या है?"</li>
+          <li>"Monsoon season में coal handling कैसे different होती है?"</li>
+          <li>"Last major belt trip का reason क्या था?"</li>
+          <li>"यहाँ LOTO procedure exact steps क्या हैं?"</li>
+          <li>"Control room में कौन से alarms most frequent हैं?"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="key">
+      <div class="lbl">Site Visit Mindset</div>
+      <p>Site पर जाने का goal <strong>recognize → connect → question</strong> है। Recognize: जो आपने पढ़ा वो real equipment में देखें। Connect: यह component/system इस overall process में कहाँ fit होता है। Question: जो आपको confusing लगे उसे supervisor से पूछें — "मुझे यह नहीं पता" कहना weakness नहीं है; बिना पूछे गलत समझ लेना weakness है।</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ DOS AND DON'TS ═══════════════════════════════════════ -->
+<div class="mod c-navy" id="dos">
+  <div class="mod-hdr"><div class="cb-tag">Do's &amp; Don'ts</div><h2>CHP में क्या करें और क्या न करें</h2></div>
+  <div class="mod-body">
+    <div class="cg">
+      <div style="background:#eafaf1;border:2px solid #1e8449;border-radius:10px;padding:18px">
+        <h4 style="color:#145a32;font-size:14.5px;margin-bottom:14px">✅ ज़रूर करें (DO's)</h4>
+        <ul style="list-style:none;padding:0;font-size:13.5px;line-height:2.1">
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">हर shift में shift start से पहले सभी safety devices का visual check करें</li>
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">CHP में enter करने से पहले complete PPE पहनें — Helmet, shoes, glasses, gloves, respirator</li>
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">किसी भी maintenance activity से पहले LOTO procedure follow करें</li>
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">Belt Weigher reading regularly monitor करें — normal range से बाहर हो तो report करें</li>
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">हर shift में spill coal sweep करें — "no coal on floor" rule maintain करें</li>
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">Idlers को daily patrol में check करें — seized या noisy idler को immediately report करें</li>
+          <li style="border-bottom:1px solid #d5f5e3;padding-bottom:4px">Belt trip या abnormal event को logbook में time, location, और reason के साथ record करें</li>
+          <li style="padding-bottom:4px">Belt start से 30 seconds पहले hooter sound करें और confirm करें कि कोई belt पर/near नहीं है</li>
+        </ul>
+      </div>
+      <div style="background:#fdedec;border:2px solid #c0392b;border-radius:10px;padding:18px">
+        <h4 style="color:#922b21;font-size:14.5px;margin-bottom:14px">❌ कभी न करें (DON'Ts)</h4>
+        <ul style="list-style:none;padding:0;font-size:13.5px;line-height:2.1">
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">Running conveyor पर कभी चलें, बैठें, या lean करें — never ever</li>
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">LOTO के बिना किसी भी conveyor या equipment को inspect या maintain करें</li>
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">Blocked chute में हाथ डालें — rod या vibrator use करें, हाथ नहीं</li>
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">BSW trip के बाद investigation के बिना conveyor restart करें</li>
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">CHP में loose clothing, jewellery, या खुले बाल के साथ जाएं</li>
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">Safety guards remove करें या bypass करें — missing guard को report करें और belt तब तक run न करें</li>
+          <li style="border-bottom:1px solid #f5b7b1;padding-bottom:4px">Belt fire में water use करें अगर electrical equipment involved हो</li>
+          <li style="padding-bottom:4px">किसी भी safety concern को "small issue है" कहकर ignore करें — हर concern report करने योग्य है</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ GLOSSARY ═══════════════════════════════════════ -->
+<div class="mod c-slate" id="glossary">
+  <div class="mod-hdr"><div class="cb-tag">Glossary</div><h2>Technical Terms की Dictionary</h2></div>
+  <div class="mod-body">
+    <p style="margin-bottom:16px">ये 32 terms इस course में बार-बार आते हैं। इन्हें याद करें — site पर supervisor से बात करते वक्त यही language use होती है।</p>
+    <table>
+      <tr><th>Term</th><th>Hindi में समझाएं</th></tr>
+      <tr><td><strong>Belt Conveyor</strong></td><td>एक continuous loop belt जो rotating pulleys पर चलती है — coal को one point से another तक transport करती है</td></tr>
+      <tr><td><strong>Drive Pulley</strong></td><td>Powered pulley जो motor से belt को friction के through move करती है — conveyor का head end</td></tr>
+      <tr><td><strong>Tail Pulley</strong></td><td>Unpowered pulley जो opposite end पर है — belt यहाँ से return side में जाती है</td></tr>
+      <tr><td><strong>Idler</strong></td><td>Freely rotating roller जो belt को support करता है — carry side पर troughed set में, return side पर flat</td></tr>
+      <tr><td><strong>Take-up System</strong></td><td>Mechanism (gravity weight या screw) जो belt tension को maintain करता है — slip और sag दोनों prevent करता है</td></tr>
+      <tr><td><strong>Belt Scraper</strong></td><td>Primary और secondary blades जो drive pulley पर belt की outer face से carryback coal remove करती हैं</td></tr>
+      <tr><td><strong>Skirt Board</strong></td><td>Feed/transfer zone पर belt के sides पर side plates जो coal को belt पर contain करती हैं</td></tr>
+      <tr><td><strong>Transfer Chute</strong></td><td>Steel duct जो coal को एक belt से दूसरी belt पर guide करती है</td></tr>
+      <tr><td><strong>EPC (Emergency Pull Cord)</strong></td><td>Rope switch जो full conveyor length में होती है — कहीं से भी pull करने पर instant stop और self-latch</td></tr>
+      <tr><td><strong>BSW (Belt Sway Switch)</strong></td><td>Belt drift detect करता है — stage 1 alarm, stage 2 trip</td></tr>
+      <tr><td><strong>ZSS (Zero Speed Switch)</strong></td><td>Belt speed monitor करता है — speed drop → auto trip (belt slip detect करने के लिए)</td></tr>
+      <tr><td><strong>Belt Weigher</strong></td><td>Gravimetric instrument जो real-time TPH measure करता है — load cell + speed sensor</td></tr>
+      <tr><td><strong>Tight Side</strong></td><td>Drive pulley से exit होने वाली belt side — high tension (T1)</td></tr>
+      <tr><td><strong>Slack Side</strong></td><td>Drive pulley में enter होने वाली belt side — low tension (T2)</td></tr>
+      <tr><td><strong>Trough Angle</strong></td><td>Carry idlers का angle जो belt को V-shape में form करता है — 35° standard, 45° high-capacity</td></tr>
+      <tr><td><strong>TPH (Tonnes Per Hour)</strong></td><td>Coal conveying rate की unit — plant की demand के हिसाब से control किया जाता है</td></tr>
+      <tr><td><strong>LOTO (Lockout-Tagout)</strong></td><td>Safety procedure: personal padlock + tag से equipment को isolate करना maintenance से पहले</td></tr>
+      <tr><td><strong>Nip Point</strong></td><td>Belt और rotating pulley के बीच converging gap — extremely dangerous — entanglement का point</td></tr>
+      <tr><td><strong>CWP (Coal Workers' Pneumoconiosis)</strong></td><td>Coal dust से होने वाली chronic lung disease — Black Lung — irreversible</td></tr>
+      <tr><td><strong>Carryback</strong></td><td>Coal जो belt के outer face से discharge होने के बाद भी चिपकी रहती है — structure पर गिरती है</td></tr>
+      <tr><td><strong>Impact Idler</strong></td><td>Rubber-cushioned idler जो feed/transfer point पर coal के impact को absorb करती है</td></tr>
+      <tr><td><strong>Rotary Tippler</strong></td><td>Wagon को cradle में clamp करके ~160° rotate करने वाला machine — coal hopper में dump करता है</td></tr>
+      <tr><td><strong>Track Hopper</strong></td><td>Rail tracks के नीचे का concrete pit — BOXN-HL wagons के bottom doors से gravity discharge होता है</td></tr>
+      <tr><td><strong>Crusher House</strong></td><td>Building जहाँ coal को ≤50 mm तक crush किया जाता है — mill feed requirement के लिए</td></tr>
+      <tr><td><strong>Bunker</strong></td><td>Coal mills के ऊपर का large storage vessel — 8–12 hours mill feed hold करता है</td></tr>
+      <tr><td><strong>Thermal Detector</strong></td><td>Rate-of-rise या fixed-point temperature sensor — fire detection के लिए; FAS से connected</td></tr>
+      <tr><td><strong>Chute Blocked Detector</strong></td><td>Rotary paddle या RF type sensor जो chute fill-up detect करता है — upstream belt trip करता है</td></tr>
+      <tr><td><strong>Belt Drift</strong></td><td>Belt का centreline से lateral wander — BSW alarm/trip को trigger करता है</td></tr>
+      <tr><td><strong>Wear Liner</strong></td><td>Chute के अंदर WR steel या UHMWPE के replaceable panels — abrasion से protect करते हैं</td></tr>
+      <tr><td><strong>PLF (Plant Load Factor)</strong></td><td>Actual generation / Rated capacity — conveyor availability directly PLF को affect करती है</td></tr>
+      <tr><td><strong>Fluid Coupling</strong></td><td>Motor और gearbox के बीच hydraulic coupling — start-up shock absorb करती है, smooth start देती है</td></tr>
+      <tr><td><strong>Confined Space</strong></td><td>Enclosed या restricted space जैसे chute, hopper, bunker — entry के लिए formal permit mandatory है</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ QUICK REFERENCE CARD ═══════════════════════════════════════ -->
+<div class="mod c-navy" id="qrc">
+  <div class="mod-hdr"><div class="cb-tag">Quick Reference Card</div><h2>L1 Belt Conveyor — Quick Reference Card</h2></div>
+  <div class="mod-body">
+    <p style="margin-bottom:16px">इस card को print करके अपनी site visit notebook में रखें। यह आपका field-ready reference है।</p>
+    <div class="diag">
+      <svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" style="max-width:660px">
+        <!-- Card background -->
+        <rect x="5" y="5" width="670" height="410" rx="12" fill="#0d2137" stroke="#2980b9" stroke-width="2"/>
+        <!-- Header -->
+        <rect x="5" y="5" width="670" height="42" rx="12" fill="#1a5276"/>
+        <rect x="5" y="33" width="670" height="14" fill="#1a5276"/>
+        <text x="340" y="31" text-anchor="middle" font-size="14" font-weight="800" fill="white">L1 Belt Conveyor — Quick Reference Card</text>
+        <text x="340" y="52" text-anchor="middle" font-size="9.5" fill="#aed6f1">Coal Handling Plant · Thermal Power Plant · L1 Foundational</text>
+
+        <!-- Column 1: Components -->
+        <text x="110" y="78" text-anchor="middle" font-size="10" font-weight="800" fill="#f39c12">Major Components</text>
+        <line x1="30" y1="82" x2="190" y2="82" stroke="#f39c12" stroke-width="1"/>
+        <text x="35" y="96" font-size="8.5" fill="#aed6f1">Drive Pulley — friction से belt move</text>
+        <text x="35" y="110" font-size="8.5" fill="#aed6f1">Tail Pulley — return end</text>
+        <text x="35" y="124" font-size="8.5" fill="#aed6f1">Carry Idlers — 35°/45° trough</text>
+        <text x="35" y="138" font-size="8.5" fill="#aed6f1">Take-up — belt tension</text>
+        <text x="35" y="152" font-size="8.5" fill="#aed6f1">Scraper — carryback remove</text>
+        <text x="35" y="166" font-size="8.5" fill="#aed6f1">Skirt Board — feed zone seal</text>
+        <text x="35" y="180" font-size="8.5" fill="#aed6f1">Transfer Chute — belt-to-belt guide</text>
+
+        <!-- Column 2: Safety Devices -->
+        <text x="340" y="78" text-anchor="middle" font-size="10" font-weight="800" fill="#e74c3c">Safety Devices</text>
+        <line x1="220" y1="82" x2="460" y2="82" stroke="#e74c3c" stroke-width="1"/>
+        <text x="225" y="96" font-size="8.5" fill="#f1948a">EPC — full length; pull = instant stop</text>
+        <text x="225" y="110" font-size="8.5" fill="#f1948a">BSW — drift: alarm → trip (25–30m)</text>
+        <text x="225" y="124" font-size="8.5" fill="#f1948a">ZSS — speed &lt;70–80% → trip</text>
+        <text x="225" y="138" font-size="8.5" fill="#f1948a">Belt Weigher — real-time TPH</text>
+        <text x="225" y="152" font-size="8.5" fill="#f1948a">Chute Blocked — upstream trip</text>
+        <text x="225" y="166" font-size="8.5" fill="#f1948a">Thermal Detector — +8°C/min trip</text>
+
+        <!-- Column 3: Control Points -->
+        <text x="580" y="78" text-anchor="middle" font-size="10" font-weight="800" fill="#2ecc71">Control Points</text>
+        <line x1="470" y1="82" x2="670" y2="82" stroke="#2ecc71" stroke-width="1"/>
+        <text x="475" y="96" font-size="8.5" fill="#a9dfbf">CP-1: Feed Point</text>
+        <text x="475" y="110" font-size="8.5" fill="#a9dfbf">CP-2: Transfer Point</text>
+        <text x="475" y="124" font-size="8.5" fill="#a9dfbf">CP-3: Drive Pulley</text>
+        <text x="475" y="138" font-size="8.5" fill="#a9dfbf">CP-4: Belt Alignment</text>
+        <text x="475" y="152" font-size="8.5" fill="#a9dfbf">CP-5: Bunker Discharge</text>
+
+        <!-- Divider -->
+        <line x1="20" y1="195" x2="660" y2="195" stroke="#2c5282" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <!-- Failure Cases -->
+        <text x="340" y="213" text-anchor="middle" font-size="10" font-weight="800" fill="#f39c12">6 Failure Cases — Cause / Effect / Action</text>
+        <text x="35" y="228" font-size="8.5" fill="#f8c471"><tspan font-weight="800">FC1 Belt Drift:</tspan> Off-centre load → BSW alarm → reduce feed, adjust idlers</text>
+        <text x="35" y="242" font-size="8.5" fill="#f8c471"><tspan font-weight="800">FC2 Overloading:</tspan> Feeder gate too open → spillage → reduce feed rate</text>
+        <text x="35" y="256" font-size="8.5" fill="#f8c471"><tspan font-weight="800">FC3 Chute Blockage:</tspan> Wet coal → backup → stop upstream belt FIRST, then clear</text>
+        <text x="35" y="270" font-size="8.5" fill="#f8c471"><tspan font-weight="800">FC4 Belt Slip:</tspan> Low tension / oily pulley → ZSS trip → check tension + pulley</text>
+        <text x="35" y="284" font-size="8.5" fill="#f8c471"><tspan font-weight="800">FC5 Dust Fire:</tspan> Seized idler + spill coal → fire → EPC + evacuate + CO₂/DCP</text>
+        <text x="35" y="298" font-size="8.5" fill="#f8c471"><tspan font-weight="800">FC6 Entanglement:</tspan> No LOTO / loose clothing → PREVENT: LOTO हमेशा, no exceptions</text>
+
+        <!-- Divider -->
+        <line x1="20" y1="310" x2="660" y2="310" stroke="#2c5282" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <!-- LOTO Steps -->
+        <text x="170" y="326" text-anchor="middle" font-size="10" font-weight="800" fill="#2ecc71">LOTO Steps (sequence में)</text>
+        <text x="35" y="342" font-size="8.5" fill="#a9dfbf">1. Notify control room  2. Stop conveyor  3. Open isolator + personal padlock लगाएं</text>
+        <text x="35" y="356" font-size="8.5" fill="#a9dfbf">4. "DO NOT OPERATE" tag  5. Test: Start press करें — confirm no movement  6. काम करें</text>
+        <text x="35" y="370" font-size="8.5" fill="#a9dfbf">7. Lock + tag हटाएं  8. Control room को notify करें</text>
+
+        <!-- PPE -->
+        <text x="530" y="326" text-anchor="middle" font-size="10" font-weight="800" fill="#e74c3c">PPE Checklist</text>
+        <text x="460" y="342" font-size="8.5" fill="#f1948a">Helmet · Safety Shoes · Reflective Vest</text>
+        <text x="460" y="356" font-size="8.5" fill="#f1948a">Safety Glasses · Cut-resistant Gloves</text>
+        <text x="460" y="370" font-size="8.5" fill="#f1948a">Respirator N95+ · Ear Protection (85 dB+)</text>
+
+        <!-- Footer -->
+        <text x="340" y="400" text-anchor="middle" font-size="8" fill="#5d6d7e">L1 Foundational · Belt Conveyor Operation · Coal Handling Plant · Thermal Power Plant</text>
+        <text x="340" y="412" text-anchor="middle" font-size="8" fill="#5d6d7e">यह card site visit पर साथ रखें। Observe करें, Connect करें, Question करें।</text>
+      </svg>
+      <div class="cap">Quick Reference Card — L1 Belt Conveyor (Print करने योग्य)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ L1 DECLARATION ═══════════════════════════════════════ -->
+<div class="mod c-green" id="declaration">
+  <div class="mod-hdr"><div class="cb-tag">L1 Declaration</div><h2>L1 Foundational Completion Declaration</h2></div>
+  <div class="mod-body">
+    <p style="margin-bottom:20px">यह declaration confirm करती है कि आपने Belt Conveyor Operation L1 Foundational Course complete किया है और आप इसके contents को समझते हैं।</p>
+    <div style="background:#f8fffe;border:2px solid #1e8449;border-radius:10px;padding:28px;max-width:700px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:20px">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#7f8c8d;margin-bottom:8px">L1 Foundational Completion</div>
+        <div style="font-size:1.4em;font-weight:800;color:#0d2137">Belt Conveyor Operation</div>
+        <div style="font-size:13px;color:#555;margin-top:4px">Coal Handling Plant · Thermal Power Plant</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0">
+        <div style="border-bottom:2px solid #1e8449;padding-bottom:6px">
+          <div style="font-size:10px;text-transform:uppercase;color:#7f8c8d;letter-spacing:1px">Trainee का नाम</div>
+          <div style="height:28px"></div>
+        </div>
+        <div style="border-bottom:2px solid #1e8449;padding-bottom:6px">
+          <div style="font-size:10px;text-transform:uppercase;color:#7f8c8d;letter-spacing:1px">Employee / Roll Number</div>
+          <div style="height:28px"></div>
+        </div>
+        <div style="border-bottom:2px solid #1e8449;padding-bottom:6px">
+          <div style="font-size:10px;text-transform:uppercase;color:#7f8c8d;letter-spacing:1px">Department / Plant</div>
+          <div style="height:28px"></div>
+        </div>
+        <div style="border-bottom:2px solid #1e8449;padding-bottom:6px">
+          <div style="font-size:10px;text-transform:uppercase;color:#7f8c8d;letter-spacing:1px">Completion Date</div>
+          <div style="height:28px"></div>
+        </div>
+      </div>
+      <div style="margin:18px 0;padding:14px;background:#eafaf1;border-radius:8px;font-size:13px;line-height:1.7">
+        <strong>मैं यह confirm करता/करती हूँ कि मैंने Belt Conveyor Operation L1 Foundational Course पूरा किया है।</strong> मुझे निम्नलिखित की समझ है: coal handling process, belt conveyor components और working principle, capacity factors, transfer point hazards, safety devices (EPC, BSW, ZSS, Belt Weigher, Chute Blocked Detector, Thermal Detector), LOTO procedure, 5 control points, और 6 common failure cases। मैं समझता/समझती हूँ कि यह course site work की पूर्ण authorization नहीं देता — supervisor की guidance में और applicable safety protocols के under काम करना अनिवार्य है।
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:24px">
+        <div>
+          <div style="border-bottom:2px solid #0d2137;padding-bottom:6px;margin-bottom:4px;height:36px"></div>
+          <div style="font-size:11px;color:#555">Trainee का हस्ताक्षर</div>
+        </div>
+        <div>
+          <div style="border-bottom:2px solid #0d2137;padding-bottom:6px;margin-bottom:4px;height:36px"></div>
+          <div style="font-size:11px;color:#555">Supervisor / Trainer का हस्ताक्षर और मुहर</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+<div style="background:#0d2137;color:rgba(255,255,255,0.6);text-align:center;padding:24px 20px;margin-top:16px;border-radius:10px">
+  <p style="font-size:13.5px;font-weight:700;color:white;margin-bottom:6px">Belt Conveyor Operation — L1 Foundational Course (Hindi)</p>
+  <p style="font-size:12px;margin-bottom:4px">Coal Handling Plant · Thermal Power Plant · Context &amp; Safety Awareness</p>
+  <p style="font-size:12px;margin-bottom:12px">Target Learner: Diploma 3rd Year Intern | Level: L1 Foundational</p>
+  <hr style="border:none;border-top:1px solid rgba(255,255,255,0.15);margin:12px 0"/>
+  <p style="font-size:11.5px">इस course में technical terms English में हैं क्योंकि industry में यही language use होती है। समझाने की भाषा Hindi है ताकि concepts clearly समझ में आएं। Observe करें, Connect करें, Question करें।</p>
+</div>
+
+</div><!-- end .wrap FINAL -->
+
+
+
+</body>
+</html>

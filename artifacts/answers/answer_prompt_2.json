@@ -1,0 +1,159 @@
+{
+  "query": "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+  "answer": "Query: belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?\n\nThis draft is based mainly on retrieved course text/image evidence; no supporting relation trace was retrieved.\n\nKey course evidence:\n- Belt Drift (Belt Misalignment) Root Cause: Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension। Effect: Belt एक तरफ रगड़ती है conveyor structure से → belt edge fraying → material spillage → structure damage → fire risk (friction से)। Detection: BSW (Belt Sway Switch) alarm; visual patrol में belt edge की position देखें। Immediate Action: Feed rate कम करें → self-aligning idlers adjust करें → loading pattern investigate करें। BSW trip के बाद investigation के बिना restart नहीं। [Belt Drift (Belt Misalignment), concept: belt-drift-belt-misalignment]\n- Transfer Point पर क्या गलत हो सकता है? समस्या | कारण | तत्काल प्रभाव ; Chute Blockage | गीली/चिपचिपी coal, over-size lumps, worn liners | Coal backup → upstream belt overload → ZSS trip ; Spillage | Belt overloading, worn skirt seals, off-centre loading | Structure पर coal गिरती है, idler damage, fire risk ; Excessive Dust | High drop height, dry fine coal, missing dust hood | CWP risk, visibility कम, explosion hazard ; Belt Drift (Receiving End) | Off-centre coal loading on BC-2 | BSW alarm, belt edge damage ; Liner Wear-Through | Abrasion से chute wall घिसना | Structural breach, coal system के बाहर जाती है Transfer points पर कभी भी running conveyor के पास काम नहीं करें। किसी भी maintenance से पहले LOTO (Lockout-Tagout) अनिवार्य है। Confined space entry के लिए formal permit system follow करें। [Transfer Point पर क्या गलत हो सकता है?, concept: transfer-point]\n- Why the Belt Drifts (Misalignment) The belt naturally tends to drift (wander sideways) if there is any asymmetry — uneven loading, idlers not perfectly perpendicular to belt travel, wind, or a bent frame. Even a slight drift accumulates over the length of the belt. If not corrected, the belt edge contacts the conveyor structure, causing edge damage, spillage, and ultimately belt failure. Self-aligning idlers and training idlers are used to correct drift automatically. A drifted belt that contacts the steel structure can generate enough heat through friction to ignite coal dust — causing a conveyor fire. Belt fires in CHP are a major risk and have caused plant outages lasting weeks. [Why the Belt Drifts (Misalignment), concept: why-the-belt-drifts-misalignment]\n- Belt Alignment Along Structure Where: Monitored continuously along the full length of the conveyor using belt sway switches. What is critical here: The belt must remain centred on the idlers throughout its full length. Belt sway switches are installed at regular intervals — if the belt drifts beyond a set limit, the sway switch first gives an alarm; if drift continues, it trips the conveyor. Self-aligning (training) idlers automatically correct minor drift. Regular inspection of idler alignment and condition is essential to maintaining belt tracking. Belt drift → edge contact with structure → friction heat → fire risk. Spillage along the full belt length. Edge damage requires expensive belt replacement. [Belt Alignment Along Structure, concept: belt-alignment-along-structure]\n- Belt Drift — क्यों होती है, क्यों ख़तरनाक है? Belt को हमेशा idlers के centre में रहना चाहिए। लेकिन अगर loading एक side पर ज़्यादा हो, idler alignment off हो, या tension uneven हो — belt धीरे-धीरे एक side की तरफ खिसकने लगती है। इसे belt drift कहते हैं। Belt drift → Belt का edge steel structure से contact → Friction heat generate → Coal dust ignite → FIRE। साथ में spillage पूरी belt length पर, expensive belt replacement, और plant shutdown। Belt sway switches (BSW) automatic alarm और trip देते हैं अगर drift ज़्यादा हो। [Belt Drift — क्यों होती है, क्यों ख़तरनाक है?, concept: belt-drift]\n\nRelevant diagram/image evidence:\n- Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html. [System Flow Integration – Coal का पूरा सफर, concept: system-flow-integration-coal]\n- Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html. [Transfer Points & Flow Behaviour, concept: transfer-points-flow-behaviour]",
+  "retrieved_images": [
+    {
+      "image_id": "072723b02f37eb29b368ac7fe2fc1774",
+      "title": "System Flow Integration – Coal का पूरा सफर",
+      "concept_id": "system-flow-integration-coal",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "description": "Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html.",
+      "citation": "[System Flow Integration – Coal का पूरा सफर, concept: system-flow-integration-coal]",
+      "display_type": "image_description"
+    },
+    {
+      "image_id": "448682ddfc6d36f050779bb025817903",
+      "title": "Transfer Points & Flow Behaviour",
+      "concept_id": "transfer-points-flow-behaviour",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+      "citation": "[Transfer Points & Flow Behaviour, concept: transfer-points-flow-behaviour]",
+      "display_type": "image_description"
+    }
+  ],
+  "citations": [
+    {
+      "id": "c4ccac6ea9c6348c3345ea41b075e453",
+      "title": "Belt Drift (Belt Misalignment)",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "belt-drift-belt-misalignment"
+    },
+    {
+      "id": "341a29ae3a77b7fd559748f49508111a",
+      "title": "Transfer Point पर क्या गलत हो सकता है?",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "transfer-point"
+    },
+    {
+      "id": "0c722e1c373f8b6c94d45b461cc43a52",
+      "title": "Why the Belt Drifts (Misalignment)",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "concept_id": "why-the-belt-drifts-misalignment"
+    },
+    {
+      "id": "8bb296cf2118bc6530e367dba873d3b5",
+      "title": "Belt Alignment Along Structure",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "concept_id": "belt-alignment-along-structure"
+    },
+    {
+      "id": "69ae06b0a8331602e788719e5ac38519",
+      "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "belt-drift"
+    },
+    {
+      "id": "072723b02f37eb29b368ac7fe2fc1774",
+      "title": "System Flow Integration – Coal का पूरा सफर",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "system-flow-integration-coal"
+    },
+    {
+      "id": "448682ddfc6d36f050779bb025817903",
+      "title": "Transfer Points & Flow Behaviour",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "concept_id": "transfer-points-flow-behaviour"
+    }
+  ],
+  "coverage_notes": {
+    "has_text_evidence": true,
+    "has_image_evidence": true,
+    "has_relation_trace": false,
+    "weaknesses": [
+      "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+    ]
+  },
+  "ui_response": {
+    "answer_text": "Query: belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?\n\nThis draft is based mainly on retrieved course text/image evidence; no supporting relation trace was retrieved.\n\nKey course evidence:\n- Belt Drift (Belt Misalignment) Root Cause: Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension। Effect: Belt एक तरफ रगड़ती है conveyor structure से → belt edge fraying → material spillage → structure damage → fire risk (friction से)। Detection: BSW (Belt Sway Switch) alarm; visual patrol में belt edge की position देखें। Immediate Action: Feed rate कम करें → self-aligning idlers adjust करें → loading pattern investigate करें। BSW trip के बाद investigation के बिना restart नहीं। [Belt Drift (Belt Misalignment), concept: belt-drift-belt-misalignment]\n- Transfer Point पर क्या गलत हो सकता है? समस्या | कारण | तत्काल प्रभाव ; Chute Blockage | गीली/चिपचिपी coal, over-size lumps, worn liners | Coal backup → upstream belt overload → ZSS trip ; Spillage | Belt overloading, worn skirt seals, off-centre loading | Structure पर coal गिरती है, idler damage, fire risk ; Excessive Dust | High drop height, dry fine coal, missing dust hood | CWP risk, visibility कम, explosion hazard ; Belt Drift (Receiving End) | Off-centre coal loading on BC-2 | BSW alarm, belt edge damage ; Liner Wear-Through | Abrasion से chute wall घिसना | Structural breach, coal system के बाहर जाती है Transfer points पर कभी भी running conveyor के पास काम नहीं करें। किसी भी maintenance से पहले LOTO (Lockout-Tagout) अनिवार्य है। Confined space entry के लिए formal permit system follow करें। [Transfer Point पर क्या गलत हो सकता है?, concept: transfer-point]\n- Why the Belt Drifts (Misalignment) The belt naturally tends to drift (wander sideways) if there is any asymmetry — uneven loading, idlers not perfectly perpendicular to belt travel, wind, or a bent frame. Even a slight drift accumulates over the length of the belt. If not corrected, the belt edge contacts the conveyor structure, causing edge damage, spillage, and ultimately belt failure. Self-aligning idlers and training idlers are used to correct drift automatically. A drifted belt that contacts the steel structure can generate enough heat through friction to ignite coal dust — causing a conveyor fire. Belt fires in CHP are a major risk and have caused plant outages lasting weeks. [Why the Belt Drifts (Misalignment), concept: why-the-belt-drifts-misalignment]\n- Belt Alignment Along Structure Where: Monitored continuously along the full length of the conveyor using belt sway switches. What is critical here: The belt must remain centred on the idlers throughout its full length. Belt sway switches are installed at regular intervals — if the belt drifts beyond a set limit, the sway switch first gives an alarm; if drift continues, it trips the conveyor. Self-aligning (training) idlers automatically correct minor drift. Regular inspection of idler alignment and condition is essential to maintaining belt tracking. Belt drift → edge contact with structure → friction heat → fire risk. Spillage along the full belt length. Edge damage requires expensive belt replacement. [Belt Alignment Along Structure, concept: belt-alignment-along-structure]\n- Belt Drift — क्यों होती है, क्यों ख़तरनाक है? Belt को हमेशा idlers के centre में रहना चाहिए। लेकिन अगर loading एक side पर ज़्यादा हो, idler alignment off हो, या tension uneven हो — belt धीरे-धीरे एक side की तरफ खिसकने लगती है। इसे belt drift कहते हैं। Belt drift → Belt का edge steel structure से contact → Friction heat generate → Coal dust ignite → FIRE। साथ में spillage पूरी belt length पर, expensive belt replacement, और plant shutdown। Belt sway switches (BSW) automatic alarm और trip देते हैं अगर drift ज़्यादा हो। [Belt Drift — क्यों होती है, क्यों ख़तरनाक है?, concept: belt-drift]\n\nRelevant diagram/image evidence:\n- Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html. [System Flow Integration – Coal का पूरा सफर, concept: system-flow-integration-coal]\n- Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html. [Transfer Points & Flow Behaviour, concept: transfer-points-flow-behaviour]",
+    "retrieved_images": [
+      {
+        "image_id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "description": "Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html.",
+        "citation": "[System Flow Integration – Coal का पूरा सफर, concept: system-flow-integration-coal]",
+        "display_type": "image_description"
+      },
+      {
+        "image_id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "citation": "[Transfer Points & Flow Behaviour, concept: transfer-points-flow-behaviour]",
+        "display_type": "image_description"
+      }
+    ],
+    "citations": [
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift-belt-misalignment"
+      },
+      {
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "transfer-point"
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "why-the-belt-drifts-misalignment"
+      },
+      {
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "title": "Belt Alignment Along Structure",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "belt-alignment-along-structure"
+      },
+      {
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift"
+      },
+      {
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "transfer-points-flow-behaviour"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": false,
+      "weaknesses": [
+        "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+      ]
+    },
+    "language": "hi-en"
+  },
+  "answer_metadata": {
+    "mode": "extractive",
+    "model": null,
+    "uses_only_compressed_context": true,
+    "image_evidence_count": 2,
+    "language": "hi-en"
+  }
+}

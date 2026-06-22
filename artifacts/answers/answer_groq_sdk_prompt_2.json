@@ -1,0 +1,159 @@
+{
+  "query": "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+  "answer": "Belt drift से fire risk होने का मुख्य कारण यह है कि जब बेल्ट drifted होती है, तो इसका edge steel structure से contact में आता है, जिससे friction heat generate होता है और coal dust ignite हो जाता है, जिससे आग लग सकती है [c4ccac6ea9c6348c3345ea41b075e453]। यही कारण है कि belt drift को खतरनाक माना जाता है [69ae06b0a8331602e788719e5ac38519]। \n\nTrainee को यह observe करना चाहिए कि बेल्ट का edge steel structure से contact में न आए, क्योंकि इससे friction heat generate होता है और fire risk बढ़ जाता है [0c722e1c373f8b6c94d45b461cc43a52]। इसके अलावा, trainee को यह भी देखना चाहिए कि बेल्ट का alignment सही है या नहीं, क्योंकि off-centre loading, worn idlers, wet/sticky coal, misaligned pulleys, या incorrect take-up tension जैसे कारणों से बेल्ट drifted हो सकती है [c4ccac6ea9c6348c3345ea41b075e453]। \n\nयह जानकारी मुख्य रूप से course text/image evidence पर आधारित है, क्योंकि कोई relation trace उपलब्ध नहीं है [coverage_notes]।",
+  "retrieved_images": [
+    {
+      "image_id": "072723b02f37eb29b368ac7fe2fc1774",
+      "title": "System Flow Integration – Coal का पूरा सफर",
+      "concept_id": "system-flow-integration-coal",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "description": "Diagram under: System Flow Integration – Coal का पूरा सफर.",
+      "citation": null,
+      "display_type": "image_description"
+    },
+    {
+      "image_id": "448682ddfc6d36f050779bb025817903",
+      "title": "Transfer Points & Flow Behaviour",
+      "concept_id": "transfer-points-flow-behaviour",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "description": "Diagram under: Transfer Points & Flow Behaviour.",
+      "citation": null,
+      "display_type": "image_description"
+    }
+  ],
+  "citations": [
+    {
+      "id": "c4ccac6ea9c6348c3345ea41b075e453",
+      "title": "Belt Drift (Belt Misalignment)",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "belt-drift-belt-misalignment"
+    },
+    {
+      "id": "341a29ae3a77b7fd559748f49508111a",
+      "title": "Transfer Point पर क्या गलत हो सकता है?",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "transfer-point"
+    },
+    {
+      "id": "0c722e1c373f8b6c94d45b461cc43a52",
+      "title": "Why the Belt Drifts (Misalignment)",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "concept_id": "why-the-belt-drifts-misalignment"
+    },
+    {
+      "id": "8bb296cf2118bc6530e367dba873d3b5",
+      "title": "Belt Alignment Along Structure",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "concept_id": "belt-alignment-along-structure"
+    },
+    {
+      "id": "69ae06b0a8331602e788719e5ac38519",
+      "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "belt-drift"
+    },
+    {
+      "id": "072723b02f37eb29b368ac7fe2fc1774",
+      "title": "System Flow Integration – Coal का पूरा सफर",
+      "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+      "concept_id": "system-flow-integration-coal"
+    },
+    {
+      "id": "448682ddfc6d36f050779bb025817903",
+      "title": "Transfer Points & Flow Behaviour",
+      "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+      "concept_id": "transfer-points-flow-behaviour"
+    }
+  ],
+  "coverage_notes": {
+    "has_text_evidence": true,
+    "has_image_evidence": true,
+    "has_relation_trace": false,
+    "weaknesses": [
+      "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+    ]
+  },
+  "ui_response": {
+    "answer_text": "Belt drift से fire risk होने का मुख्य कारण यह है कि जब बेल्ट drifted होती है, तो इसका edge steel structure से contact में आता है, जिससे friction heat generate होता है और coal dust ignite हो जाता है, जिससे आग लग सकती है [c4ccac6ea9c6348c3345ea41b075e453]। यही कारण है कि belt drift को खतरनाक माना जाता है [69ae06b0a8331602e788719e5ac38519]। \n\nTrainee को यह observe करना चाहिए कि बेल्ट का edge steel structure से contact में न आए, क्योंकि इससे friction heat generate होता है और fire risk बढ़ जाता है [0c722e1c373f8b6c94d45b461cc43a52]। इसके अलावा, trainee को यह भी देखना चाहिए कि बेल्ट का alignment सही है या नहीं, क्योंकि off-centre loading, worn idlers, wet/sticky coal, misaligned pulleys, या incorrect take-up tension जैसे कारणों से बेल्ट drifted हो सकती है [c4ccac6ea9c6348c3345ea41b075e453]। \n\nयह जानकारी मुख्य रूप से course text/image evidence पर आधारित है, क्योंकि कोई relation trace उपलब्ध नहीं है [coverage_notes]।",
+    "retrieved_images": [
+      {
+        "image_id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "description": "Diagram under: System Flow Integration – Coal का पूरा सफर.",
+        "citation": null,
+        "display_type": "image_description"
+      },
+      {
+        "image_id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Transfer Points & Flow Behaviour.",
+        "citation": null,
+        "display_type": "image_description"
+      }
+    ],
+    "citations": [
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift-belt-misalignment"
+      },
+      {
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "transfer-point"
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "why-the-belt-drifts-misalignment"
+      },
+      {
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "title": "Belt Alignment Along Structure",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "belt-alignment-along-structure"
+      },
+      {
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift"
+      },
+      {
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "transfer-points-flow-behaviour"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": false,
+      "weaknesses": [
+        "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+      ]
+    },
+    "language": "hi-en"
+  },
+  "answer_metadata": {
+    "mode": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "uses_only_compressed_context": true,
+    "image_evidence_count": 2,
+    "language": "hi-en"
+  }
+}

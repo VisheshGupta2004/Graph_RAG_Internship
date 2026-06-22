@@ -1,0 +1,125 @@
+{
+  "query": "Why is belt drift dangerous and what early signs should a trainee watch for?",
+  "compact_context": {
+    "key_text_evidence": [
+      {
+        "id": "2899686403df8e4dfbbe8429ab96691e",
+        "title": "Uneven Loading → Belt Drift → Structural Damage",
+        "concept_id": "uneven-loading-belt-drift-structural-damage",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Uneven Loading → Belt Drift → Structural Damage Cause: Coal from the feeder drops consistently to one side of the belt (e.g., feeder gate partially blocked, chute misaligned). The belt carries more load on one side than the other. What Happens: The belt gradually drifts toward the heavier side. It contacts the steel frame of the conveyor structure. Friction between the belt edge and the frame generates heat. Over hours, the belt edge begins to abrade. Coal spillage begins at the affected side. If not corrected, the belt tears longitudinally — a full-length split requiring complete belt replacement. Early Signs: Belt sway alarm activates. Visible drift at one or more idler sets. Spillage on one side only. Squealing noise from belt-structure contact. Consequence: Forced conveyor shutdown. Belt replacement cost (₹10–40 lakhs). 2–5 days of downtime for re-belting.",
+        "citation": "[Uneven Loading → Belt Drift → Structural Damage, concept: uneven-loading-belt-drift-structural-damage]"
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "concept_id": "why-the-belt-drifts-misalignment",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Why the Belt Drifts (Misalignment) The belt naturally tends to drift (wander sideways) if there is any asymmetry — uneven loading, idlers not perfectly perpendicular to belt travel, wind, or a bent frame. Even a slight drift accumulates over the length of the belt. If not corrected, the belt edge contacts the conveyor structure, causing edge damage, spillage, and ultimately belt failure. Self-aligning idlers and training idlers are used to correct drift automatically. A drifted belt that contacts the steel structure can generate enough heat through friction to ignite coal dust — causing a conveyor fire. Belt fires in CHP are a major risk and have caused plant outages lasting weeks.",
+        "citation": "[Why the Belt Drifts (Misalignment), concept: why-the-belt-drifts-misalignment]"
+      },
+      {
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "title": "Safety Device Reference Guide",
+        "concept_id": "safety-device-reference-guide",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Safety Device Reference Guide Device | Location on Conveyor | Function | Response When Activated ; Emergency Pull Cord (EPC) | Both sides, full length of conveyor, approximately every 30–50 m | Allows any person anywhere along the conveyor to immediately stop it in an emergency by pulling the rope/wire | Immediate emergency stop of conveyor drive motor. Conveyor cannot restart until EPC is reset and root cause investigated. ; Belt Sway Switch (BSW) | Both sides, spaced every 50–75 m along carry and return strand | Detects lateral drift of the belt beyond a set limit. Has two positions: first position = alarm; second position = trip. | First activation: Alarm in control room. Second (greater drift): Conveyor trip. Prevents belt edge from contacting steel structure. ; Zero Speed Switch (ZSS) | Tail pulley shaft or on a return idler | Monitors belt speed. Detects if the belt has stopped (zero speed) while the motor is still running — indicating belt slip. | Conveyor trip + alarm.",
+        "citation": "[Safety Device Reference Guide, concept: safety-device-reference-guide]"
+      },
+      {
+        "id": "dc97dddd829d1163f40dc02d85dbe8b4",
+        "title": "Glossary of CHP & Belt Conveyor Terms",
+        "concept_id": "glossary-of-chp-belt-conveyor-terms",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Glossary of CHP & Belt Conveyor Terms On your first day on site you will hear these terms constantly. This glossary ensures you are not lost in the conversation. Term | Meaning ; Belt | The continuous rubber-fabric loop that carries coal from tail to head end. ; Belt Conveyor (BC) | The complete conveyor assembly — numbered in sequence (BC-1, BC-2, etc.) in the plant. ; Carry Strand | The top run of the belt that carries coal toward the discharge point. ; Return Strand | The lower run of the empty belt going back from head to tail. ; Head Pulley | The drive pulley at the discharge end of the conveyor. ; Tail Pulley | The non-driven pulley at the loading end. ; Idler | A free-spinning roller that supports the belt. Troughing idlers (carry) and flat idlers (return). ; Trough Angle | The angle at which wing idler rolls are tilted to form the trough (20°–45°). ; Take-up | The tensioning device — gravity, screw, or hydraulic — that keeps the belt at correct tension. ;",
+        "citation": "[Glossary of CHP & Belt Conveyor Terms, concept: glossary-of-chp-belt-conveyor-terms]"
+      },
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "concept_id": "belt-drift-belt-misalignment",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "excerpt": "Belt Drift (Belt Misalignment) Root Cause: Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension। Effect: Belt एक तरफ रगड़ती है conveyor structure से → belt edge fraying → material spillage → structure damage → fire risk (friction से)। Detection: BSW (Belt Sway Switch) alarm; visual patrol में belt edge की position देखें। Immediate Action: Feed rate कम करें → self-aligning idlers adjust करें → loading pattern investigate करें। BSW trip के बाद investigation के बिना restart नहीं।",
+        "citation": "[Belt Drift (Belt Misalignment), concept: belt-drift-belt-misalignment]"
+      }
+    ],
+    "key_image_evidence": [
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "citation": "[Transfer Points & Flow Behaviour, concept: transfer-points-flow-behaviour]"
+      },
+      {
+        "id": "df6927d5c387e9bfa54c5e5cc52b02dc",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "description": "Diagram under: 3. Safety Devices — आपकी जान बचाने वाले Instruments. Caption: Fig 7.2 – Belt Conveyor Safety Devices: EPC, BSW, ZSS, और Belt Weigher. Visible labels: Belt Conveyor (Loaded Direction); EPC Rope (पूरी length में); EPC; BSW; ZSS; Speed; Belt Weigher; EPC: कहीं से भी खींचें; → तुरंत stop; ZSS: Speed drop; → auto trip; BSW: Belt drift; → alarm → trip; Belt Weigher: TPH; → control room data. Context: Safety और Hazard Awareness / Belt_Conveyor_L1_Course_HINDI.html.",
+        "citation": "[3. Safety Devices — आपकी जान बचाने वाले Instruments, concept: 3-safety-devices-instruments]"
+      }
+    ],
+    "key_relations": [],
+    "source_references": [
+      {
+        "id": "2899686403df8e4dfbbe8429ab96691e",
+        "title": "Uneven Loading → Belt Drift → Structural Damage",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "uneven-loading-belt-drift-structural-damage"
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "why-the-belt-drifts-misalignment"
+      },
+      {
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "title": "Safety Device Reference Guide",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "safety-device-reference-guide"
+      },
+      {
+        "id": "dc97dddd829d1163f40dc02d85dbe8b4",
+        "title": "Glossary of CHP & Belt Conveyor Terms",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "glossary-of-chp-belt-conveyor-terms"
+      },
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift-belt-misalignment"
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "transfer-points-flow-behaviour"
+      },
+      {
+        "id": "df6927d5c387e9bfa54c5e5cc52b02dc",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "3-safety-devices-instruments"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": false,
+      "weaknesses": [
+        "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+      ]
+    }
+  },
+  "compression_metadata": {
+    "mode": "extractive",
+    "max_text_evidence": 5,
+    "max_image_evidence": 2,
+    "max_relations": 6,
+    "max_excerpt_chars": 1000
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "CHP Training Assistant",
+  "short_name": "CHP Assistant",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f5f7f3",
+  "theme_color": "#12372f",
+  "description": "Mobile MVP for asking CHP training questions with text or voice.",
+  "icons": [
+    {
+      "src": "icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

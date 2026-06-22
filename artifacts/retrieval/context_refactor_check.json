@@ -1,0 +1,2281 @@
+{
+  "query": "Show the coal flow from wagon or track hopper to boiler bunker and include relevant diagrams.",
+  "seed_results": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "content": "What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-the-fundamental-principle-of-a-track-hopper",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 248,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Real Scenarios. Real Consequences.",
+            "What is the fundamental principle of a Track Hopper?"
+          ]
+        },
+        "score": 0.9299999999999999,
+        "vector_score": null,
+        "lexical_score": 0.9299999999999999,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=3",
+          "operational_overlap=4"
+        ],
+        "rerank_score": 1.38
+      },
+      {
+        "collection": "TextChunk",
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "content": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 354,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Real Scenarios. Real Consequences.",
+            "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?"
+          ]
+        },
+        "score": 0.89,
+        "vector_score": null,
+        "lexical_score": 0.89,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=3",
+          "operational_overlap=3"
+        ],
+        "rerank_score": 1.315
+      },
+      {
+        "collection": "TextChunk",
+        "id": "8e334f253efb6acee0ebbec0d4b52767",
+        "concept_id": "wagon-tippler-belt-conveyor-flow",
+        "title": "Wagon Tippler से Belt Conveyor तक का Flow",
+        "content": "Wagon Tippler से Belt Conveyor तक का Flow Step | Equipment | Function ; 1 | Wagon Tippler / Track Hopper | Coal wagon को empty करता है — hopper में dump ; 2 | Hopper + Vibratory/Apron Feeder | Controlled rate पर coal को Belt No. 1 पर feed करता है ; 3 | Belt Conveyor No. 1 (BC-1) | Coal को Crusher House तक ले जाती है ; 4 | Crusher House | Coal को ≤50 mm तक crush करता है ; 5 | CHP Conveyors | Crushed coal को Coal Yard / Bunkers तक पहुँचाती हैं ; 6 | Bunker → Mill → Boiler | Generation cycle शुरू होती है",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-wagon-tippler-belt-conveyor-flow",
+        "metadata": {
+          "level": 3,
+          "child_titles": [],
+          "content_length": 506,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Wagon Tippler के प्रकार",
+            "Wagon Tippler से Belt Conveyor तक का Flow"
+          ]
+        },
+        "score": 0.86,
+        "vector_score": null,
+        "lexical_score": 0.86,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=7"
+        ],
+        "rerank_score": 1.26
+      },
+      {
+        "collection": "TextChunk",
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "concept_id": "system-flow-integration-coal",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "content": "System Flow Integration – Coal का पूरा सफर Coal का सफर एक relay race की तरह है — हर stage अगली stage को handoff करती है। एक भी stage fail हुई तो पूरी race रुक जाती है। Belt conveyor system अकेले काम नहीं करता — यह एक बड़े coal handling sequence का हिस्सा है। Wagon tippler से boiler तक हर step एक specific function है जो अगले step पर निर्भर करती है। यह chain समझना ज़रूरी है। ① Railway Wagon Coal loaded BOX-N wagons railway tracks पर आते हैं ⚠ Surge loading risk ② Wagon Tippler Wagon को rotate/tilt करके coal को dump करता है ⚠ High dust generation ③ Track Hopper Coal को temporarily store करता है ⚠ Overflow risk ④ Feeder Coal की rate control करके belt पर डालता है ⚠ Overfeeding risk ⑤ Belt Conveyor BC-1 Coal को aage carry ⚠ Drift, overload risk ⑥ Transfer Tower BC-1 से BC-2 पर coal ⚠ HIGHEST RISK ZONE ⑦ Belt Conveyor BC-2 Bunker तक carry ⚠ Same risks ⑧ Coal Bunker 8–12 hrs buffer storage ⚠ Overflow / starvation ⑨ Pulveriser Coal को powder बनाता है → Boiler में जाती है ✓ Electricity generation",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "metadata": {
+          "content_length": 1001,
+          "child_titles": [
+            "हर Stage का Breakdown"
+          ],
+          "level": 2,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "System Flow Integration – Coal का पूरा सफर"
+          ]
+        },
+        "score": 0.86,
+        "vector_score": null,
+        "lexical_score": 0.86,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=7"
+        ],
+        "rerank_score": 1.26
+      },
+      {
+        "collection": "TextChunk",
+        "id": "822ccb3635e9542ea62d9edd8fcb8544",
+        "concept_id": "the-complete-coal-journey",
+        "title": "The complete coal journey",
+        "score": 0.8679169416427612,
+        "vector_score": 0.8679169416427612,
+        "rerank_score": 1.2329169416427612,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=2",
+          "operational_overlap=4"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13208305835723877,
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 311,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "The complete coal journey"
+          ]
+        },
+        "content": "The complete coal journey 1 Coal Wagon Bottom doors open over track hopper 2 Track Hopper Pit Coal falls by gravity into underground cavity 3 Grizzly Screen Steel bars filter out oversized material 4 Feeder System Extracts coal at controlled, steady rate 5 Belt Conveyor Carries coal to crusher / yard / bunkers",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-complete-coal-journey"
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "eb8b5b79b51d4756a7f5aa4622110127",
+        "concept_id": "surge-flow-the-sudden-collapse",
+        "title": "Surge Flow — The Sudden Collapse",
+        "description": "Diagram under: Surge Flow — The Sudden Collapse. Caption: Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor. Visible labels: ⬇⬇⬇; SUDDEN SURGE — massive coal rush. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-surge-flow-the-sudden-collapse",
+        "metadata": {
+          "view_box": "0 0 360 160",
+          "order_in_file": 7,
+          "linked_text_section_id": "Track_Hopper_iCard_Microlearning-surge-flow-the-sudden-collapse",
+          "svg_text_labels": [
+            "⬇⬇⬇",
+            "SUDDEN SURGE — massive coal rush"
+          ],
+          "raw_svg_excerpt": "<svg viewbox=\"0 0 360 160\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#0d1220\" height=\"160\" width=\"360\" x=\"0\" y=\"0\"></rect> <!-- Hopper (partially emptied) --> <polygon fill=\"#1a237e\" opacity=\"0.5\" points=\"50,20 110,100 250,100 310,20\"></polygon> <!-- Some coal remaining above --> <ellipse cx=\"180\" cy=\"55\" fill=\"#1a0e06\" opacity=\"0.6\" rx=\"60\" ry=\"18\"></ellipse> <!-- Open outlet - surge coming out --> <ellipse cx=\"180\" cy=\"106\" fill=\"#4e342e\" opacity=\"0.9\" rx=\"60\" ry=\"10\"></ellipse> <ellipse",
+          "caption": "Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor",
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "Surge Flow — The Sudden Collapse"
+          ]
+        },
+        "score": 0.85,
+        "vector_score": null,
+        "lexical_score": 0.85,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=2",
+          "operational_overlap=4"
+        ],
+        "rerank_score": 1.24
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "46838ec16d143849ee124fc956000344",
+        "concept_id": "what-is-a-track-hopper",
+        "title": "What is a Track Hopper?",
+        "score": 0.8617699146270752,
+        "vector_score": 0.8617699146270752,
+        "rerank_score": 1.201769914627075,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=4"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1382300853729248,
+        "metadata": {
+          "view_box": "0 0 360 180",
+          "order_in_file": 1,
+          "linked_text_section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+          "svg_text_labels": [
+            "COAL WAGON",
+            "bottom doors open",
+            "⬇⬇⬇",
+            "coal accumulating",
+            "Track Hopper Pit (underground)"
+          ],
+          "raw_svg_excerpt": "<svg viewbox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#1b3a1f\" height=\"180\" width=\"360\" x=\"0\" y=\"0\"></rect> <!-- Rail track --> <rect fill=\"#607d8b\" height=\"8\" rx=\"2\" width=\"320\" x=\"20\" y=\"60\"></rect> <!-- Sleepers --> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"50\" y=\"57\"></rect> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"90\" y=\"57\"></rect> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"130\" y=\"57\"></rect> <rect fill=\"#5d4037\" height=\"14\" width=\"8\" x=\"170\" y=\"57\"></rect",
+          "caption": "Rail wagon with open bottom doors discharging coal by gravity into underground hopper",
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?"
+          ]
+        },
+        "description": "Diagram under: What is a Track Hopper?. Caption: Rail wagon with open bottom doors discharging coal by gravity into underground hopper. Visible labels: COAL WAGON; bottom doors open; ⬇⬇⬇; coal accumulating; Track Hopper Pit (underground). Context: Track Hopper – iCard Microlearning / Track_Hopper_iCard_Microlearning.html.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "0b5d0ed61fb6eecf7ac122edafd2a301",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+        "title": "The Track Hopper Feeder — A Quick Refresh",
+        "description": "Diagram under: The Track Hopper Feeder — A Quick Refresh. Visible labels: WAGON; tippled; HOPPER; FEEDER; ★ THIS COURSE; BELT CONVEYOR; CRUSHER; HOUSE; COAL BUNKER; / STOCK; MILL → BOILER; GENERATION; POSITION OF FEEDER IN COAL FLOW CHAIN; Every tonne through the boiler passes through this feeder first. Context: Track Hopper Feeder Start, Stop & Inspection under Supervision / track_hopper_feeder_L2_course.html.",
+        "source_file": "track_hopper_feeder_L2_course.html",
+        "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+        "metadata": {
+          "view_box": "0 0 820 200",
+          "order_in_file": 1,
+          "linked_text_section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+          "svg_text_labels": [
+            "WAGON",
+            "tippled",
+            "HOPPER",
+            "FEEDER",
+            "★ THIS COURSE",
+            "BELT CONVEYOR",
+            "CRUSHER",
+            "HOUSE",
+            "COAL BUNKER",
+            "/ STOCK",
+            "MILL → BOILER",
+            "GENERATION",
+            "POSITION OF FEEDER IN COAL FLOW CHAIN",
+            "Every tonne through the boiler passes through this feeder first"
+          ],
+          "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 820 200\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"a2\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#c8520a\"></path> </marker> <marker id=\"a2b\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#1a4d7c\"></path> </marker> </defs> <!-- Wagon --> <rect fill=\"#2a3545\" height=\"40\" rx=\"3\" stroke=\"#4a5a6a\" stro",
+          "caption": "",
+          "breadcrumb": [
+            "Track Hopper Feeder | L2 Preparedness Course",
+            "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+            "The Track Hopper Feeder — A Quick Refresh"
+          ]
+        },
+        "score": 0.94,
+        "vector_score": null,
+        "lexical_score": 0.94,
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=8",
+          "title_overlap=3",
+          "operational_overlap=7",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 1.15
+      }
+    ],
+    "concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-feeder-a-quick-refresh",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+        "title": "The Track Hopper Feeder — A Quick Refresh",
+        "score": 0.874970555305481,
+        "vector_score": 0.874970555305481,
+        "rerank_score": 0.874970555305481,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12502944469451904,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "track_hopper_feeder_L2_course.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The Track Hopper Feeder — A Quick Refresh"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "The Track Hopper Feeder — A Quick Refresh",
+        "text_chunk_ids": [
+          "45d12c2452583c7612b94abf87cf6566"
+        ],
+        "image_ids": [
+          "0b5d0ed61fb6eecf7ac122edafd2a301"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.874970555305481
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-end-to-end-view",
+        "concept_id": "system-flow-integration-end-to-end-view",
+        "title": "System Flow Integration – End-to-End View",
+        "score": 0.8747284412384033,
+        "vector_score": 0.8747284412384033,
+        "rerank_score": 0.8747284412384033,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12527155876159668,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "System Flow Integration – End-to-End View"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        },
+        "label": "System Flow Integration – End-to-End View",
+        "text_chunk_ids": [
+          "93d89ec434764f0f63200ab3e8b67946"
+        ],
+        "image_ids": [
+          "273f1f8ec3d39c1c98d2f8b6411ef28f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8747284412384033
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "understanding-each-stage",
+        "concept_id": "understanding-each-stage",
+        "title": "Understanding Each Stage",
+        "score": 0.8718278408050537,
+        "vector_score": 0.8718278408050537,
+        "rerank_score": 0.8718278408050537,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1281721591949463,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Understanding Each Stage"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Understanding Each Stage",
+        "text_chunk_ids": [
+          "d5b2339a9ce495b6373db30645be7e48"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8718278408050537
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-complete-coal-journey",
+        "concept_id": "the-complete-coal-journey",
+        "title": "The complete coal journey",
+        "score": 0.8679169416427612,
+        "vector_score": 0.8679169416427612,
+        "rerank_score": 0.8679169416427612,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13208305835723877,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The complete coal journey"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "The complete coal journey",
+        "text_chunk_ids": [
+          "822ccb3635e9542ea62d9edd8fcb8544"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8679169416427612
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "score": 0.8594285249710083,
+        "vector_score": 0.8594285249710083,
+        "rerank_score": 0.8594285249710083,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1405714750289917,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "System Flow Integration – Coal का पूरा सफर"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "System Flow Integration – Coal का पूरा सफर",
+        "text_chunk_ids": [
+          "91d74d119e070e5c8113408d1d797c2d"
+        ],
+        "image_ids": [
+          "072723b02f37eb29b368ac7fe2fc1774"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8594285249710083
+      }
+    ]
+  },
+  "graph_expansion": {
+    "max_hops": 2,
+    "nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "bunker-feeding-system",
+        "concept_id": "bunker-feeding-system",
+        "label": "Bunker Feeding System",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "1110628a0a6f1c8f40f568c9e1bf29ad",
+          "25454920d3d144a2f00c85fe3346c972",
+          "47e0e89043a8ad285e6144543a171d62",
+          "4e3c714eabe42caba53c2a378d2e1415",
+          "54f5286cf8750746e086501692dd74af",
+          "ba26e6630b9c1b01f2f4d3a8ca745ac7",
+          "f7beddedd0e20896067134fff9569e6b"
+        ],
+        "target_relation_ids": [
+          "89e1e42c333309387218f9d7fb149b6f"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_skill",
+            "has_swo"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 7,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "explain-coal-flow-from-conveyor-to-bunker",
+        "concept_id": "explain-coal-flow-from-conveyor-to-bunker",
+        "label": "Explain coal flow from conveyor to bunker",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "54f5286cf8750746e086501692dd74af"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_skill"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 0,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "explain-coal-flow-from-hopper-to-conveyor",
+        "concept_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "label": "Explain coal flow from hopper to conveyor",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "a71e9ba2204a38699cbc6a088279329b"
+        ],
+        "target_relation_ids": [
+          "a3cf124fcf152587943d8701b790fe7b"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_skill",
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 1,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "explain-wagon-unloading-flow-from-receipt-to-hopper",
+        "concept_id": "explain-wagon-unloading-flow-from-receipt-to-hopper",
+        "label": "Explain wagon unloading flow from receipt to hopper",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "e5584bd5b3f8c0702edb3802570b3bb7"
+        ],
+        "target_relation_ids": [
+          "72012a016b6ad08ce92881db6f81558c"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_skill",
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "surge-flow-the-sudden-collapse",
+        "concept_id": "surge-flow-the-sudden-collapse",
+        "label": "Surge Flow — The Sudden Collapse",
+        "text_chunk_ids": [
+          "cc1e97ebd5fbf25738609ca05b30aef0"
+        ],
+        "image_ids": [
+          "eb8b5b79b51d4756a7f5aa4622110127"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Surge Flow — The Sudden Collapse"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal",
+        "label": "System Flow Integration – Coal का पूरा सफर",
+        "text_chunk_ids": [
+          "91d74d119e070e5c8113408d1d797c2d"
+        ],
+        "image_ids": [
+          "072723b02f37eb29b368ac7fe2fc1774"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "System Flow Integration – Coal का पूरा सफर"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-end-to-end-view",
+        "concept_id": "system-flow-integration-end-to-end-view",
+        "label": "System Flow Integration – End-to-End View",
+        "text_chunk_ids": [
+          "93d89ec434764f0f63200ab3e8b67946"
+        ],
+        "image_ids": [
+          "273f1f8ec3d39c1c98d2f8b6411ef28f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "System Flow Integration – End-to-End View"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-complete-coal-journey",
+        "concept_id": "the-complete-coal-journey",
+        "label": "The complete coal journey",
+        "text_chunk_ids": [
+          "822ccb3635e9542ea62d9edd8fcb8544"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The complete coal journey"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "label": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "text_chunk_ids": [
+          "a057d83d76f364d1192b6f9af8aaddff"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-feeder-a-quick-refresh",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+        "label": "The Track Hopper Feeder — A Quick Refresh",
+        "text_chunk_ids": [
+          "45d12c2452583c7612b94abf87cf6566"
+        ],
+        "image_ids": [
+          "0b5d0ed61fb6eecf7ac122edafd2a301"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "track_hopper_feeder_L2_course.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "The Track Hopper Feeder — A Quick Refresh"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "trace-coal-flow-from-hopper-through-feeder-to-conveyor",
+        "concept_id": "trace-coal-flow-from-hopper-through-feeder-to-conveyor",
+        "label": "Trace coal flow from hopper through feeder to conveyor",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "a71e9ba2204a38699cbc6a088279329b"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 0,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "concept_id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "label": "Trace coal unloading flow from wagon to hopper system",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "e5584bd5b3f8c0702edb3802570b3bb7"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 0,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "image_count": 0,
+          "text_chunk_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "track-hopper-operation",
+        "concept_id": "track-hopper-operation",
+        "label": "Track Hopper Operation",
+        "text_chunk_ids": [
+          "326177bef41e5a82396b7b3bc2c708b9"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [
+          "40cf99fd9633e30d879d0d07a01966ab",
+          "4662645a84726d14a612d39d6bbdb7a9",
+          "6693e1d329f69da742120467a9730c30",
+          "75da25c0c35bd24f73897cd6af2e58c6",
+          "77b9d670bd20c5f391581a812383dd19",
+          "85ac2a36b4197d05c4e9b225eddd9758",
+          "a3cf124fcf152587943d8701b790fe7b",
+          "aee70daa4e57bad618ee3b54508a154d"
+        ],
+        "target_relation_ids": [
+          "869155ee953f4bfa3969d7dba6d46c92"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_skill",
+            "has_swo"
+          ],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 1,
+          "source_relation_count": 8,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Track Hopper Operation"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "understanding-each-stage",
+        "concept_id": "understanding-each-stage",
+        "label": "Understanding Each Stage",
+        "text_chunk_ids": [
+          "d5b2339a9ce495b6373db30645be7e48"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Understanding Each Stage"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "wagon-tippler-belt-conveyor-flow",
+        "concept_id": "wagon-tippler-belt-conveyor-flow",
+        "label": "Wagon Tippler से Belt Conveyor तक का Flow",
+        "text_chunk_ids": [
+          "8e334f253efb6acee0ebbec0d4b52767"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Wagon Tippler से Belt Conveyor तक का Flow"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-is-a-track-hopper",
+        "concept_id": "what-is-a-track-hopper",
+        "label": "What is a Track Hopper?",
+        "text_chunk_ids": [
+          "19840e50aaad348878ec0cda8cc8e1a1"
+        ],
+        "image_ids": [
+          "46838ec16d143849ee124fc956000344"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "What is a Track Hopper?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "label": "What is the fundamental principle of a Track Hopper?",
+        "text_chunk_ids": [
+          "a24dd3a6d0e9f899172f20d57080afb1"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "What is the fundamental principle of a Track Hopper?"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      }
+    ],
+    "relations": [
+      {
+        "collection": "RelationChunk",
+        "id": "a3cf124fcf152587943d8701b790fe7b",
+        "relation_id": "a3cf124fcf152587943d8701b790fe7b",
+        "source_id": "track-hopper-operation",
+        "target_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "relation_type": "has_skill",
+        "description": "Track Hopper Operation has skill Explain coal flow from hopper to conveyor.",
+        "graph_relevance_score": 0.668359965234995,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_skill:0.65",
+          "endpoint_has_evidence",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Skills",
+          "source_label": "Track Hopper Operation",
+          "source_file": "CHP WRCF.xlsx",
+          "placeholder": false,
+          "target_label": "Explain coal flow from hopper to conveyor",
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Receipt & Unloading | SWO: Track Hopper Operation | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain coal flow from hopper to conveyor | Cognitive Type: Procedural | Skill Criticality: Medium | Recertification (Months): 12.0 | AI Impact: Low",
+          "row_number": 11
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "e5584bd5b3f8c0702edb3802570b3bb7",
+        "relation_id": "e5584bd5b3f8c0702edb3802570b3bb7",
+        "source_id": "explain-wagon-unloading-flow-from-receipt-to-hopper",
+        "target_id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "relation_type": "has_task",
+        "description": "Explain wagon unloading flow from receipt to hopper has task Trace coal unloading flow from wagon to hopper system.",
+        "graph_relevance_score": 0.49368535965681076,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Tasks",
+          "source_label": "Explain wagon unloading flow from receipt to hopper",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Trace coal unloading flow from wagon to hopper system",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Receipt & Unloading | SWO: Wagon Tippler Operation | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain wagon unloading flow from receipt to hopper | Task: Trace coal unloading flow from wagon to hopper system | Frequency: Weekly | Complexity: Low | Standard Duration (mins): 15.0 | Required Proficiency Level: L1",
+          "row_number": 81
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "a71e9ba2204a38699cbc6a088279329b",
+        "relation_id": "a71e9ba2204a38699cbc6a088279329b",
+        "source_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "target_id": "trace-coal-flow-from-hopper-through-feeder-to-conveyor",
+        "relation_type": "has_task",
+        "description": "Explain coal flow from hopper to conveyor has task Trace coal flow from hopper through feeder to conveyor.",
+        "graph_relevance_score": 0.49335996523499487,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Tasks",
+          "source_label": "Explain coal flow from hopper to conveyor",
+          "source_file": "CHP WRCF.xlsx",
+          "placeholder": false,
+          "target_label": "Trace coal flow from hopper through feeder to conveyor",
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Receipt & Unloading | SWO: Track Hopper Operation | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain coal flow from hopper to conveyor | Task: Trace coal flow from hopper through feeder to conveyor | Frequency: Weekly | Complexity: Low | Standard Duration (mins): 15.0 | Required Proficiency Level: L1",
+          "row_number": 95
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "54f5286cf8750746e086501692dd74af",
+        "relation_id": "54f5286cf8750746e086501692dd74af",
+        "source_id": "bunker-feeding-system",
+        "target_id": "explain-coal-flow-from-conveyor-to-bunker",
+        "relation_type": "has_skill",
+        "description": "Bunker Feeding System has skill Explain coal flow from conveyor to bunker.",
+        "graph_relevance_score": 0.46944073617458343,
+        "ranking_reasons": [
+          "seed=0.31",
+          "hop_decay=1.00",
+          "type=has_skill:0.65",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Skills",
+          "source_label": "Bunker Feeding System",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Explain coal flow from conveyor to bunker",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Feed to Boiler Systems | SWO: Bunker Feeding System | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain coal flow from conveyor to bunker | Cognitive Type: Procedural | Skill Criticality: Medium | Recertification (Months): 12.0 | AI Impact: Low",
+          "row_number": 230
+        }
+      }
+    ],
+    "trace": [
+      {
+        "hop": 1,
+        "from": "explain-coal-flow-from-conveyor-to-bunker",
+        "to": "bunker-feeding-system",
+        "direction": "in",
+        "relation_id": "54f5286cf8750746e086501692dd74af",
+        "relation_type": "has_skill",
+        "graph_relevance_score": 0.46944073617458343,
+        "ranking_reasons": [
+          "seed=0.31",
+          "hop_decay=1.00",
+          "type=has_skill:0.65",
+          "query_overlap=5"
+        ]
+      },
+      {
+        "hop": 1,
+        "from": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "to": "explain-wagon-unloading-flow-from-receipt-to-hopper",
+        "direction": "in",
+        "relation_id": "e5584bd5b3f8c0702edb3802570b3bb7",
+        "relation_type": "has_task",
+        "graph_relevance_score": 0.49368535965681076,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=5"
+        ]
+      },
+      {
+        "hop": 1,
+        "from": "explain-coal-flow-from-hopper-to-conveyor",
+        "to": "track-hopper-operation",
+        "direction": "in",
+        "relation_id": "a3cf124fcf152587943d8701b790fe7b",
+        "relation_type": "has_skill",
+        "graph_relevance_score": 0.668359965234995,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_skill:0.65",
+          "endpoint_has_evidence",
+          "query_overlap=5"
+        ]
+      },
+      {
+        "hop": 1,
+        "from": "explain-coal-flow-from-hopper-to-conveyor",
+        "to": "trace-coal-flow-from-hopper-through-feeder-to-conveyor",
+        "direction": "out",
+        "relation_id": "a71e9ba2204a38699cbc6a088279329b",
+        "relation_type": "has_task",
+        "graph_relevance_score": 0.49335996523499487,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=5"
+        ]
+      }
+    ],
+    "seed_relation_only_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "explain-coal-flow-from-conveyor-to-bunker",
+        "concept_id": "explain-coal-flow-from-conveyor-to-bunker",
+        "title": "Explain coal flow from conveyor to bunker",
+        "score": 0.8729856014251709,
+        "vector_score": 0.8729856014251709,
+        "rerank_score": 0.3055449604988098,
+        "ranking_reasons": [
+          "node_weight=0.35"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1270143985748291,
+        "metadata": {
+          "relation_types": [
+            "has_skill"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 0,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        },
+        "label": "Explain coal flow from conveyor to bunker",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "54f5286cf8750746e086501692dd74af"
+        ],
+        "retrieval_weight": 0.35,
+        "weighted_score": 0.3055449604988098,
+        "graph_seed_reason": "high_confidence_relation_only_node"
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "concept_id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "title": "Trace coal unloading flow from wagon to hopper system",
+        "score": 0.8668192625045776,
+        "vector_score": 0.8668192625045776,
+        "rerank_score": 0.30338674187660214,
+        "ranking_reasons": [
+          "node_weight=0.35"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13318073749542236,
+        "metadata": {
+          "relation_types": [
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 0,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        },
+        "label": "Trace coal unloading flow from wagon to hopper system",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "e5584bd5b3f8c0702edb3802570b3bb7"
+        ],
+        "retrieval_weight": 0.35,
+        "weighted_score": 0.30338674187660214,
+        "graph_seed_reason": "high_confidence_relation_only_node"
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "explain-coal-flow-from-hopper-to-conveyor",
+        "concept_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "title": "Explain coal flow from hopper to conveyor",
+        "score": 0.8641629815101624,
+        "vector_score": 0.8641629815101624,
+        "rerank_score": 0.3024570435285568,
+        "ranking_reasons": [
+          "node_weight=0.35"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13583701848983765,
+        "metadata": {
+          "relation_types": [
+            "has_skill",
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 1,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        },
+        "label": "Explain coal flow from hopper to conveyor",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "a71e9ba2204a38699cbc6a088279329b"
+        ],
+        "target_relation_ids": [
+          "a3cf124fcf152587943d8701b790fe7b"
+        ],
+        "retrieval_weight": 0.35,
+        "weighted_score": 0.3024570435285568,
+        "graph_seed_reason": "high_confidence_relation_only_node"
+      }
+    ]
+  },
+  "expanded_evidence": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "concept_id": "what-is-a-track-hopper",
+        "title": "What is a Track Hopper?",
+        "content": "What is a Track Hopper? COAL WAGON bottom doors open ⬇⬇⬇ coal accumulating Track Hopper Pit (underground) Rail wagon with open bottom doors discharging coal by gravity into underground hopper A Track Hopper is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. No tipping. No rotation. Just gravity.",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+        "metadata": {
+          "level": 1,
+          "child_titles": [
+            "Why it matters to the plant",
+            "Track Hopper vs Wagon Tippler",
+            "The complete coal journey",
+            "Break one link, break the chain",
+            "An underground cavity you cannot fully see",
+            "4 key structural elements",
+            "The Grizzly — first line of defence",
+            "What happens if the grizzly fails?",
+            "Why a feeder is needed",
+            "Belt Feeder",
+            "Apron Feeder",
+            "Coal is NOT a liquid",
+            "Arch Formation — The Silent Stop",
+            "Surge Flow — The Sudden Collapse",
+            "The most dangerous words in a CHP:",
+            "5 deceptive situations",
+            "Not one hazard. Three — overlapping.",
+            "Your role as a trainee"
+          ],
+          "content_length": 392,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=2",
+          "operational_overlap=4",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.565
+      },
+      {
+        "collection": "TextChunk",
+        "id": "326177bef41e5a82396b7b3bc2c708b9",
+        "concept_id": "track-hopper-operation",
+        "title": "Track Hopper Operation",
+        "content": "Track Hopper Operation Coal Receipt & Unloading Thermal Power Plant · Coal Handling Plant 8 Concept Blocks 42 Learning Cards 5 Control Points 6 Failure Cases",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-track-hopper-operation",
+        "metadata": {
+          "level": 1,
+          "child_titles": [
+            "How to use this course"
+          ],
+          "content_length": 157,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "Track Hopper Operation"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=2",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.515
+      },
+      {
+        "collection": "TextChunk",
+        "id": "cc1e97ebd5fbf25738609ca05b30aef0",
+        "concept_id": "surge-flow-the-sudden-collapse",
+        "title": "Surge Flow — The Sudden Collapse",
+        "content": "Surge Flow — The Sudden Collapse ⬇⬇⬇ SUDDEN SURGE — massive coal rush Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor 🚨 The Deadly Risk",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-surge-flow-the-sudden-collapse",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 172,
+          "breadcrumb": [
+            "Track Hopper – iCard Microlearning",
+            "What is a Track Hopper?",
+            "Surge Flow — The Sudden Collapse"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.5
+      },
+      {
+        "collection": "TextChunk",
+        "id": "d5b2339a9ce495b6373db30645be7e48",
+        "concept_id": "understanding-each-stage",
+        "title": "Understanding Each Stage",
+        "content": "Understanding Each Stage Stage | What Happens Here | Consequence if Disrupted ; Railway Wagon | Coal-loaded wagons arrive from the mine via rail. Each wagon carries 60–80 tonnes. | No coal input — entire downstream system starves. ; Wagon Tippler / Track Hopper | Wagon is inverted or coal falls through a grated pit. Coal drops into the hopper below. | Feed is interrupted — hopper level drops, feeder starves. ; Track Hopper / Surge Hopper | Acts as a buffer storage. Absorbs variation in wagon unloading rate. Feeds the conveyor steadily. | Overflow if feed is too fast; starvation if empty. ; Feeder / Crusher | Controls the rate at which coal is loaded onto the conveyor. May include a crusher to reduce lump size. | Overload or underload on conveyor; blockages if lumps are too large. ; Belt Conveyor BC-1 | Carries coal horizontally or at an incline to the transfer tower or directly to the bunker. | Entire downstream coal supply stops. ; Transfer Tower | Junction point where coal moves from one conveyor to another (BC-1 to BC-2). Contains a chute to guide coal. | Spillage, blockage, or coal misdirection. ; Coal Bunker | Large overhead storage silo (capacity 8–12 hours of operation). Continuously fed from conveyor above. | Bunker starves → boiler load reduction → unit outage. ; Boiler | Coal from bunker is pulverised and fired. Steam drives the turbine-generator. | Power generation stops. The belt conveyor is not an isolated machine . It is one critical link in a chain. An imbalance at any point — too much coal, too little coal, wrong size coal — travels downstream and amplifies. A senior engineer thinks of the entire chain simultaneously, not just the conveyor belt in front of them.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-understanding-each-stage",
+        "metadata": {
+          "content_length": 1706,
+          "child_titles": [],
+          "level": 3,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "System Flow Integration – End-to-End View",
+            "Understanding Each Stage"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=10",
+          "operational_overlap=6",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.48000000000000004
+      },
+      {
+        "collection": "TextChunk",
+        "id": "45d12c2452583c7612b94abf87cf6566",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+        "title": "The Track Hopper Feeder — A Quick Refresh",
+        "content": "The Track Hopper Feeder — A Quick Refresh You learned in L1 that coal discharged from the Wagon Tippler falls into the Underground Hopper. The Track Hopper Feeder is the device that meters coal from the bottom of that hopper onto the downstream belt conveyor at a controlled, steady rate. There are two main types you will encounter in Indian thermal power plants: WAGON tippled HOPPER FEEDER ★ THIS COURSE BELT CONVEYOR CRUSHER HOUSE COAL BUNKER / STOCK MILL → BOILER GENERATION POSITION OF FEEDER IN COAL FLOW CHAIN Every tonne through the boiler passes through this feeder first",
+        "source_file": "track_hopper_feeder_L2_course.html",
+        "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "Two Feeder Types You Will Encounter"
+          ],
+          "content_length": 581,
+          "breadcrumb": [
+            "Track Hopper Feeder | L2 Preparedness Course",
+            "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+            "The Track Hopper Feeder — A Quick Refresh"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=9",
+          "title_overlap=3",
+          "operational_overlap=7",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.4099999999999999
+      },
+      {
+        "collection": "TextChunk",
+        "id": "93d89ec434764f0f63200ab3e8b67946",
+        "concept_id": "system-flow-integration-end-to-end-view",
+        "title": "System Flow Integration – End-to-End View",
+        "content": "System Flow Integration – End-to-End View Wagon Tippler → Hopper → Feeder → Conveyor → Transfer Points → Coal Bunker → Boiler. The conveyor is not isolated — it is one link in a synchronised chain. Before you can understand the conveyor itself, you need to visualise the complete material flow — the journey coal takes from the moment it arrives at the plant to when it reaches the boiler. Think of it like a factory assembly line: every station depends on the one before it, and supplies the one after it. RAILWAY WAGON (Coal Source) Arrival point WAGON TIPPLER (Unloading) ~20–25 min/wagon TRACK HOPPER (Buffer) Coal storage pit FEEDER / CRUSHER (Sizing) Controls feed rate BELT CONVEYOR BC-1 (This Course) Primary conveying TRANSFER TOWER (High-risk zone) BC-1 → BC-2 COAL BUNKER (Final Buffer) Above the boiler BOILER (Combustion) ⚠ CRITICAL DELIVERY ZONE Transfer Tower + Bunker filling = high-risk area Coal Flow Direction → Each station is dependent on the previous — disruption at any point affects the entire chain",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-system-flow-integration-end-to-end-view",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "Understanding Each Stage"
+          ],
+          "content_length": 1023,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "System Flow Integration – End-to-End View"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=10",
+          "title_overlap=1",
+          "operational_overlap=7",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.29000000000000004
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "concept_id": "system-flow-integration-coal",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "description": "Diagram under: System Flow Integration – Coal का पूरा सफर. Caption: Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है. Visible labels: ① Railway Wagon; Coal loaded BOX-N wagons; railway tracks पर आते हैं; ⚠ Surge loading risk; ② Wagon Tippler; Wagon को rotate/tilt करके; coal को dump करता है; ⚠ High dust generation; ③ Track Hopper; Coal को temporarily; store करता है; ⚠ Overflow risk; ④ Feeder; Coal की rate control; करके belt पर डालता है; ⚠ Overfeeding risk; ⑤ Belt Conveyor; BC-1; Coal को aage carry; ⚠ Drift, overload risk; ⑥ Transfer; Tower; BC-1 से BC-2 पर coal; ⚠ HIGHEST RISK ZONE; ⑦ Belt; Conveyor BC-2; Bunker तक carry; ⚠ Same risks; ⑧ Coal; Bunker; 8–12 hrs buffer storage; ⚠ Overflow / starvation; ⑨ Pulveriser; Coal को powder बनाता है; → Boiler में जाती है; ✓ Electricity generation. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_HINDI.html.",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "metadata": {
+          "view_box": "0 0 820 420",
+          "order_in_file": 2,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+          "svg_text_labels": [
+            "① Railway Wagon",
+            "Coal loaded BOX-N wagons",
+            "railway tracks पर आते हैं",
+            "⚠ Surge loading risk",
+            "② Wagon Tippler",
+            "Wagon को rotate/tilt करके",
+            "coal को dump करता है",
+            "⚠ High dust generation",
+            "③ Track Hopper",
+            "Coal को temporarily",
+            "store करता है",
+            "⚠ Overflow risk",
+            "④ Feeder",
+            "Coal की rate control",
+            "करके belt पर डालता है",
+            "⚠ Overfeeding risk",
+            "⑤ Belt Conveyor",
+            "BC-1",
+            "Coal को aage carry",
+            "⚠ Drift, overload risk",
+            "⑥ Transfer",
+            "Tower",
+            "BC-1 से BC-2 पर coal",
+            "⚠ HIGHEST RISK ZONE",
+            "⑦ Belt",
+            "Conveyor BC-2",
+            "Bunker तक carry",
+            "⚠ Same risks",
+            "⑧ Coal",
+            "Bunker",
+            "8–12 hrs buffer storage",
+            "⚠ Overflow / starvation",
+            "⑨ Pulveriser",
+            "Coal को powder बनाता है",
+            "→ Boiler में जाती है",
+            "✓ Electricity generation"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:800px\" viewbox=\"0 0 820 420\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"a2\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"><polygon fill=\"#2c3e50\" points=\"0 0,8 3,0 6\"></polygon></marker> <marker id=\"a2r\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"><polygon fill=\"#c0392b\" points=\"0 0,8 3,0 6\"></polygon></marker> </defs> <!-- Stage 1: Railway Wagon --> <rect fill=\"#d6eaf8\" height=\"75\" rx=\"10\" stroke=\"#2980b9\" stroke-width=\"2",
+          "caption": "Fig 2.1 – Coal का complete journey — Railway Wagon से Boiler तक; हर stage अगली पर dependent है",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "System Flow Integration – Coal का पूरा सफर"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=7",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.3500000000000001
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "273f1f8ec3d39c1c98d2f8b6411ef28f",
+        "concept_id": "system-flow-integration-end-to-end-view",
+        "title": "System Flow Integration – End-to-End View",
+        "description": "Diagram under: System Flow Integration – End-to-End View. Caption: Fig 2.1 – Complete end-to-end coal flow from railway wagon to boiler. Visible labels: RAILWAY; WAGON; (Coal Source); Arrival point; TIPPLER; (Unloading); ~20–25 min/wagon; TRACK; HOPPER; (Buffer); Coal storage pit; FEEDER /; CRUSHER; (Sizing); Controls feed rate; BELT; CONVEYOR; BC-1; (This Course); Primary conveying; TRANSFER; TOWER; (High-risk zone); BC-1 → BC-2; COAL; BUNKER; (Final Buffer); Above the boiler; BOILER; (Combustion); ⚠ CRITICAL DELIVERY ZONE; Transfer Tower + Bunker filling = high-risk area; Coal Flow Direction →; Each station is dependent on the previous — disruption at any point affects the entire chain. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-system-flow-integration-end-to-end-view",
+        "metadata": {
+          "view_box": "0 0 860 280",
+          "order_in_file": 2,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-system-flow-integration-end-to-end-view",
+          "svg_text_labels": [
+            "RAILWAY",
+            "WAGON",
+            "(Coal Source)",
+            "Arrival point",
+            "TIPPLER",
+            "(Unloading)",
+            "~20–25 min/wagon",
+            "TRACK",
+            "HOPPER",
+            "(Buffer)",
+            "Coal storage pit",
+            "FEEDER /",
+            "CRUSHER",
+            "(Sizing)",
+            "Controls feed rate",
+            "BELT",
+            "CONVEYOR",
+            "BC-1",
+            "(This Course)",
+            "Primary conveying",
+            "TRANSFER",
+            "TOWER",
+            "(High-risk zone)",
+            "BC-1 → BC-2",
+            "COAL",
+            "BUNKER",
+            "(Final Buffer)",
+            "Above the boiler",
+            "BOILER",
+            "(Combustion)",
+            "⚠ CRITICAL DELIVERY ZONE",
+            "Transfer Tower + Bunker filling = high-risk area",
+            "Coal Flow Direction →",
+            "Each station is dependent on the previous — disruption at any point affects the entire chain"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:840px\" viewbox=\"0 0 860 280\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"a2\" markerheight=\"7\" markerwidth=\"9\" orient=\"auto\" refx=\"9\" refy=\"3.5\"> <polygon fill=\"#2c5282\" points=\"0 0, 9 3.5, 0 7\"></polygon> </marker> <marker id=\"a2r\" markerheight=\"7\" markerwidth=\"9\" orient=\"auto\" refx=\"9\" refy=\"3.5\"> <polygon fill=\"#c0392b\" points=\"0 0, 9 3.5, 0 7\"></polygon> </marker> </defs> <!-- STAGE BOXES --> <!-- 1. Railway Wagon --> <rect fill=\"#d6eaf8\" height=\"72\" rx=\"8\" st",
+          "caption": "Fig 2.1 – Complete end-to-end coal flow from railway wagon to boiler",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "System Flow Integration – End-to-End View"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=9",
+          "title_overlap=1",
+          "operational_overlap=7",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.29000000000000004
+      }
+    ]
+  },
+  "context_for_llm_later": {
+    "text_blocks": [
+      {
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways",
+        "rerank_score": 1.38,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=3",
+          "operational_overlap=4"
+        ]
+      },
+      {
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free",
+        "rerank_score": 1.315,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=3",
+          "operational_overlap=3"
+        ]
+      },
+      {
+        "id": "8e334f253efb6acee0ebbec0d4b52767",
+        "title": "Wagon Tippler से Belt Conveyor तक का Flow",
+        "concept_id": "wagon-tippler-belt-conveyor-flow",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "Wagon Tippler से Belt Conveyor तक का Flow Step | Equipment | Function ; 1 | Wagon Tippler / Track Hopper | Coal wagon को empty करता है — hopper में dump ; 2 | Hopper + Vibratory/Apron Feeder | Controlled rate पर coal को Belt No. 1 पर feed करता है ; 3 | Belt Conveyor No. 1 (BC-1) | Coal को Crusher House तक ले जाती है ; 4 | Crusher House | Coal को ≤50 mm तक crush करता है ; 5 | CHP Conveyors | Crushed coal को Coal Yard / Bunkers तक पहुँचाती हैं ; 6 | Bunker → Mill → Boiler | Generation cycle शुरू होती है",
+        "rerank_score": 1.26,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=7"
+        ]
+      },
+      {
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "System Flow Integration – Coal का पूरा सफर Coal का सफर एक relay race की तरह है — हर stage अगली stage को handoff करती है। एक भी stage fail हुई तो पूरी race रुक जाती है। Belt conveyor system अकेले काम नहीं करता — यह एक बड़े coal handling sequence का हिस्सा है। Wagon tippler से boiler तक हर step एक specific function है जो अगले step पर निर्भर करती है। यह chain समझना ज़रूरी है। ① Railway Wagon Coal loaded BOX-N wagons railway tracks पर आते हैं ⚠ Surge loading risk ② Wagon Tippler Wagon को rotate/tilt करके coal को dump करता है ⚠ High dust generation ③ Track Hopper Coal को temporarily store करता है ⚠ Overflow risk ④ Feeder Coal की rate control करके belt पर डालता है ⚠ Overfeeding risk ⑤ Belt Conveyor BC-1 Coal को aage carry ⚠ Drift, overload risk ⑥ Transfer Tower BC-1 से BC-2 पर coal ⚠ HIGHEST RISK ZONE ⑦ Belt Conveyor BC-2 Bunker तक carry ⚠ Same risks ⑧ Coal Bunker 8–12 hrs buffer storage ⚠ Overflow / starvation ⑨ Pulveriser Coal को powder बनाता है → Boiler में जाती है ✓ Electricity generation",
+        "rerank_score": 1.26,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=7"
+        ]
+      },
+      {
+        "id": "822ccb3635e9542ea62d9edd8fcb8544",
+        "title": "The complete coal journey",
+        "concept_id": "the-complete-coal-journey",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "The complete coal journey 1 Coal Wagon Bottom doors open over track hopper 2 Track Hopper Pit Coal falls by gravity into underground cavity 3 Grizzly Screen Steel bars filter out oversized material 4 Feeder System Extracts coal at controlled, steady rate 5 Belt Conveyor Carries coal to crusher / yard / bunkers",
+        "rerank_score": 1.2329169416427612,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=2",
+          "operational_overlap=4"
+        ]
+      },
+      {
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "title": "What is a Track Hopper?",
+        "concept_id": "what-is-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "What is a Track Hopper? COAL WAGON bottom doors open ⬇⬇⬇ coal accumulating Track Hopper Pit (underground) Rail wagon with open bottom doors discharging coal by gravity into underground hopper A Track Hopper is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. No tipping. No rotation. Just gravity.",
+        "rerank_score": 0.565,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=2",
+          "operational_overlap=4",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "326177bef41e5a82396b7b3bc2c708b9",
+        "title": "Track Hopper Operation",
+        "concept_id": "track-hopper-operation",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "Track Hopper Operation Coal Receipt & Unloading Thermal Power Plant · Coal Handling Plant 8 Concept Blocks 42 Learning Cards 5 Control Points 6 Failure Cases",
+        "rerank_score": 0.515,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=2",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "cc1e97ebd5fbf25738609ca05b30aef0",
+        "title": "Surge Flow — The Sudden Collapse",
+        "concept_id": "surge-flow-the-sudden-collapse",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "content": "Surge Flow — The Sudden Collapse ⬇⬇⬇ SUDDEN SURGE — massive coal rush Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor 🚨 The Deadly Risk",
+        "rerank_score": 0.5,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ]
+      }
+    ],
+    "image_blocks": [
+      {
+        "id": "eb8b5b79b51d4756a7f5aa4622110127",
+        "title": "Surge Flow — The Sudden Collapse",
+        "concept_id": "surge-flow-the-sudden-collapse",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: Surge Flow — The Sudden Collapse. Caption: Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor. Visible labels: ⬇⬇⬇; SUDDEN SURGE — massive coal rush. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "rerank_score": 1.24,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=2",
+          "operational_overlap=4"
+        ]
+      },
+      {
+        "id": "46838ec16d143849ee124fc956000344",
+        "title": "What is a Track Hopper?",
+        "concept_id": "what-is-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: What is a Track Hopper?. Caption: Rail wagon with open bottom doors discharging coal by gravity into underground hopper. Visible labels: COAL WAGON; bottom doors open; ⬇⬇⬇; coal accumulating; Track Hopper Pit (underground). Context: Track Hopper – iCard Microlearning / Track_Hopper_iCard_Microlearning.html.",
+        "rerank_score": 1.201769914627075,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=4"
+        ]
+      },
+      {
+        "id": "0b5d0ed61fb6eecf7ac122edafd2a301",
+        "title": "The Track Hopper Feeder — A Quick Refresh",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+        "source_file": "track_hopper_feeder_L2_course.html",
+        "description": "Diagram under: The Track Hopper Feeder — A Quick Refresh. Visible labels: WAGON; tippled; HOPPER; FEEDER; ★ THIS COURSE; BELT CONVEYOR; CRUSHER; HOUSE; COAL BUNKER; / STOCK; MILL → BOILER; GENERATION; POSITION OF FEEDER IN COAL FLOW CHAIN; Every tonne through the boiler passes through this feeder first. Context: Track Hopper Feeder Start, Stop & Inspection under Supervision / track_hopper_feeder_L2_course.html.",
+        "rerank_score": 1.15,
+        "ranking_reasons": [
+          "query_overlap=8",
+          "title_overlap=3",
+          "operational_overlap=7",
+          "generic_penalty=0.25"
+        ]
+      }
+    ],
+    "relation_blocks": [
+      {
+        "collection": "RelationChunk",
+        "id": "a3cf124fcf152587943d8701b790fe7b",
+        "relation_id": "a3cf124fcf152587943d8701b790fe7b",
+        "source_id": "track-hopper-operation",
+        "target_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "relation_type": "has_skill",
+        "description": "Track Hopper Operation has skill Explain coal flow from hopper to conveyor.",
+        "graph_relevance_score": 0.668359965234995,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_skill:0.65",
+          "endpoint_has_evidence",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Skills",
+          "source_label": "Track Hopper Operation",
+          "source_file": "CHP WRCF.xlsx",
+          "placeholder": false,
+          "target_label": "Explain coal flow from hopper to conveyor",
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Receipt & Unloading | SWO: Track Hopper Operation | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain coal flow from hopper to conveyor | Cognitive Type: Procedural | Skill Criticality: Medium | Recertification (Months): 12.0 | AI Impact: Low",
+          "row_number": 11
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "e5584bd5b3f8c0702edb3802570b3bb7",
+        "relation_id": "e5584bd5b3f8c0702edb3802570b3bb7",
+        "source_id": "explain-wagon-unloading-flow-from-receipt-to-hopper",
+        "target_id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "relation_type": "has_task",
+        "description": "Explain wagon unloading flow from receipt to hopper has task Trace coal unloading flow from wagon to hopper system.",
+        "graph_relevance_score": 0.49368535965681076,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Tasks",
+          "source_label": "Explain wagon unloading flow from receipt to hopper",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Trace coal unloading flow from wagon to hopper system",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Receipt & Unloading | SWO: Wagon Tippler Operation | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain wagon unloading flow from receipt to hopper | Task: Trace coal unloading flow from wagon to hopper system | Frequency: Weekly | Complexity: Low | Standard Duration (mins): 15.0 | Required Proficiency Level: L1",
+          "row_number": 81
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "a71e9ba2204a38699cbc6a088279329b",
+        "relation_id": "a71e9ba2204a38699cbc6a088279329b",
+        "source_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "target_id": "trace-coal-flow-from-hopper-through-feeder-to-conveyor",
+        "relation_type": "has_task",
+        "description": "Explain coal flow from hopper to conveyor has task Trace coal flow from hopper through feeder to conveyor.",
+        "graph_relevance_score": 0.49335996523499487,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Tasks",
+          "source_label": "Explain coal flow from hopper to conveyor",
+          "source_file": "CHP WRCF.xlsx",
+          "placeholder": false,
+          "target_label": "Trace coal flow from hopper through feeder to conveyor",
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Receipt & Unloading | SWO: Track Hopper Operation | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain coal flow from hopper to conveyor | Task: Trace coal flow from hopper through feeder to conveyor | Frequency: Weekly | Complexity: Low | Standard Duration (mins): 15.0 | Required Proficiency Level: L1",
+          "row_number": 95
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "54f5286cf8750746e086501692dd74af",
+        "relation_id": "54f5286cf8750746e086501692dd74af",
+        "source_id": "bunker-feeding-system",
+        "target_id": "explain-coal-flow-from-conveyor-to-bunker",
+        "relation_type": "has_skill",
+        "description": "Bunker Feeding System has skill Explain coal flow from conveyor to bunker.",
+        "graph_relevance_score": 0.46944073617458343,
+        "ranking_reasons": [
+          "seed=0.31",
+          "hop_decay=1.00",
+          "type=has_skill:0.65",
+          "query_overlap=5"
+        ],
+        "metadata": {
+          "sheet_name": "Skills",
+          "source_label": "Bunker Feeding System",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Explain coal flow from conveyor to bunker",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Feed to Boiler Systems | SWO: Bunker Feeding System | Capability Code: CAP-02 | Capability: Process Familiarization (Input → Output) | Proficiency Level: L1 - Plant Awareness | Skill: Explain coal flow from conveyor to bunker | Cognitive Type: Procedural | Skill Criticality: Medium | Recertification (Months): 12.0 | AI Impact: Low",
+          "row_number": 230
+        }
+      }
+    ],
+    "seed_concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "the-track-hopper-feeder-a-quick-refresh",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+        "title": "The Track Hopper Feeder — A Quick Refresh",
+        "score": 0.874970555305481,
+        "vector_score": 0.874970555305481,
+        "rerank_score": 0.874970555305481,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12502944469451904,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "track_hopper_feeder_L2_course.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The Track Hopper Feeder — A Quick Refresh"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "The Track Hopper Feeder — A Quick Refresh",
+        "text_chunk_ids": [
+          "45d12c2452583c7612b94abf87cf6566"
+        ],
+        "image_ids": [
+          "0b5d0ed61fb6eecf7ac122edafd2a301"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.874970555305481
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-end-to-end-view",
+        "concept_id": "system-flow-integration-end-to-end-view",
+        "title": "System Flow Integration – End-to-End View",
+        "score": 0.8747284412384033,
+        "vector_score": 0.8747284412384033,
+        "rerank_score": 0.8747284412384033,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12527155876159668,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "System Flow Integration – End-to-End View"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        },
+        "label": "System Flow Integration – End-to-End View",
+        "text_chunk_ids": [
+          "93d89ec434764f0f63200ab3e8b67946"
+        ],
+        "image_ids": [
+          "273f1f8ec3d39c1c98d2f8b6411ef28f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8747284412384033
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "understanding-each-stage",
+        "concept_id": "understanding-each-stage",
+        "title": "Understanding Each Stage",
+        "score": 0.8718278408050537,
+        "vector_score": 0.8718278408050537,
+        "rerank_score": 0.8718278408050537,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1281721591949463,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Understanding Each Stage"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Understanding Each Stage",
+        "text_chunk_ids": [
+          "d5b2339a9ce495b6373db30645be7e48"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8718278408050537
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "the-complete-coal-journey",
+        "concept_id": "the-complete-coal-journey",
+        "title": "The complete coal journey",
+        "score": 0.8679169416427612,
+        "vector_score": 0.8679169416427612,
+        "rerank_score": 0.8679169416427612,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.13208305835723877,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Track_Hopper_iCard_Microlearning.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "The complete coal journey"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "The complete coal journey",
+        "text_chunk_ids": [
+          "822ccb3635e9542ea62d9edd8fcb8544"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8679169416427612
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "score": 0.8594285249710083,
+        "vector_score": 0.8594285249710083,
+        "rerank_score": 0.8594285249710083,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1405714750289917,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "System Flow Integration – Coal का पूरा सफर"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "System Flow Integration – Coal का पूरा सफर",
+        "text_chunk_ids": [
+          "91d74d119e070e5c8113408d1d797c2d"
+        ],
+        "image_ids": [
+          "072723b02f37eb29b368ac7fe2fc1774"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8594285249710083
+      }
+    ],
+    "source_references": [
+      {
+        "collection": "TextChunk",
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-the-fundamental-principle-of-a-track-hopper",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "8e334f253efb6acee0ebbec0d4b52767",
+        "title": "Wagon Tippler से Belt Conveyor तक का Flow",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-wagon-tippler-belt-conveyor-flow",
+        "concept_id": "wagon-tippler-belt-conveyor-flow"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-system-flow-integration-coal",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "822ccb3635e9542ea62d9edd8fcb8544",
+        "title": "The complete coal journey",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-the-complete-coal-journey",
+        "concept_id": "the-complete-coal-journey"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "title": "What is a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+        "concept_id": "what-is-a-track-hopper"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "326177bef41e5a82396b7b3bc2c708b9",
+        "title": "Track Hopper Operation",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-track-hopper-operation",
+        "concept_id": "track-hopper-operation"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "cc1e97ebd5fbf25738609ca05b30aef0",
+        "title": "Surge Flow — The Sudden Collapse",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-surge-flow-the-sudden-collapse",
+        "concept_id": "surge-flow-the-sudden-collapse"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "eb8b5b79b51d4756a7f5aa4622110127",
+        "title": "Surge Flow — The Sudden Collapse",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-surge-flow-the-sudden-collapse",
+        "concept_id": "surge-flow-the-sudden-collapse"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "46838ec16d143849ee124fc956000344",
+        "title": "What is a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "section_id": "Track_Hopper_iCard_Microlearning-what-is-a-track-hopper",
+        "concept_id": "what-is-a-track-hopper"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "0b5d0ed61fb6eecf7ac122edafd2a301",
+        "title": "The Track Hopper Feeder — A Quick Refresh",
+        "source_file": "track_hopper_feeder_L2_course.html",
+        "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+        "concept_id": "the-track-hopper-feeder-a-quick-refresh"
+      }
+    ]
+  },
+  "retrieval_diagnostics": {
+    "dropped_generic_chunks": [],
+    "dropped_duplicate_chunks": [],
+    "dropped_low_score_relations": [
+      {
+        "relation_id": "a3cf124fcf152587943d8701b790fe7b",
+        "score": 0.34937500000000005,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=5"
+        ]
+      },
+      {
+        "relation_id": "85ac2a36b4197d05c4e9b225eddd9758",
+        "score": 0.323375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=4"
+        ]
+      },
+      {
+        "relation_id": "6693e1d329f69da742120467a9730c30",
+        "score": 0.323375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=4"
+        ]
+      },
+      {
+        "relation_id": "40cf99fd9633e30d879d0d07a01966ab",
+        "score": 0.297375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=3"
+        ]
+      },
+      {
+        "relation_id": "4662645a84726d14a612d39d6bbdb7a9",
+        "score": 0.297375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=3"
+        ]
+      },
+      {
+        "relation_id": "75da25c0c35bd24f73897cd6af2e58c6",
+        "score": 0.297375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=3"
+        ]
+      },
+      {
+        "relation_id": "aee70daa4e57bad618ee3b54508a154d",
+        "score": 0.297375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=3"
+        ]
+      },
+      {
+        "relation_id": "77b9d670bd20c5f391581a812383dd19",
+        "score": 0.297375,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_skill:0.65",
+          "query_overlap=3"
+        ]
+      },
+      {
+        "relation_id": "869155ee953f4bfa3969d7dba6d46c92",
+        "score": 0.28924999999999995,
+        "reasons": [
+          "seed=0.50",
+          "hop_decay=0.65",
+          "type=has_swo:0.60",
+          "query_overlap=3"
+        ]
+      }
+    ],
+    "final_context_counts": {
+      "text_blocks": 8,
+      "image_blocks": 3,
+      "relation_blocks": 4,
+      "source_references": 11
+    },
+    "graph_disabled": false
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "query": "Show the coal flow from wagon or track hopper to boiler bunker and include relevant diagrams.",
+  "compact_context": {
+    "key_text_evidence": [
+      {
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "excerpt": "What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways",
+        "citation": "[What is the fundamental principle of a Track Hopper?, concept: what-is-the-fundamental-principle-of-a-track-hopper]"
+      },
+      {
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "excerpt": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free",
+        "citation": "[The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?, concept: the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge]"
+      },
+      {
+        "id": "8e334f253efb6acee0ebbec0d4b52767",
+        "title": "Wagon Tippler से Belt Conveyor तक का Flow",
+        "concept_id": "wagon-tippler-belt-conveyor-flow",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "excerpt": "Wagon Tippler से Belt Conveyor तक का Flow Step | Equipment | Function ; 1 | Wagon Tippler / Track Hopper | Coal wagon को empty करता है — hopper में dump ; 2 | Hopper + Vibratory/Apron Feeder | Controlled rate पर coal को Belt No. 1 पर feed करता है ; 3 | Belt Conveyor No. 1 (BC-1) | Coal को Crusher House तक ले जाती है ; 4 | Crusher House | Coal को ≤50 mm तक crush करता है ; 5 | CHP Conveyors | Crushed coal को Coal Yard / Bunkers तक पहुँचाती हैं ; 6 | Bunker → Mill → Boiler | Generation cycle शुरू होती है",
+        "citation": "[Wagon Tippler से Belt Conveyor तक का Flow, concept: wagon-tippler-belt-conveyor-flow]"
+      },
+      {
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "excerpt": "System Flow Integration – Coal का पूरा सफर Coal का सफर एक relay race की तरह है — हर stage अगली stage को handoff करती है। एक भी stage fail हुई तो पूरी race रुक जाती है। Belt conveyor system अकेले काम नहीं करता — यह एक बड़े coal handling sequence का हिस्सा है। Wagon tippler से boiler तक हर step एक specific function है जो अगले step पर निर्भर करती है। यह chain समझना ज़रूरी है। ① Railway Wagon Coal loaded BOX-N wagons railway tracks पर आते हैं ⚠ Surge loading risk ② Wagon Tippler Wagon को rotate/tilt करके coal को dump करता है ⚠ High dust generation ③ Track Hopper Coal को temporarily store करता है ⚠ Overflow risk ④ Feeder Coal की rate control करके belt पर डालता है ⚠ Overfeeding risk ⑤ Belt Conveyor BC-1 Coal को aage carry ⚠ Drift, overload risk ⑥ Transfer Tower BC-1 से BC-2 पर coal ⚠ HIGHEST RISK ZONE ⑦ Belt Conveyor BC-2 Bunker तक carry ⚠ Same risks ⑧ Coal Bunker 8–12 hrs buffer storage ⚠ Overflow / starvation ⑨ Pulveriser Coal को powder बनाता है → Boiler में जाती है ✓ Electricity generatio...",
+        "citation": "[System Flow Integration – Coal का पूरा सफर, concept: system-flow-integration-coal]"
+      },
+      {
+        "id": "822ccb3635e9542ea62d9edd8fcb8544",
+        "title": "The complete coal journey",
+        "concept_id": "the-complete-coal-journey",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "excerpt": "The complete coal journey 1 Coal Wagon Bottom doors open over track hopper 2 Track Hopper Pit Coal falls by gravity into underground cavity 3 Grizzly Screen Steel bars filter out oversized material 4 Feeder System Extracts coal at controlled, steady rate 5 Belt Conveyor Carries coal to crusher / yard / bunkers",
+        "citation": "[The complete coal journey, concept: the-complete-coal-journey]"
+      }
+    ],
+    "key_image_evidence": [
+      {
+        "id": "eb8b5b79b51d4756a7f5aa4622110127",
+        "title": "Surge Flow — The Sudden Collapse",
+        "concept_id": "surge-flow-the-sudden-collapse",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: Surge Flow — The Sudden Collapse. Caption: Arch collapses → ALL backed-up coal rushes out at once, flooding feeder and conveyor. Visible labels: ⬇⬇⬇; SUDDEN SURGE — massive coal rush. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "citation": "[Surge Flow — The Sudden Collapse, concept: surge-flow-the-sudden-collapse]"
+      },
+      {
+        "id": "46838ec16d143849ee124fc956000344",
+        "title": "What is a Track Hopper?",
+        "concept_id": "what-is-a-track-hopper",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: What is a Track Hopper?. Caption: Rail wagon with open bottom doors discharging coal by gravity into underground hopper. Visible labels: COAL WAGON; bottom doors open; ⬇⬇⬇; coal accumulating; Track Hopper Pit (underground). Context: Track Hopper – iCard Microlearning / Track_Hopper_iCard_Microlearning.html.",
+        "citation": "[What is a Track Hopper?, concept: what-is-a-track-hopper]"
+      }
+    ],
+    "key_relations": [
+      {
+        "relation_id": "a3cf124fcf152587943d8701b790fe7b",
+        "source_id": "track-hopper-operation",
+        "target_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "relation_type": "has_skill",
+        "description": "Track Hopper Operation has skill Explain coal flow from hopper to conveyor.",
+        "graph_relevance_score": 0.668359965234995
+      },
+      {
+        "relation_id": "e5584bd5b3f8c0702edb3802570b3bb7",
+        "source_id": "explain-wagon-unloading-flow-from-receipt-to-hopper",
+        "target_id": "trace-coal-unloading-flow-from-wagon-to-hopper-system",
+        "relation_type": "has_task",
+        "description": "Explain wagon unloading flow from receipt to hopper has task Trace coal unloading flow from wagon to hopper system.",
+        "graph_relevance_score": 0.49368535965681076
+      },
+      {
+        "relation_id": "a71e9ba2204a38699cbc6a088279329b",
+        "source_id": "explain-coal-flow-from-hopper-to-conveyor",
+        "target_id": "trace-coal-flow-from-hopper-through-feeder-to-conveyor",
+        "relation_type": "has_task",
+        "description": "Explain coal flow from hopper to conveyor has task Trace coal flow from hopper through feeder to conveyor.",
+        "graph_relevance_score": 0.49335996523499487
+      },
+      {
+        "relation_id": "54f5286cf8750746e086501692dd74af",
+        "source_id": "bunker-feeding-system",
+        "target_id": "explain-coal-flow-from-conveyor-to-bunker",
+        "relation_type": "has_skill",
+        "description": "Bunker Feeding System has skill Explain coal flow from conveyor to bunker.",
+        "graph_relevance_score": 0.46944073617458343
+      }
+    ],
+    "source_references": [
+      {
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper"
+      },
+      {
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge"
+      },
+      {
+        "id": "8e334f253efb6acee0ebbec0d4b52767",
+        "title": "Wagon Tippler से Belt Conveyor तक का Flow",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "wagon-tippler-belt-conveyor-flow"
+      },
+      {
+        "id": "91d74d119e070e5c8113408d1d797c2d",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "id": "822ccb3635e9542ea62d9edd8fcb8544",
+        "title": "The complete coal journey",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "the-complete-coal-journey"
+      },
+      {
+        "id": "eb8b5b79b51d4756a7f5aa4622110127",
+        "title": "Surge Flow — The Sudden Collapse",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "surge-flow-the-sudden-collapse"
+      },
+      {
+        "id": "46838ec16d143849ee124fc956000344",
+        "title": "What is a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "what-is-a-track-hopper"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": true,
+      "weaknesses": []
+    }
+  },
+  "compression_metadata": {
+    "mode": "extractive",
+    "max_text_evidence": 5,
+    "max_image_evidence": 2,
+    "max_relations": 6,
+    "max_excerpt_chars": 1000
+  }
+}

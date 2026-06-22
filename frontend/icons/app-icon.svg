@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="CHP Assistant">
+  <rect width="512" height="512" rx="96" fill="#12372f"/>
+  <path d="M116 330h280v44H116z" fill="#d28b35"/>
+  <path d="M142 146h228c28 0 50 22 50 50v48c0 28-22 50-50 50H142c-28 0-50-22-50-50v-48c0-28 22-50 50-50z" fill="#f5f7f3"/>
+  <path d="M155 215h202" stroke="#12372f" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="166" cy="374" r="24" fill="#f5f7f3"/>
+  <circle cx="346" cy="374" r="24" fill="#f5f7f3"/>
+</svg>

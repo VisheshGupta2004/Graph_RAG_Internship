@@ -1,0 +1,52 @@
+[
+  {
+    "index": 1,
+    "prompt": "Why is belt drift dangerous and what early signs should a trainee watch for?",
+    "passed": true,
+    "compressed_smaller": true,
+    "retrieval_size": 84742,
+    "compressed_size": 9301,
+    "citations": 7,
+    "has_relation_trace": false
+  },
+  {
+    "index": 2,
+    "prompt": "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+    "passed": true,
+    "compressed_smaller": true,
+    "retrieval_size": 77037,
+    "compressed_size": 8736,
+    "citations": 7,
+    "has_relation_trace": false
+  },
+  {
+    "index": 3,
+    "prompt": "Show the coal flow from wagon or track hopper to boiler bunker and include relevant diagrams.",
+    "passed": true,
+    "compressed_smaller": true,
+    "retrieval_size": 77241,
+    "compressed_size": 8821,
+    "citations": 7,
+    "has_relation_trace": true
+  },
+  {
+    "index": 4,
+    "prompt": "What happens if the grizzly fails or arch formation occurs in a track hopper?",
+    "passed": true,
+    "compressed_smaller": true,
+    "retrieval_size": 46521,
+    "compressed_size": 6897,
+    "citations": 7,
+    "has_relation_trace": false
+  },
+  {
+    "index": 5,
+    "prompt": "What are the hazards at conveyor transfer points and what safety devices or actions are relevant?",
+    "passed": true,
+    "compressed_smaller": true,
+    "retrieval_size": 93595,
+    "compressed_size": 11097,
+    "citations": 7,
+    "has_relation_trace": true
+  }
+]

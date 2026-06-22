@@ -1,0 +1,10 @@
+from __future__ import annotations
+
+
+TEST_PROMPTS = [
+    "Why is belt drift dangerous and what early signs should a trainee watch for?",
+    "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+    "Show the coal flow from wagon or track hopper to boiler bunker and include relevant diagrams.",
+    "What happens if the grizzly fails or arch formation occurs in a track hopper?",
+    "What are the hazards at conveyor transfer points and what safety devices or actions are relevant?",
+]

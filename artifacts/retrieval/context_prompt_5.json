@@ -1,0 +1,2030 @@
+{
+  "query": "What are the hazards at conveyor transfer points and what safety devices or actions are relevant?",
+  "seed_results": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "c19f5246effdbb5c435a13fa4bd4799d",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "content": "Instrumentation & Safety Devices on the Conveyor Think of instrumentation as the conveyor's nervous system — sensors spread across the full length that continuously sense abnormal conditions and either warn operators or automatically stop the machine before a small problem becomes a catastrophe. A belt conveyor in a modern Coal Handling Plant is fitted with numerous sensors, switches, and protective devices along its entire length. These are not optional extras — they are mandatory safety and operational requirements under Indian Electricity Rules, factory safety regulations, and plant operating procedures. As an intern, you will see these devices everywhere on the conveyor. Knowing what each one does is essential. MOVING BELT TAIL PULLEY DRIVE PULLEY M ━━ EMERGENCY PULL CORD (Both Sides, Full Length) ━━ EPC EPC EPC BSW Belt Sway Switch BSW ZSS SPD Zero Speed / Underspeed Switch BW WEIGH Belt Weigher (Load cell) CBD CHUTE Chute Blocked Detector 🔥 Thermal/ Fire Detector Return Strand EPC = Emergency Pull Cord BSW = Belt Sway Switch ZSS = Zero Speed Switch BW = Belt Weigher CBD = Chute Blocked Detector 🔥 = Fire Detector",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-instrumentation-safety-devices-on-the-conveyor",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "Safety Device Reference Guide"
+          ],
+          "content_length": 1135,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Instrumentation & Safety Devices on the Conveyor"
+          ]
+        },
+        "score": 0.95,
+        "vector_score": null,
+        "lexical_score": 0.95,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=4",
+          "operational_overlap=2"
+        ],
+        "rerank_score": 1.3699999999999999
+      },
+      {
+        "collection": "TextChunk",
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "concept_id": "transfer-points-flow-behaviour",
+        "title": "Transfer Points & Flow Behaviour",
+        "content": "Transfer Points & Flow Behaviour A transfer point is like a controlled handover baton pass — coal must land precisely on the next belt. Any miss, blockage, or misalignment at this point disrupts the entire downstream flow. Wherever coal moves from one conveyor to the next — or from a hopper to a conveyor — there is a transfer point . These are not minor connections; they are among the most critical and most hazardous locations in the entire Coal Handling Plant. Understanding what happens at a transfer point is essential before entering the CHP. BC-1 (Upper Conveyor) Coal on BC-1 Head Pulley TRANSFER CHUTE (guides coal) ↓ Coal falls here BC-2 (Lower Conveyor) Impact Zone Coal on BC-2 ⚠ DUST ⚠ Spillage ⚠ Spillage ⚠ BLOCKAGE RISK Wet/sticky coal can block chute Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "What Can Go Wrong at a Transfer Point"
+          ],
+          "content_length": 847,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Transfer Points & Flow Behaviour"
+          ]
+        },
+        "score": 0.86,
+        "vector_score": null,
+        "lexical_score": 0.86,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=2"
+        ],
+        "rerank_score": 1.22
+      },
+      {
+        "collection": "TextChunk",
+        "id": "e06e9b097093c20cbaba9c526236db29",
+        "concept_id": "what-can-go-wrong-at-a-transfer-point",
+        "title": "What Can Go Wrong at a Transfer Point",
+        "content": "What Can Go Wrong at a Transfer Point Problem | Cause | Consequence ; Chute Blockage | Wet, fine, or sticky coal accumulates inside the chute and sticks to walls, eventually bridging across. | Coal backs up onto BC-1, causing it to overload. If blockage is not cleared quickly, the conveyor trips. ; Spillage | Coal falls outside the belt edges due to misaligned chute, worn skirt boards, or over-speed discharge. | Accumulation of coal on walkways and structure — slipping hazard, fire risk from dust, structural overloading. ; Dust Generation | Free-fall of coal creates turbulent air that carries fine coal particles. Longer drop height = more dust. | Respiratory hazard, reduced visibility, fire and explosion risk from coal dust cloud. ; Belt Damage at Impact | Large coal lumps falling from height impact the belt at the transfer point, especially if impact idlers are worn. | Belt cover damage, gouging, or even belt puncture — leading to belt failure. ; Off-centre Loading | Coal does not land centrally on BC-2 due to incorrect chute alignment or spillage plate wear. | Belt drifts to one side → edge damage → spillage → potential belt damage against structure. Transfer towers are enclosed structures at junctions between conveyors. They are high-dust, confined-space environments with active machinery on multiple levels. Entry requires a Confined Space Entry Permit, dust mask, and must always be done with a buddy. Never enter during conveyor operation without a specific maintenance permit.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-what-can-go-wrong-at-a-transfer-point",
+        "metadata": {
+          "level": 3,
+          "child_titles": [],
+          "content_length": 1504,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Transfer Points & Flow Behaviour",
+            "What Can Go Wrong at a Transfer Point"
+          ]
+        },
+        "score": 0.85,
+        "vector_score": null,
+        "lexical_score": 0.85,
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=2",
+          "operational_overlap=2"
+        ],
+        "rerank_score": 1.2
+      },
+      {
+        "collection": "TextChunk",
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "concept_id": "safety-device-reference-guide",
+        "title": "Safety Device Reference Guide",
+        "score": 0.8549672961235046,
+        "vector_score": 0.8549672961235046,
+        "rerank_score": 1.1949672961235045,
+        "ranking_reasons": [
+          "query_overlap=9",
+          "title_overlap=1",
+          "operational_overlap=3"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14503270387649536,
+        "metadata": {
+          "content_length": 3534,
+          "child_titles": [],
+          "level": 3,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Instrumentation & Safety Devices on the Conveyor",
+            "Safety Device Reference Guide"
+          ]
+        },
+        "content": "Safety Device Reference Guide Device | Location on Conveyor | Function | Response When Activated ; Emergency Pull Cord (EPC) | Both sides, full length of conveyor, approximately every 30–50 m | Allows any person anywhere along the conveyor to immediately stop it in an emergency by pulling the rope/wire | Immediate emergency stop of conveyor drive motor. Conveyor cannot restart until EPC is reset and root cause investigated. ; Belt Sway Switch (BSW) | Both sides, spaced every 50–75 m along carry and return strand | Detects lateral drift of the belt beyond a set limit. Has two positions: first position = alarm; second position = trip. | First activation: Alarm in control room. Second (greater drift): Conveyor trip. Prevents belt edge from contacting steel structure. ; Zero Speed Switch (ZSS) | Tail pulley shaft or on a return idler | Monitors belt speed. Detects if the belt has stopped (zero speed) while the motor is still running — indicating belt slip. | Conveyor trip + alarm. Prevents drive pulley from running against a stationary belt (which causes fire from friction). ; Belt Weigher (BW) | Fixed location on the conveyor, typically mid-span | Measures the weight of coal on the belt per unit length using load cells. Calculates instantaneous TPH and cumulative tonnes. | Data sent to control room / DCS. No trip — provides operational data. High load may trigger an alarm. ; Chute Blocked Detector (CBD) | Inside transfer chutes at transfer points | Detects when coal has accumulated and blocked the chute (using vibration probe, ultrasonic, or paddle switch). | Alarm in control room. May automatically stop upstream feeder to prevent further coal accumulation. ; Thermal / Fire Detector | Inside conveyor galleries (tunnels) and transfer towers | Detects elevated temperature indicating a developing fire. Linear heat detection cable runs along the belt gallery roof. | Fire alarm. Conveyor trip. Activation of fire suppression system (CO₂ or water mist). Control room alert. ; Underspeed Switch | Drive shaft area | Detects if belt is running slower than designed speed (but not zero). Indicates overloading or drive slip developing. | Alarm → trip if underspeed persists. Allows early intervention before full slippage occurs. ; Motor Overload Relay (OLR) | Motor control centre (MCC) / switchgear panel | Monitors motor current. If the motor draws current above the rated limit for a set time (indicating overload), it trips. | Motor trip + alarm. Conveyor stops. Investigation required to identify overload cause before restart. When you walk a conveyor on site, you will see red ropes, yellow boxes, and small switches mounted on the frame at regular intervals — these are all part of this safety system. You will hear terms like \"BSW trip,\" \"ZSS alarm,\" or \"EPC activation\" on the radio constantly. Now you know exactly what each term means, what triggered it, and what the plant team needs to do in response. On some plants, under production pressure, well-meaning but incorrect actions include bypassing a belt sway switch that keeps tripping, disabling a chute blocked detector that gives \"false\" alarms, or tying off an EPC that was accidentally pulled. This is an extremely dangerous practice. Every safety device bypass removes one layer of protection from the system. Multiple bypasses create a condition where a fatal accident can occur without any warning. As an intern, if you are ever asked to bypass a safety device, immediately consult your supervisor. Document it. Never accept it as routine.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-safety-device-reference-guide"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "bace41e2d3e501f79db89fcdc433ff8c",
+        "concept_id": "safety-hazard-awareness",
+        "title": "Safety & Hazard Awareness",
+        "score": 0.8720372915267944,
+        "vector_score": 0.8720372915267944,
+        "rerank_score": 1.1770372915267944,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=1",
+          "operational_overlap=3"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12796270847320557,
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "Hazard-by-Hazard Analysis",
+            "Personal Protective Equipment (PPE) in CHP"
+          ],
+          "content_length": 1261,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Safety & Hazard Awareness"
+          ]
+        },
+        "content": "Safety & Hazard Awareness Moving machinery + bulk material + confined spaces = continuous risk. Most conveyor accidents happen not because of complexity but because someone was not aware of where the danger was. You do not need to be doing anything wrong to be injured near a conveyor. You simply need to be in the wrong place, distracted, or unaware of what is moving around you. The conveyor does not slow down for you. It does not have a sensor that detects a human body near it. It will continue running at full speed regardless. Your awareness is your protection. MOVING BELT (entire length is a hazard) TAIL PULLEY 🔴 PINCH ZONE Entanglement risk DRIVE PULLEY 🔴 PINCH + NIP ZONE High-torque crush risk 🟠 FEED POINT Impact hazard Dust cloud 🟠 TRANSFER POINT Spillage, blockage Confined space 🟡 BELT SURFACE Never touch/step on moving belt 🟡 Return strand — carryback coal falls here — slip hazard below ☁ Dust cloud ☁ Dust cloud ━━━ Emergency Pull Cord (full length) — Pull anywhere to STOP conveyor ━━━ HAZARD ZONE LEGEND RED = Extreme danger (pinch/nip/crush) — Mandatory guarding required ORANGE = High hazard (spillage, blockage, dust, confined space) — Permit required YELLOW = Caution zone (moving belt, carryback, slipping) — Stay clear, PPE required",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-safety-hazard-awareness"
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "3e7c62783eb6e7f828ad7dbf68049848",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "description": "Diagram under: Instrumentation & Safety Devices on the Conveyor. Caption: Fig S1 – Instrumentation and safety devices positioned along a typical CHP belt conveyor. Visible labels: MOVING BELT; TAIL; PULLEY; DRIVE; M; ━━ EMERGENCY PULL CORD (Both Sides, Full Length) ━━; EPC; BSW; Belt Sway; Switch; ZSS; SPD; Zero Speed /; Underspeed Switch; BW; WEIGH; Belt Weigher; (Load cell); CBD; CHUTE; Chute Blocked; Detector; 🔥; Thermal/; Fire Detector; Return Strand; EPC = Emergency Pull Cord; BSW = Belt Sway Switch; ZSS = Zero Speed Switch; BW = Belt Weigher; CBD = Chute Blocked Detector; 🔥 = Fire Detector. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-instrumentation-safety-devices-on-the-conveyor",
+        "metadata": {
+          "view_box": "0 0 860 310",
+          "order_in_file": 9,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-instrumentation-safety-devices-on-the-conveyor",
+          "svg_text_labels": [
+            "MOVING BELT",
+            "TAIL",
+            "PULLEY",
+            "DRIVE",
+            "M",
+            "━━ EMERGENCY PULL CORD (Both Sides, Full Length) ━━",
+            "EPC",
+            "BSW",
+            "Belt Sway",
+            "Switch",
+            "ZSS",
+            "SPD",
+            "Zero Speed /",
+            "Underspeed Switch",
+            "BW",
+            "WEIGH",
+            "Belt Weigher",
+            "(Load cell)",
+            "CBD",
+            "CHUTE",
+            "Chute Blocked",
+            "Detector",
+            "🔥",
+            "Thermal/",
+            "Fire Detector",
+            "Return Strand",
+            "EPC = Emergency Pull Cord",
+            "BSW = Belt Sway Switch",
+            "ZSS = Zero Speed Switch",
+            "BW = Belt Weigher",
+            "CBD = Chute Blocked Detector",
+            "🔥 = Fire Detector"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:840px\" viewbox=\"0 0 860 310\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"ia\" markerheight=\"5\" markerwidth=\"7\" orient=\"auto\" refx=\"7\" refy=\"2.5\"> <polygon fill=\"#555\" points=\"0 0,7 2.5,0 5\"></polygon> </marker> </defs> <!-- CONVEYOR FRAME --> <rect fill=\"#bdc3c7\" height=\"14\" rx=\"4\" stroke=\"#95a5a6\" stroke-width=\"1\" width=\"740\" x=\"60\" y=\"130\"></rect> <!-- BELT --> <rect fill=\"#c0392b\" height=\"14\" opacity=\"0.75\" rx=\"4\" width=\"740\" x=\"60\" y=\"116\"></rect> <text fill=\"",
+          "caption": "Fig S1 – Instrumentation and safety devices positioned along a typical CHP belt conveyor",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Instrumentation & Safety Devices on the Conveyor"
+          ]
+        },
+        "score": 0.9,
+        "vector_score": null,
+        "lexical_score": 0.9,
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.0,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=4",
+          "operational_overlap=2",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 1.0350000000000001
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "b584f7e7468a707f0315f82a24bff78f",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for",
+        "title": "Your First Site Visit – What to Observe & What to Look For",
+        "score": 0.8263124227523804,
+        "vector_score": 0.8263124227523804,
+        "rerank_score": 0.9063124227523804,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "generic_penalty=0.25"
+        ],
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.0,
+        "distance": 0.17368757724761963,
+        "metadata": {
+          "view_box": "0 0 820 260",
+          "order_in_file": 10,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-your-first-site-visit-what-to-observe-what-to-look-for",
+          "svg_text_labels": [
+            "Site Visit Observation Sequence – Walk the Conveyor Like an Engineer",
+            "STEP 1",
+            "Start at the",
+            "Feed Point (Tail End)",
+            "Observe loading",
+            "STEP 2",
+            "Walk Along One",
+            "Side of Belt",
+            "Check belt & idlers",
+            "STEP 3",
+            "Observe Drive /",
+            "Head End",
+            "Check discharge",
+            "STEP 4",
+            "Look at Safety",
+            "Devices",
+            "EPC, sway switches",
+            "STEP 5",
+            "Visit Transfer",
+            "Tower (outside)",
+            "Observe from safe zone",
+            "STEP 6 – REFLECT & REPORT",
+            "Note all abnormalities observed.",
+            "Discuss with supervisor. NEVER",
+            "act on abnormalities independently.",
+            "⛔ NEVER do this on your first visit:",
+            "Do not touch, adjust, or interfere with any equipment — observe only."
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:800px\" viewbox=\"0 0 820 260\" xmlns=\"http://www.w3.org/2000/svg\"> <text fill=\"#154360\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\" x=\"410\" y=\"20\">Site Visit Observation Sequence – Walk the Conveyor Like an Engineer</text> <!-- Step boxes in a path --> <!-- Step 1 --> <rect fill=\"#d6eaf8\" height=\"65\" rx=\"8\" stroke=\"#2980b9\" stroke-width=\"2\" width=\"130\" x=\"5\" y=\"40\"></rect> <text fill=\"#1a5276\" font-size=\"9.5\" font-weight=\"700\" text-anchor=\"middle\" x=\"70\" y=\"60\">STEP",
+          "caption": "Fig SV1 – Recommended observation sequence for a trainee's first conveyor walk",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Your First Site Visit – What to Observe & What to Look For"
+          ]
+        },
+        "description": "Diagram under: Your First Site Visit – What to Observe & What to Look For. Caption: Fig SV1 – Recommended observation sequence for a trainee's first conveyor walk. Visible labels: Site Visit Observation Sequence – Walk the Conveyor Like an Engineer; STEP 1; Start at the; Feed Point (Tail End); Observe loading; STEP 2; Walk Along One; Side of Belt; Check belt & idlers; STEP 3; Observe Drive /; Head End; Check discharge; STEP 4; Look at Safety; Devices; EPC, sway switches; STEP 5; Visit Transfer; Tower (outside); Observe from safe zone; STEP 6 – REFLECT & REPORT; Note all abnormalities observed.; Discuss with supervisor. NEVER; act on abnormalities independently.; ⛔ NEVER do this on your first visit:; Do not touch, adjust, or interfere with any equipment — observe only.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-your-first-site-visit-what-to-observe-what-to-look-for"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "448682ddfc6d36f050779bb025817903",
+        "concept_id": "transfer-points-flow-behaviour",
+        "title": "Transfer Points & Flow Behaviour",
+        "score": 0.8543581366539001,
+        "vector_score": 0.8543581366539001,
+        "rerank_score": 0.9043581366539002,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "generic_penalty=0.25"
+        ],
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14564186334609985,
+        "metadata": {
+          "view_box": "0 0 680 300",
+          "order_in_file": 6,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+          "svg_text_labels": [
+            "BC-1 (Upper Conveyor)",
+            "Coal on BC-1",
+            "Head",
+            "Pulley",
+            "TRANSFER",
+            "CHUTE",
+            "(guides coal)",
+            "↓ Coal",
+            "falls here",
+            "BC-2 (Lower Conveyor)",
+            "Impact Zone",
+            "Coal on BC-2",
+            "⚠ DUST",
+            "⚠ Spillage",
+            "⚠ BLOCKAGE RISK",
+            "Wet/sticky coal",
+            "can block chute",
+            "Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift."
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:660px\" viewbox=\"0 0 680 300\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"ta\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"> <polygon fill=\"#2c5282\" points=\"0 0,8 3,0 6\"></polygon> </marker> <marker id=\"ta2\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"> <polygon fill=\"#c0392b\" points=\"0 0,8 3,0 6\"></polygon> </marker> <marker id=\"ta3\" markerheight=\"6\" markerwidth=\"8\" orient=\"auto\" refx=\"8\" refy=\"3\"> <polygon fill=\"#e67e22\" po",
+          "caption": "Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Transfer Points & Flow Behaviour"
+          ]
+        },
+        "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour"
+      }
+    ],
+    "concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "safety-hazard-awareness",
+        "concept_id": "safety-hazard-awareness",
+        "title": "Safety & Hazard Awareness",
+        "score": 0.8866772055625916,
+        "vector_score": 0.8866772055625916,
+        "rerank_score": 0.8866772055625916,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.11332279443740845,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html",
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Safety & Hazard Awareness",
+            "Safety और Hazard Awareness"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 2,
+          "has_evidence": true
+        },
+        "label": "Safety & Hazard Awareness",
+        "text_chunk_ids": [
+          "4ae30a8580ac1acc602ae3203f190ec9",
+          "bace41e2d3e501f79db89fcdc433ff8c"
+        ],
+        "image_ids": [
+          "a39af16d5a0132c85a53be9f5b5f0169"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8866772055625916
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "hazard-by-hazard-analysis",
+        "concept_id": "hazard-by-hazard-analysis",
+        "title": "Hazard-by-Hazard Analysis",
+        "score": 0.878139078617096,
+        "vector_score": 0.878139078617096,
+        "rerank_score": 0.878139078617096,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12186092138290405,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Hazard-by-Hazard Analysis"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Hazard-by-Hazard Analysis",
+        "text_chunk_ids": [
+          "943ed3ca0dd3ff7dbbc7ab7977664680"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.878139078617096
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "course",
+        "concept_id": "course",
+        "title": "यह Course कैसे इस्तेमाल करें",
+        "score": 0.8686668872833252,
+        "vector_score": 0.8686668872833252,
+        "rerank_score": 0.8686668872833252,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1313331127166748,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+            "इस Course में आप क्या सीखोगे",
+            "यह Course कैसे इस्तेमाल करें"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 3,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "यह Course कैसे इस्तेमाल करें",
+        "text_chunk_ids": [
+          "4c488929c0e6a2e5a2560eaf5f6153d1",
+          "e260f713aeef67b5f50ae0020154e269",
+          "fcaf0d2642cadd142348953ce5e52182"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8686668872833252
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "transfer-between-conveyors-transfer-point",
+        "concept_id": "transfer-between-conveyors-transfer-point",
+        "title": "Transfer Between Conveyors (Transfer Point)",
+        "score": 0.8598611354827881,
+        "vector_score": 0.8598611354827881,
+        "rerank_score": 0.8598611354827881,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14013886451721191,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html",
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Transfer Between Conveyors (Transfer Point)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 2,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Transfer Between Conveyors (Transfer Point)",
+        "text_chunk_ids": [
+          "22e9fd074cf8b2493c7efea2b862065c",
+          "a8dda383fa6fe4efc96dc9fa4c0b86a3"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8598611354827881
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "score": 0.8581469655036926,
+        "vector_score": 0.8581469655036926,
+        "rerank_score": 0.8581469655036926,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14185303449630737,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "text_chunk_ids": [
+          "57424115bb84daad17ff190dfe33beab"
+        ],
+        "image_ids": [
+          "df6927d5c387e9bfa54c5e5cc52b02dc"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8581469655036926
+      }
+    ]
+  },
+  "graph_expansion": {
+    "max_hops": 2,
+    "nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "label": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "text_chunk_ids": [
+          "57424115bb84daad17ff190dfe33beab"
+        ],
+        "image_ids": [
+          "df6927d5c387e9bfa54c5e5cc52b02dc"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "course",
+        "concept_id": "course",
+        "label": "यह Course कैसे इस्तेमाल करें",
+        "text_chunk_ids": [
+          "4c488929c0e6a2e5a2560eaf5f6153d1",
+          "e260f713aeef67b5f50ae0020154e269",
+          "fcaf0d2642cadd142348953ce5e52182"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+            "इस Course में आप क्या सीखोगे",
+            "यह Course कैसे इस्तेमाल करें"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 3,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "concept_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "label": "Ensure safe access and working conditions around conveyor",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "4517edbaa83e1fb1f2371e87cc8b2c17"
+        ],
+        "target_relation_ids": [
+          "fdb0f7bd4aea205ed8e69ccc33950667"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_control_point",
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "ensure-safe-maintenance-procedures",
+        "concept_id": "ensure-safe-maintenance-procedures",
+        "label": "Ensure safe maintenance procedures",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "72ebc786c9ea21aefa3f75a76936fb00",
+          "fdb0f7bd4aea205ed8e69ccc33950667"
+        ],
+        "target_relation_ids": [
+          "c8c0c92280fa910574ba538eedce3ef1"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_skill",
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 2,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "hazard-by-hazard-analysis",
+        "concept_id": "hazard-by-hazard-analysis",
+        "label": "Hazard-by-Hazard Analysis",
+        "text_chunk_ids": [
+          "943ed3ca0dd3ff7dbbc7ab7977664680"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Hazard-by-Hazard Analysis"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "instrumentation-safety-devices-on-the-conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "label": "Instrumentation & Safety Devices on the Conveyor",
+        "text_chunk_ids": [
+          "c19f5246effdbb5c435a13fa4bd4799d"
+        ],
+        "image_ids": [
+          "3e7c62783eb6e7f828ad7dbf68049848"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Instrumentation & Safety Devices on the Conveyor"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "safe-access-and-working-conditions-ensured",
+        "concept_id": "safe-access-and-working-conditions-ensured",
+        "label": "Safe access and working conditions ensured",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "4517edbaa83e1fb1f2371e87cc8b2c17"
+        ],
+        "metadata": {
+          "relation_types": [
+            "has_control_point"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 0,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "safety-device-reference-guide",
+        "concept_id": "safety-device-reference-guide",
+        "label": "Safety Device Reference Guide",
+        "text_chunk_ids": [
+          "0ac4d27c0200a781b5be58f53eeb5584"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Safety Device Reference Guide"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 0,
+          "text_chunk_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "safety-hazard-awareness",
+        "concept_id": "safety-hazard-awareness",
+        "label": "Safety & Hazard Awareness",
+        "text_chunk_ids": [
+          "4ae30a8580ac1acc602ae3203f190ec9",
+          "bace41e2d3e501f79db89fcdc433ff8c"
+        ],
+        "image_ids": [
+          "a39af16d5a0132c85a53be9f5b5f0169"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html",
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Safety & Hazard Awareness",
+            "Safety और Hazard Awareness"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 2,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "transfer-between-conveyors-transfer-point",
+        "concept_id": "transfer-between-conveyors-transfer-point",
+        "label": "Transfer Between Conveyors (Transfer Point)",
+        "text_chunk_ids": [
+          "22e9fd074cf8b2493c7efea2b862065c",
+          "a8dda383fa6fe4efc96dc9fa4c0b86a3"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html",
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Transfer Between Conveyors (Transfer Point)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 2,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "transfer-points-flow-behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "label": "Transfer Points & Flow Behaviour",
+        "text_chunk_ids": [
+          "21a17a41b519a584208799bf74b6c6ad"
+        ],
+        "image_ids": [
+          "448682ddfc6d36f050779bb025817903"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Transfer Points & Flow Behaviour"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "what-can-go-wrong-at-a-transfer-point",
+        "concept_id": "what-can-go-wrong-at-a-transfer-point",
+        "label": "What Can Go Wrong at a Transfer Point",
+        "text_chunk_ids": [
+          "e06e9b097093c20cbaba9c526236db29"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "What Can Go Wrong at a Transfer Point"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        }
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "your-first-site-visit-what-to-observe-what-to-look-for",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for",
+        "label": "Your First Site Visit – What to Observe & What to Look For",
+        "text_chunk_ids": [
+          "4fb45b4733f8944396232da52b074dae"
+        ],
+        "image_ids": [
+          "b584f7e7468a707f0315f82a24bff78f"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Your First Site Visit – What to Observe & What to Look For"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        }
+      }
+    ],
+    "relations": [
+      {
+        "collection": "RelationChunk",
+        "id": "4517edbaa83e1fb1f2371e87cc8b2c17",
+        "relation_id": "4517edbaa83e1fb1f2371e87cc8b2c17",
+        "source_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "target_id": "safe-access-and-working-conditions-ensured",
+        "relation_type": "has_control_point",
+        "description": "Ensure safe access and working conditions around conveyor has control point Safe access and working conditions ensured.",
+        "graph_relevance_score": 0.437397041618824,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_control_point:0.85",
+          "query_overlap=3"
+        ],
+        "metadata": {
+          "sheet_name": "Control Point",
+          "source_label": "Ensure safe access and working conditions around conveyor",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Safe access and working conditions ensured",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Conveying System | SWO: Conveyor Idler & Roller System | Capability Code: CAP-09 | Proficiency Level: L3 | Skill: Ensure safe maintenance procedures | Task: Ensure safe access and working conditions around conveyor | Control Point: Safe access and working conditions ensured | Risk Level: Critical | Failure Impact Type: Safety | KPI Threshold: No unsafe condition | Escalation Required: Yes | Evidence Type: Supervisor Observation",
+          "row_number": 96
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "fdb0f7bd4aea205ed8e69ccc33950667",
+        "relation_id": "fdb0f7bd4aea205ed8e69ccc33950667",
+        "source_id": "ensure-safe-maintenance-procedures",
+        "target_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "relation_type": "has_task",
+        "description": "Ensure safe maintenance procedures has task Ensure safe access and working conditions around conveyor.",
+        "graph_relevance_score": 0.412397041618824,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=3"
+        ],
+        "metadata": {
+          "sheet_name": "Tasks",
+          "source_label": "Ensure safe maintenance procedures",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Ensure safe access and working conditions around conveyor",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Conveying System | SWO: Conveyor Idler & Roller System | Capability Code: CAP-09 | Capability: Compliance & Safety Awareness | Proficiency Level: L3 - Conditional Independence – Supervised | Skill: Ensure safe maintenance procedures | Task: Ensure safe access and working conditions around conveyor | Frequency: Daily | Complexity: Medium | Standard Duration (mins): 10.0 | Required Proficiency Level: L3",
+          "row_number": 57
+        }
+      }
+    ],
+    "trace": [
+      {
+        "hop": 1,
+        "from": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "to": "safe-access-and-working-conditions-ensured",
+        "direction": "out",
+        "relation_id": "4517edbaa83e1fb1f2371e87cc8b2c17",
+        "relation_type": "has_control_point",
+        "graph_relevance_score": 0.437397041618824,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_control_point:0.85",
+          "query_overlap=3"
+        ]
+      },
+      {
+        "hop": 1,
+        "from": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "to": "ensure-safe-maintenance-procedures",
+        "direction": "in",
+        "relation_id": "fdb0f7bd4aea205ed8e69ccc33950667",
+        "relation_type": "has_task",
+        "graph_relevance_score": 0.412397041618824,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=3"
+        ]
+      }
+    ],
+    "seed_relation_only_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "concept_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "title": "Ensure safe access and working conditions around conveyor",
+        "score": 0.8563023805618286,
+        "vector_score": 0.8563023805618286,
+        "rerank_score": 0.29970583319664,
+        "ranking_reasons": [
+          "node_weight=0.35"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1436976194381714,
+        "metadata": {
+          "relation_types": [
+            "has_control_point",
+            "has_task"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "source_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        },
+        "label": "Ensure safe access and working conditions around conveyor",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [
+          "4517edbaa83e1fb1f2371e87cc8b2c17"
+        ],
+        "target_relation_ids": [
+          "fdb0f7bd4aea205ed8e69ccc33950667"
+        ],
+        "retrieval_weight": 0.35,
+        "weighted_score": 0.29970583319664,
+        "graph_seed_reason": "high_confidence_relation_only_node"
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "safe-access-and-working-conditions-ensured",
+        "concept_id": "safe-access-and-working-conditions-ensured",
+        "title": "Safe access and working conditions ensured",
+        "score": 0.8537907600402832,
+        "vector_score": 0.8537907600402832,
+        "rerank_score": 0.2988267660140991,
+        "ranking_reasons": [
+          "node_weight=0.35"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1462092399597168,
+        "metadata": {
+          "relation_types": [
+            "has_control_point"
+          ],
+          "source_files": [],
+          "target_relation_count": 1,
+          "retrieval_weight": 0.35,
+          "source_relation_count": 0,
+          "titles": [],
+          "embedding_source": "relation_label_text",
+          "text_chunk_count": 0,
+          "image_count": 0,
+          "has_evidence": false
+        },
+        "label": "Safe access and working conditions ensured",
+        "text_chunk_ids": [],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [
+          "4517edbaa83e1fb1f2371e87cc8b2c17"
+        ],
+        "retrieval_weight": 0.35,
+        "weighted_score": 0.2988267660140991,
+        "graph_seed_reason": "high_confidence_relation_only_node"
+      }
+    ]
+  },
+  "expanded_evidence": {
+    "text_chunks": [
+      {
+        "collection": "TextChunk",
+        "id": "943ed3ca0dd3ff7dbbc7ab7977664680",
+        "concept_id": "hazard-by-hazard-analysis",
+        "title": "Hazard-by-Hazard Analysis",
+        "content": "Hazard-by-Hazard Analysis Pulleys rotate continuously at high speed. The nip point — where the belt meets the pulley — has an extremely small gap that closes in milliseconds. A finger, loose clothing, or hair entering this gap will be drawn in with full motor force before any human reaction is possible. Guards (physical covers) must always be in place over all pulleys. If a guard is missing — report it immediately and do not approach the pulley. The belt surface itself is a hazard. Loose clothing, gloves, tools, or anything trailing near the belt can be instantly grabbed and pulled in. Belt speed (1.5–2.5 m/s) is faster than human reflex. This type of accident typically results in degloving injuries, crush injuries, or fatalities. Rule: always wear close-fitting PPE near conveyors. Never lean over a running belt. At transfer points, coal falls from one conveyor to the next. Large coal lumps weighing several kilograms can bounce or be thrown sideways if a blockage or imbalance occurs. Standing below or beside an active chute is extremely dangerous. Transfer towers also have open floors and structural walkways at multiple levels — falling coal from one level can injure personnel on a lower level. Fine coal dust generated at transfer points, feed points, and from carryback is a dual hazard. Respiratory: Coal dust causes coal worker's pneumoconiosis (CWP/\"black lung\") with long-term exposure. Always wear a P2/P3 dust mask in dusty areas. Fire: Coal dust suspended in air at concentrations above the Lower Explosive Limit (LEL) can ignite from a spark or hot surface. Accumulated coal dust on hot surfaces (like a seized idler or a slipping belt) can also self-ignite. Coal spillage on walkways creates an extremely slippery surface, especially when wet. Carryback coal falls from the return strand onto the floor below the conveyor. Structural platforms, stairs, and walkways in CHP are often narrow and positioned close to moving equipment. Falls from elevated walkways (transfer towers can be 10–20 m high) are fatal. Always hold handrails, wear non-slip safety boots, and never rush on CHP walkways. Conveyor drive panels operate at medium voltage (3.3 kV or 6.6 kV in large plants, 415 V in smaller). Control panels, junction boxes, and local isolators are located along conveyor routes. Never open an electrical panel without a qualified electrician present and without following Lockout-Tagout (LOTO) procedures. Water from coal spillage near electrical panels is extremely dangerous.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-hazard-by-hazard-analysis",
+        "metadata": {
+          "content_length": 2510,
+          "child_titles": [],
+          "level": 3,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Safety & Hazard Awareness",
+            "Hazard-by-Hazard Analysis"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.48000000000000004
+      },
+      {
+        "collection": "TextChunk",
+        "id": "57424115bb84daad17ff190dfe33beab",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "content": "3. Safety Devices — आपकी जान बचाने वाले Instruments Belt Conveyor (Loaded Direction) EPC Rope (पूरी length में) EPC EPC EPC EPC EPC BSW BSW ZSS Speed Belt Weigher EPC: कहीं से भी खींचें → तुरंत stop ZSS: Speed drop → auto trip BSW: Belt drift → alarm → trip Belt Weigher: TPH → control room data Safety Device | काम क्या करता है | कब Trip होता है ; Emergency Pull Cord (EPC) | पूरी conveyor length में rope; कहीं से भी खींचें — instant stop | Manual pull; self-latching — investigation के बाद ही restart ; Belt Sway Switch (BSW) | Belt का lateral drift detect करता है | Stage 1: alarm; Stage 2: conveyor trip। हर 25–30 m पर। ; Zero Speed Switch (ZSS) | Belt speed monitor करता है | Speed rated से 70–80% से कम → 3 sec बाद trip ; Belt Weigher | Real-time TPH measure करता है | Trip नहीं — data control room को भेजता है ; Chute Blocked Detector | Chute fill-up detect करता है | Paddle stop / RF change → upstream belt/feeder trip ; Thermal / Fire Detector | Temperature rise या flame detect करता है | Rate-of-rise +8°C/min या fixed 68/93°C → Fire Alarm trip",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+        "metadata": {
+          "content_length": 1055,
+          "child_titles": [],
+          "level": 3,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Safety और Hazard Awareness",
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.47500000000000003
+      },
+      {
+        "collection": "TextChunk",
+        "id": "4ae30a8580ac1acc602ae3203f190ec9",
+        "concept_id": "safety-hazard-awareness",
+        "title": "Safety और Hazard Awareness",
+        "content": "Safety और Hazard Awareness Belt conveyor एक विशाल machine है जो आपसे बहुत तेज़ चलती है और बहुत ज़्यादा ताकतवर है। यह आपको नहीं देखती। आपको ही इसे देखना होगा — हर बार, हर shift में। Belt Conveyor एक very high-energy machine है — thousands of tonnes of coal हर घंटे move करती है, कभी-कभी 3.5 m/s की speed से। CHP एक ऐसा environment है जहाँ negligence — चाहे एक पल की ही हो — life-altering consequences दे सकती है। यह section आपको primary hazards और उनसे बचाव के तरीकों से परिचित कराता है।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-safety-hazard-awareness",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "1. Mechanical Hazards (यांत्रिक खतरे)",
+            "2. Dust और Fire Hazards",
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+            "4. PPE Requirements और LOTO Procedure"
+          ],
+          "content_length": 486,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Safety और Hazard Awareness"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=1",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.41500000000000004
+      },
+      {
+        "collection": "TextChunk",
+        "id": "22e9fd074cf8b2493c7efea2b862065c",
+        "concept_id": "transfer-between-conveyors-transfer-point",
+        "title": "Transfer Between Conveyors (Transfer Point)",
+        "content": "Transfer Between Conveyors (Transfer Point) Where: Transfer tower — where coal discharges from BC-1 and loads onto BC-2 through a chute. What is critical here: The trajectory of coal through the chute must be matched to the receiving belt speed and direction. The coal must land centrally on BC-2. The chute must be free of blockage. Chute liners (wear-resistant steel plates) must be intact. Deflector plates must direct coal accurately. This is the highest-risk location in the entire CHP. Blockages here can back-fill the chute, causing BC-1 overload. Spillage from here falls from height. Dust is at maximum. Confined space entry here requires a formal permit.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-between-conveyors-transfer-point",
+        "metadata": {
+          "content_length": 664,
+          "child_titles": [],
+          "level": 4,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Critical Process Control Points",
+            "Transfer Between Conveyors (Transfer Point)"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=1",
+          "operational_overlap=1",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.4
+      },
+      {
+        "collection": "TextChunk",
+        "id": "a8dda383fa6fe4efc96dc9fa4c0b86a3",
+        "concept_id": "transfer-between-conveyors-transfer-point",
+        "title": "Transfer Between Conveyors (Transfer Point)",
+        "content": "Transfer Between Conveyors (Transfer Point) कहाँ है: Transfer tower — जहाँ BC-1 से coal discharge होती है और chute के through BC-2 पर load होती है। यहाँ क्या critical है: Chute से गुज़रने वाली coal का trajectory receiving belt की speed और direction के साथ match होना चाहिए। Coal को BC-2 पर centrally land करना चाहिए। Chute blockage-free होनी चाहिए। Chute liners (wear-resistant steel plates) intact होने चाहिए। Deflector plates coal को accurately direct करें। यह पूरे CHP में सबसे high-risk location है। यहाँ blockages chute को back-fill कर सकती हैं, जिससे BC-1 overload होती है। यहाँ से spillage height से गिरती है। Dust maximum होती है। यहाँ confined space entry के लिए formal permit ज़रूरी है।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-transfer-between-conveyors-transfer-point",
+        "metadata": {
+          "level": 4,
+          "child_titles": [],
+          "content_length": 696,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Critical Process Control Points",
+            "Transfer Between Conveyors (Transfer Point)"
+          ]
+        },
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=1",
+          "title_overlap=1",
+          "operational_overlap=1",
+          "graph_relevance=0.20"
+        ],
+        "rerank_score": 0.325
+      },
+      {
+        "collection": "TextChunk",
+        "id": "4fb45b4733f8944396232da52b074dae",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for",
+        "title": "Your First Site Visit – What to Observe & What to Look For",
+        "content": "Your First Site Visit – What to Observe & What to Look For Your first site visit is not a tour — it is a structured observation exercise. For every component you studied in this course, there is a physical object in front of you. Treat it like matching a textbook diagram to a real machine, component by component. Now that you understand the system theoretically, you need to translate that knowledge to what you will actually see, hear, and smell when you walk into the Coal Handling Plant for the first time. This guide prepares you for that transition, so you do not feel overwhelmed or miss important details. Site Visit Observation Sequence – Walk the Conveyor Like an Engineer STEP 1 Start at the Feed Point (Tail End) Observe loading STEP 2 Walk Along One Side of Belt Check belt & idlers STEP 3 Observe Drive / Head End Check discharge STEP 4 Look at Safety Devices EPC, sway switches STEP 5 Visit Transfer Tower (outside) Observe from safe zone STEP 6 – REFLECT & REPORT Note all abnormalities observed. Discuss with supervisor. NEVER act on abnormalities independently. ⛔ NEVER do this on your first visit: Do not touch, adjust, or interfere with any equipment — observe only.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-your-first-site-visit-what-to-observe-what-to-look-for",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "Step-by-Step: What to Look For at Each Location"
+          ],
+          "content_length": 1187,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Your First Site Visit – What to Observe & What to Look For"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.29000000000000004
+      },
+      {
+        "collection": "TextChunk",
+        "id": "4c488929c0e6a2e5a2560eaf5f6153d1",
+        "concept_id": "course",
+        "title": "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+        "content": "इस Course को पूरा करने के बाद आप क्या कर पाएंगे ये learning outcomes define करते हैं कि इस L1 course को complete करने के बाद एक intern या trainee operator को क्या demonstrate करना चाहिए। ये सिर्फ theoretical knowledge नहीं — ये observable behaviours हैं। Context & Importance: Thermal power generation cycle explain कर पाना — coal से electricity तक — और belt conveyor की critical role इस chain में। Component Recognition: एक real conveyor पर सभी major components — belt, pulleys, idlers, take-up, scrapers, chute — identify और name कर पाना। Working Principle: Friction-drive principle explain करना — tight side/slack side tension का concept — और यह conveyor reliability को कैसे affect करता है। Capacity Factors: TPH capacity को affect करने वाले factors (width, speed, trough angle, coal properties) identify करना और normal vs. abnormal loading recognize करना। Transfer Points: Transfer point पर coal flow को describe करना — chute function, impact zone, और common hazards (blockage, spillage, dust) explain करना। Hazard Recognition: Primary mechanical hazards (entanglement, nip points, struck-by), dust hazards (CWP, explosion), और fire hazards को identify करना। Safety Devices: EPC, BSW, ZSS, Belt Weigher, Chute Blocked Detector, और Thermal Detector — हर device का function और trip condition बताना। LOTO Procedure: LOTO के सभी 8 steps सही sequence में बताना और यह explain करना कि LOTO किसी भी maintenance activity से पहले क्यों mandatory है। Control Points: CP1 से CP5 तक की locations और हर point पर क्या check करना है — यह describe करना। Failure Recognition: 6 common failure cases — belt drift, overloading, chute blockage, belt slip, dust fire, entanglement — identify करना और हर case में immediate action बताना।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-course-3",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 1717,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "operational_overlap=3",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.22000000000000003
+      },
+      {
+        "collection": "TextChunk",
+        "id": "e260f713aeef67b5f50ae0020154e269",
+        "concept_id": "course",
+        "title": "इस Course में आप क्या सीखोगे",
+        "content": "इस Course में आप क्या सीखोगे ✓ Boiler तक continuous fuel supply में conveyor system का role समझना। ✓ सारे major conveyor components identify करना और उनका system में क्या काम है यह समझना। ✓ Visualize करना कि coal, unloading point (wagon tippler) से boiler bunker तक कैसे travel करती है। ✓ Belt conveyor में motion, load carrying, और tension balance का mechanism समझना। ✓ यह पहचानना कि capacity limits system stability और plant performance को कैसे affect करती हैं। ✓ High-risk zones जैसे transfer points, drive pulleys, और rotating parts के बारे में awareness develop करना। ✓ Upstream systems जैसे wagon tippler, conveyor behaviour को सीधे कैसे affect करता है, यह समझना।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-course-2",
+        "metadata": {
+          "level": 2,
+          "child_titles": [],
+          "content_length": 668,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "इस Course में आप क्या सीखोगे"
+          ]
+        },
+        "generic_instruction_penalty": 0.5,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "operational_overlap=2",
+          "graph_relevance=0.20",
+          "generic_penalty=0.50"
+        ],
+        "rerank_score": 0.0
+      },
+      {
+        "collection": "TextChunk",
+        "id": "fcaf0d2642cadd142348953ce5e52182",
+        "concept_id": "course",
+        "title": "यह Course कैसे इस्तेमाल करें",
+        "content": "यह Course कैसे इस्तेमाल करें यह course इसलिए बनाया गया है ताकि आप Coal Handling Plant के belt conveyor system की पूरी mental picture बना सकें — site पर जाने से पहले। सोचिए जैसे पूरा system अपने दिमाग में download कर रहे हों, ताकि जब आप physically वहाँ पहुँचें, तो हर चीज़ पहचान सकें, उसका reason समझ सकें, और यह भी जान सकें कि खतरा कहाँ है। यह सिर्फ एक context और awareness course है। इसमें यह नहीं बताया गया कि कोई भी equipment कैसे start, stop, या operate करते हैं। आप कभी भी कोई भी operational action अकेले attempt मत करना — plant management से formal training और authorization लेने के बाद ही करना। यह course complete करने के बाद आप Coal Handling Plant में walk कर सकोगे, belt conveyor system के हर major component को identify कर सकोगे, power generation में उसका role समझोगे, और — सबसे important — hazardous zones और ऐसे behaviours पहचान सकोगे जो आपको या दूसरों को injury दे सकते हैं।",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-course",
+        "metadata": {
+          "level": 2,
+          "child_titles": [
+            "📋 Course Contents"
+          ],
+          "content_length": 887,
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "यह Course कैसे इस्तेमाल करें"
+          ]
+        },
+        "generic_instruction_penalty": 0.5,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=1",
+          "operational_overlap=1",
+          "graph_relevance=0.20",
+          "generic_penalty=0.50"
+        ],
+        "rerank_score": 0.0
+      }
+    ],
+    "image_chunks": [
+      {
+        "collection": "ImageChunk",
+        "id": "df6927d5c387e9bfa54c5e5cc52b02dc",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "description": "Diagram under: 3. Safety Devices — आपकी जान बचाने वाले Instruments. Caption: Fig 7.2 – Belt Conveyor Safety Devices: EPC, BSW, ZSS, और Belt Weigher. Visible labels: Belt Conveyor (Loaded Direction); EPC Rope (पूरी length में); EPC; BSW; ZSS; Speed; Belt Weigher; EPC: कहीं से भी खींचें; → तुरंत stop; ZSS: Speed drop; → auto trip; BSW: Belt drift; → alarm → trip; Belt Weigher: TPH; → control room data. Context: Safety और Hazard Awareness / Belt_Conveyor_L1_Course_HINDI.html.",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+        "metadata": {
+          "view_box": "0 0 680 185",
+          "order_in_file": 8,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+          "svg_text_labels": [
+            "Belt Conveyor (Loaded Direction)",
+            "EPC Rope (पूरी length में)",
+            "EPC",
+            "BSW",
+            "ZSS",
+            "Speed",
+            "Belt Weigher",
+            "EPC: कहीं से भी खींचें",
+            "→ तुरंत stop",
+            "ZSS: Speed drop",
+            "→ auto trip",
+            "BSW: Belt drift",
+            "→ alarm → trip",
+            "Belt Weigher: TPH",
+            "→ control room data"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:660px\" viewbox=\"0 0 680 185\" xmlns=\"http://www.w3.org/2000/svg\"> <rect fill=\"#e8d5c0\" height=\"32\" rx=\"4\" stroke=\"#8b6543\" stroke-width=\"1.5\" width=\"670\" x=\"5\" y=\"8\"></rect> <text fill=\"#5d4037\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"340\" y=\"29\">Belt Conveyor (Loaded Direction)</text> <line stroke=\"#c0392b\" stroke-dasharray=\"12,5\" stroke-width=\"3\" x1=\"5\" x2=\"675\" y1=\"52\" y2=\"52\"></line> <text fill=\"#c0392b\" font-size=\"8.5\" font-weight=\"700\" x=\"8\" y=\"47\">EPC",
+          "caption": "Fig 7.2 – Belt Conveyor Safety Devices: EPC, BSW, ZSS, और Belt Weigher",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training (Hindi)",
+            "Belt Conveyor Operation",
+            "Safety और Hazard Awareness",
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.22500000000000003
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "a39af16d5a0132c85a53be9f5b5f0169",
+        "concept_id": "safety-hazard-awareness",
+        "title": "Safety & Hazard Awareness",
+        "description": "Diagram under: Safety & Hazard Awareness. Caption: Fig 7.1 – Conveyor hazard zone map — colour coded by severity. Visible labels: MOVING BELT (entire length is a hazard); TAIL; PULLEY; 🔴 PINCH ZONE; Entanglement risk; DRIVE; 🔴 PINCH + NIP ZONE; High-torque crush risk; 🟠 FEED POINT; Impact hazard; Dust cloud; 🟠 TRANSFER; POINT; Spillage, blockage; Confined space; 🟡 BELT SURFACE; Never touch/step on moving belt; 🟡 Return strand — carryback coal falls here — slip hazard below; ☁ Dust cloud; ━━━ Emergency Pull Cord (full length) — Pull anywhere to STOP conveyor ━━━; HAZARD ZONE LEGEND; RED = Extreme danger (pinch/nip/crush) — Mandatory guarding required; ORANGE = High hazard (spillage, blockage, dust, confined space) — Permit required; YELLOW = Caution zone (moving belt, carryback, slipping) — Stay clear, PPE required. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-safety-hazard-awareness",
+        "metadata": {
+          "view_box": "0 0 820 290",
+          "order_in_file": 7,
+          "linked_text_section_id": "Belt_Conveyor_L1_Course_COMPLETE-safety-hazard-awareness",
+          "svg_text_labels": [
+            "MOVING BELT (entire length is a hazard)",
+            "TAIL",
+            "PULLEY",
+            "🔴 PINCH ZONE",
+            "Entanglement risk",
+            "DRIVE",
+            "🔴 PINCH + NIP ZONE",
+            "High-torque crush risk",
+            "🟠 FEED POINT",
+            "Impact hazard",
+            "Dust cloud",
+            "🟠 TRANSFER",
+            "POINT",
+            "Spillage, blockage",
+            "Confined space",
+            "🟡 BELT SURFACE",
+            "Never touch/step on moving belt",
+            "🟡 Return strand — carryback coal falls here — slip hazard below",
+            "☁ Dust cloud",
+            "━━━ Emergency Pull Cord (full length) — Pull anywhere to STOP conveyor ━━━",
+            "HAZARD ZONE LEGEND",
+            "RED = Extreme danger (pinch/nip/crush) — Mandatory guarding required",
+            "ORANGE = High hazard (spillage, blockage, dust, confined space) — Permit required",
+            "YELLOW = Caution zone (moving belt, carryback, slipping) — Stay clear, PPE required"
+          ],
+          "raw_svg_excerpt": "<svg style=\"max-width:800px\" viewbox=\"0 0 820 290\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"ha\" markerheight=\"5\" markerwidth=\"7\" orient=\"auto\" refx=\"7\" refy=\"2.5\"> <polygon fill=\"#c0392b\" points=\"0 0,7 2.5,0 5\"></polygon> </marker> </defs> <!-- BELT OUTLINE --> <rect fill=\"#e74c3c\" height=\"18\" opacity=\"0.7\" rx=\"5\" width=\"700\" x=\"60\" y=\"100\"></rect> <text fill=\"white\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\" x=\"410\" y=\"113\">MOVING BELT (entire length is a hazard)</text>",
+          "caption": "Fig 7.1 – Conveyor hazard zone map — colour coded by severity",
+          "breadcrumb": [
+            "Belt Conveyor Operation – L1 Foundational Course | CHP Training",
+            "Belt Conveyor Operation",
+            "Safety & Hazard Awareness"
+          ]
+        },
+        "generic_instruction_penalty": 0.25,
+        "graph_relevance_score": 0.2,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "graph_relevance=0.20",
+          "generic_penalty=0.25"
+        ],
+        "rerank_score": 0.20500000000000002
+      }
+    ]
+  },
+  "context_for_llm_later": {
+    "text_blocks": [
+      {
+        "id": "c19f5246effdbb5c435a13fa4bd4799d",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Instrumentation & Safety Devices on the Conveyor Think of instrumentation as the conveyor's nervous system — sensors spread across the full length that continuously sense abnormal conditions and either warn operators or automatically stop the machine before a small problem becomes a catastrophe. A belt conveyor in a modern Coal Handling Plant is fitted with numerous sensors, switches, and protective devices along its entire length. These are not optional extras — they are mandatory safety and operational requirements under Indian Electricity Rules, factory safety regulations, and plant operating procedures. As an intern, you will see these devices everywhere on the conveyor. Knowing what each one does is essential. MOVING BELT TAIL PULLEY DRIVE PULLEY M ━━ EMERGENCY PULL CORD (Both Sides, Full Length) ━━ EPC EPC EPC BSW Belt Sway Switch BSW ZSS SPD Zero Speed / Underspeed Switch BW WEIGH Belt Weigher (Load cell) CBD CHUTE Chute Blocked Detector 🔥 Thermal/ Fire Detector Return Strand EPC = Emergency Pull Cord BSW = Belt Sway Switch ZSS = Zero Speed Switch BW = Belt Weigher CBD = Chute Blocked Detector 🔥 = Fire Detector",
+        "rerank_score": 1.3699999999999999,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=4",
+          "operational_overlap=2"
+        ]
+      },
+      {
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Transfer Points & Flow Behaviour A transfer point is like a controlled handover baton pass — coal must land precisely on the next belt. Any miss, blockage, or misalignment at this point disrupts the entire downstream flow. Wherever coal moves from one conveyor to the next — or from a hopper to a conveyor — there is a transfer point . These are not minor connections; they are among the most critical and most hazardous locations in the entire Coal Handling Plant. Understanding what happens at a transfer point is essential before entering the CHP. BC-1 (Upper Conveyor) Coal on BC-1 Head Pulley TRANSFER CHUTE (guides coal) ↓ Coal falls here BC-2 (Lower Conveyor) Impact Zone Coal on BC-2 ⚠ DUST ⚠ Spillage ⚠ Spillage ⚠ BLOCKAGE RISK Wet/sticky coal can block chute Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.",
+        "rerank_score": 1.22,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "title_overlap=2",
+          "operational_overlap=2"
+        ]
+      },
+      {
+        "id": "e06e9b097093c20cbaba9c526236db29",
+        "title": "What Can Go Wrong at a Transfer Point",
+        "concept_id": "what-can-go-wrong-at-a-transfer-point",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "What Can Go Wrong at a Transfer Point Problem | Cause | Consequence ; Chute Blockage | Wet, fine, or sticky coal accumulates inside the chute and sticks to walls, eventually bridging across. | Coal backs up onto BC-1, causing it to overload. If blockage is not cleared quickly, the conveyor trips. ; Spillage | Coal falls outside the belt edges due to misaligned chute, worn skirt boards, or over-speed discharge. | Accumulation of coal on walkways and structure — slipping hazard, fire risk from dust, structural overloading. ; Dust Generation | Free-fall of coal creates turbulent air that carries fine coal particles. Longer drop height = more dust. | Respiratory hazard, reduced visibility, fire and explosion risk from coal dust cloud. ; Belt Damage at Impact | Large coal lumps falling from height impact the belt at the transfer point, especially if impact idlers are worn. | Belt cover damage, gouging, or even belt puncture — leading to belt failure. ; Off-centre Loading | Coal does not land centrally on BC-2 due to incorrect chute alignment or spillage plate wear. | Belt drifts to one side → edge damage → spillage → potential belt damage against structure. Transfer towers are enclosed structures at junctions between conveyors. They are high-dust, confined-space environments with active machinery on multiple levels. Entry requires a Confined Space Entry Permit, dust mask, and must always be done with a buddy. Never enter during conveyor operation without a specific maintenance permit.",
+        "rerank_score": 1.2,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=2",
+          "operational_overlap=2"
+        ]
+      },
+      {
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "title": "Safety Device Reference Guide",
+        "concept_id": "safety-device-reference-guide",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Safety Device Reference Guide Device | Location on Conveyor | Function | Response When Activated ; Emergency Pull Cord (EPC) | Both sides, full length of conveyor, approximately every 30–50 m | Allows any person anywhere along the conveyor to immediately stop it in an emergency by pulling the rope/wire | Immediate emergency stop of conveyor drive motor. Conveyor cannot restart until EPC is reset and root cause investigated. ; Belt Sway Switch (BSW) | Both sides, spaced every 50–75 m along carry and return strand | Detects lateral drift of the belt beyond a set limit. Has two positions: first position = alarm; second position = trip. | First activation: Alarm in control room. Second (greater drift): Conveyor trip. Prevents belt edge from contacting steel structure. ; Zero Speed Switch (ZSS) | Tail pulley shaft or on a return idler | Monitors belt speed. Detects if the belt has stopped (zero speed) while the motor is still running — indicating belt slip. | Conveyor trip + alarm. Prevents drive pulley from running against a stationary belt (which causes fire from friction). ; Belt Weigher (BW) | Fixed location on the conveyor, typically mid-span | Measures the weight of coal on the belt per unit length using load cells. Calculates instantaneous TPH and cumulative tonnes. | Data sent to control room / DCS. No trip — provides operational data. High load may trigger an alarm. ; Chute Blocked Detector (CBD) | Inside transfer chutes at transfer points | Detects when coal has accumulated and blocked the chute (using vibration probe, ultrasonic, or paddle switch). | Alarm in control room. May automatically stop upstream feeder to prevent further coal accumulation. ; Thermal / Fire Detector | Inside conveyor galleries (tunnels) and transfer towers | Detects elevated temperature indicating a developing fire. Linear heat detection cable runs along the belt gallery roof. | Fire alarm. Conveyor trip. Activation of fire suppression system (CO₂ or water mist). Control room alert. ; Underspeed Switch | Drive shaft area | Detects if belt is running slower than designed speed (but not zero). Indicates overloading or drive slip developing. | Alarm → trip if underspeed persists. Allows early intervention before full slippage occurs. ; Motor Overload Relay (OLR) | Motor control centre (MCC) / switchgear panel | Monitors motor current. If the motor draws current above the rated limit for a set time (indicating overload), it trips. | Motor trip + alarm. Conveyor stops. Investigation required to identify overload cause before restart. When you walk a conveyor on site, you will see red ropes, yellow boxes, and small switches mounted on the frame at regular intervals — these are all part of this safety system. You will hear terms like \"BSW trip,\" \"ZSS alarm,\" or \"EPC activation\" on the radio constantly. Now you know exactly what each term means, what triggered it, and what the plant team needs to do in response. On some plants, under production pressure, well-meaning but incorrect actions include bypassing a belt sway switch that keeps tripping, disabling a chute blocked detector that gives \"false\" alarms, or tying off an EPC that was accidentally pulled. This is an extremely dangerous practice. Every safety device bypass removes one layer of protection from the system. Multiple bypasses create a condition where a fatal accident can occur without any warning. As an intern, if you are ever asked to bypass a safety device, immediately consult your supervisor. Document it. Never accept it as routine.",
+        "rerank_score": 1.1949672961235045,
+        "ranking_reasons": [
+          "query_overlap=9",
+          "title_overlap=1",
+          "operational_overlap=3"
+        ]
+      },
+      {
+        "id": "bace41e2d3e501f79db89fcdc433ff8c",
+        "title": "Safety & Hazard Awareness",
+        "concept_id": "safety-hazard-awareness",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Safety & Hazard Awareness Moving machinery + bulk material + confined spaces = continuous risk. Most conveyor accidents happen not because of complexity but because someone was not aware of where the danger was. You do not need to be doing anything wrong to be injured near a conveyor. You simply need to be in the wrong place, distracted, or unaware of what is moving around you. The conveyor does not slow down for you. It does not have a sensor that detects a human body near it. It will continue running at full speed regardless. Your awareness is your protection. MOVING BELT (entire length is a hazard) TAIL PULLEY 🔴 PINCH ZONE Entanglement risk DRIVE PULLEY 🔴 PINCH + NIP ZONE High-torque crush risk 🟠 FEED POINT Impact hazard Dust cloud 🟠 TRANSFER POINT Spillage, blockage Confined space 🟡 BELT SURFACE Never touch/step on moving belt 🟡 Return strand — carryback coal falls here — slip hazard below ☁ Dust cloud ☁ Dust cloud ━━━ Emergency Pull Cord (full length) — Pull anywhere to STOP conveyor ━━━ HAZARD ZONE LEGEND RED = Extreme danger (pinch/nip/crush) — Mandatory guarding required ORANGE = High hazard (spillage, blockage, dust, confined space) — Permit required YELLOW = Caution zone (moving belt, carryback, slipping) — Stay clear, PPE required",
+        "rerank_score": 1.1770372915267944,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=1",
+          "operational_overlap=3"
+        ]
+      },
+      {
+        "id": "943ed3ca0dd3ff7dbbc7ab7977664680",
+        "title": "Hazard-by-Hazard Analysis",
+        "concept_id": "hazard-by-hazard-analysis",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "content": "Hazard-by-Hazard Analysis Pulleys rotate continuously at high speed. The nip point — where the belt meets the pulley — has an extremely small gap that closes in milliseconds. A finger, loose clothing, or hair entering this gap will be drawn in with full motor force before any human reaction is possible. Guards (physical covers) must always be in place over all pulleys. If a guard is missing — report it immediately and do not approach the pulley. The belt surface itself is a hazard. Loose clothing, gloves, tools, or anything trailing near the belt can be instantly grabbed and pulled in. Belt speed (1.5–2.5 m/s) is faster than human reflex. This type of accident typically results in degloving injuries, crush injuries, or fatalities. Rule: always wear close-fitting PPE near conveyors. Never lean over a running belt. At transfer points, coal falls from one conveyor to the next. Large coal lumps weighing several kilograms can bounce or be thrown sideways if a blockage or imbalance occurs. Standing below or beside an active chute is extremely dangerous. Transfer towers also have open floors and structural walkways at multiple levels — falling coal from one level can injure personnel on a lower level. Fine coal dust generated at transfer points, feed points, and from carryback is a dual hazard. Respiratory: Coal dust causes coal worker's pneumoconiosis (CWP/\"black lung\") with long-term exposure. Always wear a P2/P3 dust mask in dusty areas. Fire: Coal dust suspended in air at concentrations above the Lower Explosive Limit (LEL) can ignite from a spark or hot surface. Accumulated coal dust on hot surfaces (like a seized idler or a slipping belt) can also self-ignite. Coal spillage on walkways creates an extremely slippery surface, especially when wet. Carryback coal falls from the return strand onto the floor below the conveyor. Structural platforms, stairs, and walkways in CHP are often narrow and positioned close to moving equipment. Falls from elevated walkways (transfer towers can be 10–20 m high) are fatal. Always hold handrails, wear non-slip safety boots, and never rush on CHP walkways. Conveyor drive panels operate at medium voltage (3.3 kV or 6.6 kV in large plants, 415 V in smaller). Control panels, junction boxes, and local isolators are located along conveyor routes. Never open an electrical panel without a qualified electrician present and without following Lockout-Tagout (LOTO) procedures. Water from coal spillage near electrical panels is extremely dangerous.",
+        "rerank_score": 0.48000000000000004,
+        "ranking_reasons": [
+          "query_overlap=7",
+          "operational_overlap=3",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "57424115bb84daad17ff190dfe33beab",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "3. Safety Devices — आपकी जान बचाने वाले Instruments Belt Conveyor (Loaded Direction) EPC Rope (पूरी length में) EPC EPC EPC EPC EPC BSW BSW ZSS Speed Belt Weigher EPC: कहीं से भी खींचें → तुरंत stop ZSS: Speed drop → auto trip BSW: Belt drift → alarm → trip Belt Weigher: TPH → control room data Safety Device | काम क्या करता है | कब Trip होता है ; Emergency Pull Cord (EPC) | पूरी conveyor length में rope; कहीं से भी खींचें — instant stop | Manual pull; self-latching — investigation के बाद ही restart ; Belt Sway Switch (BSW) | Belt का lateral drift detect करता है | Stage 1: alarm; Stage 2: conveyor trip। हर 25–30 m पर। ; Zero Speed Switch (ZSS) | Belt speed monitor करता है | Speed rated से 70–80% से कम → 3 sec बाद trip ; Belt Weigher | Real-time TPH measure करता है | Trip नहीं — data control room को भेजता है ; Chute Blocked Detector | Chute fill-up detect करता है | Paddle stop / RF change → upstream belt/feeder trip ; Thermal / Fire Detector | Temperature rise या flame detect करता है | Rate-of-rise +8°C/min या fixed 68/93°C → Fire Alarm trip",
+        "rerank_score": 0.47500000000000003,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ]
+      },
+      {
+        "id": "4ae30a8580ac1acc602ae3203f190ec9",
+        "title": "Safety और Hazard Awareness",
+        "concept_id": "safety-hazard-awareness",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "content": "Safety और Hazard Awareness Belt conveyor एक विशाल machine है जो आपसे बहुत तेज़ चलती है और बहुत ज़्यादा ताकतवर है। यह आपको नहीं देखती। आपको ही इसे देखना होगा — हर बार, हर shift में। Belt Conveyor एक very high-energy machine है — thousands of tonnes of coal हर घंटे move करती है, कभी-कभी 3.5 m/s की speed से। CHP एक ऐसा environment है जहाँ negligence — चाहे एक पल की ही हो — life-altering consequences दे सकती है। यह section आपको primary hazards और उनसे बचाव के तरीकों से परिचित कराता है।",
+        "rerank_score": 0.41500000000000004,
+        "ranking_reasons": [
+          "query_overlap=3",
+          "title_overlap=1",
+          "operational_overlap=2",
+          "graph_relevance=0.20"
+        ]
+      }
+    ],
+    "image_blocks": [
+      {
+        "id": "3e7c62783eb6e7f828ad7dbf68049848",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Instrumentation & Safety Devices on the Conveyor. Caption: Fig S1 – Instrumentation and safety devices positioned along a typical CHP belt conveyor. Visible labels: MOVING BELT; TAIL; PULLEY; DRIVE; M; ━━ EMERGENCY PULL CORD (Both Sides, Full Length) ━━; EPC; BSW; Belt Sway; Switch; ZSS; SPD; Zero Speed /; Underspeed Switch; BW; WEIGH; Belt Weigher; (Load cell); CBD; CHUTE; Chute Blocked; Detector; 🔥; Thermal/; Fire Detector; Return Strand; EPC = Emergency Pull Cord; BSW = Belt Sway Switch; ZSS = Zero Speed Switch; BW = Belt Weigher; CBD = Chute Blocked Detector; 🔥 = Fire Detector. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "rerank_score": 1.0350000000000001,
+        "ranking_reasons": [
+          "query_overlap=5",
+          "title_overlap=4",
+          "operational_overlap=2",
+          "generic_penalty=0.25"
+        ]
+      },
+      {
+        "id": "b584f7e7468a707f0315f82a24bff78f",
+        "title": "Your First Site Visit – What to Observe & What to Look For",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Your First Site Visit – What to Observe & What to Look For. Caption: Fig SV1 – Recommended observation sequence for a trainee's first conveyor walk. Visible labels: Site Visit Observation Sequence – Walk the Conveyor Like an Engineer; STEP 1; Start at the; Feed Point (Tail End); Observe loading; STEP 2; Walk Along One; Side of Belt; Check belt & idlers; STEP 3; Observe Drive /; Head End; Check discharge; STEP 4; Look at Safety; Devices; EPC, sway switches; STEP 5; Visit Transfer; Tower (outside); Observe from safe zone; STEP 6 – REFLECT & REPORT; Note all abnormalities observed.; Discuss with supervisor. NEVER; act on abnormalities independently.; ⛔ NEVER do this on your first visit:; Do not touch, adjust, or interfere with any equipment — observe only.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "rerank_score": 0.9063124227523804,
+        "ranking_reasons": [
+          "query_overlap=6",
+          "title_overlap=1",
+          "operational_overlap=3",
+          "generic_penalty=0.25"
+        ]
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Transfer Points & Flow Behaviour. Caption: Fig 6.1 – Cross-section of a transfer point showing coal trajectory, chute, and hazard zones. Visible labels: BC-1 (Upper Conveyor); Coal on BC-1; Head; Pulley; TRANSFER; CHUTE; (guides coal); ↓ Coal; falls here; BC-2 (Lower Conveyor); Impact Zone; Coal on BC-2; ⚠ DUST; ⚠ Spillage; ⚠ BLOCKAGE RISK; Wet/sticky coal; can block chute; Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "rerank_score": 0.9043581366539002,
+        "ranking_reasons": [
+          "query_overlap=4",
+          "title_overlap=2",
+          "operational_overlap=2",
+          "generic_penalty=0.25"
+        ]
+      }
+    ],
+    "relation_blocks": [
+      {
+        "collection": "RelationChunk",
+        "id": "4517edbaa83e1fb1f2371e87cc8b2c17",
+        "relation_id": "4517edbaa83e1fb1f2371e87cc8b2c17",
+        "source_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "target_id": "safe-access-and-working-conditions-ensured",
+        "relation_type": "has_control_point",
+        "description": "Ensure safe access and working conditions around conveyor has control point Safe access and working conditions ensured.",
+        "graph_relevance_score": 0.437397041618824,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_control_point:0.85",
+          "query_overlap=3"
+        ],
+        "metadata": {
+          "sheet_name": "Control Point",
+          "source_label": "Ensure safe access and working conditions around conveyor",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Safe access and working conditions ensured",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Conveying System | SWO: Conveyor Idler & Roller System | Capability Code: CAP-09 | Proficiency Level: L3 | Skill: Ensure safe maintenance procedures | Task: Ensure safe access and working conditions around conveyor | Control Point: Safe access and working conditions ensured | Risk Level: Critical | Failure Impact Type: Safety | KPI Threshold: No unsafe condition | Escalation Required: Yes | Evidence Type: Supervisor Observation",
+          "row_number": 96
+        }
+      },
+      {
+        "collection": "RelationChunk",
+        "id": "fdb0f7bd4aea205ed8e69ccc33950667",
+        "relation_id": "fdb0f7bd4aea205ed8e69ccc33950667",
+        "source_id": "ensure-safe-maintenance-procedures",
+        "target_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "relation_type": "has_task",
+        "description": "Ensure safe maintenance procedures has task Ensure safe access and working conditions around conveyor.",
+        "graph_relevance_score": 0.412397041618824,
+        "ranking_reasons": [
+          "seed=0.30",
+          "hop_decay=1.00",
+          "type=has_task:0.75",
+          "query_overlap=3"
+        ],
+        "metadata": {
+          "sheet_name": "Tasks",
+          "source_label": "Ensure safe maintenance procedures",
+          "source_file": "CHP WRCF.xlsx",
+          "target_label": "Ensure safe access and working conditions around conveyor",
+          "placeholder": false,
+          "evidence": "Industry: Thermal Power Plant | FG: Coal Handling System | PWO: Coal Conveying System | SWO: Conveyor Idler & Roller System | Capability Code: CAP-09 | Capability: Compliance & Safety Awareness | Proficiency Level: L3 - Conditional Independence – Supervised | Skill: Ensure safe maintenance procedures | Task: Ensure safe access and working conditions around conveyor | Frequency: Daily | Complexity: Medium | Standard Duration (mins): 10.0 | Required Proficiency Level: L3",
+          "row_number": 57
+        }
+      }
+    ],
+    "seed_concept_nodes": [
+      {
+        "collection": "ConceptNode",
+        "id": "safety-hazard-awareness",
+        "concept_id": "safety-hazard-awareness",
+        "title": "Safety & Hazard Awareness",
+        "score": 0.8866772055625916,
+        "vector_score": 0.8866772055625916,
+        "rerank_score": 0.8866772055625916,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.11332279443740845,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html",
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Safety & Hazard Awareness",
+            "Safety और Hazard Awareness"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "image_count": 1,
+          "text_chunk_count": 2,
+          "has_evidence": true
+        },
+        "label": "Safety & Hazard Awareness",
+        "text_chunk_ids": [
+          "4ae30a8580ac1acc602ae3203f190ec9",
+          "bace41e2d3e501f79db89fcdc433ff8c"
+        ],
+        "image_ids": [
+          "a39af16d5a0132c85a53be9f5b5f0169"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8866772055625916
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "hazard-by-hazard-analysis",
+        "concept_id": "hazard-by-hazard-analysis",
+        "title": "Hazard-by-Hazard Analysis",
+        "score": 0.878139078617096,
+        "vector_score": 0.878139078617096,
+        "rerank_score": 0.878139078617096,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.12186092138290405,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "Hazard-by-Hazard Analysis"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Hazard-by-Hazard Analysis",
+        "text_chunk_ids": [
+          "943ed3ca0dd3ff7dbbc7ab7977664680"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.878139078617096
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "course",
+        "concept_id": "course",
+        "title": "यह Course कैसे इस्तेमाल करें",
+        "score": 0.8686668872833252,
+        "vector_score": 0.8686668872833252,
+        "rerank_score": 0.8686668872833252,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.1313331127166748,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "इस Course को पूरा करने के बाद आप क्या कर पाएंगे",
+            "इस Course में आप क्या सीखोगे",
+            "यह Course कैसे इस्तेमाल करें"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 3,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "यह Course कैसे इस्तेमाल करें",
+        "text_chunk_ids": [
+          "4c488929c0e6a2e5a2560eaf5f6153d1",
+          "e260f713aeef67b5f50ae0020154e269",
+          "fcaf0d2642cadd142348953ce5e52182"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8686668872833252
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "transfer-between-conveyors-transfer-point",
+        "concept_id": "transfer-between-conveyors-transfer-point",
+        "title": "Transfer Between Conveyors (Transfer Point)",
+        "score": 0.8598611354827881,
+        "vector_score": 0.8598611354827881,
+        "rerank_score": 0.8598611354827881,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14013886451721191,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_COMPLETE.html",
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "source_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "titles": [
+            "Transfer Between Conveyors (Transfer Point)"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 2,
+          "image_count": 0,
+          "has_evidence": true
+        },
+        "label": "Transfer Between Conveyors (Transfer Point)",
+        "text_chunk_ids": [
+          "22e9fd074cf8b2493c7efea2b862065c",
+          "a8dda383fa6fe4efc96dc9fa4c0b86a3"
+        ],
+        "image_ids": [],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8598611354827881
+      },
+      {
+        "collection": "ConceptNode",
+        "id": "3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "score": 0.8581469655036926,
+        "vector_score": 0.8581469655036926,
+        "rerank_score": 0.8581469655036926,
+        "ranking_reasons": [
+          "node_weight=1.0"
+        ],
+        "generic_instruction_penalty": 0.0,
+        "graph_relevance_score": 0.0,
+        "distance": 0.14185303449630737,
+        "metadata": {
+          "relation_types": [],
+          "source_files": [
+            "Belt_Conveyor_L1_Course_HINDI.html"
+          ],
+          "target_relation_count": 0,
+          "retrieval_weight": 1.0,
+          "source_relation_count": 0,
+          "titles": [
+            "3. Safety Devices — आपकी जान बचाने वाले Instruments"
+          ],
+          "embedding_source": "linked_text_image_vectors",
+          "text_chunk_count": 1,
+          "image_count": 1,
+          "has_evidence": true
+        },
+        "label": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "text_chunk_ids": [
+          "57424115bb84daad17ff190dfe33beab"
+        ],
+        "image_ids": [
+          "df6927d5c387e9bfa54c5e5cc52b02dc"
+        ],
+        "source_relation_ids": [],
+        "target_relation_ids": [],
+        "retrieval_weight": 1.0,
+        "weighted_score": 0.8581469655036926
+      }
+    ],
+    "source_references": [
+      {
+        "collection": "TextChunk",
+        "id": "c19f5246effdbb5c435a13fa4bd4799d",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-instrumentation-safety-devices-on-the-conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "concept_id": "transfer-points-flow-behaviour"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "e06e9b097093c20cbaba9c526236db29",
+        "title": "What Can Go Wrong at a Transfer Point",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-what-can-go-wrong-at-a-transfer-point",
+        "concept_id": "what-can-go-wrong-at-a-transfer-point"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "title": "Safety Device Reference Guide",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-safety-device-reference-guide",
+        "concept_id": "safety-device-reference-guide"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "bace41e2d3e501f79db89fcdc433ff8c",
+        "title": "Safety & Hazard Awareness",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-safety-hazard-awareness",
+        "concept_id": "safety-hazard-awareness"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "943ed3ca0dd3ff7dbbc7ab7977664680",
+        "title": "Hazard-by-Hazard Analysis",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-hazard-by-hazard-analysis",
+        "concept_id": "hazard-by-hazard-analysis"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "57424115bb84daad17ff190dfe33beab",
+        "title": "3. Safety Devices — आपकी जान बचाने वाले Instruments",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-3-safety-devices-instruments",
+        "concept_id": "3-safety-devices-instruments"
+      },
+      {
+        "collection": "TextChunk",
+        "id": "4ae30a8580ac1acc602ae3203f190ec9",
+        "title": "Safety और Hazard Awareness",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "section_id": "Belt_Conveyor_L1_Course_HINDI-safety-hazard-awareness",
+        "concept_id": "safety-hazard-awareness"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "3e7c62783eb6e7f828ad7dbf68049848",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-instrumentation-safety-devices-on-the-conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "b584f7e7468a707f0315f82a24bff78f",
+        "title": "Your First Site Visit – What to Observe & What to Look For",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-your-first-site-visit-what-to-observe-what-to-look-for",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for"
+      },
+      {
+        "collection": "ImageChunk",
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "section_id": "Belt_Conveyor_L1_Course_COMPLETE-transfer-points-flow-behaviour",
+        "concept_id": "transfer-points-flow-behaviour"
+      }
+    ]
+  },
+  "retrieval_diagnostics": {
+    "dropped_generic_chunks": [
+      {
+        "id": "e260f713aeef67b5f50ae0020154e269",
+        "title": "इस Course में आप क्या सीखोगे"
+      },
+      {
+        "id": "fcaf0d2642cadd142348953ce5e52182",
+        "title": "यह Course कैसे इस्तेमाल करें"
+      }
+    ],
+    "dropped_duplicate_chunks": [],
+    "dropped_low_score_relations": [],
+    "final_context_counts": {
+      "text_blocks": 8,
+      "image_blocks": 3,
+      "relation_blocks": 2,
+      "source_references": 11
+    },
+    "graph_disabled": false
+  }
+}

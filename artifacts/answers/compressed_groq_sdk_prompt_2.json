@@ -1,0 +1,116 @@
+{
+  "compact_context": {
+    "key_text_evidence": [
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "concept_id": "belt-drift-belt-misalignment",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "excerpt": "Belt Drift (Belt Misalignment) Root Cause: Off-centre loading (feeder से coal belt के center में नहीं गिर रही), worn idlers, wet/sticky coal जो एक तरफ build-up कर रही हो, misaligned pulleys, या incorrect take-up tension।"
+      },
+      {
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "concept_id": "belt-drift",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "excerpt": "Belt drift → Belt का edge steel structure से contact → Friction heat generate → Coal dust ignite → FIRE।"
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "concept_id": "why-the-belt-drifts-misalignment",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "A drifted belt that contacts the steel structure can generate enough heat through friction to ignite coal dust — causing a conveyor fire."
+      },
+      {
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "title": "Belt Alignment Along Structure",
+        "concept_id": "belt-alignment-along-structure",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Belt drift → edge contact with structure → friction heat → fire risk."
+      },
+      {
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "concept_id": "transfer-point",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "excerpt": "Spillage | Belt overloading, worn skirt seals, off-centre loading | Structure पर coal गिरती है, idler damage, fire risk;"
+      }
+    ],
+    "key_image_evidence": [
+      {
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "concept_id": "system-flow-integration-coal",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "description": "Diagram under: System Flow Integration – Coal का पूरा सफर."
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Transfer Points & Flow Behaviour."
+      }
+    ],
+    "key_relations": [],
+    "source_references": [
+      {
+        "id": "c4ccac6ea9c6348c3345ea41b075e453",
+        "title": "Belt Drift (Belt Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift-belt-misalignment"
+      },
+      {
+        "id": "341a29ae3a77b7fd559748f49508111a",
+        "title": "Transfer Point पर क्या गलत हो सकता है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "transfer-point"
+      },
+      {
+        "id": "0c722e1c373f8b6c94d45b461cc43a52",
+        "title": "Why the Belt Drifts (Misalignment)",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "why-the-belt-drifts-misalignment"
+      },
+      {
+        "id": "8bb296cf2118bc6530e367dba873d3b5",
+        "title": "Belt Alignment Along Structure",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "belt-alignment-along-structure"
+      },
+      {
+        "id": "69ae06b0a8331602e788719e5ac38519",
+        "title": "Belt Drift — क्यों होती है, क्यों ख़तरनाक है?",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "belt-drift"
+      },
+      {
+        "id": "072723b02f37eb29b368ac7fe2fc1774",
+        "title": "System Flow Integration – Coal का पूरा सफर",
+        "source_file": "Belt_Conveyor_L1_Course_HINDI.html",
+        "concept_id": "system-flow-integration-coal"
+      },
+      {
+        "id": "448682ddfc6d36f050779bb025817903",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "transfer-points-flow-behaviour"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": false,
+      "weaknesses": [
+        "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+      ]
+    }
+  },
+  "query": "belt drift से fire risk क्यों होता है और trainee को क्या observe करना चाहिए?",
+  "compression_metadata": {
+    "mode": "groq",
+    "model": "llama-3.1-8b-instant",
+    "fallback_available": true
+  }
+}

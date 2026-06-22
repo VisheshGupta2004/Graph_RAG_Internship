@@ -1,0 +1,140 @@
+{
+  "query": "What are the hazards at conveyor transfer points and what safety devices or actions are relevant?",
+  "compact_context": {
+    "key_text_evidence": [
+      {
+        "id": "c19f5246effdbb5c435a13fa4bd4799d",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Instrumentation & Safety Devices on the Conveyor Think of instrumentation as the conveyor's nervous system — sensors spread across the full length that continuously sense abnormal conditions and either warn operators or automatically stop the machine before a small problem becomes a catastrophe. A belt conveyor in a modern Coal Handling Plant is fitted with numerous sensors, switches, and protective devices along its entire length. These are not optional extras — they are mandatory safety and operational requirements under Indian Electricity Rules, factory safety regulations, and plant operating procedures. As an intern, you will see these devices everywhere on the conveyor. Knowing what each one does is essential.",
+        "citation": "[Instrumentation & Safety Devices on the Conveyor, concept: instrumentation-safety-devices-on-the-conveyor]"
+      },
+      {
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "title": "Transfer Points & Flow Behaviour",
+        "concept_id": "transfer-points-flow-behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Transfer Points & Flow Behaviour A transfer point is like a controlled handover baton pass — coal must land precisely on the next belt. Any miss, blockage, or misalignment at this point disrupts the entire downstream flow. Wherever coal moves from one conveyor to the next — or from a hopper to a conveyor — there is a transfer point . These are not minor connections; they are among the most critical and most hazardous locations in the entire Coal Handling Plant. Understanding what happens at a transfer point is essential before entering the CHP. BC-1 (Upper Conveyor) Coal on BC-1 Head Pulley TRANSFER CHUTE (guides coal) ↓ Coal falls here BC-2 (Lower Conveyor) Impact Zone Coal on BC-2 ⚠ DUST ⚠ Spillage ⚠ Spillage ⚠ BLOCKAGE RISK Wet/sticky coal can block chute Coal must land centrally on BC-2 belt. Any deviation → spillage or belt drift.",
+        "citation": "[Transfer Points & Flow Behaviour, concept: transfer-points-flow-behaviour]"
+      },
+      {
+        "id": "e06e9b097093c20cbaba9c526236db29",
+        "title": "What Can Go Wrong at a Transfer Point",
+        "concept_id": "what-can-go-wrong-at-a-transfer-point",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "What Can Go Wrong at a Transfer Point Problem | Cause | Consequence ; Chute Blockage | Wet, fine, or sticky coal accumulates inside the chute and sticks to walls, eventually bridging across. | Coal backs up onto BC-1, causing it to overload. If blockage is not cleared quickly, the conveyor trips. ; Spillage | Coal falls outside the belt edges due to misaligned chute, worn skirt boards, or over-speed discharge. | Accumulation of coal on walkways and structure — slipping hazard, fire risk from dust, structural overloading. ; Dust Generation | Free-fall of coal creates turbulent air that carries fine coal particles. Longer drop height = more dust. | Respiratory hazard, reduced visibility, fire and explosion risk from coal dust cloud. ; Belt Damage at Impact | Large coal lumps falling from height impact the belt at the transfer point, especially if impact idlers are worn. | Belt cover damage, gouging, or even belt puncture — leading to belt failure. ;",
+        "citation": "[What Can Go Wrong at a Transfer Point, concept: what-can-go-wrong-at-a-transfer-point]"
+      },
+      {
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "title": "Safety Device Reference Guide",
+        "concept_id": "safety-device-reference-guide",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Safety Device Reference Guide Device | Location on Conveyor | Function | Response When Activated ; Emergency Pull Cord (EPC) | Both sides, full length of conveyor, approximately every 30–50 m | Allows any person anywhere along the conveyor to immediately stop it in an emergency by pulling the rope/wire | Immediate emergency stop of conveyor drive motor. Conveyor cannot restart until EPC is reset and root cause investigated. ; Belt Sway Switch (BSW) | Both sides, spaced every 50–75 m along carry and return strand | Detects lateral drift of the belt beyond a set limit. Has two positions: first position = alarm; second position = trip. | First activation: Alarm in control room. Second (greater drift): Conveyor trip. Prevents belt edge from contacting steel structure. ; Zero Speed Switch (ZSS) | Tail pulley shaft or on a return idler | Monitors belt speed. Detects if the belt has stopped (zero speed) while the motor is still running — indicating belt slip. | Conveyor trip + alarm.",
+        "citation": "[Safety Device Reference Guide, concept: safety-device-reference-guide]"
+      },
+      {
+        "id": "bace41e2d3e501f79db89fcdc433ff8c",
+        "title": "Safety & Hazard Awareness",
+        "concept_id": "safety-hazard-awareness",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "excerpt": "Safety & Hazard Awareness Moving machinery + bulk material + confined spaces = continuous risk. Most conveyor accidents happen not because of complexity but because someone was not aware of where the danger was. You do not need to be doing anything wrong to be injured near a conveyor. You simply need to be in the wrong place, distracted, or unaware of what is moving around you. The conveyor does not slow down for you. It does not have a sensor that detects a human body near it. It will continue running at full speed regardless. Your awareness is your protection. MOVING BELT (entire length is a hazard) TAIL PULLEY 🔴 PINCH ZONE Entanglement risk DRIVE PULLEY 🔴 PINCH + NIP ZONE High-torque crush risk 🟠 FEED POINT Impact hazard Dust cloud 🟠 TRANSFER POINT Spillage, blockage Confined space 🟡 BELT SURFACE Never touch/step on moving belt 🟡 Return strand — carryback coal falls here — slip hazard below ☁ Dust cloud ☁ Dust cloud ━━━ Emergency Pull Cord (full length) — Pull anywhere to STOP conve...",
+        "citation": "[Safety & Hazard Awareness, concept: safety-hazard-awareness]"
+      }
+    ],
+    "key_image_evidence": [
+      {
+        "id": "3e7c62783eb6e7f828ad7dbf68049848",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Instrumentation & Safety Devices on the Conveyor. Caption: Fig S1 – Instrumentation and safety devices positioned along a typical CHP belt conveyor. Visible labels: MOVING BELT; TAIL; PULLEY; DRIVE; M; ━━ EMERGENCY PULL CORD (Both Sides, Full Length) ━━; EPC; BSW; Belt Sway; Switch; ZSS; SPD; Zero Speed /; Underspeed Switch; BW; WEIGH; Belt Weigher; (Load cell); CBD; CHUTE; Chute Blocked; Detector; 🔥; Thermal/; Fire Detector; Return Strand; EPC = Emergency Pull Cord; BSW = Belt Sway Switch; ZSS = Zero Speed Switch; BW = Belt Weigher; CBD = Chute Blocked Detector; 🔥 = Fire Detector. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "citation": "[Instrumentation & Safety Devices on the Conveyor, concept: instrumentation-safety-devices-on-the-conveyor]"
+      },
+      {
+        "id": "b584f7e7468a707f0315f82a24bff78f",
+        "title": "Your First Site Visit – What to Observe & What to Look For",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "description": "Diagram under: Your First Site Visit – What to Observe & What to Look For. Caption: Fig SV1 – Recommended observation sequence for a trainee's first conveyor walk. Visible labels: Site Visit Observation Sequence – Walk the Conveyor Like an Engineer; STEP 1; Start at the; Feed Point (Tail End); Observe loading; STEP 2; Walk Along One; Side of Belt; Check belt & idlers; STEP 3; Observe Drive /; Head End; Check discharge; STEP 4; Look at Safety; Devices; EPC, sway switches; STEP 5; Visit Transfer; Tower (outside); Observe from safe zone; STEP 6 – REFLECT & REPORT; Note all abnormalities observed.; Discuss with supervisor. NEVER; act on abnormalities independently.; ⛔ NEVER do this on your first visit:; Do not touch, adjust, or interfere with any equipment — observe only.. Context: Belt Conveyor Operation / Belt_Conveyor_L1_Course_COMPLETE.html.",
+        "citation": "[Your First Site Visit – What to Observe & What to Look For, concept: your-first-site-visit-what-to-observe-what-to-look-for]"
+      }
+    ],
+    "key_relations": [
+      {
+        "relation_id": "4517edbaa83e1fb1f2371e87cc8b2c17",
+        "source_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "target_id": "safe-access-and-working-conditions-ensured",
+        "relation_type": "has_control_point",
+        "description": "Ensure safe access and working conditions around conveyor has control point Safe access and working conditions ensured.",
+        "graph_relevance_score": 0.437397041618824
+      },
+      {
+        "relation_id": "fdb0f7bd4aea205ed8e69ccc33950667",
+        "source_id": "ensure-safe-maintenance-procedures",
+        "target_id": "ensure-safe-access-and-working-conditions-around-conveyor",
+        "relation_type": "has_task",
+        "description": "Ensure safe maintenance procedures has task Ensure safe access and working conditions around conveyor.",
+        "graph_relevance_score": 0.412397041618824
+      }
+    ],
+    "source_references": [
+      {
+        "id": "c19f5246effdbb5c435a13fa4bd4799d",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor"
+      },
+      {
+        "id": "21a17a41b519a584208799bf74b6c6ad",
+        "title": "Transfer Points & Flow Behaviour",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "transfer-points-flow-behaviour"
+      },
+      {
+        "id": "e06e9b097093c20cbaba9c526236db29",
+        "title": "What Can Go Wrong at a Transfer Point",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "what-can-go-wrong-at-a-transfer-point"
+      },
+      {
+        "id": "0ac4d27c0200a781b5be58f53eeb5584",
+        "title": "Safety Device Reference Guide",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "safety-device-reference-guide"
+      },
+      {
+        "id": "bace41e2d3e501f79db89fcdc433ff8c",
+        "title": "Safety & Hazard Awareness",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "safety-hazard-awareness"
+      },
+      {
+        "id": "3e7c62783eb6e7f828ad7dbf68049848",
+        "title": "Instrumentation & Safety Devices on the Conveyor",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "instrumentation-safety-devices-on-the-conveyor"
+      },
+      {
+        "id": "b584f7e7468a707f0315f82a24bff78f",
+        "title": "Your First Site Visit – What to Observe & What to Look For",
+        "source_file": "Belt_Conveyor_L1_Course_COMPLETE.html",
+        "concept_id": "your-first-site-visit-what-to-observe-what-to-look-for"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": true,
+      "weaknesses": []
+    }
+  },
+  "compression_metadata": {
+    "mode": "extractive",
+    "max_text_evidence": 5,
+    "max_image_evidence": 2,
+    "max_relations": 6,
+    "max_excerpt_chars": 1000
+  }
+}

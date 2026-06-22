@@ -1,0 +1,1402 @@
+{
+  "source_file": "track_hopper_feeder_L2_course.html",
+  "nested_json": {
+    "title": "Track Hopper Feeder | L2 Preparedness Course",
+    "content": "",
+    "children": [
+      {
+        "title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "content": "You have completed L1 — you know what the system is and why it matters. This course prepares you for the next stage: assisted execution . You will work alongside a supervisor, observe, support, and learn to read what the system is telling you. Skill 1 Assist in Starting and Stopping Feeder Skill 2 Assist in Inspecting Coal at Feeder Input Mode Supervised execution only Pre-req L1 Wagon Tippler completed",
+        "children": [
+          {
+            "title": "The Track Hopper Feeder — A Quick Refresh",
+            "content": "You learned in L1 that coal discharged from the Wagon Tippler falls into the Underground Hopper. The Track Hopper Feeder is the device that meters coal from the bottom of that hopper onto the downstream belt conveyor at a controlled, steady rate. There are two main types you will encounter in Indian thermal power plants: WAGON tippled HOPPER FEEDER ★ THIS COURSE BELT CONVEYOR CRUSHER HOUSE COAL BUNKER / STOCK MILL → BOILER GENERATION POSITION OF FEEDER IN COAL FLOW CHAIN Every tonne through the boiler passes through this feeder first",
+            "children": [
+              {
+                "title": "Two Feeder Types You Will Encounter",
+                "content": "Uses electromagnetic or mechanical vibration to move coal along a trough. Simpler design, lower maintenance, well-suited to fine coal. Flow rate is adjusted by changing vibration amplitude or frequency. Common at: smaller CHP installations, older plants Uses a slow-moving steel apron or rubber belt to carry coal from the hopper outlet. Handles larger lumps and heavier material well. Flow rate controlled by feeder speed and a slide gate above. Common at: large-capacity plants, high-throughput systems",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-two-feeder-types-you-will-encounter",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "The Track Hopper Feeder — A Quick Refresh"
+              }
+            ],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Execution Block 1: Feeder Start Sequence",
+            "content": "",
+            "children": [
+              {
+                "title": "What Happens When the Feeder Starts",
+                "content": "0 FEEDER START CMD supervisor initiates ~5s MOTOR ACCELERATES observe sound/vibration ~15s FIRST COAL HITS BELT observation window opens ~1min STEADY STATE FLOW confirm normal operation cont. PERIODIC MONITORING rounds every shift",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 1: Feeder Start Sequence"
+              },
+              {
+                "title": "Control Point 1 — Pre-Start System Readiness Check",
+                "content": "The downstream belt conveyor must be confirmed running and at the correct speed before feeder start is commanded. This confirmation comes from the control room or from the supervisor who has checked belt status on the SCADA/PLC system. As a trainee, you do not have the authority or system access to confirm belt status — this is a supervisor action. Your role: Stand at the feeder local panel area, observe the feeder visually, and listen for the supervisor's instruction to proceed. Do not touch the start pushbutton unless specifically directed. Before start, the hopper should have sufficient coal to sustain initial flow. You can assist by checking the hopper level indicator (if visible locally) or reading the level gauge and reporting the reading to your supervisor. Low hopper level may cause intermittent feeding — important to note before starting. What to report: Hopper level reading. Presence of any blockage at the hopper throat. Any unusual odours or visible smoke from the hopper area (can indicate spontaneous combustion). Confirm that no personnel are in the feeder zone — under the feeder trough, near the discharge end, or inside the underground hopper area. Both you and your supervisor walk the immediate zone before any start command is issued. This is a procedural safety step and is never skipped regardless of time pressure.",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-control-point-1-pre-start-system-readiness-check",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 1: Feeder Start Sequence"
+              },
+              {
+                "title": "Control Point 2 — Initial Coal Flow Observation Window",
+                "content": "Coal begins flowing steadily from the feeder outlet — no surging, no sudden large lumps, no gaps in flow OBSERVE Feeder drive motor sound is smooth and consistent — no grinding, banging, or cyclical thumping LISTEN Coal falls centrally on the belt at the transfer point — not to one side (which causes belt mis-tracking) OBSERVE No unusual coal dust cloud beyond normal — excessive dust at startup indicates high coal velocity or faulty dust suppression OBSERVE Feeder ampere reading (motor current) is within normal range — supervisor confirms on SCADA; high current at startup can indicate blockage or material jam SUPERVISOR Belt load cell / weigh feeder reading is increasing normally — supervisor confirms material is being placed on belt as expected SUPERVISOR",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-control-point-2-initial-coal-flow-observation-window",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 1: Feeder Start Sequence"
+              }
+            ],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-execution-block-1-feeder-start-sequence",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Execution Block 2: Feeder Stop Sequence",
+            "content": "",
+            "children": [
+              {
+                "title": "System Behaviour During a Stop — The Inertia Window",
+                "content": "TIME → FLOW RATE STOP CMD INERTIA ZONE 10–30 seconds coal still flowing Actual feeder output Belt \"expectation\"",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 2: Feeder Stop Sequence"
+              },
+              {
+                "title": "Planned Stop vs Emergency Stop — Know the Difference",
+                "content": "",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-planned-stop-vs-emergency-stop-know-the-difference",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 2: Feeder Stop Sequence"
+              },
+              {
+                "title": "Control Point 3 — Assisted Stop Under Live Load",
+                "content": "Supervisor confirms downstream belt will continue running for the clearing period after feeder stop — this is non-negotiable SUPERVISOR You observe the feeder discharge end — watch for the coal tail-off: flow should reduce progressively, not cut off with a sudden material surge OBSERVE Watch the transfer point on the belt — coal should spread evenly during tail-off, not pile up on one edge OBSERVE Feeder motor sound should reduce smoothly to silence — an abnormal grinding or metallic sound during deceleration is a warning sign to report immediately LISTEN Hopper throat gate closure (if applicable) — commanded by supervisor before or at stop to limit residual flow SUPERVISOR After motor stops: both trainee and supervisor confirm the feeder is stationary before anyone approaches the feeder for inspection JOINT",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-control-point-3-assisted-stop-under-live-load",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 2: Feeder Stop Sequence"
+              }
+            ],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-execution-block-2-feeder-stop-sequence",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Execution Block 3: Coal Inspection at Feeder Input",
+            "content": "",
+            "children": [
+              {
+                "title": "What You Are Inspecting and Why",
+                "content": "",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-what-you-are-inspecting-and-why",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 3: Coal Inspection at Feeder Input"
+              },
+              {
+                "title": "Coal Size Assessment — Why It Matters Here",
+                "content": "The feeder is designed to handle coal up to a maximum lump size — typically 150mm–300mm depending on the feeder type and downstream crusher capacity. Coal that exceeds this size causes:",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-coal-size-assessment-why-it-matters-here",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 3: Coal Inspection at Feeder Input"
+              },
+              {
+                "title": "Inspection Safety Rules",
+                "content": "",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-inspection-safety-rules",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Execution Block 3: Coal Inspection at Feeder Input"
+              }
+            ],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-execution-block-3-coal-inspection-at-feeder-input",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Observation Windows — Reading System Behaviour",
+            "content": "A large part of your value as an L2 learner is your presence on the floor . Instruments are not everywhere, and local observation is a genuine layer of protection. Knowing what normal looks like is the only way to recognise abnormal.",
+            "children": [
+              {
+                "title": "Normal vs. Abnormal — Quick Reference",
+                "content": "What You Are Watching | Normal Condition | Early Warning | Act ; Coal flow from feeder outlet | Steady, continuous, even width | Pulsing, gaps, surges | REPORT ; Coal landing on belt | Centred, consistent pile height | Displaced to one side | REPORT ; Feeder motor sound | Smooth, consistent hum | Thumping, grinding, cyclical sound | REPORT IMMEDIATELY ; Feeder trough vibration | Even vibration (vibratory type) or smooth movement (apron type) | Irregular, jerky, or hammering vibration | REPORT ; Dust levels at feeder | Low; water mist visible from suppression | Dust cloud increasing; mist absent | REPORT ; Coal smell | Normal fresh coal odour | Burning or acrid smell | REPORT IMMEDIATELY ; Motor casing temperature | Warm to back of hand — not hot | Hot — cannot hold hand near casing | REPORT IMMEDIATELY ; Belt tracking at transfer point | Belt running centrally on idlers | Belt drifting to one side | REPORT ; Hopper throat area | Open, coal freely moving downward | Coal bridging / arch forming | REPORT IMMEDIATELY",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-normal-vs-abnormal-quick-reference",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Observation Windows — Reading System Behaviour"
+              }
+            ],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-observation-windows-reading-system-behaviour",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Common Mistakes in Assisted Execution",
+            "content": "These are the execution errors that occur most often among trainees during their first supervised interactions with feeder systems. They are not listed to make you nervous — they are listed so you recognise the pattern if you start heading toward it. Mistake | Why It Happens | Consequence | Severity ; Touching the start button before supervisor confirms system readiness | Eagerness to help; mistaking presence of button for permission to use it | Feeder starts before downstream belt is ready; spillage or belt trip | HIGH ; Standing in the coal discharge fall zone during observation | Wanting a better viewing angle; not knowing the designated safe observation point | Coal impact injury; coal dust inhalation; being caught in moving material | HIGH ; Treating inspection as a quick visual pass — not pausing to observe carefully | Time pressure; assumption that nothing will be wrong | Hazardous material (tramp iron, oversized coal) enters the system undetected | HIGH ; Not reporting an early warning condition because \"it seems minor\" | Self-doubt; not wanting to raise a false alarm; not knowing what normal is | Small issues become failures; early warning missed means later incident | HIGH ; Walking away from the feeder during the post-start observation window | Feeling that once it starts, the job is done | Abnormal behaviour in the first 60 seconds goes undetected | MEDIUM ; Not accounting for inertia during a stop — assuming coal stops when the motor stops | Intuition from everyday experience (switches turn things off instantly) | Misreads the discharge end as clear when coal is still flowing; wrong report | MEDIUM ; Attempting to remove obstruction from the feeder trough | Wanting to solve the problem; not wanting to slow things down | Entanglement injury; crush injury; falls into trough | CRITICAL / FATAL",
+            "children": [],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-common-mistakes-in-assisted-execution",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Failure Cases — Learn from What Went Wrong",
+            "content": "These cases are drawn from real failure scenarios in coal handling plant environments. The details have been presented as learning cases. Read each case as if you were the trainee in that situation.",
+            "children": [],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-failure-cases-learn-from-what-went-wrong",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Risk Summary — Three Dimensions",
+            "content": "Risk Dimension | Trigger Scenario | Potential Consequence | Severity ; Plant Continuity | Feeder trip during peak coal demand; blockage of hopper throat; belt damage from mis-tracking | Downstream conveyor starvation → bunker depletion → mill trip → unit derate. In a tight coal stock situation, even a 2-hour feeder outage can force load reduction. | HIGH ; Machinery Integrity | Tramp iron through feeder; oversized lump blocking apron chain; uncontrolled start/stop loading belt | Feeder chain/pan damage requiring replacement; belt edge damage from mis-tracking; crusher tooth breakage from oversized material. Repair downtime: hours to days. | HIGH ; Human Safety | Approach to running feeder zone without clearance; attempt to clear blockage manually; entry into hopper area without LOTO; ignoring burning smell | Entanglement in moving feeder mechanism; coal burial in hopper; burn injury from spontaneous combustion; respiratory injury from coal dust. Consequences are potentially fatal. | CRITICAL",
+            "children": [],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-risk-summary-three-dimensions",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          },
+          {
+            "title": "Your Role Boundary — What L2 Means in Practice",
+            "content": "",
+            "children": [
+              {
+                "title": "What You Should Be Ready to Do — Under Supervision",
+                "content": "",
+                "children": [],
+                "level": 3,
+                "section_id": "track_hopper_feeder_L2_course-what-you-should-be-ready-to-do-under-supervision",
+                "source_file": "track_hopper_feeder_L2_course.html",
+                "parent_title": "Your Role Boundary — What L2 Means in Practice"
+              }
+            ],
+            "level": 2,
+            "section_id": "track_hopper_feeder_L2_course-your-role-boundary-what-l2-means-in-practice",
+            "source_file": "track_hopper_feeder_L2_course.html",
+            "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+          }
+        ],
+        "level": 1,
+        "section_id": "track_hopper_feeder_L2_course-track-hopper-feeder-start-stop-inspection-under-supervision",
+        "source_file": "track_hopper_feeder_L2_course.html",
+        "parent_title": "Track Hopper Feeder | L2 Preparedness Course"
+      }
+    ],
+    "level": 0,
+    "section_id": "track-hopper-feeder-l2-preparedness-course",
+    "source_file": "track_hopper_feeder_L2_course.html",
+    "parent_title": null
+  },
+  "text_chunks": [
+    {
+      "title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "parent_title": "Track Hopper Feeder | L2 Preparedness Course",
+      "content": "Track Hopper Feeder Start, Stop & Inspection under Supervision You have completed L1 — you know what the system is and why it matters. This course prepares you for the next stage: assisted execution . You will work alongside a supervisor, observe, support, and learn to read what the system is telling you. Skill 1 Assist in Starting and Stopping Feeder Skill 2 Assist in Inspecting Coal at Feeder Input Mode Supervised execution only Pre-req L1 Wagon Tippler completed",
+      "section_id": "track_hopper_feeder_L2_course-track-hopper-feeder-start-stop-inspection-under-supervision",
+      "concept_id": "track-hopper-feeder-start-stop-inspection-under-supervision",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "level": 1,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+      ],
+      "child_titles": [
+        "The Track Hopper Feeder — A Quick Refresh",
+        "Execution Block 1: Feeder Start Sequence",
+        "Execution Block 2: Feeder Stop Sequence",
+        "Execution Block 3: Coal Inspection at Feeder Input",
+        "Observation Windows — Reading System Behaviour",
+        "Common Mistakes in Assisted Execution",
+        "Failure Cases — Learn from What Went Wrong",
+        "Risk Summary — Three Dimensions",
+        "Your Role Boundary — What L2 Means in Practice"
+      ]
+    },
+    {
+      "title": "The Track Hopper Feeder — A Quick Refresh",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "content": "The Track Hopper Feeder — A Quick Refresh You learned in L1 that coal discharged from the Wagon Tippler falls into the Underground Hopper. The Track Hopper Feeder is the device that meters coal from the bottom of that hopper onto the downstream belt conveyor at a controlled, steady rate. There are two main types you will encounter in Indian thermal power plants: WAGON tippled HOPPER FEEDER ★ THIS COURSE BELT CONVEYOR CRUSHER HOUSE COAL BUNKER / STOCK MILL → BOILER GENERATION POSITION OF FEEDER IN COAL FLOW CHAIN Every tonne through the boiler passes through this feeder first",
+      "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+      "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "level": 2,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "The Track Hopper Feeder — A Quick Refresh"
+      ],
+      "child_titles": [
+        "Two Feeder Types You Will Encounter"
+      ]
+    },
+    {
+      "title": "Two Feeder Types You Will Encounter",
+      "parent_title": "The Track Hopper Feeder — A Quick Refresh",
+      "content": "Two Feeder Types You Will Encounter Uses electromagnetic or mechanical vibration to move coal along a trough. Simpler design, lower maintenance, well-suited to fine coal. Flow rate is adjusted by changing vibration amplitude or frequency. Common at: smaller CHP installations, older plants Uses a slow-moving steel apron or rubber belt to carry coal from the hopper outlet. Handles larger lumps and heavier material well. Flow rate controlled by feeder speed and a slide gate above. Common at: large-capacity plants, high-throughput systems",
+      "section_id": "track_hopper_feeder_L2_course-two-feeder-types-you-will-encounter",
+      "concept_id": "two-feeder-types-you-will-encounter",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "The Track Hopper Feeder — A Quick Refresh",
+        "Two Feeder Types You Will Encounter"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "What Happens When the Feeder Starts",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "content": "What Happens When the Feeder Starts 0 FEEDER START CMD supervisor initiates ~5s MOTOR ACCELERATES observe sound/vibration ~15s FIRST COAL HITS BELT observation window opens ~1min STEADY STATE FLOW confirm normal operation cont. PERIODIC MONITORING rounds every shift",
+      "section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+      "concept_id": "what-happens-when-the-feeder-starts",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Execution Block 1: Feeder Start Sequence",
+        "What Happens When the Feeder Starts"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Control Point 1 — Pre-Start System Readiness Check",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "content": "Control Point 1 — Pre-Start System Readiness Check The downstream belt conveyor must be confirmed running and at the correct speed before feeder start is commanded. This confirmation comes from the control room or from the supervisor who has checked belt status on the SCADA/PLC system. As a trainee, you do not have the authority or system access to confirm belt status — this is a supervisor action. Your role: Stand at the feeder local panel area, observe the feeder visually, and listen for the supervisor's instruction to proceed. Do not touch the start pushbutton unless specifically directed. Before start, the hopper should have sufficient coal to sustain initial flow. You can assist by checking the hopper level indicator (if visible locally) or reading the level gauge and reporting the reading to your supervisor. Low hopper level may cause intermittent feeding — important to note before starting. What to report: Hopper level reading. Presence of any blockage at the hopper throat. Any unusual odours or visible smoke from the hopper area (can indicate spontaneous combustion). Confirm that no personnel are in the feeder zone — under the feeder trough, near the discharge end, or inside the underground hopper area. Both you and your supervisor walk the immediate zone before any start command is issued. This is a procedural safety step and is never skipped regardless of time pressure.",
+      "section_id": "track_hopper_feeder_L2_course-control-point-1-pre-start-system-readiness-check",
+      "concept_id": "control-point-1-pre-start-system-readiness-check",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Execution Block 1: Feeder Start Sequence",
+        "Control Point 1 — Pre-Start System Readiness Check"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Control Point 2 — Initial Coal Flow Observation Window",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "content": "Control Point 2 — Initial Coal Flow Observation Window Coal begins flowing steadily from the feeder outlet — no surging, no sudden large lumps, no gaps in flow OBSERVE Feeder drive motor sound is smooth and consistent — no grinding, banging, or cyclical thumping LISTEN Coal falls centrally on the belt at the transfer point — not to one side (which causes belt mis-tracking) OBSERVE No unusual coal dust cloud beyond normal — excessive dust at startup indicates high coal velocity or faulty dust suppression OBSERVE Feeder ampere reading (motor current) is within normal range — supervisor confirms on SCADA; high current at startup can indicate blockage or material jam SUPERVISOR Belt load cell / weigh feeder reading is increasing normally — supervisor confirms material is being placed on belt as expected SUPERVISOR",
+      "section_id": "track_hopper_feeder_L2_course-control-point-2-initial-coal-flow-observation-window",
+      "concept_id": "control-point-2-initial-coal-flow-observation-window",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Execution Block 1: Feeder Start Sequence",
+        "Control Point 2 — Initial Coal Flow Observation Window"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "System Behaviour During a Stop — The Inertia Window",
+      "parent_title": "Execution Block 2: Feeder Stop Sequence",
+      "content": "System Behaviour During a Stop — The Inertia Window TIME → FLOW RATE STOP CMD INERTIA ZONE 10–30 seconds coal still flowing Actual feeder output Belt \"expectation\"",
+      "section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+      "concept_id": "system-behaviour-during-a-stop-the-inertia-window",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Execution Block 2: Feeder Stop Sequence",
+        "System Behaviour During a Stop — The Inertia Window"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Control Point 3 — Assisted Stop Under Live Load",
+      "parent_title": "Execution Block 2: Feeder Stop Sequence",
+      "content": "Control Point 3 — Assisted Stop Under Live Load Supervisor confirms downstream belt will continue running for the clearing period after feeder stop — this is non-negotiable SUPERVISOR You observe the feeder discharge end — watch for the coal tail-off: flow should reduce progressively, not cut off with a sudden material surge OBSERVE Watch the transfer point on the belt — coal should spread evenly during tail-off, not pile up on one edge OBSERVE Feeder motor sound should reduce smoothly to silence — an abnormal grinding or metallic sound during deceleration is a warning sign to report immediately LISTEN Hopper throat gate closure (if applicable) — commanded by supervisor before or at stop to limit residual flow SUPERVISOR After motor stops: both trainee and supervisor confirm the feeder is stationary before anyone approaches the feeder for inspection JOINT",
+      "section_id": "track_hopper_feeder_L2_course-control-point-3-assisted-stop-under-live-load",
+      "concept_id": "control-point-3-assisted-stop-under-live-load",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Execution Block 2: Feeder Stop Sequence",
+        "Control Point 3 — Assisted Stop Under Live Load"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Coal Size Assessment — Why It Matters Here",
+      "parent_title": "Execution Block 3: Coal Inspection at Feeder Input",
+      "content": "Coal Size Assessment — Why It Matters Here The feeder is designed to handle coal up to a maximum lump size — typically 150mm–300mm depending on the feeder type and downstream crusher capacity. Coal that exceeds this size causes:",
+      "section_id": "track_hopper_feeder_L2_course-coal-size-assessment-why-it-matters-here",
+      "concept_id": "coal-size-assessment-why-it-matters-here",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Execution Block 3: Coal Inspection at Feeder Input",
+        "Coal Size Assessment — Why It Matters Here"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Observation Windows — Reading System Behaviour",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "content": "Observation Windows — Reading System Behaviour A large part of your value as an L2 learner is your presence on the floor . Instruments are not everywhere, and local observation is a genuine layer of protection. Knowing what normal looks like is the only way to recognise abnormal.",
+      "section_id": "track_hopper_feeder_L2_course-observation-windows-reading-system-behaviour",
+      "concept_id": "observation-windows-reading-system-behaviour",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "level": 2,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Observation Windows — Reading System Behaviour"
+      ],
+      "child_titles": [
+        "Normal vs. Abnormal — Quick Reference"
+      ]
+    },
+    {
+      "title": "Normal vs. Abnormal — Quick Reference",
+      "parent_title": "Observation Windows — Reading System Behaviour",
+      "content": "Normal vs. Abnormal — Quick Reference What You Are Watching | Normal Condition | Early Warning | Act ; Coal flow from feeder outlet | Steady, continuous, even width | Pulsing, gaps, surges | REPORT ; Coal landing on belt | Centred, consistent pile height | Displaced to one side | REPORT ; Feeder motor sound | Smooth, consistent hum | Thumping, grinding, cyclical sound | REPORT IMMEDIATELY ; Feeder trough vibration | Even vibration (vibratory type) or smooth movement (apron type) | Irregular, jerky, or hammering vibration | REPORT ; Dust levels at feeder | Low; water mist visible from suppression | Dust cloud increasing; mist absent | REPORT ; Coal smell | Normal fresh coal odour | Burning or acrid smell | REPORT IMMEDIATELY ; Motor casing temperature | Warm to back of hand — not hot | Hot — cannot hold hand near casing | REPORT IMMEDIATELY ; Belt tracking at transfer point | Belt running centrally on idlers | Belt drifting to one side | REPORT ; Hopper throat area | Open, coal freely moving downward | Coal bridging / arch forming | REPORT IMMEDIATELY",
+      "section_id": "track_hopper_feeder_L2_course-normal-vs-abnormal-quick-reference",
+      "concept_id": "normal-vs-abnormal-quick-reference",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "level": 3,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Observation Windows — Reading System Behaviour",
+        "Normal vs. Abnormal — Quick Reference"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Common Mistakes in Assisted Execution",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "content": "Common Mistakes in Assisted Execution These are the execution errors that occur most often among trainees during their first supervised interactions with feeder systems. They are not listed to make you nervous — they are listed so you recognise the pattern if you start heading toward it. Mistake | Why It Happens | Consequence | Severity ; Touching the start button before supervisor confirms system readiness | Eagerness to help; mistaking presence of button for permission to use it | Feeder starts before downstream belt is ready; spillage or belt trip | HIGH ; Standing in the coal discharge fall zone during observation | Wanting a better viewing angle; not knowing the designated safe observation point | Coal impact injury; coal dust inhalation; being caught in moving material | HIGH ; Treating inspection as a quick visual pass — not pausing to observe carefully | Time pressure; assumption that nothing will be wrong | Hazardous material (tramp iron, oversized coal) enters the system undetected | HIGH ; Not reporting an early warning condition because \"it seems minor\" | Self-doubt; not wanting to raise a false alarm; not knowing what normal is | Small issues become failures; early warning missed means later incident | HIGH ; Walking away from the feeder during the post-start observation window | Feeling that once it starts, the job is done | Abnormal behaviour in the first 60 seconds goes undetected | MEDIUM ; Not accounting for inertia during a stop — assuming coal stops when the motor stops | Intuition from everyday experience (switches turn things off instantly) | Misreads the discharge end as clear when coal is still flowing; wrong report | MEDIUM ; Attempting to remove obstruction from the feeder trough | Wanting to solve the problem; not wanting to slow things down | Entanglement injury; crush injury; falls into trough | CRITICAL / FATAL",
+      "section_id": "track_hopper_feeder_L2_course-common-mistakes-in-assisted-execution",
+      "concept_id": "common-mistakes-in-assisted-execution",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "level": 2,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Common Mistakes in Assisted Execution"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Failure Cases — Learn from What Went Wrong",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "content": "Failure Cases — Learn from What Went Wrong These cases are drawn from real failure scenarios in coal handling plant environments. The details have been presented as learning cases. Read each case as if you were the trainee in that situation.",
+      "section_id": "track_hopper_feeder_L2_course-failure-cases-learn-from-what-went-wrong",
+      "concept_id": "failure-cases-learn-from-what-went-wrong",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "level": 2,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Failure Cases — Learn from What Went Wrong"
+      ],
+      "child_titles": []
+    },
+    {
+      "title": "Risk Summary — Three Dimensions",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "content": "Risk Summary — Three Dimensions Risk Dimension | Trigger Scenario | Potential Consequence | Severity ; Plant Continuity | Feeder trip during peak coal demand; blockage of hopper throat; belt damage from mis-tracking | Downstream conveyor starvation → bunker depletion → mill trip → unit derate. In a tight coal stock situation, even a 2-hour feeder outage can force load reduction. | HIGH ; Machinery Integrity | Tramp iron through feeder; oversized lump blocking apron chain; uncontrolled start/stop loading belt | Feeder chain/pan damage requiring replacement; belt edge damage from mis-tracking; crusher tooth breakage from oversized material. Repair downtime: hours to days. | HIGH ; Human Safety | Approach to running feeder zone without clearance; attempt to clear blockage manually; entry into hopper area without LOTO; ignoring burning smell | Entanglement in moving feeder mechanism; coal burial in hopper; burn injury from spontaneous combustion; respiratory injury from coal dust. Consequences are potentially fatal. | CRITICAL",
+      "section_id": "track_hopper_feeder_L2_course-risk-summary-three-dimensions",
+      "concept_id": "risk-summary-three-dimensions",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "level": 2,
+      "breadcrumb": [
+        "Track Hopper Feeder | L2 Preparedness Course",
+        "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+        "Risk Summary — Three Dimensions"
+      ],
+      "child_titles": []
+    }
+  ],
+  "image_chunks": [
+    {
+      "image_id": "0b5d0ed61fb6eecf7ac122edafd2a301",
+      "description": "Diagram under: The Track Hopper Feeder — A Quick Refresh. Visible labels: WAGON; tippled; HOPPER; FEEDER; ★ THIS COURSE; BELT CONVEYOR; CRUSHER; HOUSE; COAL BUNKER; / STOCK; MILL → BOILER; GENERATION; POSITION OF FEEDER IN COAL FLOW CHAIN; Every tonne through the boiler passes through this feeder first. Context: Track Hopper Feeder Start, Stop & Inspection under Supervision / track_hopper_feeder_L2_course.html.",
+      "title": "The Track Hopper Feeder — A Quick Refresh",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+      "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "svg",
+      "metadata": {
+        "linked_text_section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+        "caption": "",
+        "svg_text_labels": [
+          "WAGON",
+          "tippled",
+          "HOPPER",
+          "FEEDER",
+          "★ THIS COURSE",
+          "BELT CONVEYOR",
+          "CRUSHER",
+          "HOUSE",
+          "COAL BUNKER",
+          "/ STOCK",
+          "MILL → BOILER",
+          "GENERATION",
+          "POSITION OF FEEDER IN COAL FLOW CHAIN",
+          "Every tonne through the boiler passes through this feeder first"
+        ],
+        "view_box": "0 0 820 200",
+        "order_in_file": 1,
+        "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 820 200\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"a2\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#c8520a\"></path> </marker> <marker id=\"a2b\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#1a4d7c\"></path> </marker> </defs> <!-- Wagon --> <rect fill=\"#2a3545\" height=\"40\" rx=\"3\" stroke=\"#4a5a6a\" stro",
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "The Track Hopper Feeder — A Quick Refresh"
+        ]
+      }
+    },
+    {
+      "image_id": "b1d501541d07464b6bc42997647e744f",
+      "description": "Diagram under: What Happens When the Feeder Starts. Visible labels: 0; FEEDER; START CMD; supervisor; initiates; ~5s; MOTOR; ACCELERATES; observe; sound/vibration; ~15s; FIRST COAL; HITS BELT; observation; window opens; ~1min; STEADY; STATE FLOW; confirm normal; operation; cont.; PERIODIC; MONITORING; rounds; every shift. Context: Execution Block 1: Feeder Start Sequence / track_hopper_feeder_L2_course.html.",
+      "title": "What Happens When the Feeder Starts",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "concept_id": "what-happens-when-the-feeder-starts",
+      "section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "svg",
+      "metadata": {
+        "linked_text_section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+        "caption": "",
+        "svg_text_labels": [
+          "0",
+          "FEEDER",
+          "START CMD",
+          "supervisor",
+          "initiates",
+          "~5s",
+          "MOTOR",
+          "ACCELERATES",
+          "observe",
+          "sound/vibration",
+          "~15s",
+          "FIRST COAL",
+          "HITS BELT",
+          "observation",
+          "window opens",
+          "~1min",
+          "STEADY",
+          "STATE FLOW",
+          "confirm normal",
+          "operation",
+          "cont.",
+          "PERIODIC",
+          "MONITORING",
+          "rounds",
+          "every shift"
+        ],
+        "view_box": "0 0 760 120",
+        "order_in_file": 2,
+        "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 760 120\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"af\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#c8520a\"></path> </marker> </defs> <!-- timeline bar --> <line stroke=\"#c8c2b4\" stroke-width=\"1.5\" x1=\"30\" x2=\"730\" y1=\"60\" y2=\"60\"></line> <!-- T=0 --> <circle cx=\"80\" cy=\"60\" fill=\"#c8520a\" r=\"10\"></circle> <text fill=\"#fff\" font-size=\"9\" text-anchor=",
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 1: Feeder Start Sequence",
+          "What Happens When the Feeder Starts"
+        ]
+      }
+    },
+    {
+      "image_id": "66ba4d62fe9aaba25e5c22ce6ff6a086",
+      "description": "Diagram under: System Behaviour During a Stop — The Inertia Window. Visible labels: TIME →; FLOW RATE; STOP CMD; INERTIA ZONE; 10–30 seconds; coal still flowing; Actual feeder output; Belt \"expectation\". Context: Execution Block 2: Feeder Stop Sequence / track_hopper_feeder_L2_course.html.",
+      "title": "System Behaviour During a Stop — The Inertia Window",
+      "parent_title": "Execution Block 2: Feeder Stop Sequence",
+      "concept_id": "system-behaviour-during-a-stop-the-inertia-window",
+      "section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "svg",
+      "metadata": {
+        "linked_text_section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+        "caption": "",
+        "svg_text_labels": [
+          "TIME →",
+          "FLOW RATE",
+          "STOP CMD",
+          "INERTIA ZONE",
+          "10–30 seconds",
+          "coal still flowing",
+          "Actual feeder output",
+          "Belt \"expectation\""
+        ],
+        "view_box": "0 0 700 140",
+        "order_in_file": 3,
+        "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 700 140\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- axes --> <line stroke=\"#c8c2b4\" stroke-width=\"1\" x1=\"40\" x2=\"680\" y1=\"110\" y2=\"110\"></line> <line stroke=\"#c8c2b4\" stroke-width=\"1\" x1=\"40\" x2=\"40\" y1=\"20\" y2=\"110\"></line> <text fill=\"#6b6656\" font-size=\"9\" text-anchor=\"middle\" x=\"360\" y=\"128\">TIME →</text> <text fill=\"#6b6656\" font-size=\"9\" text-anchor=\"middle\" transform=\"rotate(-90,14,65)\" x=\"14\" y=\"65\">FLOW RATE<",
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 2: Feeder Stop Sequence",
+          "System Behaviour During a Stop — The Inertia Window"
+        ]
+      }
+    }
+  ],
+  "relations": [],
+  "textchunk_objects": [
+    {
+      "id": "4d916c9c51c6dcb80ea66d0d22a6b76e",
+      "content": "Track Hopper Feeder Start, Stop & Inspection under Supervision You have completed L1 — you know what the system is and why it matters. This course prepares you for the next stage: assisted execution . You will work alongside a supervisor, observe, support, and learn to read what the system is telling you. Skill 1 Assist in Starting and Stopping Feeder Skill 2 Assist in Inspecting Coal at Feeder Input Mode Supervised execution only Pre-req L1 Wagon Tippler completed",
+      "title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "parent_title": "Track Hopper Feeder | L2 Preparedness Course",
+      "concept_id": "track-hopper-feeder-start-stop-inspection-under-supervision",
+      "section_id": "track_hopper_feeder_L2_course-track-hopper-feeder-start-stop-inspection-under-supervision",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "metadata": {
+        "level": 1,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+        ],
+        "child_titles": [
+          "The Track Hopper Feeder — A Quick Refresh",
+          "Execution Block 1: Feeder Start Sequence",
+          "Execution Block 2: Feeder Stop Sequence",
+          "Execution Block 3: Coal Inspection at Feeder Input",
+          "Observation Windows — Reading System Behaviour",
+          "Common Mistakes in Assisted Execution",
+          "Failure Cases — Learn from What Went Wrong",
+          "Risk Summary — Three Dimensions",
+          "Your Role Boundary — What L2 Means in Practice"
+        ],
+        "content_length": 469
+      }
+    },
+    {
+      "id": "45d12c2452583c7612b94abf87cf6566",
+      "content": "The Track Hopper Feeder — A Quick Refresh You learned in L1 that coal discharged from the Wagon Tippler falls into the Underground Hopper. The Track Hopper Feeder is the device that meters coal from the bottom of that hopper onto the downstream belt conveyor at a controlled, steady rate. There are two main types you will encounter in Indian thermal power plants: WAGON tippled HOPPER FEEDER ★ THIS COURSE BELT CONVEYOR CRUSHER HOUSE COAL BUNKER / STOCK MILL → BOILER GENERATION POSITION OF FEEDER IN COAL FLOW CHAIN Every tonne through the boiler passes through this feeder first",
+      "title": "The Track Hopper Feeder — A Quick Refresh",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+      "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "metadata": {
+        "level": 2,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "The Track Hopper Feeder — A Quick Refresh"
+        ],
+        "child_titles": [
+          "Two Feeder Types You Will Encounter"
+        ],
+        "content_length": 581
+      }
+    },
+    {
+      "id": "386e9dc0477267ea902429e65deed062",
+      "content": "Two Feeder Types You Will Encounter Uses electromagnetic or mechanical vibration to move coal along a trough. Simpler design, lower maintenance, well-suited to fine coal. Flow rate is adjusted by changing vibration amplitude or frequency. Common at: smaller CHP installations, older plants Uses a slow-moving steel apron or rubber belt to carry coal from the hopper outlet. Handles larger lumps and heavier material well. Flow rate controlled by feeder speed and a slide gate above. Common at: large-capacity plants, high-throughput systems",
+      "title": "Two Feeder Types You Will Encounter",
+      "parent_title": "The Track Hopper Feeder — A Quick Refresh",
+      "concept_id": "two-feeder-types-you-will-encounter",
+      "section_id": "track_hopper_feeder_L2_course-two-feeder-types-you-will-encounter",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "The Track Hopper Feeder — A Quick Refresh",
+          "Two Feeder Types You Will Encounter"
+        ],
+        "child_titles": [],
+        "content_length": 540
+      }
+    },
+    {
+      "id": "52f70b1b0f383332a2070152733110bd",
+      "content": "What Happens When the Feeder Starts 0 FEEDER START CMD supervisor initiates ~5s MOTOR ACCELERATES observe sound/vibration ~15s FIRST COAL HITS BELT observation window opens ~1min STEADY STATE FLOW confirm normal operation cont. PERIODIC MONITORING rounds every shift",
+      "title": "What Happens When the Feeder Starts",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "concept_id": "what-happens-when-the-feeder-starts",
+      "section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 1: Feeder Start Sequence",
+          "What Happens When the Feeder Starts"
+        ],
+        "child_titles": [],
+        "content_length": 266
+      }
+    },
+    {
+      "id": "1240e4139b5797546055106aa31330b4",
+      "content": "Control Point 1 — Pre-Start System Readiness Check The downstream belt conveyor must be confirmed running and at the correct speed before feeder start is commanded. This confirmation comes from the control room or from the supervisor who has checked belt status on the SCADA/PLC system. As a trainee, you do not have the authority or system access to confirm belt status — this is a supervisor action. Your role: Stand at the feeder local panel area, observe the feeder visually, and listen for the supervisor's instruction to proceed. Do not touch the start pushbutton unless specifically directed. Before start, the hopper should have sufficient coal to sustain initial flow. You can assist by checking the hopper level indicator (if visible locally) or reading the level gauge and reporting the reading to your supervisor. Low hopper level may cause intermittent feeding — important to note before starting. What to report: Hopper level reading. Presence of any blockage at the hopper throat. Any unusual odours or visible smoke from the hopper area (can indicate spontaneous combustion). Confirm that no personnel are in the feeder zone — under the feeder trough, near the discharge end, or inside the underground hopper area. Both you and your supervisor walk the immediate zone before any start command is issued. This is a procedural safety step and is never skipped regardless of time pressure.",
+      "title": "Control Point 1 — Pre-Start System Readiness Check",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "concept_id": "control-point-1-pre-start-system-readiness-check",
+      "section_id": "track_hopper_feeder_L2_course-control-point-1-pre-start-system-readiness-check",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 1: Feeder Start Sequence",
+          "Control Point 1 — Pre-Start System Readiness Check"
+        ],
+        "child_titles": [],
+        "content_length": 1402
+      }
+    },
+    {
+      "id": "34bc52067d5546e6b8633b72c3d2b435",
+      "content": "Control Point 2 — Initial Coal Flow Observation Window Coal begins flowing steadily from the feeder outlet — no surging, no sudden large lumps, no gaps in flow OBSERVE Feeder drive motor sound is smooth and consistent — no grinding, banging, or cyclical thumping LISTEN Coal falls centrally on the belt at the transfer point — not to one side (which causes belt mis-tracking) OBSERVE No unusual coal dust cloud beyond normal — excessive dust at startup indicates high coal velocity or faulty dust suppression OBSERVE Feeder ampere reading (motor current) is within normal range — supervisor confirms on SCADA; high current at startup can indicate blockage or material jam SUPERVISOR Belt load cell / weigh feeder reading is increasing normally — supervisor confirms material is being placed on belt as expected SUPERVISOR",
+      "title": "Control Point 2 — Initial Coal Flow Observation Window",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "concept_id": "control-point-2-initial-coal-flow-observation-window",
+      "section_id": "track_hopper_feeder_L2_course-control-point-2-initial-coal-flow-observation-window",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 1: Feeder Start Sequence",
+          "Control Point 2 — Initial Coal Flow Observation Window"
+        ],
+        "child_titles": [],
+        "content_length": 821
+      }
+    },
+    {
+      "id": "0366f4ad5911a67c06b8058613954e86",
+      "content": "System Behaviour During a Stop — The Inertia Window TIME → FLOW RATE STOP CMD INERTIA ZONE 10–30 seconds coal still flowing Actual feeder output Belt \"expectation\"",
+      "title": "System Behaviour During a Stop — The Inertia Window",
+      "parent_title": "Execution Block 2: Feeder Stop Sequence",
+      "concept_id": "system-behaviour-during-a-stop-the-inertia-window",
+      "section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 2: Feeder Stop Sequence",
+          "System Behaviour During a Stop — The Inertia Window"
+        ],
+        "child_titles": [],
+        "content_length": 163
+      }
+    },
+    {
+      "id": "35187015c2ead3efad83b22615a89f99",
+      "content": "Control Point 3 — Assisted Stop Under Live Load Supervisor confirms downstream belt will continue running for the clearing period after feeder stop — this is non-negotiable SUPERVISOR You observe the feeder discharge end — watch for the coal tail-off: flow should reduce progressively, not cut off with a sudden material surge OBSERVE Watch the transfer point on the belt — coal should spread evenly during tail-off, not pile up on one edge OBSERVE Feeder motor sound should reduce smoothly to silence — an abnormal grinding or metallic sound during deceleration is a warning sign to report immediately LISTEN Hopper throat gate closure (if applicable) — commanded by supervisor before or at stop to limit residual flow SUPERVISOR After motor stops: both trainee and supervisor confirm the feeder is stationary before anyone approaches the feeder for inspection JOINT",
+      "title": "Control Point 3 — Assisted Stop Under Live Load",
+      "parent_title": "Execution Block 2: Feeder Stop Sequence",
+      "concept_id": "control-point-3-assisted-stop-under-live-load",
+      "section_id": "track_hopper_feeder_L2_course-control-point-3-assisted-stop-under-live-load",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "procedure",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 2: Feeder Stop Sequence",
+          "Control Point 3 — Assisted Stop Under Live Load"
+        ],
+        "child_titles": [],
+        "content_length": 867
+      }
+    },
+    {
+      "id": "e347dce50eeec35107c1c56a10692e98",
+      "content": "Coal Size Assessment — Why It Matters Here The feeder is designed to handle coal up to a maximum lump size — typically 150mm–300mm depending on the feeder type and downstream crusher capacity. Coal that exceeds this size causes:",
+      "title": "Coal Size Assessment — Why It Matters Here",
+      "parent_title": "Execution Block 3: Coal Inspection at Feeder Input",
+      "concept_id": "coal-size-assessment-why-it-matters-here",
+      "section_id": "track_hopper_feeder_L2_course-coal-size-assessment-why-it-matters-here",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 3: Coal Inspection at Feeder Input",
+          "Coal Size Assessment — Why It Matters Here"
+        ],
+        "child_titles": [],
+        "content_length": 228
+      }
+    },
+    {
+      "id": "070da5ccd84377d06a4d42e8585f668f",
+      "content": "Observation Windows — Reading System Behaviour A large part of your value as an L2 learner is your presence on the floor . Instruments are not everywhere, and local observation is a genuine layer of protection. Knowing what normal looks like is the only way to recognise abnormal.",
+      "title": "Observation Windows — Reading System Behaviour",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "observation-windows-reading-system-behaviour",
+      "section_id": "track_hopper_feeder_L2_course-observation-windows-reading-system-behaviour",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "metadata": {
+        "level": 2,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Observation Windows — Reading System Behaviour"
+        ],
+        "child_titles": [
+          "Normal vs. Abnormal — Quick Reference"
+        ],
+        "content_length": 280
+      }
+    },
+    {
+      "id": "43ea720db361ae6067150baa4e149263",
+      "content": "Normal vs. Abnormal — Quick Reference What You Are Watching | Normal Condition | Early Warning | Act ; Coal flow from feeder outlet | Steady, continuous, even width | Pulsing, gaps, surges | REPORT ; Coal landing on belt | Centred, consistent pile height | Displaced to one side | REPORT ; Feeder motor sound | Smooth, consistent hum | Thumping, grinding, cyclical sound | REPORT IMMEDIATELY ; Feeder trough vibration | Even vibration (vibratory type) or smooth movement (apron type) | Irregular, jerky, or hammering vibration | REPORT ; Dust levels at feeder | Low; water mist visible from suppression | Dust cloud increasing; mist absent | REPORT ; Coal smell | Normal fresh coal odour | Burning or acrid smell | REPORT IMMEDIATELY ; Motor casing temperature | Warm to back of hand — not hot | Hot — cannot hold hand near casing | REPORT IMMEDIATELY ; Belt tracking at transfer point | Belt running centrally on idlers | Belt drifting to one side | REPORT ; Hopper throat area | Open, coal freely moving downward | Coal bridging / arch forming | REPORT IMMEDIATELY",
+      "title": "Normal vs. Abnormal — Quick Reference",
+      "parent_title": "Observation Windows — Reading System Behaviour",
+      "concept_id": "normal-vs-abnormal-quick-reference",
+      "section_id": "track_hopper_feeder_L2_course-normal-vs-abnormal-quick-reference",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "concept",
+      "metadata": {
+        "level": 3,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Observation Windows — Reading System Behaviour",
+          "Normal vs. Abnormal — Quick Reference"
+        ],
+        "child_titles": [],
+        "content_length": 1066
+      }
+    },
+    {
+      "id": "d5eac1cb5a663e999841fdbe95016f00",
+      "content": "Common Mistakes in Assisted Execution These are the execution errors that occur most often among trainees during their first supervised interactions with feeder systems. They are not listed to make you nervous — they are listed so you recognise the pattern if you start heading toward it. Mistake | Why It Happens | Consequence | Severity ; Touching the start button before supervisor confirms system readiness | Eagerness to help; mistaking presence of button for permission to use it | Feeder starts before downstream belt is ready; spillage or belt trip | HIGH ; Standing in the coal discharge fall zone during observation | Wanting a better viewing angle; not knowing the designated safe observation point | Coal impact injury; coal dust inhalation; being caught in moving material | HIGH ; Treating inspection as a quick visual pass — not pausing to observe carefully | Time pressure; assumption that nothing will be wrong | Hazardous material (tramp iron, oversized coal) enters the system undetected | HIGH ; Not reporting an early warning condition because \"it seems minor\" | Self-doubt; not wanting to raise a false alarm; not knowing what normal is | Small issues become failures; early warning missed means later incident | HIGH ; Walking away from the feeder during the post-start observation window | Feeling that once it starts, the job is done | Abnormal behaviour in the first 60 seconds goes undetected | MEDIUM ; Not accounting for inertia during a stop — assuming coal stops when the motor stops | Intuition from everyday experience (switches turn things off instantly) | Misreads the discharge end as clear when coal is still flowing; wrong report | MEDIUM ; Attempting to remove obstruction from the feeder trough | Wanting to solve the problem; not wanting to slow things down | Entanglement injury; crush injury; falls into trough | CRITICAL / FATAL",
+      "title": "Common Mistakes in Assisted Execution",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "common-mistakes-in-assisted-execution",
+      "section_id": "track_hopper_feeder_L2_course-common-mistakes-in-assisted-execution",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "metadata": {
+        "level": 2,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Common Mistakes in Assisted Execution"
+        ],
+        "child_titles": [],
+        "content_length": 1872
+      }
+    },
+    {
+      "id": "cfd2ed95fffccb4e85fd8e722ffe1b3f",
+      "content": "Failure Cases — Learn from What Went Wrong These cases are drawn from real failure scenarios in coal handling plant environments. The details have been presented as learning cases. Read each case as if you were the trainee in that situation.",
+      "title": "Failure Cases — Learn from What Went Wrong",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "failure-cases-learn-from-what-went-wrong",
+      "section_id": "track_hopper_feeder_L2_course-failure-cases-learn-from-what-went-wrong",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "metadata": {
+        "level": 2,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Failure Cases — Learn from What Went Wrong"
+        ],
+        "child_titles": [],
+        "content_length": 241
+      }
+    },
+    {
+      "id": "ce2834d4640b3e4a2c8fd63f119d112a",
+      "content": "Risk Summary — Three Dimensions Risk Dimension | Trigger Scenario | Potential Consequence | Severity ; Plant Continuity | Feeder trip during peak coal demand; blockage of hopper throat; belt damage from mis-tracking | Downstream conveyor starvation → bunker depletion → mill trip → unit derate. In a tight coal stock situation, even a 2-hour feeder outage can force load reduction. | HIGH ; Machinery Integrity | Tramp iron through feeder; oversized lump blocking apron chain; uncontrolled start/stop loading belt | Feeder chain/pan damage requiring replacement; belt edge damage from mis-tracking; crusher tooth breakage from oversized material. Repair downtime: hours to days. | HIGH ; Human Safety | Approach to running feeder zone without clearance; attempt to clear blockage manually; entry into hopper area without LOTO; ignoring burning smell | Entanglement in moving feeder mechanism; coal burial in hopper; burn injury from spontaneous combustion; respiratory injury from coal dust. Consequences are potentially fatal. | CRITICAL",
+      "title": "Risk Summary — Three Dimensions",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "risk-summary-three-dimensions",
+      "section_id": "track_hopper_feeder_L2_course-risk-summary-three-dimensions",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "risk",
+      "metadata": {
+        "level": 2,
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Risk Summary — Three Dimensions"
+        ],
+        "child_titles": [],
+        "content_length": 1038
+      }
+    }
+  ],
+  "imagechunk_objects": [
+    {
+      "image_id": "0b5d0ed61fb6eecf7ac122edafd2a301",
+      "description": "Diagram under: The Track Hopper Feeder — A Quick Refresh. Visible labels: WAGON; tippled; HOPPER; FEEDER; ★ THIS COURSE; BELT CONVEYOR; CRUSHER; HOUSE; COAL BUNKER; / STOCK; MILL → BOILER; GENERATION; POSITION OF FEEDER IN COAL FLOW CHAIN; Every tonne through the boiler passes through this feeder first. Context: Track Hopper Feeder Start, Stop & Inspection under Supervision / track_hopper_feeder_L2_course.html.",
+      "title": "The Track Hopper Feeder — A Quick Refresh",
+      "parent_title": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+      "section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "svg",
+      "metadata": {
+        "linked_text_section_id": "track_hopper_feeder_L2_course-the-track-hopper-feeder-a-quick-refresh",
+        "caption": "",
+        "svg_text_labels": [
+          "WAGON",
+          "tippled",
+          "HOPPER",
+          "FEEDER",
+          "★ THIS COURSE",
+          "BELT CONVEYOR",
+          "CRUSHER",
+          "HOUSE",
+          "COAL BUNKER",
+          "/ STOCK",
+          "MILL → BOILER",
+          "GENERATION",
+          "POSITION OF FEEDER IN COAL FLOW CHAIN",
+          "Every tonne through the boiler passes through this feeder first"
+        ],
+        "view_box": "0 0 820 200",
+        "order_in_file": 1,
+        "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 820 200\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"a2\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#c8520a\"></path> </marker> <marker id=\"a2b\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#1a4d7c\"></path> </marker> </defs> <!-- Wagon --> <rect fill=\"#2a3545\" height=\"40\" rx=\"3\" stroke=\"#4a5a6a\" stro",
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "The Track Hopper Feeder — A Quick Refresh"
+        ]
+      }
+    },
+    {
+      "image_id": "b1d501541d07464b6bc42997647e744f",
+      "description": "Diagram under: What Happens When the Feeder Starts. Visible labels: 0; FEEDER; START CMD; supervisor; initiates; ~5s; MOTOR; ACCELERATES; observe; sound/vibration; ~15s; FIRST COAL; HITS BELT; observation; window opens; ~1min; STEADY; STATE FLOW; confirm normal; operation; cont.; PERIODIC; MONITORING; rounds; every shift. Context: Execution Block 1: Feeder Start Sequence / track_hopper_feeder_L2_course.html.",
+      "title": "What Happens When the Feeder Starts",
+      "parent_title": "Execution Block 1: Feeder Start Sequence",
+      "concept_id": "what-happens-when-the-feeder-starts",
+      "section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "svg",
+      "metadata": {
+        "linked_text_section_id": "track_hopper_feeder_L2_course-what-happens-when-the-feeder-starts",
+        "caption": "",
+        "svg_text_labels": [
+          "0",
+          "FEEDER",
+          "START CMD",
+          "supervisor",
+          "initiates",
+          "~5s",
+          "MOTOR",
+          "ACCELERATES",
+          "observe",
+          "sound/vibration",
+          "~15s",
+          "FIRST COAL",
+          "HITS BELT",
+          "observation",
+          "window opens",
+          "~1min",
+          "STEADY",
+          "STATE FLOW",
+          "confirm normal",
+          "operation",
+          "cont.",
+          "PERIODIC",
+          "MONITORING",
+          "rounds",
+          "every shift"
+        ],
+        "view_box": "0 0 760 120",
+        "order_in_file": 2,
+        "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 760 120\" xmlns=\"http://www.w3.org/2000/svg\"> <defs> <marker id=\"af\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"5\" refy=\"3\"> <path d=\"M0,0 L0,6 L7,3z\" fill=\"#c8520a\"></path> </marker> </defs> <!-- timeline bar --> <line stroke=\"#c8c2b4\" stroke-width=\"1.5\" x1=\"30\" x2=\"730\" y1=\"60\" y2=\"60\"></line> <!-- T=0 --> <circle cx=\"80\" cy=\"60\" fill=\"#c8520a\" r=\"10\"></circle> <text fill=\"#fff\" font-size=\"9\" text-anchor=",
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 1: Feeder Start Sequence",
+          "What Happens When the Feeder Starts"
+        ]
+      }
+    },
+    {
+      "image_id": "66ba4d62fe9aaba25e5c22ce6ff6a086",
+      "description": "Diagram under: System Behaviour During a Stop — The Inertia Window. Visible labels: TIME →; FLOW RATE; STOP CMD; INERTIA ZONE; 10–30 seconds; coal still flowing; Actual feeder output; Belt \"expectation\". Context: Execution Block 2: Feeder Stop Sequence / track_hopper_feeder_L2_course.html.",
+      "title": "System Behaviour During a Stop — The Inertia Window",
+      "parent_title": "Execution Block 2: Feeder Stop Sequence",
+      "concept_id": "system-behaviour-during-a-stop-the-inertia-window",
+      "section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+      "source_file": "track_hopper_feeder_L2_course.html",
+      "type": "svg",
+      "metadata": {
+        "linked_text_section_id": "track_hopper_feeder_L2_course-system-behaviour-during-a-stop-the-inertia-window",
+        "caption": "",
+        "svg_text_labels": [
+          "TIME →",
+          "FLOW RATE",
+          "STOP CMD",
+          "INERTIA ZONE",
+          "10–30 seconds",
+          "coal still flowing",
+          "Actual feeder output",
+          "Belt \"expectation\""
+        ],
+        "view_box": "0 0 700 140",
+        "order_in_file": 3,
+        "raw_svg_excerpt": "<svg font-family=\"'Share Tech Mono', monospace\" style=\"width:100%;\" viewbox=\"0 0 700 140\" xmlns=\"http://www.w3.org/2000/svg\"> <!-- axes --> <line stroke=\"#c8c2b4\" stroke-width=\"1\" x1=\"40\" x2=\"680\" y1=\"110\" y2=\"110\"></line> <line stroke=\"#c8c2b4\" stroke-width=\"1\" x1=\"40\" x2=\"40\" y1=\"20\" y2=\"110\"></line> <text fill=\"#6b6656\" font-size=\"9\" text-anchor=\"middle\" x=\"360\" y=\"128\">TIME →</text> <text fill=\"#6b6656\" font-size=\"9\" text-anchor=\"middle\" transform=\"rotate(-90,14,65)\" x=\"14\" y=\"65\">FLOW RATE<",
+        "breadcrumb": [
+          "Track Hopper Feeder | L2 Preparedness Course",
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+          "Execution Block 2: Feeder Stop Sequence",
+          "System Behaviour During a Stop — The Inertia Window"
+        ]
+      }
+    }
+  ],
+  "relationchunk_objects": [],
+  "conceptnode_objects": [
+    {
+      "concept_id": "coal-size-assessment-why-it-matters-here",
+      "label": "Coal Size Assessment — Why It Matters Here",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "e347dce50eeec35107c1c56a10692e98"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Coal Size Assessment — Why It Matters Here"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "common-mistakes-in-assisted-execution",
+      "label": "Common Mistakes in Assisted Execution",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "d5eac1cb5a663e999841fdbe95016f00"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Common Mistakes in Assisted Execution"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "control-point-1-pre-start-system-readiness-check",
+      "label": "Control Point 1 — Pre-Start System Readiness Check",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "1240e4139b5797546055106aa31330b4"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Control Point 1 — Pre-Start System Readiness Check"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "control-point-2-initial-coal-flow-observation-window",
+      "label": "Control Point 2 — Initial Coal Flow Observation Window",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "34bc52067d5546e6b8633b72c3d2b435"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Control Point 2 — Initial Coal Flow Observation Window"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "control-point-3-assisted-stop-under-live-load",
+      "label": "Control Point 3 — Assisted Stop Under Live Load",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "35187015c2ead3efad83b22615a89f99"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Control Point 3 — Assisted Stop Under Live Load"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "failure-cases-learn-from-what-went-wrong",
+      "label": "Failure Cases — Learn from What Went Wrong",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "cfd2ed95fffccb4e85fd8e722ffe1b3f"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Failure Cases — Learn from What Went Wrong"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "normal-vs-abnormal-quick-reference",
+      "label": "Normal vs. Abnormal — Quick Reference",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "43ea720db361ae6067150baa4e149263"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Normal vs. Abnormal — Quick Reference"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "observation-windows-reading-system-behaviour",
+      "label": "Observation Windows — Reading System Behaviour",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "070da5ccd84377d06a4d42e8585f668f"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Observation Windows — Reading System Behaviour"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "risk-summary-three-dimensions",
+      "label": "Risk Summary — Three Dimensions",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "ce2834d4640b3e4a2c8fd63f119d112a"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Risk Summary — Three Dimensions"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "system-behaviour-during-a-stop-the-inertia-window",
+      "label": "System Behaviour During a Stop — The Inertia Window",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "0366f4ad5911a67c06b8058613954e86"
+      ],
+      "image_ids": [
+        "66ba4d62fe9aaba25e5c22ce6ff6a086"
+      ],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "System Behaviour During a Stop — The Inertia Window"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 1,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "the-track-hopper-feeder-a-quick-refresh",
+      "label": "The Track Hopper Feeder — A Quick Refresh",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "45d12c2452583c7612b94abf87cf6566"
+      ],
+      "image_ids": [
+        "0b5d0ed61fb6eecf7ac122edafd2a301"
+      ],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "The Track Hopper Feeder — A Quick Refresh"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 1,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "track-hopper-feeder-start-stop-inspection-under-supervision",
+      "label": "Track Hopper Feeder Start, Stop & Inspection under Supervision",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "4d916c9c51c6dcb80ea66d0d22a6b76e"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Track Hopper Feeder Start, Stop & Inspection under Supervision"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "two-feeder-types-you-will-encounter",
+      "label": "Two Feeder Types You Will Encounter",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "386e9dc0477267ea902429e65deed062"
+      ],
+      "image_ids": [],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "Two Feeder Types You Will Encounter"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 0,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    },
+    {
+      "concept_id": "what-happens-when-the-feeder-starts",
+      "label": "What Happens When the Feeder Starts",
+      "node_type": "concept",
+      "text_chunk_ids": [
+        "52f70b1b0f383332a2070152733110bd"
+      ],
+      "image_ids": [
+        "b1d501541d07464b6bc42997647e744f"
+      ],
+      "source_relation_ids": [],
+      "target_relation_ids": [],
+      "metadata": {
+        "source_files": [
+          "track_hopper_feeder_L2_course.html"
+        ],
+        "titles": [
+          "What Happens When the Feeder Starts"
+        ],
+        "relation_types": [],
+        "text_chunk_count": 1,
+        "image_count": 1,
+        "source_relation_count": 0,
+        "target_relation_count": 0,
+        "has_evidence": true,
+        "embedding_source": "not_embedded",
+        "retrieval_weight": 1.0
+      }
+    }
+  ]
+}

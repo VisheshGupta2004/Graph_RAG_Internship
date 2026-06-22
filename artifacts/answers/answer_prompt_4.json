@@ -1,0 +1,159 @@
+{
+  "query": "What happens if the grizzly fails or arch formation occurs in a track hopper?",
+  "answer": "Query: What happens if the grizzly fails or arch formation occurs in a track hopper?\n\nThis draft is based mainly on retrieved course text/image evidence; no supporting relation trace was retrieved.\n\nKey course evidence:\n- The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free [The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?, concept: the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge]\n- What is \"arch formation\" and why is it dangerous? A The hopper structure is arch-shaped for strength B A safety gate that closes the hopper outlet C Coal particles bridge the outlet, stopping flow — then collapse suddenly in a dangerous surge D Coal piling up above ground level during overfill [What is \"arch formation\" and why is it dangerous?, concept: what-is-arch-formation-and-why-is-it-dangerous]\n- What happens if the grizzly fails? 🚨 Chain of Destruction 🪨 Boulder/large lump — destroys feeder belt or apron chain completely 🔩 Metal debris (bolts, wire) — cuts conveyor belt downstream 🌿 Rope or wood — wraps around feeder shaft, causes jam and stall 🪨 Shale/stone — jams between apron plates, cracking the steel pans ⚠ Rule [What happens if the grizzly fails?, concept: what-happens-if-the-grizzly-fails]\n- What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways [What is the fundamental principle of a Track Hopper?, concept: what-is-the-fundamental-principle-of-a-track-hopper]\n- What is a Track Hopper? COAL WAGON bottom doors open ⬇⬇⬇ coal accumulating Track Hopper Pit (underground) Rail wagon with open bottom doors discharging coal by gravity into underground hopper A Track Hopper is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. No tipping. No rotation. Just gravity. [What is a Track Hopper?, concept: what-is-a-track-hopper]\n\nRelevant diagram/image evidence:\n- Diagram under: Arch Formation — The Silent Stop. Caption: Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.. Visible labels: Coal above arch; ARCH (bridge); ⛔ Flow STOPS; Coal above builds up · pressure increases. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html. [Arch Formation — The Silent Stop, concept: arch-formation-the-silent-stop]\n- Diagram under: The Grizzly — first line of defence. Caption: Steel bar grid — small coal passes, oversized material and debris are stopped. Visible labels: gap; 200–300mm; Fine coal ✓ passes; LARGE; LUMP; ⛔ STOPPED; GRIZZLY SCREEN — Top View; ↓ Fine coal falls freely into hopper pit below. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html. [The Grizzly — first line of defence, concept: the-grizzly-first-line-of-defence]",
+  "retrieved_images": [
+    {
+      "image_id": "4e61af661d7f633eb3dc57e3cb0e3871",
+      "title": "Arch Formation — The Silent Stop",
+      "concept_id": "arch-formation-the-silent-stop",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "description": "Diagram under: Arch Formation — The Silent Stop. Caption: Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.. Visible labels: Coal above arch; ARCH (bridge); ⛔ Flow STOPS; Coal above builds up · pressure increases. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+      "citation": "[Arch Formation — The Silent Stop, concept: arch-formation-the-silent-stop]",
+      "display_type": "image_description"
+    },
+    {
+      "image_id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+      "title": "The Grizzly — first line of defence",
+      "concept_id": "the-grizzly-first-line-of-defence",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "description": "Diagram under: The Grizzly — first line of defence. Caption: Steel bar grid — small coal passes, oversized material and debris are stopped. Visible labels: gap; 200–300mm; Fine coal ✓ passes; LARGE; LUMP; ⛔ STOPPED; GRIZZLY SCREEN — Top View; ↓ Fine coal falls freely into hopper pit below. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+      "citation": "[The Grizzly — first line of defence, concept: the-grizzly-first-line-of-defence]",
+      "display_type": "image_description"
+    }
+  ],
+  "citations": [
+    {
+      "id": "a057d83d76f364d1192b6f9af8aaddff",
+      "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge"
+    },
+    {
+      "id": "f569ead205bb61d77a63140bf6614181",
+      "title": "What is \"arch formation\" and why is it dangerous?",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "what-is-arch-formation-and-why-is-it-dangerous"
+    },
+    {
+      "id": "dfa6dea4f937ae90050b2770d938b2b6",
+      "title": "What happens if the grizzly fails?",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "what-happens-if-the-grizzly-fails"
+    },
+    {
+      "id": "a24dd3a6d0e9f899172f20d57080afb1",
+      "title": "What is the fundamental principle of a Track Hopper?",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper"
+    },
+    {
+      "id": "19840e50aaad348878ec0cda8cc8e1a1",
+      "title": "What is a Track Hopper?",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "what-is-a-track-hopper"
+    },
+    {
+      "id": "4e61af661d7f633eb3dc57e3cb0e3871",
+      "title": "Arch Formation — The Silent Stop",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "arch-formation-the-silent-stop"
+    },
+    {
+      "id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+      "title": "The Grizzly — first line of defence",
+      "source_file": "Track_Hopper_iCard_Microlearning.html",
+      "concept_id": "the-grizzly-first-line-of-defence"
+    }
+  ],
+  "coverage_notes": {
+    "has_text_evidence": true,
+    "has_image_evidence": true,
+    "has_relation_trace": false,
+    "weaknesses": [
+      "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+    ]
+  },
+  "ui_response": {
+    "answer_text": "Query: What happens if the grizzly fails or arch formation occurs in a track hopper?\n\nThis draft is based mainly on retrieved course text/image evidence; no supporting relation trace was retrieved.\n\nKey course evidence:\n- The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge? A Yes — if no wagon is on the track, it is safe B Yes — the feeder stops automatically between unloading cycles C No — feeder may still run, arch could collapse, bars may be wet, dust may be present underground D Yes, but only briefly and with both hands free [The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?, concept: the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge]\n- What is \"arch formation\" and why is it dangerous? A The hopper structure is arch-shaped for strength B A safety gate that closes the hopper outlet C Coal particles bridge the outlet, stopping flow — then collapse suddenly in a dangerous surge D Coal piling up above ground level during overfill [What is \"arch formation\" and why is it dangerous?, concept: what-is-arch-formation-and-why-is-it-dangerous]\n- What happens if the grizzly fails? 🚨 Chain of Destruction 🪨 Boulder/large lump — destroys feeder belt or apron chain completely 🔩 Metal debris (bolts, wire) — cuts conveyor belt downstream 🌿 Rope or wood — wraps around feeder shaft, causes jam and stall 🪨 Shale/stone — jams between apron plates, cracking the steel pans ⚠ Rule [What happens if the grizzly fails?, concept: what-happens-if-the-grizzly-fails]\n- What is the fundamental principle of a Track Hopper? A The wagon is physically rotated to empty coal B Bottom doors open and coal falls by gravity into pit below C A vacuum system draws coal out of the wagon D Hydraulic rams tilt the wagon sideways [What is the fundamental principle of a Track Hopper?, concept: what-is-the-fundamental-principle-of-a-track-hopper]\n- What is a Track Hopper? COAL WAGON bottom doors open ⬇⬇⬇ coal accumulating Track Hopper Pit (underground) Rail wagon with open bottom doors discharging coal by gravity into underground hopper A Track Hopper is an underground pit built beneath a rail track. Wagons with bottom-opening doors drive over it — coal falls straight through into the pit below. No tipping. No rotation. Just gravity. [What is a Track Hopper?, concept: what-is-a-track-hopper]\n\nRelevant diagram/image evidence:\n- Diagram under: Arch Formation — The Silent Stop. Caption: Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.. Visible labels: Coal above arch; ARCH (bridge); ⛔ Flow STOPS; Coal above builds up · pressure increases. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html. [Arch Formation — The Silent Stop, concept: arch-formation-the-silent-stop]\n- Diagram under: The Grizzly — first line of defence. Caption: Steel bar grid — small coal passes, oversized material and debris are stopped. Visible labels: gap; 200–300mm; Fine coal ✓ passes; LARGE; LUMP; ⛔ STOPPED; GRIZZLY SCREEN — Top View; ↓ Fine coal falls freely into hopper pit below. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html. [The Grizzly — first line of defence, concept: the-grizzly-first-line-of-defence]",
+    "retrieved_images": [
+      {
+        "image_id": "4e61af661d7f633eb3dc57e3cb0e3871",
+        "title": "Arch Formation — The Silent Stop",
+        "concept_id": "arch-formation-the-silent-stop",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: Arch Formation — The Silent Stop. Caption: Arch formation — coal bridges the outlet, all flow stops. Pressure above increases silently.. Visible labels: Coal above arch; ARCH (bridge); ⛔ Flow STOPS; Coal above builds up · pressure increases. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "citation": "[Arch Formation — The Silent Stop, concept: arch-formation-the-silent-stop]",
+        "display_type": "image_description"
+      },
+      {
+        "image_id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+        "title": "The Grizzly — first line of defence",
+        "concept_id": "the-grizzly-first-line-of-defence",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "description": "Diagram under: The Grizzly — first line of defence. Caption: Steel bar grid — small coal passes, oversized material and debris are stopped. Visible labels: gap; 200–300mm; Fine coal ✓ passes; LARGE; LUMP; ⛔ STOPPED; GRIZZLY SCREEN — Top View; ↓ Fine coal falls freely into hopper pit below. Context: What is a Track Hopper? / Track_Hopper_iCard_Microlearning.html.",
+        "citation": "[The Grizzly — first line of defence, concept: the-grizzly-first-line-of-defence]",
+        "display_type": "image_description"
+      }
+    ],
+    "citations": [
+      {
+        "id": "a057d83d76f364d1192b6f9af8aaddff",
+        "title": "The Track Hopper area looks quiet between unloadings. Is it safe to approach the grizzly edge?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "the-track-hopper-area-looks-quiet-between-unloadings-is-it-safe-to-approach-the-grizzly-edge"
+      },
+      {
+        "id": "f569ead205bb61d77a63140bf6614181",
+        "title": "What is \"arch formation\" and why is it dangerous?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "what-is-arch-formation-and-why-is-it-dangerous"
+      },
+      {
+        "id": "dfa6dea4f937ae90050b2770d938b2b6",
+        "title": "What happens if the grizzly fails?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "what-happens-if-the-grizzly-fails"
+      },
+      {
+        "id": "a24dd3a6d0e9f899172f20d57080afb1",
+        "title": "What is the fundamental principle of a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "what-is-the-fundamental-principle-of-a-track-hopper"
+      },
+      {
+        "id": "19840e50aaad348878ec0cda8cc8e1a1",
+        "title": "What is a Track Hopper?",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "what-is-a-track-hopper"
+      },
+      {
+        "id": "4e61af661d7f633eb3dc57e3cb0e3871",
+        "title": "Arch Formation — The Silent Stop",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "arch-formation-the-silent-stop"
+      },
+      {
+        "id": "36ea3cbec7860cb08e7ca2a27f0df97f",
+        "title": "The Grizzly — first line of defence",
+        "source_file": "Track_Hopper_iCard_Microlearning.html",
+        "concept_id": "the-grizzly-first-line-of-defence"
+      }
+    ],
+    "coverage_notes": {
+      "has_text_evidence": true,
+      "has_image_evidence": true,
+      "has_relation_trace": false,
+      "weaknesses": [
+        "No relation trace was retrieved; answer should rely mainly on text/image evidence."
+      ]
+    },
+    "language": "en"
+  },
+  "answer_metadata": {
+    "mode": "extractive",
+    "model": null,
+    "uses_only_compressed_context": true,
+    "image_evidence_count": 2,
+    "language": "en"
+  }
+}

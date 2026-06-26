@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import os
 import math
+from functools import lru_cache
+from time import perf_counter
 from typing import Any
 
 from ..core.config import EMBEDDING_BATCH_SIZE, EMBEDDING_MODEL
@@ -115,11 +117,18 @@ def embed_passages(
 ) -> list[list[float]]:
     """Embed document/passsage text with the E5 passage prefix."""
     model = _load_model(model_name)
+    encode_start = perf_counter()
     vectors = model.encode(
         [f"{DOCUMENT_PREFIX}{text}" for text in texts],
         normalize_embeddings=True,
         convert_to_numpy=True,
         batch_size=batch_size,
+    )
+    print(
+        "[embedding timings] "
+        f"operation=embed_passages model={model_name} texts={len(texts)} "
+        f"encode_seconds={_elapsed_seconds(encode_start)}",
+        flush=True,
     )
     return [vector.astype(float).tolist() for vector in vectors]
 
@@ -127,12 +136,31 @@ def embed_passages(
 def embed_query(query: str, model_name: str = EMBEDDING_MODEL) -> list[float]:
     """Embed a user query with the E5 query prefix."""
     model = _load_model(model_name)
+    encode_start = perf_counter()
     vector = model.encode(
         [f"{QUERY_PREFIX}{query}"],
         normalize_embeddings=True,
         convert_to_numpy=True,
     )[0]
+    print(
+        "[embedding timings] "
+        f"operation=embed_query model={model_name} "
+        f"encode_seconds={_elapsed_seconds(encode_start)}",
+        flush=True,
+    )
     return vector.astype(float).tolist()
+
+
+def warm_embedding_model(model_name: str = EMBEDDING_MODEL) -> None:
+    """Load the embedding model once so the first user query does not pay startup cost."""
+    warm_start = perf_counter()
+    _load_model(model_name)
+    print(
+        "[embedding timings] "
+        f"operation=warm_model model={model_name} "
+        f"warm_seconds={_elapsed_seconds(warm_start)}",
+        flush=True,
+    )
 
 
 def _embed_objects(
@@ -180,7 +208,9 @@ def _embed_objects(
     }
 
 
+@lru_cache(maxsize=2)
 def _load_model(model_name: str) -> Any:
+    load_start = perf_counter()
     os.environ.setdefault("USE_TF", "0")
     os.environ.setdefault("USE_FLAX", "0")
     os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
@@ -193,15 +223,33 @@ def _load_model(model_name: str) -> Any:
             "Install dependencies with: pip install -r requirements.txt"
         ) from exc
     try:
-        return SentenceTransformer(model_name)
+        model = SentenceTransformer(model_name)
+        print(
+            "[embedding timings] "
+            f"operation=load_model model={model_name} "
+            f"load_seconds={_elapsed_seconds(load_start)} cache=miss",
+            flush=True,
+        )
+        return model
     except Exception as exc:
         try:
-            return SentenceTransformer(model_name, local_files_only=True)
+            model = SentenceTransformer(model_name, local_files_only=True)
+            print(
+                "[embedding timings] "
+                f"operation=load_model model={model_name} "
+                f"load_seconds={_elapsed_seconds(load_start)} cache=miss local_files_only=true",
+                flush=True,
+            )
+            return model
         except Exception as local_exc:
             raise RuntimeError(
                 f"Could not load embedding model '{model_name}'. "
                 "Download it once with network access, then rerun embedding locally."
             ) from local_exc
+
+
+def _elapsed_seconds(start: float) -> float:
+    return round(perf_counter() - start, 3)
 
 
 def _weighted_average_vector(weighted_vectors: list[tuple[list[float], float]]) -> list[float]:

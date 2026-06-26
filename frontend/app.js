@@ -1,4 +1,5 @@
 const API_BASE_URL = "https://graphraginternship-production.up.railway.app";
+// const API_BASE_URL = "http://localhost:8000";
 
 const questionInput = document.getElementById("questionInput");
 const sendButton = document.getElementById("sendButton");

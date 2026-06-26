@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from time import perf_counter
 from typing import Any
 
 from fastapi import FastAPI, File, HTTPException, Response, UploadFile
@@ -19,6 +20,7 @@ from ..core.config import (
     WEAVIATE_HOST,
     WEAVIATE_PORT,
 )
+from ..embedding.service import warm_embedding_model
 from ..extraction.image_extraction import find_svg_by_image_id
 from ..providers.groq_provider import LLMProviderError, groq_transcribe_audio, has_groq_api_key
 from ..retrieval import retrieve_context
@@ -37,6 +39,11 @@ app.add_middleware(
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
+
+
+@app.on_event("startup")
+def warm_models() -> None:
+    warm_embedding_model()
 
 
 class ChatRequest(BaseModel):
@@ -133,14 +140,42 @@ async def transcribe(file: UploadFile = File(...), language: str | None = None) 
 
 
 def _answer_question(message: str) -> dict[str, Any]:
+    total_start = perf_counter()
+    step_start = total_start
+
     retrieval_context = retrieve_context(message)
-    compressed_context = compress_context(retrieval_context, use_llm=True, allow_fallback=True)
+    timings = {
+        "retrieval_seconds": _elapsed_seconds(step_start),
+    }
+
+    step_start = perf_counter()
+    compressed_context = compress_context(retrieval_context, use_llm=False, allow_fallback=True)
+    timings["compression_seconds"] = _elapsed_seconds(step_start)
+
+    step_start = perf_counter()
     answer_payload = generate_grounded_answer(compressed_context, use_llm=True, allow_fallback=True)
+    timings["answer_generation_seconds"] = _elapsed_seconds(step_start)
+
+    step_start = perf_counter()
     ui = answer_payload.get("ui_response", {})
     metadata = dict(answer_payload.get("answer_metadata", {}))
     metadata["compression_mode"] = compressed_context.get("compression_metadata", {}).get("mode")
     metadata["retrieval_counts"] = retrieval_context.get("retrieval_diagnostics", {}).get("final_context_counts", {})
+    metadata["retrieval_timings"] = retrieval_context.get("retrieval_diagnostics", {}).get("timings", {})
     metadata["has_relation_trace"] = answer_payload.get("coverage_notes", {}).get("has_relation_trace")
+    timings["response_packaging_seconds"] = _elapsed_seconds(step_start)
+    timings["total_seconds"] = _elapsed_seconds(total_start)
+    metadata["timings"] = timings
+    print(
+        "[chat timings] "
+        f"retrieval={timings['retrieval_seconds']}s "
+        f"compression={timings['compression_seconds']}s "
+        f"answer={timings['answer_generation_seconds']}s "
+        f"packaging={timings['response_packaging_seconds']}s "
+        f"total={timings['total_seconds']}s",
+        flush=True,
+    )
+    _print_retrieval_timings(metadata["retrieval_timings"])
 
     return {
         "query": answer_payload.get("query") or message,
@@ -150,6 +185,37 @@ def _answer_question(message: str) -> dict[str, Any]:
         "coverage_notes": ui.get("coverage_notes") or answer_payload.get("coverage_notes", {}),
         "metadata": metadata,
     }
+
+
+def _elapsed_seconds(start: float) -> float:
+    return round(perf_counter() - start, 3)
+
+
+def _print_retrieval_timings(timings: dict[str, Any]) -> None:
+    if not timings:
+        return
+    ordered_keys = [
+        "weaviate_setup_seconds",
+        "query_embedding_seconds",
+        "query_terms_seconds",
+        "text_vector_search_seconds",
+        "image_vector_search_seconds",
+        "node_vector_search_seconds",
+        "node_rerank_seconds",
+        "fetch_all_text_seconds",
+        "fetch_all_images_seconds",
+        "fetch_all_nodes_seconds",
+        "fetch_all_relations_seconds",
+        "text_lexical_merge_rerank_seconds",
+        "image_lexical_merge_rerank_seconds",
+        "seed_build_seconds",
+        "graph_expansion_seconds",
+        "expanded_evidence_seconds",
+        "context_build_seconds",
+        "total_retrieval_seconds",
+    ]
+    parts = [f"{key}={timings[key]}s" for key in ordered_keys if key in timings]
+    print("[retrieval timings] " + " ".join(parts), flush=True)
 
 
 def _with_image_asset_urls(images: list[dict[str, Any]]) -> list[dict[str, Any]]:

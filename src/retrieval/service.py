@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 from collections import deque
+from time import perf_counter
 from typing import Any
 
 from weaviate.classes.query import MetadataQuery
@@ -67,40 +68,87 @@ def retrieve_context(
     client: Any | None = None,
 ) -> dict[str, Any]:
     """Retrieve text, image, node, and graph context without generating an answer."""
+    timings: dict[str, float] = {}
+    total_start = perf_counter()
     owns_client = client is None
     if client is None:
+        step_start = perf_counter()
         client = setup_weaviate()
+        timings["weaviate_setup_seconds"] = _elapsed_seconds(step_start)
+    else:
+        timings["weaviate_setup_seconds"] = 0.0
 
     try:
+        step_start = perf_counter()
         query_vector = embed_query(query)
+        timings["query_embedding_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         query_terms = _query_terms(query)
+        timings["query_terms_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         raw_text_hits = _vector_search(client, TEXT_COLLECTION, query_vector, max(text_top_k * 4, text_top_k))
+        timings["text_vector_search_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         raw_image_hits = _vector_search(client, IMAGE_COLLECTION, query_vector, max(image_top_k * 4, image_top_k))
+        timings["image_vector_search_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         raw_node_hits = _vector_search(client, CONCEPT_COLLECTION, query_vector, max(node_top_k * 5, 20))
+        timings["node_vector_search_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         node_hits = _rerank_node_hits(raw_node_hits, node_top_k)
         relation_seed_nodes = _relation_seed_node_hits(raw_node_hits, node_hits)
+        timings["node_rerank_seconds"] = _elapsed_seconds(step_start)
 
+        step_start = perf_counter()
         all_text = _fetch_all(client, TEXT_COLLECTION)
+        timings["fetch_all_text_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         all_images = _fetch_all(client, IMAGE_COLLECTION)
+        timings["fetch_all_images_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         all_nodes = _fetch_all(client, CONCEPT_COLLECTION)
+        timings["fetch_all_nodes_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         all_relations = _fetch_all(client, RELATION_COLLECTION)
+        timings["fetch_all_relations_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         text_hits = _rerank_evidence_hits(
             _merge_hits(raw_text_hits, _lexical_evidence_candidates(all_text, TEXT_COLLECTION, query_terms)),
             query_terms,
             text_top_k,
         )
+        timings["text_lexical_merge_rerank_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         image_hits = _rerank_evidence_hits(
             _merge_hits(raw_image_hits, _lexical_evidence_candidates(all_images, IMAGE_COLLECTION, query_terms)),
             query_terms,
             image_top_k,
         )
+        timings["image_lexical_merge_rerank_seconds"] = _elapsed_seconds(step_start)
 
+        step_start = perf_counter()
         seed_concepts = _seed_concepts(text_hits, image_hits, node_hits + relation_seed_nodes)
         seed_scores = _seed_scores(text_hits, image_hits, node_hits, relation_seed_nodes)
+        timings["seed_build_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         if disable_graph:
             expansion = {"concept_ids": set(seed_concepts), "nodes": [], "relations": [], "trace": [], "dropped_low_score_relations": []}
         else:
             expansion = _expand_graph(seed_concepts, all_nodes, all_relations, max_hops, relation_limit, seed_scores, query_terms)
+        timings["graph_expansion_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         expanded_evidence = _expanded_evidence(
             expansion["concept_ids"],
             all_text,
@@ -110,6 +158,9 @@ def retrieve_context(
         )
         expanded_evidence["text_chunks"] = _rerank_evidence_hits(expanded_evidence["text_chunks"], query_terms, len(expanded_evidence["text_chunks"]), graph_relevance=0.2)
         expanded_evidence["image_chunks"] = _rerank_evidence_hits(expanded_evidence["image_chunks"], query_terms, len(expanded_evidence["image_chunks"]), graph_relevance=0.2)
+        timings["expanded_evidence_seconds"] = _elapsed_seconds(step_start)
+
+        step_start = perf_counter()
         context, diagnostics = _build_context_blocks(
             text_hits,
             image_hits,
@@ -121,8 +172,11 @@ def retrieve_context(
             max_context_relations=max_context_relations,
             debug_full_context=debug_full_context,
         )
+        timings["context_build_seconds"] = _elapsed_seconds(step_start)
         diagnostics["dropped_low_score_relations"] = expansion.get("dropped_low_score_relations", [])
         diagnostics["graph_disabled"] = disable_graph
+        timings["total_retrieval_seconds"] = _elapsed_seconds(total_start)
+        diagnostics["timings"] = timings
 
         return {
             "query": query,
@@ -145,6 +199,10 @@ def retrieve_context(
     finally:
         if owns_client:
             client.close()
+
+
+def _elapsed_seconds(start: float) -> float:
+    return round(perf_counter() - start, 3)
 
 
 def _vector_search(client: Any, collection_name: str, query_vector: list[float], limit: int) -> list[dict[str, Any]]:

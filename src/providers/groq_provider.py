@@ -42,11 +42,15 @@ def groq_chat_completion(
         raise LLMProviderError(f"Groq SDK request failed: {exc}") from exc
 
     try:
-        content = completion.choices[0].message.content
+        choice = completion.choices[0]
+        content = choice.message.content
     except (AttributeError, IndexError, TypeError) as exc:
         raise LLMProviderError(f"Unexpected Groq SDK response shape: {completion}") from exc
     if content is None:
         raise LLMProviderError(f"Groq SDK returned an empty message: {completion}")
+    if not str(content).strip():
+        finish_reason = getattr(choice, "finish_reason", None)
+        raise LLMProviderError(f"Groq SDK returned blank content. finish_reason={finish_reason}")
     return content
 
 

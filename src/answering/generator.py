@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from ..core.config import GROQ_ANSWER_MODEL
+from ..core.config import GROQ_ANSWER_MAX_TOKENS, GROQ_ANSWER_MODEL
 from ..providers.groq_provider import groq_chat_completion
 
 
@@ -37,10 +37,11 @@ def generate_grounded_answer(
         },
     ]
     try:
-        answer = groq_chat_completion(messages=messages, model=model, temperature=0.1, max_tokens=1800)
+        answer = groq_chat_completion(messages=messages, model=model, temperature=0.1, max_tokens=GROQ_ANSWER_MAX_TOKENS)
         return _answer_payload(compressed_context, answer, mode="groq", model=model)
-    except Exception:
+    except Exception as exc:
         if allow_fallback:
+            print(f"[answer generation] falling back to extractive answer: {exc}", flush=True)
             fallback = build_extractive_answer(compressed_context)
             fallback["answer_metadata"]["mode"] = "extractive_fallback_after_llm_error"
             return fallback

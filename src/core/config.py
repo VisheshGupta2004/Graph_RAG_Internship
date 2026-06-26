@@ -17,8 +17,9 @@ CONCEPT_COLLECTION = "ConceptNode"
 EMBEDDING_MODEL = "intfloat/multilingual-e5-small"
 EMBEDDING_BATCH_SIZE = 32
 
-GROQ_COMPRESSOR_MODEL = "llama-3.1-8b-instant"
-GROQ_ANSWER_MODEL = "llama-3.3-70b-versatile"
+GROQ_COMPRESSOR_MODEL = os.getenv("GROQ_COMPRESSOR_MODEL", "llama-3.1-8b-instant")
+GROQ_ANSWER_MODEL = os.getenv("GROQ_ANSWER_MODEL", "openai/gpt-oss-20b")
+GROQ_ANSWER_MAX_TOKENS = int(os.getenv("GROQ_ANSWER_MAX_TOKENS", "1000"))
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 WEAVIATE_HOST = os.getenv("WEAVIATE_HOST", "localhost")

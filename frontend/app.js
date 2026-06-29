@@ -1,4 +1,6 @@
-const API_BASE_URL = "https://graphraginternship-production.up.railway.app";
+// Replace with your Modal ASGI URL after: modal deploy deploy_modal.py
+// Example: https://YOUR-WORKSPACE--graphrag-backend-fastapi-app.modal.run
+const API_BASE_URL = "https://visheshg2004--graphrag-backend-fastapi-app.modal.run";
 // const API_BASE_URL = "http://localhost:8000";
 
 const questionInput = document.getElementById("questionInput");

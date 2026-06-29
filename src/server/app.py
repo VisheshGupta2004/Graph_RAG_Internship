@@ -16,8 +16,11 @@ from ..core.config import (
     GROQ_ANSWER_MODEL,
     GROQ_COMPRESSOR_MODEL,
     GROQ_TRANSCRIPTION_MODEL,
+    WEAVIATE_GRPC_HOST,
     WEAVIATE_GRPC_PORT,
+    WEAVIATE_GRPC_SECURE,
     WEAVIATE_HOST,
+    WEAVIATE_HTTP_SECURE,
     WEAVIATE_PORT,
 )
 from ..embedding.service import warm_embedding_model
@@ -71,7 +74,10 @@ def health() -> dict[str, Any]:
         "weaviate": {
             "host": WEAVIATE_HOST,
             "port": WEAVIATE_PORT,
+            "http_secure": WEAVIATE_HTTP_SECURE,
+            "grpc_host": WEAVIATE_GRPC_HOST,
             "grpc_port": WEAVIATE_GRPC_PORT,
+            "grpc_secure": WEAVIATE_GRPC_SECURE,
         },
         "models": {
             "compressor": GROQ_COMPRESSOR_MODEL,

@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import os
 from pathlib import Path
 
@@ -24,7 +28,19 @@ GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 WEAVIATE_HOST = os.getenv("WEAVIATE_HOST", "localhost")
 WEAVIATE_PORT = int(os.getenv("WEAVIATE_PORT", "8080"))
+WEAVIATE_GRPC_HOST = os.getenv("WEAVIATE_GRPC_HOST", WEAVIATE_HOST)
 WEAVIATE_GRPC_PORT = int(os.getenv("WEAVIATE_GRPC_PORT", "50051"))
+
+
+def _env_bool(name: str, default: bool) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    return value.strip().lower() in ("1", "true", "yes", "on")
+
+
+WEAVIATE_HTTP_SECURE = _env_bool("WEAVIATE_HTTP_SECURE", WEAVIATE_PORT == 443)
+WEAVIATE_GRPC_SECURE = _env_bool("WEAVIATE_GRPC_SECURE", WEAVIATE_GRPC_PORT == 443)
 
 API_CORS_ORIGINS = [
     origin.strip()

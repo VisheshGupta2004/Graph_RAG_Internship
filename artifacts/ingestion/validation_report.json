@@ -16,7 +16,31 @@
     "concept_unique_ids": true
   },
   "embeddings": {
-    "enabled": false
+    "enabled": true,
+    "text": {
+      "model": "intfloat/multilingual-e5-small",
+      "document_prefix": "passage:",
+      "query_prefix": "query:",
+      "embedded": 196,
+      "skipped": []
+    },
+    "images": {
+      "model": "intfloat/multilingual-e5-small",
+      "document_prefix": "passage:",
+      "query_prefix": "query:",
+      "embedded": 34,
+      "skipped": []
+    },
+    "concepts": {
+      "model": "intfloat/multilingual-e5-small",
+      "evidence_text_weight": 1.0,
+      "evidence_image_weight": 0.8,
+      "relation_only_retrieval_weight": 0.35,
+      "embedded_from_evidence": 179,
+      "embedded_from_relations": 759,
+      "embedded": 938,
+      "skipped": []
+    }
   },
   "passed": true
 }

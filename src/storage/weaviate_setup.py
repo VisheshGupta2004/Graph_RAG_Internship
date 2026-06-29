@@ -7,24 +7,23 @@ from ..core.config import (
     IMAGE_COLLECTION,
     RELATION_COLLECTION,
     TEXT_COLLECTION,
+    WEAVIATE_GRPC_HOST,
     WEAVIATE_GRPC_PORT,
+    WEAVIATE_GRPC_SECURE,
     WEAVIATE_HOST,
+    WEAVIATE_HTTP_SECURE,
     WEAVIATE_PORT,
 )
 
 
 def setup_weaviate() -> Any:
-    """Connect to local Weaviate and create MVP collections if needed."""
+    """Connect to Weaviate and create MVP collections if needed."""
     import weaviate
     import weaviate.classes.config as wvcc
     from weaviate.classes.init import AdditionalConfig, Timeout
 
-    client = weaviate.connect_to_local(
-        host=WEAVIATE_HOST,
-        port=WEAVIATE_PORT,
-        grpc_port=WEAVIATE_GRPC_PORT,
-        additional_config=AdditionalConfig(timeout=Timeout(init=30, query=60, insert=120)),
-    )
+    additional_config = AdditionalConfig(timeout=Timeout(init=30, query=60, insert=120))
+    client = _connect_weaviate(weaviate, additional_config)
 
     try:
         _ensure_text_collection(client, wvcc)
@@ -35,6 +34,28 @@ def setup_weaviate() -> Any:
         client.close()
         raise
     return client
+
+
+def _connect_weaviate(weaviate: Any, additional_config: Any) -> Any:
+    """Use local connection for development and custom TLS for remote hosts."""
+    is_local = WEAVIATE_HOST in ("localhost", "127.0.0.1")
+    if is_local:
+        return weaviate.connect_to_local(
+            host=WEAVIATE_HOST,
+            port=WEAVIATE_PORT,
+            grpc_port=WEAVIATE_GRPC_PORT,
+            additional_config=additional_config,
+        )
+
+    return weaviate.connect_to_custom(
+        http_host=WEAVIATE_HOST,
+        http_port=WEAVIATE_PORT,
+        http_secure=WEAVIATE_HTTP_SECURE,
+        grpc_host=WEAVIATE_GRPC_HOST,
+        grpc_port=WEAVIATE_GRPC_PORT,
+        grpc_secure=WEAVIATE_GRPC_SECURE,
+        additional_config=additional_config,
+    )
 
 
 def reset_text_collection() -> None:

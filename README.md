@@ -1,6 +1,6 @@
 # GraphRAG Internship
 
-A Graph Retrieval-Augmented Generation (GraphRAG) system for **Coal Handling Plant (CHP) training material** that combines semantic search, knowledge graph expansion, and grounded answer generation. The system retrieves evidence from structured documents, diagrams, and graph relationships before generating responses, ensuring every answer is supported by relevant source material.
+A Graph Retrieval-Augmented Generation (GraphRAG) system for **Industrial Function training material** that combines semantic search, knowledge graph expansion, and grounded answer generation. The system retrieves evidence from structured documents, diagrams, and graph relationships before generating responses, ensuring every answer is supported by relevant source material.
 
 ---
 
